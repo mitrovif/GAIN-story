@@ -53,6 +53,17 @@ def preview_image(html, base):
     return None
 
 
+def cover_url(r):
+    """The link to take a cover from: a replacement link that matches the example (exact or related)
+    and is not a news article wins over the original source_url; section landing pages are skipped."""
+    rep = (r.get("replacement_url") or "").strip()
+    if rep and r.get("replacement_match") in ("exact", "related") and not r.get("replacement_source", "").startswith("news"):
+        return rep
+    if rep and r.get("replacement_match") == "landing":
+        return ""
+    return r["source_url"].strip()
+
+
 def main():
     only = set()
     if "--only" in sys.argv:
@@ -62,7 +73,7 @@ def main():
     rows = list(csv.DictReader(open(EXAMPLES, encoding="utf-8")))
     log = []
     for r in rows:
-        ex, url = r["ex_id"], r["source_url"].strip()
+        ex, url = r["ex_id"], cover_url(r)
         if not url or (only and ex not in only):
             continue
         if not force and (r["cover_status"].startswith(("ok", "rejected"))):

@@ -16,13 +16,17 @@ rows = list(csv.DictReader(open(os.path.join(ROOT, "data", "gain_examples.csv"),
 out = {}
 for r in rows:
     has_cover = r["cover_status"].startswith("ok") and r["cover_file"]
-    if not (has_cover or r["source_url"]):
+    rep = r.get("replacement_url", "").strip()
+    link = rep if rep and r.get("replacement_match") in ("exact", "related", "landing") else r["source_url"].strip()
+    if not (has_cover or link):
         continue
     out[str(int(r["roster_row"]) - 1)] = {
         "ex": r["ex_id"],
         "title": r["title"],
         "country": r["country"],
-        "link": r["source_url"],
+        "link": link,
+        "link_match": r.get("replacement_match", "") if link == rep else "original",
+        "link_source": r.get("replacement_source", "") if link == rep else "",
         "cover": r["cover_file"] if has_cover else "",
         "cover_note": r["cover_status"] if has_cover else "",
     }

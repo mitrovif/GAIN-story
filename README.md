@@ -14,16 +14,16 @@ Covers and links feed:
 | | Examples |
 |---|---|
 | GAIN examples, 2021–2025 | 413 |
-| With a source link | 44 |
-| Covers checked and in use | **12** |
-| Rejected after checking | 10 (logos, icons, stock photos, an inner page, a price list) |
-| Still missing a cover | 391 |
+| With a source link (original or replacement) | 153 |
+| Covers checked and in use | **48** |
+| Rejected after checking | 30 (logos, stock photos, event photos, text pages, a restricted report, a price list) |
+| Still missing a cover | 335 |
 
 ## Files
 
 | Path | What it is |
 |---|---|
-| `data/gain_examples.csv` | One row per GAIN example: year, country, organisation, title, lead, use of the Recommendations, `source_url`, `url_found_by`, `cover_file`, `cover_status`, `checked_on` |
+| `data/gain_examples.csv` | One row per GAIN example: year, country, organisation, title, lead, use of the Recommendations, `source_url` (as first collected), `url_found_by`, the `replacement_*` columns (a better link found on the NSO or organisation website: `replacement_url`, `replacement_match` exact / related / landing / none, `replacement_source` official / partner / news, `replacement_checked`, `replacement_note`, `replacement_on`), `cover_file`, `cover_status`, `checked_on` |
 | `covers/exNNN.png` | Checked cover thumbnails |
 | `data/cover_fetch_log.csv` | What happened with each link on the last fetch |
 | `data/story_covers.json` | Export for the scrollytelling page (`tools/export_for_story.py`) |
@@ -47,6 +47,9 @@ Covers and links feed:
 ## Log
 
 - **30 Sep 2026:** links found by web search for the 7 featured story examples; covers for Burkina Faso INSD (ESEP-PDI 2024), the African Union 4th School on Migration Statistics report, and the UBOS 2024 census report. Still to check by hand in a browser: Nigeria NBS (microdata catalogue), Philippines PSA (press release), Thailand (2025 module not yet published).
+
+- **30 Sep 2026 (NSO website pass):** 171 examples searched on NSO and organisation websites: the 34 whose link was broken, blocked or generic, and the 137 country-led 2024–2025 examples without a link, with NSO-list countries (`gain_sdg_workstream/data/nso_census_targets.csv`) first. Result: 94 exact, 31 related, 17 section pages, 29 not found. 36 new covers kept after checking, 20 rejected. Links still to open by hand (sites block scripts): PSA Philippines, IDB, UNDP, UNRWA, BPS Indonesia, dofi.ibz.be, ESCWA, Liechtenstein. Six links are news articles, flagged in `replacement_source`. The session's web-search limit was reached, so some later countries were searched by browsing sites only (Kenya, Morocco, Moldova, Burundi, CAR, South Sudan, Rwanda, Cameroon, Sweden, Bangladesh, Egypt, Sudan, Mozambique, DRC) and deserve a second pass.
+- **Next:** institution-led examples (UNHCR, World Bank / JDC, IOM, JIPS, IDMC, UNICEF…) and the 2021–2023 rounds.
 
 ## Priorities
 
