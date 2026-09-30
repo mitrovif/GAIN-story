@@ -1,98 +1,126 @@
 ex_id,url,result
-ex004,https://stat.gov.tm/en/population-census,"saved (check by eye) page-pdf: page 1 of 3, https://stat.gov.tm/population-census-pdfs/results/en/introduction.pdf"
-ex005,https://data.unhcr.org/en/documents/details/111483,saved (check by eye) screenshot: Document - Lebanon: Disaster Risk Management Official List of Shelters - Stateme
-ex008,https://resultats2024.rgphapps.ma/,saved (check by eye) screenshot: Résultats RGPH 2024
-ex009,https://www.unrwa.org/resources/reports/palestinian-population-lebanon-findings-unrwa-digital-identity-verification,failed: HTTP 403 (also through the browser)
-ex015,https://www.knbs.or.ke/reports/kdhs-2022/,saved (check by eye) screenshot: Kenya Demographic and Health Survey - 2022 - Kenya National Bureau of Statistics
-ex029,https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Migration-Integration/_inhalt.html,saved (check by eye) screenshot: Bevölkerung mit Migrationshintergrund & Ausländer in Deutschland - Statistisches
-ex033,https://edam-2024-0kd2xs9.gamma.site/,saved (check by eye) page-cover: https://cdn.gamma.app/p327y1pq5vrkd8x/427edc8935bd4c6d9c40dc12fca5c264/thumbnail/Rapport-EDAM1-IS.png
-ex048,https://microdata.nigerianstat.gov.ng/index.php/catalog/182,saved (check by eye) page-cover: https://microdata.nigerianstat.gov.ng/files/thumbnails/thumbnail-s182.jpg?v=1776095002
-ex053,https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/longterminternationalmigrationprovisional/yearendingdecember2022,"saved (check by eye) page-pdf: page 1 of 105, https://unstats.un.org/unsd/publication/SeriesM/SeriesM_58rev1e.pdf"
-ex055,https://dtm.iom.int/haiti,failed: HTTP 403 (also through the browser)
-ex056,https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/earlyintegrationoutcomesforrefugeesresettledinenglandandwales/2015to2021,saved (check by eye) screenshot: Early integration outcomes for refugees resettled in England and Wales - Office 
-ex057,https://ine.gob.hn/censo-de-poblacion-y-vivienda-2025/,"saved (check by eye) page-pdf: page 1 of 74, https://ine.gob.hn/wp-content/uploads/2025/10/Contrato-Programa-de-Apoyo-al-Censo-de-Poblacion-y-Vivienda-y-Fortalecimiento-del-Sistema-Estadistico-Nacional.pdf"
-ex058,https://rtc-cea.cepal.org/es/documento/guia-practica-para-la-produccion-de-estadisticas-armonizadas-sobre-desplazamiento-forzado,saved (check by eye) screenshot: Guía práctica para la producción de estadísticas armonizadas sobre desplazamient
-ex059,https://pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_DisplacedNorthGaza2025E.pdf,"failed: APIRequestContext.get: unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
-ex061,https://ine.gob.hn/censo-de-poblacion-y-vivienda-2025/,"saved (check by eye) page-pdf: page 1 of 74, https://ine.gob.hn/wp-content/uploads/2025/10/Contrato-Programa-de-Apoyo-al-Censo-de-Poblacion-y-Vivienda-y-Fortalecimiento-del-Sistema-Estadistico-Nacional.pdf"
-ex062,https://microdata.pcbs.gov.ps/PCBS-Metadata-en-v5.2/index.php/catalog/708,saved (check by eye) screenshot: West Bank and Gaza - Multiple indicator cluster survey 2019-2020
-ex064,https://www.nso.go.th/nsoweb/main/summano/aE,saved (check by eye) screenshot: สำมะโนประชากรและเคหะ
-ex066,https://dosweb.dos.gov.jo/DataBank/census2015/GeneralPopulation&HousingCensus_Guide_2015_EN.pdf,saved (check by eye) pdf: page 1 of 239
-ex067,https://www.bps.go.id/en/publication/2026/06/30/bdc814f38edf0a941f4f9d34/penduduk-dan-indikator-kependudukan-hasil-survei-penduduk-antar-sensus-2025.html,failed: HTTP 403 (also through the browser)
-ex076,https://www.gov.uk/government/statistics/irregular-migration-to-the-uk-year-ending-june-2024,"saved (check by eye) screenshot: Irregular migration to the UK, year ending June 2024 - GOV.UK"
-ex079,https://microdata.unhcr.org/index.php/catalog/1466,saved (check by eye) page-cover: https://microdata.unhcr.org/files/images/west_afr.jpg?v=1779903631
-ex084,https://www.ine.es/infografias/ucranianos/ucranianos.htm,saved (check by eye) screenshot: Ucranianos en España
-ex085,https://www.jointdatacenter.org/activites/displaced-and-stateless-populations-in-car/,saved (check by eye) screenshot: Displaced and Stateless Populations in CAR|JDC
-ex089,https://dofi.ibz.be/fr/figures/access-and-stay/rapports,saved (check by eye) screenshot: https://dofi.ibz.be/fr/figures/access-and-stay/rapports
-ex091,https://www.ilo.org/resource/article/ethiopia-reviews-progress-reintegration-and-labour-migration-coordination,saved (check by eye) screenshot: Ethiopia Reviews Progress in Reintegration and Labour Migration Coordination | I
-ex094,https://www.probation.go.ke/downloads,"saved (check by eye) page-pdf: page 1 of 4, https://www.probation.go.ke/sites/default/files/downloads/Probation%20PAMPHLET%20for%20Offenders.pdf"
-ex095,https://dofi.ibz.be/fr/themes/sejour-irregulier/detention,saved (check by eye) screenshot: https://dofi.ibz.be/fr/themes/sejour-irregulier/detention
-ex102,https://www.undp.org/somalia/publications/data-solutions-toolkit,failed: HTTP 403 (also through the browser)
-ex103,https://igad.int/?p=22726,saved (check by eye) page-cover: https://igad.int/wp-content/uploads/2022/04/Text-Thumbnail-2-01-scaled-1.jpeg
-ex104,https://www.jips.org/news/strengthening-the-data-systems-and-capacities-of-the-idp-committee-in-azerbaijan/,saved (check by eye) screenshot: Strengthening the Data Systems and Capacities of the IDP Committee in Azerbaijan
-ex106,https://www.undp.org/es/node/597391,failed: HTTP 403 (also through the browser)
-ex110,https://ins-cameroun.cm/mics-7-au-cameroun/,"saved (check by eye) page-pdf: page 1 of 3, https://ins-cameroun.cm/wp-content/uploads/2026/06/ITV_MICS7_ameroun.pdf"
-ex112,https://www.knbs.or.ke/wp-content/uploads/2025/01/2024-25-Kenya-Integrated-Household-Budget-Survey-Pilot-Report.pdf,saved (check by eye) pdf: page 1 of 35
-ex116,https://www.knbs.or.ke/wp-content/uploads/2024/05/2024-Economic-Survey.pdf,saved (check by eye) pdf: page 1 of 508
-ex118,https://www.ssb.no/befolkning/innvandrere/artikler/hvordan-presterer-flyktninger-pa-skolebenken,saved (check by eye) screenshot: Hvordan presterer flyktninger på skolebenken? – SSB
-ex119,https://www.jointdatacenter.org/activites/internally-displaced-people-in-yemen/,saved (check by eye) screenshot: Internally Displaced People in Yemen|JDC
-ex123,https://www.geostat.ge/en/modules/categories/909/the-geographical-distribution-of-the-population-and-internal-migration,saved (check by eye) screenshot: The Geographical Distribution of The Population and Internal Migration - Nationa
-ex132,https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/ukrainske-flyktninger-etter-introduksjonsprogram-pa-arbeidsmarkedet,"saved (check by eye) page-pdf: page 1 of 103, https://www.ssb.no/en/utdanning/voksenopplaering/artikler/former-participants-in-the-introduction-programme-2005-2019/_/attachment/inline/1dedfc25-bad7-4718-a146-8555c39b19c3:ba4b2af9c3839c36917efb23167a26e98fb0a016/RAPP2022-52.pdf"
-ex135,https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/en-av-tre-ukrainere-er-i-jobb,saved (check by eye) screenshot: En av tre ukrainere er i jobb – SSB
-ex136,https://www.icasees.org/index.php/actualites/423-centrafrique-rgph-4-licasees-presente-les-resultats-provisoires-globaux-et-preliminaires-au-ctir,"saved (check by eye) screenshot: CENTRAFRIQUE : RGPH-4, l'ICASEES présente les résultats provisoires globaux et p"
-ex139,https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/flyktninger-i-og-utenfor-arbeidsmarkedet-2023/_/attachment/inline/346960db-ce5c-4305-ad52-637bc5ce8c55:94dcbfc7c9e1810dd8a36ce75fd16524ab739f03/RAPP2025-01.pdf,saved (check by eye) pdf: page 1 of 136
-ex141,https://www.ssb.no/befolkning/innvandrere/artikler/mange-enslige-mindrearige-flyktninger-fra-ukraina,saved (check by eye) screenshot: Mange enslige mindreårige flyktninger fra Ukraina – SSB
-ex145,https://www.internal-displacement.org/countries/south-africa,saved (check by eye) screenshot: South Africa | IDMC - Internal Displacement Monitoring Centre
-ex148,https://www.ssb.no/befolkning/innvandrere/artikler/stor-andel-med-lavinntekt-blant-syriske-kvoteflyktninger,saved (check by eye) screenshot: Stor andel med lavinntekt blant syriske kvoteflyktninger – SSB
-ex150,https://disasterdisplacement.org/news-events/panama-workshop-may-2024/,saved (check by eye) page-cover: https://disasterdisplacement.org/wp-content/uploads/2023/12/COVER_small-e1719129052559-150x150.jpg
-ex153,https://www.internal-displacement.org/countries/uganda/,saved (check by eye) screenshot: Uganda | IDMC - Internal Displacement Monitoring Centre
-ex168,https://www.internal-displacement.org/countries/marshall-islands,saved (check by eye) screenshot: Marshall Islands | IDMC - Internal Displacement Monitoring Centre
-ex171,https://igad.int/?p=18913,saved (check by eye) page-cover: https://igad.int/wp-content/uploads/2022/04/Text-Thumbnail-2-01-scaled-1.jpeg
-ex179,https://www.mfa.gov.by/en/press/news_mfa/ec0edfebea3271d2.html,failed: APIRequestContext.get: connect ETIMEDOUT 195.50.7.181:443
-ex184,https://dosweb.dos.gov.jo/DataBank/Labour_Force/Employment_Unemployment/Labor_Force_Survey_questionnaire_2024.pdf,saved (check by eye) pdf: page 1 of 14
-ex185,https://www.armstat.am/file/article/demog_2024_7.pdf,saved (check by eye) pdf: page 1 of 45
-ex190,https://babel.bps.go.id/en/news/2024/10/30/450/post-enumeration-workshop-for-intercensal-population-survey-2025-pilot.html,failed: HTTP 403 (also through the browser)
-ex195,https://igm.gov.md/ro/statistica,saved (check by eye) screenshot: Statistica | INSPECTORATUL GENERAL PENTRU MIGRAȚIE
-ex209,https://fmino.gov.ng/first-lady-commissions-resettlement-city-in-keffi-nasarawa-state/,saved (check by eye) page-cover: https://fmino.gov.ng/wp-content/uploads/2026/09/IMG-20260930-WA0010-218x150.jpg
-ex210,https://www.statssa.gov.za/?p=14709,saved (check by eye) screenshot: Continuous Population Survey (CPS) test goes to the field | Statistics South Afr
-ex213,https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/methodologies/refugeeintegrationoutcomesriodatalinkagepilot,saved (check by eye) screenshot: Refugee Integration Outcomes (RIO) data linkage pilot - Office for National Stat
-ex217,https://www.instat-mali.org/fr/publications/enquete-modulaire-et-permanente-aupres-des-menages-emop,"saved (check by eye) page-pdf: page 1 of 3, https://www.instat-mali.org/laravel-filemanager/files/shares/doc/conditions-utilisation-donnees-ouvertes_doc.pdf"
-ex218,https://www.armstat.am/en/?nid=944,saved (check by eye) screenshot: Statistical Committee of the Republic of Armenia
-ex228,https://www.sida.se/en/for-partners/methods-materials,saved (check by eye) screenshot: Methods and materials | Sida
-ex229,https://www.dane.gov.co/index.php/estadisticas-por-tema/pobreza-y-condiciones-de-vida/encuesta-de-goce-efectivo-de-derechos-eged,saved (check by eye) screenshot: DANE - Encuesta de goce efectivo de derechos (EGED)
-ex234,https://www.ssb.no/befolkning/flytting/artikler/uregistrert-utvandring-fra-norge/_/attachment/inline/2b780628-56b2-400c-ad12-125a2b9894bc:a679064cdc81beb854dbbb730f1e0409780d1b7e/NOT2024-03.pdf,saved (check by eye) pdf: page 1 of 30
-ex237,https://www.gov.si/en/topics/mednarodna-zascita/,saved (check by eye) screenshot: International Protection | GOV.SI
-ex242,https://www.ssb.no/befolkning/innvandrere/artikler/overgang-til-norsk-statsborgerskap-1977-2023,"saved (check by eye) page-pdf: page 1 of 74, https://www.ssb.no/befolkning/innvandrere/artikler/overgang-til-norsk-statsborgerskap-1977-2021/_/attachment/inline/1130ffc0-5e70-429e-a07e-e450e5af695e:c18c1a4aba6726f6279d7922e4c001bbfe712bc3/RAPP2024-03.pdf"
-ex245,https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/en-av-tre-ukrainere-er-i-jobb,saved (check by eye) screenshot: En av tre ukrainere er i jobb – SSB
-ex253,https://unece.org/sites/default/files/2024-04/2.Refugees%20WP1%20ITA%20Conti%20Pangallo.pdf,failed: HTTP 403 (also through the browser)
-ex254,https://www.jointdatacenter.org/activites/refugees-in-mauritania/,saved (check by eye) screenshot: Refugees in Mauritania|JDC
-ex257,https://www.jointdatacenter.org/activites/south-sudan-hbs/,saved (check by eye) screenshot: South Sudan HBS|JDC
-ex259,https://www.unhcr.org/sites/default/files/2025-06/study-of-socio-economic-conditions-of-refugees-in-italy.pdf,failed: HTTP 403 (also through the browser)
-ex261,https://www.istat.it/informazioni-sulla-rilevazione/indagine-su-bambini-e-ragazzi-comportamenti-atteggiamenti-e-progetti-futuri/,"saved (check by eye) screenshot: Indagine su bambini e ragazzi: comportamenti, atteggiamenti e progetti futuri. –"
-ex264,https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_LFSQ022024E.pdf,"failed: APIRequestContext.get: unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
-ex266,https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_AggressionGaza2024E.pdf,"failed: APIRequestContext.get: unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
-ex268,https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_WorldRefugeesDay2024E.pdf,"failed: APIRequestContext.get: unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
-ex270,https://unescwa.org/events/international-recommendations-refugee-internally-displaced-persons-and-statelessness,"saved (check by eye) screenshot: International recommendations on refugee, internally displaced persons and state"
-ex271,https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Migration-Integration/_inhalt.html,saved (check by eye) screenshot: Bevölkerung mit Migrationshintergrund & Ausländer in Deutschland - Statistisches
-ex272,https://migration.gov.gr/en/statistika/,"saved (check by eye) page-pdf: page 1 of 21, https://migration.gov.gr/wp-content/uploads/2026/02/Report_A_January-2026_International-Protection_NEW.pdf"
-ex282,https://www.istat.it/infografiche/giornata-internazionale-dei-migranti-18-dicembre-2025/,saved (check by eye) screenshot: Giornata internazionale dei migranti – 18 dicembre 2025 – Istat
-ex283,https://dtm.iom.int/fr/reports/mali-rapport-sur-les-intentions-futures-des-personnes-deplacees-mai-2025,failed: HTTP 403 (also through the browser)
-ex285,https://www.inegi.org.mx/programas/envipe/2018/,saved (check by eye) screenshot: Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE)
-ex287,https://statistica.gov.md/ro/recensamantul-populatiei-si-al-locuintelor-2024-9940.html,saved (check by eye) page-cover: https://statistica.gov.md/thumbnails/files/files/Recensamint/Recesamint_2024/imagini/quality-control__90x90.png
-ex292,https://www.jointdatacenter.org/activites/refugees-and-idps-in-sudan/,saved (check by eye) screenshot: Refugees and IDPs in Sudan|JDC
-ex295,https://www.jointdatacenter.org/activites/refugees-in-bangladesh/,saved (check by eye) screenshot: Refugees in Bangladesh|JDC
-ex296,https://www.jointdatacenter.org/activites/displaced-and-stateless-populations-in-car/,saved (check by eye) screenshot: Displaced and Stateless Populations in CAR|JDC
-ex298,https://www.jointdatacenter.org/activites/refugees-in-iraq/,saved (check by eye) screenshot: Refugees in Iraq|JDC
-ex300,https://www.jointdatacenter.org/activites/refugees-in-turkiye/,saved (check by eye) screenshot: Refugees in Türkiye|JDC
-ex309,https://publications.iadb.org/publications/english/document/Return-Migrants-in-Honduras.pdf,failed: HTTP 403 (also through the browser)
-ex310,https://www.jointdatacenter.org/data-activities/inclusion/,saved (check by eye) screenshot: National Survey Inclusion|JDC
-ex311,https://www.jointdatacenter.org/activites/refugees-in-mauritania/,saved (check by eye) screenshot: Refugees in Mauritania|JDC
-ex315,https://www.jointdatacenter.org/malawi-dhs-2024/,"saved (check by eye) page-pdf: page 1 of 829, https://dhsprogram.com/pubs/pdf/FR398/FR398.pdf"
-ex318,https://krso.gov.krd/en/indicator,saved (check by eye) screenshot: Indicator
-ex320,https://www.ubos.org/wp-content/uploads/publications/05_2026Uganda_Harmonised_Integrated_Survey_2021-22_to_2024-25-Presentation.pdf,saved (check by eye) pdf: page 1 of 63
-ex321,https://www.ubos.org/the-uganda-malaria-indicator-survey-2024-25-report-released/,saved (check by eye) screenshot: The Uganda Malaria Indicator Survey 2024–25 Report Released - Uganda Bureau of S
-ex324,https://rsso03.psa.gov.ph/content/psa-nueva-ecija-and-lgu-cabanatuan-city-awards-certificate-live-birth-secpa-59-sama-bajau,failed: HTTP 403 (also through the browser)
-ex325,https://psa.gov.ph/system/files/cbms/Press%20Release_National%20Press%20Launch%20for%20the%202024%20POPCEN-CBMS.pdf,failed: HTTP 403 (also through the browser)
-ex326,https://psa.gov.ph/content/filipino-special-consular-mission-sabah,failed: HTTP 403 (also through the browser)
-ex368,https://microdata.pcbs.gov.ps/PCBS-Metadata-en-v5.2/index.php/catalog/715,saved (check by eye) screenshot: West Bank and Gaza - Labor Force Survey 2021
-ex371,https://www.knbs.or.ke/wp-content/uploads/2021/09/Economic-Survey-2021.pdf,saved (check by eye) pdf: page 1 of 428
-ex403,https://www.knbs.or.ke/wp-content/uploads/2022/05/2022-Economic-Survey1.pdf,saved (check by eye) pdf: page 1 of 482
+ex003,https://iraq.unfpa.org/en/publications/demographic-survey-kurdistan-region-iraq,"saved (check by eye) page-pdf: page 1 of 130, https://iraq.unfpa.org/sites/default/files/pub-pdf/KRSO%20IOM%20UNFPA%20Demographic%20Survey%20Kurdistan%20Region%20of%20Iraq_0.pdf"
+ex006,https://www.ons.gov.uk/census,saved (check by eye) screenshot: Census - Office for National Statistics
+ex010,https://stat.gov.kg/en/,saved (check by eye) page-cover: https://stat.gov.kg/media/publication/22a1362f-67f4-461a-b260-1a70c2e71399.jpg.70x100_q85_crop.jpg
+ex016,https://www.microdata.lisgislr.org/index.php/home,saved (check by eye) screenshot: Home
+ex019,https://stat.fi/en,saved (check by eye) screenshot: Statistics Finland
+ex020,https://www.statistics.gov.lk/,saved (check by eye) page-cover: https://www.statistics.gov.lk/assets/img/Menu/Whats.jpg
+ex022,https://statistics.gov.rw/?-Home-,saved (check by eye) screenshot: Home | National Institute of Statistics of Rwanda
+ex025,https://unece.org/statistics/workshop/refugee2024,failed: HTTP 403 (also through the browser)
+ex027,https://www.statistikportal.li/de/themen/bevoelkerung/asylwesen,saved (check by eye) page-cover: https://www.statistikportal.li/statistikportal/publications/233-asylwesen/2024/01/1/42944/image-thumb__42944__download_preview/233.2024.01_01_asylwesen-2024-methodik-qualitaet_anpassungen~-~page-1.515952f8.png
+ex032,C:/Users/MITROVIF/UNHCR/EGRISS Secretariat - Documents/905 - Implementation of Recommendations/01_GAIN Survey/Integration & GAIN Survey/EGRISS Database Integration/GAIN Web Scarping/R script/data_lake\store/ex032/drill_84.pdf,saved (check by eye) pipeline-pdf: page 1 of 57
+ex038,http://necal.energy.gov.ng/,saved (check by eye) screenshot: Nigeria Carbon Calculator 2060
+ex041,https://unece.org/statistics/population-and-housing-censuses,failed: HTTP 403 (also through the browser)
+ex042,https://migration.gov.gr/statistika/,saved (check by eye) page-cover: https://migration.gov.gr/wp-content/uploads/2021/05/Publication1-300x212.png
+ex043,https://unece.org/statistics/meeting/population%26migration2025,failed: HTTP 403 (also through the browser)
+ex045,https://microdata.nigerianstat.gov.ng/index.php/catalog,saved (check by eye) page-cover: https://microdata.nigerianstat.gov.ng/files/thumbnails/thumbnail-s1731.jpg?v=1760614419
+ex046,https://mvd.gov.by/ru/news/15592,failed: APIRequestContext.get: connect ETIMEDOUT 195.50.7.35:443
+ex047,https://migration.gov.gr/statistika/,saved (check by eye) page-cover: https://migration.gov.gr/wp-content/uploads/2021/05/Publication1-300x212.png
+ex052,https://dtm.iom.int/reports/haiti-update-displacement-situation-spontaneous-sites-september-2025?close=true,failed: HTTP 403 (also through the browser)
+ex055,https://dtm.iom.int/reports/haiti-information-sheet-displacement-situation-haiti-round-11-september-2025?close=true,failed: HTTP 403 (also through the browser)
+ex059,https://www.pcbs.gov.ps/,"failed: APIRequestContext.get: unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+ex060,https://www.mvd.gov.by/ru/page/departament-po-grazhdanstvu-i-migraci/vynuzhdennaya-migraciya,failed: APIRequestContext.get: connect ETIMEDOUT 195.50.7.35:443
+ex063,https://datospaz.unidadvictimas.gov.co/informe-desplazamiento-forzado-colombia-primer-semestre-2025/,saved (check by eye) screenshot: Informe de desplazamiento forzado en Colombia - I semestre 2025 – Datos para la 
+ex081,https://www.stat.ee/en/find-statistics/short-term-statistics/ukrainians-estonian-labour-market,saved (check by eye) screenshot: Ukrainians in the Estonian labour market | Statistikaamet
+ex086,https://www.bps.go.id/en/statistics-table?subject=519,failed: HTTP 403 (also through the browser)
+ex087,https://www.insee.fr/fr/information/7634303,saved (check by eye) screenshot: Enquête Sans Domicile | Insee
+ex090,https://www.insee.fr/fr/statistiques/6793391,saved (check by eye) screenshot: Immigrés et descendants d'immigrés - Immigrés et descendants d'immigrés en Franc
+ex098,https://www.statcan.gc.ca/en/start,saved (check by eye) screenshot: Statistics Canada: Canada's national statistical agency
+ex101,https://www.ins.gouv.cd/,saved (check by eye) page-cover: https://www.ins.gouv.cd/_next/image?url=%2Fimages%2Factu1a.jfif&w=3840&q=75
+ex102,https://www.jips.org/tools-and-guidance/idp-refugee-statistics/,"saved (check by eye) page-pdf: page 1 of 80, https://www.jips.org/uploads/2018/10/EGRIS-IDPtechreport-EN-web-1.pdf"
+ex106,https://www.jips.org/jips-publication/intentions-survey-idps-galmudug-somalia-2024/,saved (check by eye) screenshot: Intentions Survey of IDPs Towards Durable Solutions in Galmudug State of Somalia
+ex109,https://www.jips.org/jips-publication/monitoring-progress-towards-solutions-to-internal-displacement-a-development-oriented-indicator-framework-undp-jips-2024/,"saved (check by eye) page-pdf: page 1 of 69, https://www.jips.org/uploads/2024/09/undp-jips-monitoring-progress-towards-solutions-to-internal-displacement-sep24.pdf"
+ex122,https://www.cbs.nl/nl-nl/publicatie/2022/46/rapportage-integratie-en-samenleven-2022,saved (check by eye) page-cover: https://api.eu.kaltura.com/p/139/thumbnail/entry_id/0_x6xw81gq/width/480/height/270/
+ex125,https://www12.statcan.gc.ca/census-recensement/index-eng.cfm,saved (check by eye) screenshot: File not found | Fichier non trouvé
+ex127,https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=5057&lang=en&db=imdb&adm=8&dis=2,saved (check by eye) screenshot: Surveys and statistical programs - Longitudinal Immigration Database (IMDB)
+ex133,https://roasiapacific.iom.int/sites/g/files/tmzbdl671/files/documents/2025-11/ap_mdr-2025-.pdf,failed: HTTP 403 (also through the browser)
+ex140,https://eac.opendataforafrica.org/kvimbte/documents,"saved (check by eye) page-pdf: page 1 of 116, https://www.eac.int/documents?controller=download&task=download.file&file=0d123711-b116-4f49-9c12-73561eadc5dd&name=EAC%20International%20Migration%20Statistics%20Report%20-%20Edition%203.pdf"
+ex151,https://www.ins.gouv.cd/publications/enquete-conditions-vie-menages-ecvm-2024,saved (check by eye) page-cover: https://www.ins.gouv.cd/_next/image?url=%2Fhero-un.jpg&w=3840&q=75
+ex158,https://siap-elearning.org/course/view.php?id=195,failed: HTTP 404 (also through the browser)
+ex164,https://www.unhcr.org/refugee-statistics/download/?url=zaNQ6d,failed: HTTP 403 (also through the browser)
+ex170,https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52023PC0031,saved (check by eye) screenshot: EUR-Lex - 52023PC0031 - EN - EUR-Lex
+ex172,https://manara.as-rcp.org/home,failed: HTTP 502 (also through the browser)
+ex173,https://siap-elearning.org/course/view.php?id=212,failed: HTTP 404 (also through the browser)
+ex175,https://comesa.opendataforafrica.org/data#topic=Migration+statistics,saved (check by eye) screenshot: Data - COMSTAT Data Hub
+ex176,https://belstat.gov.by/en/,failed: APIRequestContext.get: connect ETIMEDOUT 195.50.4.250:443
+ex179,https://belstat.gov.by/en/,failed: APIRequestContext.get: connect ETIMEDOUT 195.50.4.250:443
+ex180,https://microdata.worldbank.org/index.php/catalog/6251/variable/V133,saved (check by eye) screenshot: Ethiopia - Socio-Economic Survey of Refugees in Ethiopia (SESRE) 2023
+ex181,https://data.unicef.org/resources/responsible-disaggregation-of-data-on-refugee-children/,failed: HTTP 403 (also through the browser)
+ex182,https://belstat.gov.by/en/,failed: APIRequestContext.get: connect ETIMEDOUT 195.50.4.250:443
+ex186,https://www.unhcr.org/publications/forced-displacement-survey-south-sudan-2023,failed: HTTP 403 (also through the browser)
+ex190,https://www.bps.go.id/en/statistics-table?subject=519,failed: HTTP 403 (also through the browser)
+ex191,https://www.unhcr.org/publications/forced-displacement-survey-pakistan-2024,failed: HTTP 403 (also through the browser)
+ex193,https://iraq.unfpa.org/en/publications/demographic-survey-kurdistan-region-iraq,"saved (check by eye) page-pdf: page 1 of 130, https://iraq.unfpa.org/sites/default/files/pub-pdf/KRSO%20IOM%20UNFPA%20Demographic%20Survey%20Kurdistan%20Region%20of%20Iraq_0.pdf"
+ex200,https://data.unhcr.org/en/documents/details/101747,saved (check by eye) screenshot: Document - Lives on hold: Intentions and Perspectives of Refugees and IDPs from 
+ex212,https://www.ons.gov.uk/surveys,saved (check by eye) screenshot: Our studies - Office for National Statistics
+ex214,https://dtm.iom.int/reports/ghana-registration-report-mop-north-and-shai-osudoku-september-2024?close=true,failed: HTTP 403 (also through the browser)
+ex215,https://www.gov.uk/government/collections/migration-statistics,saved (check by eye) screenshot: Migration statistics - GOV.UK
+ex216,https://dtm.iom.int/datasets/chad-site-and-village-assessment-lac-province-round-23,failed: HTTP 403 (also through the browser)
+ex219,https://dtm.iom.int/reports/chad-situation-update-46-21-november-2024?close=true,failed: HTTP 403 (also through the browser)
+ex221,https://www.bfs.admin.ch/bfs/en/home.html,saved (check by eye) screenshot: Federal Statistical Office | Federal Statistical Office - FSO
+ex225,https://ncri.gov.so/data-reports,saved (check by eye) screenshot: NCRI
+ex227,https://www.dane.gov.co/files/investigaciones/Inventario_Investigaciones_Dane_2014.xls,failed: Page.goto: Download is starting
+ex240,https://www.adb.org/publications/displacement-data-asia-pacific,saved (check by eye) screenshot: Toward Durable Solutions: Mapping and Analysis of Displacement Data in Asia and 
+ex248,https://www.ssb.no/inntekt-og-forbruk/inntekt-og-formue/artikler/inntektene-til-flyktninger-bosatt-mellom-2015-og-2018,saved (check by eye) screenshot: Inntektene til flyktninger bosatt mellom 2015 og 2018 – SSB
+ex249,https://ansade.mr/fr/category/operations-statistiques/epcv/,saved (check by eye) screenshot: ANSADE - Agence Nationale de la Statistique et de la Démographie
+ex251,https://ansade.mr/fr/category/operations-statistiques/mics-5/,saved (check by eye) screenshot: ANSADE - Agence Nationale de la Statistique et de la Démographie
+ex252,http://beta.nbs.gov.ss/population_statistics/,"saved (check by eye) screenshot: NBS - National Bureau of Statistics, South Sudan"
+ex255,https://data.worldbank.org/indicator/SM.POP.FDIP,saved (check by eye) screenshot: Forcibly displaced people | Data
+ex258,https://www.worldbank.org/ext/en/topic/fragility-conflict-and-violence/forced-displacement,saved (check by eye) screenshot: Forced Displacement | World Bank Group
+ex259,C:/Users/MITROVIF/UNHCR/EGRISS Secretariat - Documents/905 - Implementation of Recommendations/01_GAIN Survey/Integration & GAIN Survey/EGRISS Database Integration/GAIN Web Scarping/R script/data_lake\store/ex259/source.pdf,saved (check by eye) pipeline-pdf: page 1 of 13
+ex264,C:/Users/MITROVIF/UNHCR/EGRISS Secretariat - Documents/905 - Implementation of Recommendations/01_GAIN Survey/Integration & GAIN Survey/EGRISS Database Integration/GAIN Web Scarping/R script/data_lake\store/ex264/source.pdf,saved (check by eye) pipeline-pdf: page 1 of 24
+ex266,https://www.pcbs.gov.ps/,"failed: APIRequestContext.get: unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+ex267,https://rtc-cea.cepal.org/es/working-groups,saved (check by eye) screenshot: Grupos de trabajo | Red de Transmisión del Conocimiento
+ex277,http://www.oicstatcom.org/statcab.php,saved (check by eye) screenshot: OIC Statistical Commission
+ex279,https://www.unidadvictimas.gov.co/registro-unico-de-victimas-ruv/,saved (check by eye) screenshot: Registro Único de Víctimas (RUV) | Unidad para las Víctimas
+ex281,https://grb.gov.gh/,failed: APIRequestContext.get: certificate has expired
+ex294,https://www.worldbank.org/en/programs/forceddisplacement/brief/unhcr-world-bank-group-joint-data-center-on-forced-displacement-fact-sheet,saved (check by eye) screenshot: World Bank-UNHCR Joint Data Center on Forced Displacement Fact Sheet
+ex309,http://dx.doi.org/10.18235/0013730,failed: HTTP 403 (also through the browser)
+ex313,https://openknowledge.worldbank.org/entities/publication/98f29351-1fac-4aac-a0dd-1b6886941a0a,saved (check by eye) screenshot: Open Knowledge Repository
+ex323,https://ansade.mr/,saved (check by eye) screenshot: ANSADE - Agence Nationale de la Statistique et de la Démographie
+ex324,https://psa.gov.ph/survey,failed: HTTP 403 (also through the browser)
+ex325,https://psa.gov.ph/survey,failed: HTTP 403 (also through the browser)
+ex326,https://psa.gov.ph/survey,failed: HTTP 403 (also through the browser)
+ex328,https://www.jointdatacenter.org/integrating-forcibly-displaced-populations-into-covid-19-high-frequency-phone-surveys/,saved (check by eye) screenshot: Integrating forcibly displaced populations into COVID-19 High Frequency Phone Su
+ex330,https://data.worldbank.org/indicator/SM.POP.FDIP,saved (check by eye) screenshot: Forcibly displaced people | Data
+ex331,https://www.worldbank.org/en/programs/forceddisplacement/brief/unhcr-world-bank-group-joint-data-center-on-forced-displacement-fact-sheet,saved (check by eye) screenshot: World Bank-UNHCR Joint Data Center on Forced Displacement Fact Sheet
+ex332,https://data.worldbank.org/indicator/SM.POP.FDIP,saved (check by eye) screenshot: Forcibly displaced people | Data
+ex335,https://www.jointdatacenter.org/integrating-forcibly-displaced-populations-into-covid-19-high-frequency-phone-surveys/,saved (check by eye) screenshot: Integrating forcibly displaced populations into COVID-19 High Frequency Phone Su
+ex336,https://www.worldbank.org/en/programs/forceddisplacement/brief/unhcr-world-bank-group-joint-data-center-on-forced-displacement-fact-sheet,saved (check by eye) screenshot: World Bank-UNHCR Joint Data Center on Forced Displacement Fact Sheet
+ex337,https://www.jointdatacenter.org/integrating-forcibly-displaced-populations-into-covid-19-high-frequency-phone-surveys/,saved (check by eye) screenshot: Integrating forcibly displaced populations into COVID-19 High Frequency Phone Su
+ex338,https://www.jointdatacenter.org/bangladesh-coxs-bazar-humanitarian-development-statistics-center-analytical-program/,failed: HTTP 404 (also through the browser)
+ex340,https://data.worldbank.org/indicator/SM.POP.FDIP,saved (check by eye) screenshot: Forcibly displaced people | Data
+ex341,https://data.worldbank.org/indicator/SM.POP.FDIP,saved (check by eye) screenshot: Forcibly displaced people | Data
+ex345,https://www.jointdatacenter.org/jdc-strategy-for-2021-2023/,saved (check by eye) page-cover: https://www.jointdatacenter.org/wp-content/uploads/2021/06/JDC-Strategy-2024-2027-Brochure-cover-scaled.jpg
+ex347,https://iraq.iom.int/resources/home-again-categorising-obstacles-returnee-reintegration-iraq,failed: HTTP 403 (also through the browser)
+ex353,https://publications.iom.int/fr/node/2951,failed: HTTP 403 (also through the browser)
+ex355,https://reliefweb.int/report/world/leave-no-migrant-behind-2030-agenda-and-data-disaggregation?msclkid=864aaae2b0d411ec931dc6b589ca9adc,"saved (check by eye) page-pdf: page 1 of 100, https://reliefweb.int/attachments/7f87fa94-509d-36cc-81a9-8f534d30614c/migrants-in-the-_sdgs.pdf"
+ex356,https://data.un.org/Data.aspx?d=UNHCR&f=indID%3AType-Ref,saved (check by eye) screenshot: UNdata | record view | Table with data on Refugees
+ex361,https://www.sdg16hub.org/sdg-16-survey-initiative,saved (check by eye) screenshot: SDG 16 Survey Initiative | SDG 16
+ex362,https://www.jips.org/jips-country/sudan/?msclkid=d74339f3b0d011ec917aadf685e683e2,saved (check by eye) screenshot: Sudan - JIPS - Joint IDP Profiling Service
+ex364,https://www.jips.org/jips-publication/jips-strategy-2021-23/,"saved (check by eye) page-pdf: page 1 of 32, https://www.jips.org/uploads/2021/03/JIPS-Strategy-2021_23-vf.pdf"
+ex367,https://www.internal-displacement.org/research-areas/differentiated-impacts,saved (check by eye) screenshot: Hidden in plain sight: The Differentiated Impacts of Internal Displacement | IDM
+ex369,https://ec.europa.eu/eurostat/web/european-neighbourhood-policy/enp-south/med-hims,failed: HTTP 404 (also through the browser)
+ex374,https://en.www.inegi.org.mx/datosabiertos/,saved (check by eye) screenshot: Open data
+ex375,https://en.www.inegi.org.mx/datosabiertos/,saved (check by eye) screenshot: Open data
+ex376,https://stat.gov.ua/en/node/5129,saved (check by eye) screenshot: Main page Ukrstat | State Statistics Service of Ukraine
+ex377,https://www.unfpa.org/publications/unfpa-strategy-2020-round-population-housing-censuses-2015-2024,"saved (check by eye) page-pdf: page 1 of 35, https://www.unfpa.org/sites/default/files/pub-pdf/Census_Strategy_Final_July.pdf"
+ex378,https://www.hcp.ma/,saved (check by eye) screenshot: Site institutionnel du Haut-Commissariat au Plan du Royaume du Maroc
+ex379,https://www.hcp.ma/,saved (check by eye) screenshot: Site institutionnel du Haut-Commissariat au Plan du Royaume du Maroc
+ex380,https://www.capmas.gov.eg/,saved (check by eye) screenshot: الجهاز المركزي للتعبئة العامة والإحصاء
+ex381,C:/Users/MITROVIF/UNHCR/EGRISS Secretariat - Documents/905 - Implementation of Recommendations/01_GAIN Survey/Integration & GAIN Survey/EGRISS Database Integration/GAIN Web Scarping/R script/data_lake\store/ex381/drill_56.pdf,saved (check by eye) pipeline-pdf: page 1 of 33
+ex382,https://www.jointdatacenter.org/libya-socio-economic-survey-of-refugees-and-migrants-in-libya/#:~:text=Migrants%20and%20displaced%20people%20in%20Libya%20tend%20to,failed: HTTP 404 (also through the browser)
+ex386,https://data.un.org/Data.aspx?d=UNHCR&f=indID%3AType-Ref,saved (check by eye) screenshot: UNdata | record view | Table with data on Refugees
+ex387,https://www.zamstats.gov.zm/zamstats-in-collaboration-with-unhcr-to-conduct-the-first-ever-forcibly-displaced-survey-fds-in-zambia/,saved (check by eye) screenshot: ZamStats in collaboration with UNHCR to conduct the first ever Forcibly Displace
+ex389,https://datospaz.unidadvictimas.gov.co/informe-desplazamiento-forzado-colombia-primer-semestre-2025/,saved (check by eye) screenshot: Informe de desplazamiento forzado en Colombia - I semestre 2025 – Datos para la 
+ex390,https://datospaz.unidadvictimas.gov.co/informe-desplazamiento-forzado-colombia-primer-semestre-2025/,saved (check by eye) screenshot: Informe de desplazamiento forzado en Colombia - I semestre 2025 – Datos para la 
+ex391,https://datospaz.unidadvictimas.gov.co/informe-desplazamiento-forzado-colombia-primer-semestre-2025/,saved (check by eye) screenshot: Informe de desplazamiento forzado en Colombia - I semestre 2025 – Datos para la 
+ex393,https://migration.iom.int/sites/g/files/tmzbdl1461/files/reports/Evaluation%20rapide%20Secheresse%20OIM%20INSTAD%20Septembre%202022_final%20EN.pdf,failed: HTTP 403 (also through the browser)
+ex398,https://www.inseed.td/,saved (check by eye) screenshot: INSEED - Institut National de la Statistique et des Études Économiques et Démogr
+ex399,https://ins-cameroun.cm/en/statistics/,saved (check by eye) screenshot: Statistics – Institut National de la Statistique du Cameroun
+ex402,https://gis.statistics.gov.rw/about/organizational-structure/office-deputy-director-general/censuses-unit,"failed: APIRequestContext.get: self-signed certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+ex404,https://www.ubos.org/data-portals-2/,failed: Page.goto: Timeout 60000ms exceeded.
+ex409,https://en.www.inegi.org.mx/datosabiertos/,saved (check by eye) screenshot: Open data
+ex411,C:/Users/MITROVIF/UNHCR/EGRISS Secretariat - Documents/905 - Implementation of Recommendations/01_GAIN Survey/Integration & GAIN Survey/EGRISS Database Integration/GAIN Web Scarping/R script/data_lake\store/ex411/drill_86.pdf,saved (check by eye) pipeline-pdf: page 1 of 57
+ex412,https://www.dane.gov.co/files/investigaciones/Inventario_Investigaciones_Dane_2014.xls,failed: Page.goto: Download is starting
+ex413,https://www.dane.gov.co/files/investigaciones/Inventario_Investigaciones_Dane_2014.xls,failed: Page.goto: Download is starting

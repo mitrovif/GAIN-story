@@ -11,24 +11,28 @@ Covers and links feed:
 
 ## Where things stand (30 Sep 2026)
 
+**Rule: an image or link is used only when the link opens the example's own document or page.**
+Related documents (another edition, another product by the same office) and section or home pages are held back.
+
 | | Examples |
 |---|---|
 | GAIN examples, 2021–2025 | 413 |
-| With a source link (original or replacement) | 153 |
-| Covers or page screenshots checked and in use | **111** (62 report covers or first pages, 49 web page screenshots) |
-| Rejected after checking | 19 (logos, photos, wrong documents, CAPTCHA pages, a restricted report) |
-| Still missing a cover | 302 |
+| With a link to the example's own document (used in the story) | 181 |
+| Covers or page screenshots checked and in use | **95** (56 report covers or first pages, 39 page screenshots) |
+| Held back: image fine, but the link is only a related or section page | 42 |
+| No link anywhere yet (119 institution-led: UNHCR, JDC, IDMC, World Bank, IOM, JIPS, ECOWAS...) | about 150 |
 
 ## Files
 
 | Path | What it is |
 |---|---|
-| `data/gain_examples.csv` | One row per GAIN example: year, country, organisation, title, lead, use of the Recommendations, `source_url` (as first collected), `url_found_by`, the `replacement_*` columns (a better link found on the NSO or organisation website: `replacement_url`, `replacement_match` exact / related / landing / none, `replacement_source` official / partner / news, `replacement_checked`, `replacement_note`, `replacement_on`), `cover_file`, `cover_status`, `checked_on` |
+| `data/gain_examples.csv` | One row per GAIN example: year, country, organisation, title, lead, use of the Recommendations, `source_url` (as first collected), `url_found_by`, the `replacement_*` columns (a better link found on the NSO or organisation website: `replacement_url`, `replacement_match` exact / related / landing / none, `replacement_source` official / partner / news, `replacement_checked`, `replacement_note`, `replacement_on`), `cover_file`, `cover_status` (`ok…` in use, `held:` link not the document, `rejected:`, `missing:`), `checked_on`, and `pipeline_url`, `pipeline_match`, `pipeline_source`, `pipeline_pdf` from the evidence pipeline |
 | `covers/exNNN.png` | Checked cover thumbnails |
 | `data/cover_fetch_log.csv` | What happened with each link on the last fetch |
 | `data/story_covers.json` | Export for the scrollytelling page (`tools/export_for_story.py`) |
 | `tools/fetch_covers.py` | Finds an image per example: a linked PDF (page 1), a report PDF linked from the page, a cover image on the page, or a screenshot of the page (headless browser; cookie banners hidden, never accepted) |
-| `tools/export_for_story.py` | Builds `story_covers.json` from checked rows |
+| `tools/export_for_story.py` | Builds `story_covers.json` from checked rows (document links only) |
+| `tools/import_pipeline_links.py` | Brings in links found by [gain-evidence-pipeline](https://github.com/mitrovif/gain-evidence-pipeline) (its local `data_lake`: drilled NSO pages, LLM-checked web search, links in the roster, downloaded reports) into the `pipeline_*` columns |
 
 **IDs:** `exNNN` is the 1-based row in the GAIN group roster (`analysis_ready_group_roster.csv`);
 `ex113` is row 113, the Burkina Faso INSD survey of IDP and host households. The story uses the
@@ -50,6 +54,7 @@ Covers and links feed:
 
 - **30 Sep 2026 (NSO website pass):** 171 examples searched on NSO and organisation websites: the 34 whose link was broken, blocked or generic, and the 137 country-led 2024–2025 examples without a link, with NSO-list countries (`gain_sdg_workstream/data/nso_census_targets.csv`) first. Result: 94 exact, 31 related, 17 section pages, 29 not found. 36 new covers kept after checking, 20 rejected. Links still to open by hand (sites block scripts): PSA Philippines, IDB, UNDP, UNRWA, BPS Indonesia, dofi.ibz.be, ESCWA, Liechtenstein. Six links are news articles, flagged in `replacement_source`. The session's web-search limit was reached, so some later countries were searched by browsing sites only (Kenya, Morocco, Moldova, Burundi, CAR, South Sudan, Rwanda, Cameroon, Sweden, Bangladesh, Egypt, Sudan, Mozambique, DRC) and deserve a second pass.
 - **30 Sep 2026 (better cover search):** the fetcher now looks for report PDFs linked from a page, cover images on the page, and otherwise takes a screenshot of the page itself, retrying blocked sites in a headless browser. Over 97 linked examples without a cover: 63 kept (49 page screenshots), 16 rejected (wrong PDFs picked up from pages, photos, CAPTCHA pages, a pop-up), 18 links still failing.
+- **30 Sep 2026 (evidence pipeline links):** imported links from gain-evidence-pipeline's `data_lake` for 125 examples without a cover (57 links in the roster, 13 drilled NSO pages, 13 LLM-checked web-search matches, 40 office sites, 5 downloaded reports). 84 images fetched; 26 passed the check by eye, 58 rejected (NSO home pages, 404 pages, stock photos, another product by the same office, one hijacked domain). Then, at the user's request, **only images whose link opens the example's own document are kept**: 42 covers across all passes moved to `held:` (related edition or section page). In use: 95.
 - **Next:** institution-led examples (UNHCR, World Bank / JDC, IOM, JIPS, IDMC, UNICEF…) and the 2021–2023 rounds.
 
 ## Priorities

@@ -9,7 +9,10 @@ Sites that block scripts are retried through a headless browser (Playwright).
 Writes covers/exNNN.png and data/cover_fetch_log.csv (method used for each).
 Every new image must be checked by eye before its cover_status is set to "ok".
 
-Usage:  python tools/fetch_covers.py [--only ex113,ex115] [--force] [--no-screenshots]
+Links found by gain-evidence-pipeline (tools/import_pipeline_links.py) are tried after the row's own link;
+a report the pipeline already downloaded is rendered first when --lake points at its data_lake folder.
+
+Usage:  python tools/fetch_covers.py [--only ex113,ex115] [--force] [--no-screenshots] [--lake <data_lake>]
 Needs:  pip install pymupdf requests beautifulsoup4 playwright && python -m playwright install chromium
 """
 
@@ -192,22 +195,33 @@ def main():
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     only = set(sys.argv[sys.argv.index("--only") + 1].split(",")) if "--only" in sys.argv else set()
     force, screenshots = "--force" in sys.argv, "--no-screenshots" not in sys.argv
+    lake = sys.argv[sys.argv.index("--lake") + 1] if "--lake" in sys.argv else ""
     os.makedirs(OUT, exist_ok=True)
     rows = list(csv.DictReader(open(EXAMPLES, encoding="utf-8")))
     br, log = Browser(), []
     try:
         for r in rows:
-            ex, url = r["ex_id"], cover_url(r)
-            if not url or (only and ex not in only):
+            ex = r["ex_id"]
+            urls = [u for u in dict.fromkeys([cover_url(r), r.get("pipeline_url", "").strip()]) if u]
+            local = os.path.join(lake, r["pipeline_pdf"]) if lake and r.get("pipeline_pdf") else ""
+            if not (urls or local) or (only and ex not in only):
                 continue
             if not force and r["cover_status"].startswith(SKIP_STATUS):
                 continue
             path = os.path.join(OUT, ex + ".png")
-            try:
-                how = fetch_one(r, url, path, br, screenshots)
-                result = ("saved (check by eye) " if not how.startswith("none") else "") + how
-            except Exception as e:  # keep going; the log records every failure
-                result = "failed: %s" % str(e).splitlines()[0][:160]
+            result, url = "none", ""
+            if local and os.path.exists(local):
+                url = local
+                result = "saved (check by eye) pipeline-pdf: page 1 of %d" % render_pdf(open(local, "rb").read(), path)
+            for u in ([] if result.startswith("saved") else urls):
+                url = u
+                try:
+                    how = fetch_one(r, u, path, br, screenshots)
+                    result = ("saved (check by eye) " if not how.startswith("none") else "") + how
+                except Exception as e:  # keep going; the log records every failure
+                    result = "failed: %s" % str(e).splitlines()[0][:160]
+                if result.startswith("saved"):
+                    break
             log.append([ex, url, result])
             print(ex, result[:110], flush=True)
     finally:

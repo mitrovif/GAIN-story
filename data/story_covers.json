@@ -14,9 +14,9 @@
   "ex": "ex003",
   "title": "Refugees socio economic survey, planned to be implemented before the end of 2025",
   "country": "Iraq",
-  "link": "https://rudaw.net/english/categories/kurdistan/1078900",
+  "link": "https://iraq.unfpa.org/en/publications/demographic-survey-kurdistan-region-iraq",
   "link_match": "exact",
-  "link_source": "news article (no official page found)",
+  "link_source": "pipeline: drilled from NSO portal, LLM-checked",
   "cover": "",
   "cover_note": "",
   "kind": ""
@@ -32,16 +32,16 @@
   "cover_note": "ok: first page of census results",
   "kind": "cover"
  },
- "4": {
-  "ex": "ex005",
-  "title": "Disaster Risk Management",
-  "country": "Lebanon",
-  "link": "https://data.unhcr.org/en/documents/details/111483",
-  "link_match": "related",
-  "link_source": "partner / international organisation",
-  "cover": "covers/ex005.png",
-  "cover_note": "ok: web page screenshot",
-  "kind": "screenshot"
+ "5": {
+  "ex": "ex006",
+  "title": "Estimating the unauthorised UK population by bringing together publicly available data sources from HO and MoJ websites and Utilising a publicly available method. Aim - to test the quality and validity of this method to produce an estimate of the unauthorised population in a proof of concept",
+  "country": "United Kingdom",
+  "link": "https://www.ons.gov.uk/census",
+  "link_match": "exact",
+  "link_source": "pipeline: drilled from NSO portal, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
  "6": {
   "ex": "ex007",
@@ -98,49 +98,38 @@
   "cover_note": "ok: publication banner",
   "kind": "cover"
  },
- "13": {
-  "ex": "ex014",
-  "title": "Survey on migrants' experiences on migration routes, assistance needs, abuses and risks, migrant smuggling, decision-making during mobility in Morocco in 2024",
-  "country": "Morocco",
-  "link": "https://www.hcp.ma/file/230790/",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex014.png",
-  "cover_note": "ok",
-  "kind": "cover"
+ "15": {
+  "ex": "ex016",
+  "title": "We are working to coordinates with line agencies involve with refugees/people in need of international protection, internally displaced persons or stateless persons like LRRRC, Red Cross, UNHCR Liberia to document these category of people and track their activities.",
+  "country": "Liberia",
+  "link": "https://www.microdata.lisgislr.org/index.php/home",
+  "link_match": "exact",
+  "link_source": "pipeline: web search, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
- "14": {
-  "ex": "ex015",
-  "title": "2025 Mini DHS",
-  "country": "Kenya",
-  "link": "https://www.knbs.or.ke/reports/kdhs-2022/",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex015.png",
-  "cover_note": "ok: web page screenshot (related: 2022 KDHS)",
-  "kind": "screenshot"
+ "24": {
+  "ex": "ex025",
+  "title": "Workshop on the International Recommendations on Statistics on Refugees, Internally Displaced Persons, and Statelessness",
+  "country": "",
+  "link": "https://unece.org/statistics/workshop/refugee2024",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
- "25": {
-  "ex": "ex026",
-  "title": "ECOSIT, General Population and Housing Census currently being prepared.",
-  "country": "Chad",
-  "link": "https://formation.inseed.td/docs/MANUEL_DU_SUPERVISEUR _RGPH-3_12042026.pdf",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex026.png",
-  "cover_note": "ok: census manual cover (related)",
-  "kind": "cover"
- },
- "28": {
-  "ex": "ex029",
-  "title": "Proof of Concept: Estimating employment rates for refugees by statistically matching administrative and survey data",
-  "country": "Germany",
-  "link": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Migration-Integration/_inhalt.html",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex029.png",
-  "cover_note": "ok: web page screenshot (section page)",
-  "kind": "screenshot"
+ "26": {
+  "ex": "ex027",
+  "title": "Asylum Statistics 2022",
+  "country": "Liechtenstein",
+  "link": "https://www.statistikportal.li/de/themen/bevoelkerung/asylwesen",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
  "29": {
   "ex": "ex030",
@@ -153,6 +142,17 @@
   "cover_note": "ok",
   "kind": "cover"
  },
+ "31": {
+  "ex": "ex032",
+  "title": "Support to the Government of Somalia to implement the IRIS",
+  "country": "Somalia",
+  "link": "https://www.stage.jips.acw2.website/uploads/2018/10/Somalia-Mogadishu-profiling-report-2016.pdf",
+  "link_match": "exact",
+  "link_source": "pipeline: drilled from NSO portal, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
  "32": {
   "ex": "ex033",
   "title": "5th Djibouti Households' Living Condition Survey (EDAM-5) which is currently in preparation",
@@ -164,38 +164,16 @@
   "cover_note": "",
   "kind": ""
  },
- "33": {
-  "ex": "ex034",
-  "title": "Concept note about IDP in Census 2022",
-  "country": "South Africa",
-  "link": "https://statssa.gov.za/publications/Report-03-00-24/Report-03-00-242022.pdf",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
+ "37": {
+  "ex": "ex038",
+  "title": "Survey in Nigeria on IDPS",
+  "country": "Nigeria",
+  "link": "http://necal.energy.gov.ng/",
+  "link_match": "exact",
+  "link_source": "pipeline: drilled from NSO portal, LLM-checked",
   "cover": "",
   "cover_note": "",
   "kind": ""
- },
- "35": {
-  "ex": "ex036",
-  "title": "Quarterly Labour Force Survey currently in preparation with the support of ILO",
-  "country": "Djibouti",
-  "link": "https://firebasestorage.googleapis.com/v0/b/instad-dj.appspot.com/o/Sociale%2F0%2FRapport%20EDST_T4_2025_VF.pdf?alt=media&token=699191a4-e130-42a7-a1ea-e1c379190dd8",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex036.png",
-  "cover_note": "ok",
-  "kind": "cover"
- },
- "36": {
-  "ex": "ex037",
-  "title": "Foreign citizens and stateless persons permanently or temporarily residing or temporarily staying in the Republic of Belarus are subject to the population census",
-  "country": "Belarus",
-  "link": "https://www.belstat.gov.by/upload/iblock/48a/twytvykdto5c4e7tzsjdc60ak8p7vyn6.pdf",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex037.png",
-  "cover_note": "ok: title page (related: 2019 census volume)",
-  "kind": "cover"
  },
  "38": {
   "ex": "ex039",
@@ -208,27 +186,71 @@
   "cover_note": "ok",
   "kind": "cover"
  },
- "44": {
-  "ex": "ex045",
-  "title": "The NBS has implemented the first ever Survey on IDPs in seven selected states of Nigeria",
-  "country": "Nigeria",
-  "link": "https://guardian.ng/news/1-1m-displaced-as-77-of-idps-seek-to-return-home-says-nbs/",
+ "40": {
+  "ex": "ex041",
+  "title": "Publication \"Conference of European Statisticians Recommendations for the 2030 Round of Population and Housing Censuses",
+  "country": "",
+  "link": "https://unece.org/statistics/population-and-housing-censuses",
   "link_match": "exact",
-  "link_source": "news article (no official page found)",
+  "link_source": "pipeline: link reported in the GAIN roster",
   "cover": "",
   "cover_note": "",
   "kind": ""
  },
- "47": {
-  "ex": "ex048",
-  "title": "partnering with International Organization to carryout administrative data collection IDPs in affected states of Nigeria",
+ "41": {
+  "ex": "ex042",
+  "title": "Asylum Procedures Report",
+  "country": "Greece",
+  "link": "https://migration.gov.gr/statistika/",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "42": {
+  "ex": "ex043",
+  "title": "Meeting of the UNECE Group of Experts on Statistics on Population and Migration (Geneva, 26-28 November 2025)",
+  "country": "",
+  "link": "https://unece.org/statistics/meeting/population%26migration2025",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "44": {
+  "ex": "ex045",
+  "title": "The NBS has implemented the first ever Survey on IDPs in seven selected states of Nigeria",
   "country": "Nigeria",
-  "link": "https://microdata.nigerianstat.gov.ng/index.php/catalog/182",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex048.png",
-  "cover_note": "ok: related (NBS Demographic Bulletin)",
-  "kind": "cover"
+  "link": "https://microdata.nigerianstat.gov.ng/index.php/catalog",
+  "link_match": "exact",
+  "link_source": "pipeline: drilled from NSO portal, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "45": {
+  "ex": "ex046",
+  "title": "study visit of the joint delegation of the Republic of Belarus to Baku (Republic of Azerbaijan) with the aim of studying best practices in the implementation of the Global Compact for Safe, Orderly and Regular Migration and achieving the SDGs related to migration",
+  "country": "Belarus",
+  "link": "https://mvd.gov.by/ru/news/15592",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "46": {
+  "ex": "ex047",
+  "title": "Unaccompanied minors Monthly Report",
+  "country": "Greece",
+  "link": "https://migration.gov.gr/statistika/",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
  "50": {
   "ex": "ex051",
@@ -241,6 +263,17 @@
   "cover_note": "ok",
   "kind": "cover"
  },
+ "51": {
+  "ex": "ex052",
+  "title": "Internal displacement exercises due to disasters and violence, especially in Haiti through the DTMParticipation in the CEA ECLAC working group for the development of an implementation guide on internal displacement",
+  "country": "Haiti",
+  "link": "https://dtm.iom.int/reports/haiti-update-displacement-situation-spontaneous-sites-september-2025?close=true",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
  "52": {
   "ex": "ex053",
   "title": "the inclusion of asylum seekers in Long-term international migration, provisional: year ending December 2022 Experimental and provisional estimates of UK international migration, 2018 to 2022",
@@ -251,17 +284,6 @@
   "cover": "",
   "cover_note": "",
   "kind": ""
- },
- "53": {
-  "ex": "ex054",
-  "title": "By 2025, it is planned to continue collecting statistics to identify PDI",
-  "country": "Honduras",
-  "link": "https://ine.gob.hn/wp-content/uploads/2026/04/Estudio-Poblacion-Desplazada-Internamente-EPHPM-2024.pdf",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex054.png",
-  "cover_note": "ok: same report as ex051",
-  "kind": "cover"
  },
  "54": {
   "ex": "ex055",
@@ -285,17 +307,6 @@
   "cover_note": "ok: web page screenshot",
   "kind": "screenshot"
  },
- "56": {
-  "ex": "ex057",
-  "title": "In the 2025 National Population and Housing Census, there is a question: What was the reason why [NAME] came to live in this municipality? 1. Search for employment 2. Transfer for work (including military service) 3. Education and training 4. Marriage, family reunification or family formation (includes children who migrate with parents) 5. Citizen insecurity and violence 6. Crop failure 7. Natural disasters 8. Others. The question aims to identify PDI and the causes of forced displacement (due to insecurity, violence and crop loss - natural disasters, which are related to climate change).",
-  "country": "Honduras",
-  "link": "https://ine.gob.hn/censo-de-poblacion-y-vivienda-2025/",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": "",
-  "kind": ""
- },
  "57": {
   "ex": "ex058",
   "title": "Honduras, leads the working group for the Practical Guide for the production of harmonized statistics on forced displacement and migration Biennium: 2024-2025 https://rtc-cea.cepal.org/es/grupo-trabajo/guia-practica-para-la-produccion-de-estadisticas-armonizada-sobre-desplazamiento",
@@ -311,34 +322,34 @@
   "ex": "ex059",
   "title": "Listing the population in gaza strip 2026.",
   "country": "State of Palestine",
-  "link": "https://pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_DisplacedNorthGaza2025E.pdf",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
+  "link": "https://www.pcbs.gov.ps/",
+  "link_match": "exact",
+  "link_source": "pipeline: web search, LLM-checked",
   "cover": "",
   "cover_note": "",
   "kind": ""
  },
- "60": {
-  "ex": "ex061",
-  "title": "At the end of the 2025 CENSUS, data will be available to analyze the variables of interest linked to the causes of forced displacement in Honduras. NOTE, experts or consultants will be required to carry out the analyzes and present the results in socialization sessions with various governmental, non-governmental and the international community, cooperation and partners.",
-  "country": "Honduras",
-  "link": "https://ine.gob.hn/censo-de-poblacion-y-vivienda-2025/",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
+ "59": {
+  "ex": "ex060",
+  "title": "Production of statistical data",
+  "country": "Belarus",
+  "link": "https://www.mvd.gov.by/ru/page/departament-po-grazhdanstvu-i-migraci/vynuzhdennaya-migraciya",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
   "cover": "",
   "cover_note": "",
   "kind": ""
  },
- "61": {
-  "ex": "ex062",
-  "title": "Multi-indicator cluster survey (mics)",
-  "country": "State of Palestine",
-  "link": "https://microdata.pcbs.gov.ps/PCBS-Metadata-en-v5.2/index.php/catalog/708",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex062.png",
-  "cover_note": "ok: web page screenshot",
-  "kind": "screenshot"
+ "62": {
+  "ex": "ex063",
+  "title": "Strengthening the integrated model",
+  "country": "Colombia",
+  "link": "https://datospaz.unidadvictimas.gov.co/informe-desplazamiento-forzado-colombia-primer-semestre-2025/",
+  "link_match": "exact",
+  "link_source": "pipeline: web search, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
  "63": {
   "ex": "ex064",
@@ -417,6 +428,17 @@
   "cover_note": "",
   "kind": ""
  },
+ "80": {
+  "ex": "ex081",
+  "title": "Ukrainians in the Estonian labour market",
+  "country": "Estonia",
+  "link": "https://www.stat.ee/en/find-statistics/short-term-statistics/ukrainians-estonian-labour-market",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex081.png",
+  "cover_note": "ok: web page screenshot (pipeline link)",
+  "kind": "screenshot"
+ },
  "81": {
   "ex": "ex082",
   "title": "EMOP",
@@ -450,38 +472,27 @@
   "cover_note": "ok: web page screenshot",
   "kind": "screenshot"
  },
- "88": {
-  "ex": "ex089",
-  "title": "Development of new statistics related to the implementation of the new law on stateless persons (in particular statistics on application for authorisation to stay issued / refused to stateless persons).",
-  "country": "Belgium",
-  "link": "https://dofi.ibz.be/fr/figures/access-and-stay/rapports",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
+ "86": {
+  "ex": "ex087",
+  "title": "Homeless Survey 2025",
+  "country": "France",
+  "link": "https://www.insee.fr/fr/information/7634303",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex087.png",
+  "cover_note": "ok: web page screenshot (pipeline link)",
+  "kind": "screenshot"
+ },
+ "89": {
+  "ex": "ex090",
+  "title": "Trajectories and origins survey 2",
+  "country": "France",
+  "link": "https://www.insee.fr/fr/statistiques/6793391",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
   "cover": "",
   "cover_note": "",
   "kind": ""
- },
- "90": {
-  "ex": "ex091",
-  "title": "Ministry of labor and Skills are provides different services and supports for refugees, IDPs, migrant returns reintegration supports (Psychosocial, social and economic reintegration) and leading organization of national protection and Overseas employment working groups",
-  "country": "Ethiopia",
-  "link": "https://www.ilo.org/resource/article/ethiopia-reviews-progress-reintegration-and-labour-migration-coordination",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex091.png",
-  "cover_note": "ok: web page screenshot",
-  "kind": "screenshot"
- },
- "91": {
-  "ex": "ex092",
-  "title": "Extension of publications on family members of refugees and persons benefiting from subsidiary protection",
-  "country": "Belgium",
-  "link": "https://dofi.ibz.be/sites/default/files/2025-05/Cartes%20RGF%20-%20statistiques%202017-2023.pdf",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex092.png",
-  "cover_note": "ok",
-  "kind": "cover"
  },
  "92": {
   "ex": "ex093",
@@ -494,46 +505,13 @@
   "cover_note": "ok: first page of the article",
   "kind": "cover"
  },
- "93": {
-  "ex": "ex094",
-  "title": "all cases referred to Probation and Aftercare Service, statistics were disaggregated in terms of nationality (foreign offenders and accused persons are identified), special needs were were categorized including those from racial minority, and foreign offenders",
-  "country": "Kenya",
-  "link": "https://www.probation.go.ke/downloads",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": "",
-  "kind": ""
- },
- "94": {
-  "ex": "ex095",
-  "title": "Development of statistics related to detention/alternative to detention (with a specific focus on asylum seekers)",
-  "country": "Belgium",
-  "link": "https://dofi.ibz.be/fr/themes/sejour-irregulier/detention",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": "",
-  "kind": ""
- },
  "101": {
   "ex": "ex102",
   "title": "Somalia - developing a joint government and UN durable solution data toolkit with relevant guidance to produce IDP data and statistics at scale (IDSF project).",
   "country": "Somalia",
-  "link": "https://www.undp.org/somalia/publications/data-solutions-toolkit",
+  "link": "https://www.jips.org/tools-and-guidance/idp-refugee-statistics/",
   "link_match": "exact",
-  "link_source": "partner / international organisation",
-  "cover": "",
-  "cover_note": "",
-  "kind": ""
- },
- "102": {
-  "ex": "ex103",
-  "title": "Organized technical working group on specific on refugees",
-  "country": "Ethiopia",
-  "link": "https://igad.int/?p=22726",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
+  "link_source": "pipeline: web search, LLM-checked",
   "cover": "",
   "cover_note": "",
   "kind": ""
@@ -564,12 +542,23 @@
   "ex": "ex106",
   "title": "Colombia - support the government of Colombia developing a durable solutions progress measure as part of the upcoming National policy on durable solutions to IDPS (IDSF project).",
   "country": "Colombia",
-  "link": "https://www.undp.org/es/node/597391",
+  "link": "https://www.jips.org/jips-publication/intentions-survey-idps-galmudug-somalia-2024/",
   "link_match": "exact",
-  "link_source": "partner / international organisation",
+  "link_source": "pipeline: drilled from NSO portal, LLM-checked",
   "cover": "",
   "cover_note": "",
   "kind": ""
+ },
+ "108": {
+  "ex": "ex109",
+  "title": "UNDP-JIPS publication: Monitoring progress towards solutions to internal displacement, a development oriented indicator framework. September 2024",
+  "country": "",
+  "link": "https://www.jips.org/jips-publication/monitoring-progress-towards-solutions-to-internal-displacement-a-development-oriented-indicator-framework-undp-jips-2024/",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex109.png",
+  "cover_note": "ok (pipeline link)",
+  "kind": "cover"
  },
  "109": {
   "ex": "ex110",
@@ -590,17 +579,6 @@
   "link_match": "original",
   "link_source": "",
   "cover": "covers/ex111.png",
-  "cover_note": "ok",
-  "kind": "cover"
- },
- "111": {
-  "ex": "ex112",
-  "title": "Kenya National Bureau of Statistics (KNBS) has included two refugee camps namely, Kakuma and Daadab in the sampling frame for the 2024/25 Kenya integrated Household Budget Survey. This will give the poverty and other socio - economic status of the refugees , asylum seekers and host community.",
-  "country": "Kenya",
-  "link": "https://www.knbs.or.ke/wp-content/uploads/2025/01/2024-25-Kenya-Integrated-Household-Budget-Survey-Pilot-Report.pdf",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex112.png",
   "cover_note": "ok",
   "kind": "cover"
  },
@@ -648,17 +626,6 @@
   "cover_note": "ok",
   "kind": "cover"
  },
- "116": {
-  "ex": "ex117",
-  "title": "Harmonized survey on household living conditions (EHCVM-3)",
-  "country": "Burkina Faso",
-  "link": "https://www.insd.bf/sites/default/files/2024-10/EHCVM_2021_Rapport_General.pdf",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex117.png",
-  "cover_note": "ok: related (EHCVM 2021 report)",
-  "kind": "cover"
- },
  "117": {
   "ex": "ex118",
   "title": "How do refugees fare in the Norwegian education system?",
@@ -692,6 +659,17 @@
   "cover_note": "ok: newsletter announcing the survey",
   "kind": "cover"
  },
+ "121": {
+  "ex": "ex122",
+  "title": "The Report on Integration and Society (in Dutch: Report on Integration and Society)",
+  "country": "Netherlands",
+  "link": "https://www.cbs.nl/nl-nl/publicatie/2022/46/rapportage-integratie-en-samenleven-2022",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
  "122": {
   "ex": "ex123",
   "title": "Census collects information on refugees, idps and migrants by reason of migration",
@@ -714,16 +692,27 @@
   "cover_note": "ok: report cover from the page preview",
   "kind": "cover"
  },
- "127": {
-  "ex": "ex128",
-  "title": "Thailand 2025 Labour Force Survey – Migration Module",
-  "country": "Thailand",
-  "link": "https://www.nso.go.th/public/e-book/Analytical-Reports/Migration-survey-2562-2566-Eng/",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex128.png",
-  "cover_note": "ok: related (2019-2023 trend report)",
-  "kind": "cover"
+ "124": {
+  "ex": "ex125",
+  "title": "Census of Population",
+  "country": "Canada",
+  "link": "https://www12.statcan.gc.ca/census-recensement/index-eng.cfm",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "126": {
+  "ex": "ex127",
+  "title": "Longitudinal Immigration Database",
+  "country": "Canada",
+  "link": "https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=5057&lang=en&db=imdb&adm=8&dis=2",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex127.png",
+  "cover_note": "ok: web page screenshot (pipeline link)",
+  "kind": "screenshot"
  },
  "131": {
   "ex": "ex132",
@@ -735,6 +724,17 @@
   "cover": "covers/ex132.png",
   "cover_note": "ok",
   "kind": "cover"
+ },
+ "132": {
+  "ex": "ex133",
+  "title": "IOM Asia-Pacific Migration Data Report 2025",
+  "country": "",
+  "link": "https://roasiapacific.iom.int/sites/g/files/tmzbdl671/files/documents/2025-11/ap_mdr-2025-.pdf",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
  "134": {
   "ex": "ex135",
@@ -780,6 +780,17 @@
   "cover_note": "ok",
   "kind": "cover"
  },
+ "139": {
+  "ex": "ex140",
+  "title": "EAC Migration Statistics Report Edition Two - under the AUC/EAC/SCB Coorperation Project on migration statistics",
+  "country": "",
+  "link": "https://eac.opendataforafrica.org/kvimbte/documents",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
  "140": {
   "ex": "ex141",
   "title": "Unaccompanied Minor Refugees, 2023",
@@ -789,17 +800,6 @@
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex141.png",
   "cover_note": "ok: web page screenshot",
-  "kind": "screenshot"
- },
- "144": {
-  "ex": "ex145",
-  "title": "Government of South Africa (NSO): we provided an overview of internal displacement in the country and list of recommendations on how to develop a monitoring system and what data would be needed to paint a comprehensive picture of ID in the country.",
-  "country": "South Africa",
-  "link": "https://www.internal-displacement.org/countries/south-africa",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex145.png",
-  "cover_note": "ok: web page screenshot (section page)",
   "kind": "screenshot"
  },
  "147": {
@@ -824,16 +824,27 @@
   "cover_note": "",
   "kind": ""
  },
- "152": {
-  "ex": "ex153",
-  "title": "Red Crescent Society of Uganda: Similar to the South Africa request, we provided an overview of the internal displacement situation in the country as well as a list of recommendations on how to improve existing system(s).",
-  "country": "Uganda",
-  "link": "https://www.internal-displacement.org/countries/uganda/",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex153.png",
-  "cover_note": "ok: web page screenshot (section page)",
-  "kind": "screenshot"
+ "150": {
+  "ex": "ex151",
+  "title": "The Survey on Household Living Conditions",
+  "country": "Democratic Republic of the Congo",
+  "link": "https://www.ins.gouv.cd/publications/enquete-conditions-vie-menages-ecvm-2024",
+  "link_match": "exact",
+  "link_source": "pipeline: drilled from NSO portal, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "157": {
+  "ex": "ex158",
+  "title": "E-Learning course on Introduction to International Recommendations on Refugee and IDP (Internally Displaced Person) Statistics",
+  "country": "",
+  "link": "https://siap-elearning.org/course/view.php?id=195",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
  "160": {
   "ex": "ex161",
@@ -846,24 +857,46 @@
   "cover_note": "ok",
   "kind": "cover"
  },
- "167": {
-  "ex": "ex168",
-  "title": "October / Marshall Islands: Provided feedback and input to NDMO forms and surveys on disaster impacts shared by IOM. This includes incorporating and ensuring that relevant displacement information is aligned with IRIS data structure.",
-  "country": "Marshall Islands",
-  "link": "https://www.internal-displacement.org/countries/marshall-islands",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex168.png",
-  "cover_note": "ok: web page screenshot (section page)",
+ "163": {
+  "ex": "ex164",
+  "title": "Modelling the age and sex of refugees",
+  "country": "",
+  "link": "https://www.unhcr.org/refugee-statistics/download/?url=zaNQ6d",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "169": {
+  "ex": "ex170",
+  "title": "Redeveloping European statistics on population and housing (ESOP)",
+  "country": "",
+  "link": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52023PC0031",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex170.png",
+  "cover_note": "ok: web page screenshot (pipeline link)",
   "kind": "screenshot"
  },
- "170": {
-  "ex": "ex171",
-  "title": "Earlier this year (2025), INSTAD in collaboration with Ministries, Departments and Agencies (MDAs) that are members of our national Technical Working Group (TWG) on Migration and Forced Displacement Statistics, finalized a two year Action Plan aimed at strengthening and improving the technical capabilities of national institutions to collect, analyze, use and disseminate high quality statistics on migration and forced displacements guided by international recommendations, and particularly IRIS, IRRS and IROSS among others.",
-  "country": "Djibouti",
-  "link": "https://igad.int/?p=18913",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
+ "171": {
+  "ex": "ex172",
+  "title": "Supporting the Enhancement and Modernization of Demographic and Social Statistics in Arab states",
+  "country": "",
+  "link": "https://manara.as-rcp.org/home",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "172": {
+  "ex": "ex173",
+  "title": "E-learning course (International Recommendations on Refugee, IDP and Statelessness Statistics)",
+  "country": "",
+  "link": "https://siap-elearning.org/course/view.php?id=212",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
   "cover": "",
   "cover_note": "",
   "kind": ""
@@ -878,6 +911,17 @@
   "cover": "covers/ex174.png",
   "cover_note": "ok",
   "kind": "cover"
+ },
+ "174": {
+  "ex": "ex175",
+  "title": "Capacity Development in Migration Statistics",
+  "country": "",
+  "link": "https://comesa.opendataforafrica.org/data#topic=Migration+statistics",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
  "176": {
   "ex": "ex177",
@@ -901,13 +945,24 @@
   "cover_note": "",
   "kind": ""
  },
+ "180": {
+  "ex": "ex181",
+  "title": "Guidance Note: \"Responsible Disaggregation of Data on Refugee and Other Forcibly Displaced Children",
+  "country": "",
+  "link": "https://data.unicef.org/resources/responsible-disaggregation-of-data-on-refugee-children/",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
  "183": {
   "ex": "ex184",
   "title": "Refugee questions were included in the labor force survey",
   "country": "Jordan",
-  "link": "https://dosweb.dos.gov.jo/DataBank/Labour_Force/Employment_Unemployment/Labor_Force_Survey_questionnaire_2024.pdf",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
+  "link": "",
+  "link_match": "",
+  "link_source": "",
   "cover": "covers/ex184.png",
   "cover_note": "ok: first page of the questionnaire",
   "kind": "cover"
@@ -923,16 +978,16 @@
   "cover_note": "ok: first page of the migration chapter",
   "kind": "cover"
  },
- "186": {
-  "ex": "ex187",
-  "title": "All data are collected in administrative databases of Ministry of the Interior",
-  "country": "Slovenia",
-  "link": "https://www.gov.si/assets/ministrstva/MNZ/Dokumenti/DM/porocilo-DM-2024/Porocilo-o-delu-Direktorata-za-migracije-za-leto-2024.pdf",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex187.png",
-  "cover_note": "ok: related (Ministry of the Interior report)",
-  "kind": "cover"
+ "185": {
+  "ex": "ex186",
+  "title": "FDS South Sudan",
+  "country": "South Sudan",
+  "link": "https://www.unhcr.org/publications/forced-displacement-survey-south-sudan-2023",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
  "189": {
   "ex": "ex190",
@@ -941,6 +996,17 @@
   "link": "https://babel.bps.go.id/en/news/2024/10/30/450/post-enumeration-workshop-for-intercensal-population-survey-2025-pilot.html",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "190": {
+  "ex": "ex191",
+  "title": "FDS Pakistan",
+  "country": "Pakistan",
+  "link": "https://www.unhcr.org/publications/forced-displacement-survey-pakistan-2024",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
   "cover": "",
   "cover_note": "",
   "kind": ""
@@ -956,27 +1022,16 @@
   "cover_note": "",
   "kind": ""
  },
- "194": {
-  "ex": "ex195",
-  "title": "Creation of a new Information System,, Migration,,",
-  "country": "Republic of Moldova",
-  "link": "https://igm.gov.md/ro/statistica",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex195.png",
-  "cover_note": "ok: web page screenshot (section page)",
+ "199": {
+  "ex": "ex200",
+  "title": "Intentions Surveys with Refugee from Ukraine",
+  "country": "",
+  "link": "https://data.unhcr.org/en/documents/details/101747",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex200.png",
+  "cover_note": "ok: web page screenshot (pipeline link)",
   "kind": "screenshot"
- },
- "198": {
-  "ex": "ex199",
-  "title": "National survey on migration in Côte d'Ivoire 2025",
-  "country": "Côte d'Ivoire",
-  "link": "https://www.fratmat.info/article/2640896/economie/migration-en-cote-divoire-le-2e-rapport-national-sur-le-pacte-mondial-valide-a-abidjan",
-  "link_match": "related",
-  "link_source": "news article (no official page found)",
-  "cover": "",
-  "cover_note": "",
-  "kind": ""
  },
  "200": {
   "ex": "ex201",
@@ -1000,17 +1055,6 @@
   "cover_note": "ok: data-portal banner, not a report",
   "kind": "cover"
  },
- "205": {
-  "ex": "ex206",
-  "title": "L1&L2 registration of new arrival from Cameroon using BIMS, IRIS, etcRegistration, documentation refugees status determination interview for asylum seekers from over 34 countries.",
-  "country": "Nigeria",
-  "link": "https://reliefweb.int/report/nigeria/biometric-l2-registration-cameroonian-asylum-seekers-adamawa-state-30-june-2024",
-  "link_match": "related",
-  "link_source": "news article (no official page found)",
-  "cover": "",
-  "cover_note": "",
-  "kind": ""
- },
  "207": {
   "ex": "ex208",
   "title": "Cambodia Inter-Censal Population Survey",
@@ -1033,17 +1077,6 @@
   "cover_note": "",
   "kind": ""
  },
- "209": {
-  "ex": "ex210",
-  "title": "Continous Population Survey (CPS)",
-  "country": "South Africa",
-  "link": "https://www.statssa.gov.za/?p=14709",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex210.png",
-  "cover_note": "ok: web page screenshot",
-  "kind": "screenshot"
- },
  "212": {
   "ex": "ex213",
   "title": "Refugee Integration Outcomes",
@@ -1055,13 +1088,35 @@
   "cover_note": "ok: web page screenshot",
   "kind": "screenshot"
  },
- "216": {
-  "ex": "ex217",
-  "title": "Mali to be integrated in 2025 into the permanent modular survey of modules to collect data on the living conditions of internally displaced people and refugees",
-  "country": "Mali",
-  "link": "https://www.instat-mali.org/fr/publications/enquete-modulaire-et-permanente-aupres-des-menages-emop",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
+ "213": {
+  "ex": "ex214",
+  "title": "2024 Ghana Registration Survey",
+  "country": "Ghana",
+  "link": "https://dtm.iom.int/reports/ghana-registration-report-mop-north-and-shai-osudoku-september-2024?close=true",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "214": {
+  "ex": "ex215",
+  "title": "Published statistics relating to refugees, asylum seekers and irregular migrants.",
+  "country": "United Kingdom",
+  "link": "https://www.gov.uk/government/collections/migration-statistics",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "215": {
+  "ex": "ex216",
+  "title": "Data collection on internally displaced persons all over Chad",
+  "country": "",
+  "link": "https://dtm.iom.int/datasets/chad-site-and-village-assessment-lac-province-round-23",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
   "cover": "",
   "cover_note": "",
   "kind": ""
@@ -1077,27 +1132,27 @@
   "cover_note": "ok: web page screenshot",
   "kind": "screenshot"
  },
- "227": {
-  "ex": "ex228",
-  "title": "Sida Migration / Displacement Toolbox",
-  "country": "Sweden",
-  "link": "https://www.sida.se/en/for-partners/methods-materials",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex228.png",
-  "cover_note": "ok: web page screenshot (section page)",
-  "kind": "screenshot"
+ "218": {
+  "ex": "ex219",
+  "title": "Data collection and site management of Chadian returnees from Sudan",
+  "country": "",
+  "link": "https://dtm.iom.int/reports/chad-situation-update-46-21-november-2024?close=true",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
- "228": {
-  "ex": "ex229",
-  "title": "Use of the Single Registry of Victims to carry out cross-references between sources such as continuous surveys and censuses, so that demographic, social and economic profiles of the IDPs can be determined.",
+ "226": {
+  "ex": "ex227",
+  "title": "Research project to strengthen the statistical offer for victims",
   "country": "Colombia",
-  "link": "https://www.dane.gov.co/index.php/estadisticas-por-tema/pobreza-y-condiciones-de-vida/encuesta-de-goce-efectivo-de-derechos-eged",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex229.png",
-  "cover_note": "ok: web page screenshot",
-  "kind": "screenshot"
+  "link": "https://www.dane.gov.co/files/investigaciones/Inventario_Investigaciones_Dane_2014.xls",
+  "link_match": "exact",
+  "link_source": "pipeline: drilled from NSO portal, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
  "230": {
   "ex": "ex231",
@@ -1132,28 +1187,6 @@
   "cover_note": "",
   "kind": ""
  },
- "235": {
-  "ex": "ex236",
-  "title": "Refugees and the Labour Market, Monitor 2022",
-  "country": "Norway",
-  "link": "https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/flyktninger-i-og-utenfor-arbeidsmarkedet-2021/_/attachment/inline/ca1260e8-ecf1-4ce9-b98c-b49fe377fc81:e56d0f1a7e2fca4bc090c4b4c1742fb7b342583a/RAPP2023-10.pdf",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex236.png",
-  "cover_note": "ok: related (2021 edition)",
-  "kind": "cover"
- },
- "236": {
-  "ex": "ex237",
-  "title": "In accordance with Regulation (EC) No 862/2007 and Regulation (EU) 2020/851 on Community statistics on migration and international protection, we are fully compliant.",
-  "country": "Slovenia",
-  "link": "https://www.gov.si/en/topics/mednarodna-zascita/",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex237.png",
-  "cover_note": "ok: web page screenshot (section page)",
-  "kind": "screenshot"
- },
  "238": {
   "ex": "ex239",
   "title": "Unaccompanied Minor Refugees 1996-2022, Monitor: Demographics, Education, Employment, and Income",
@@ -1165,6 +1198,17 @@
   "cover_note": "ok",
   "kind": "cover"
  },
+ "239": {
+  "ex": "ex240",
+  "title": "Publication: Towards Durable Solutions: Mapping and Analysis of Displacement Data in Asia and the Pacific",
+  "country": "",
+  "link": "https://www.adb.org/publications/displacement-data-asia-pacific",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex240.png",
+  "cover_note": "ok: web page screenshot (pipeline link)",
+  "kind": "screenshot"
+ },
  "241": {
   "ex": "ex242",
   "title": "Transition to Norwegian Citizenship 1977-2023",
@@ -1172,9 +1216,9 @@
   "link": "https://www.ssb.no/befolkning/innvandrere/artikler/overgang-til-norsk-statsborgerskap-1977-2023",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex242.png",
-  "cover_note": "ok: related (1977-2021 edition)",
-  "kind": "cover"
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
  "244": {
   "ex": "ex245",
@@ -1187,6 +1231,39 @@
   "cover_note": "ok: web page screenshot",
   "kind": "screenshot"
  },
+ "247": {
+  "ex": "ex248",
+  "title": "Income of Refugees Settled Between 2015 and 2018",
+  "country": "Norway",
+  "link": "https://www.ssb.no/inntekt-og-forbruk/inntekt-og-formue/artikler/inntektene-til-flyktninger-bosatt-mellom-2015-og-2018",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex248.png",
+  "cover_note": "ok: web page screenshot (pipeline link)",
+  "kind": "screenshot"
+ },
+ "248": {
+  "ex": "ex249",
+  "title": "Permanent surveys on household living conditions (EPCV) - 2025-26",
+  "country": "Mauritania",
+  "link": "https://ansade.mr/fr/category/operations-statistiques/epcv/",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "250": {
+  "ex": "ex251",
+  "title": "Multiple Indicator Cluster Surveys (MICS) – 2026",
+  "country": "Mauritania",
+  "link": "https://ansade.mr/fr/category/operations-statistiques/mics-5/",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
  "252": {
   "ex": "ex253",
   "title": "We produced an integrated and longitudinal dataset using data derived from residence permits, from Population Register and form the Datasets of Ministry of Education. This dataset is used to study the integration paths of asylum seekers in Italy.",
@@ -1197,17 +1274,6 @@
   "cover": "",
   "cover_note": "",
   "kind": ""
- },
- "253": {
-  "ex": "ex254",
-  "title": "Quarterly employment survey (LFS) - Q3 and Q4 2025",
-  "country": "Mauritania",
-  "link": "https://www.jointdatacenter.org/activites/refugees-in-mauritania/",
-  "link_match": "related",
-  "link_source": "partner / international organisation",
-  "cover": "covers/ex254.png",
-  "cover_note": "ok: web page screenshot",
-  "kind": "screenshot"
  },
  "255": {
   "ex": "ex256",
@@ -1253,17 +1319,6 @@
   "cover_note": "ok",
   "kind": "cover"
  },
- "260": {
-  "ex": "ex261",
-  "title": "We included in a survey on children and young people (aged 11-19 years) a sample of young Ukrainians in Italy. We coopereted with the World Bank on survey about Ukrainians children in Italy",
-  "country": "Italy",
-  "link": "https://www.istat.it/informazioni-sulla-rilevazione/indagine-su-bambini-e-ragazzi-comportamenti-atteggiamenti-e-progetti-futuri/",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex261.png",
-  "cover_note": "ok: web page screenshot",
-  "kind": "screenshot"
- },
  "261": {
   "ex": "ex262",
   "title": "module on PDI in the household survey",
@@ -1271,9 +1326,9 @@
   "link": "https://ine.gob.hn/wp-content/uploads/2026/04/Estudio-Poblacion-Desplazada-Internamente-EPHPM-2024.pdf",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex262.png",
-  "cover_note": "ok: same report as ex051",
-  "kind": "cover"
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
  "263": {
   "ex": "ex264",
@@ -1282,28 +1337,28 @@
   "link": "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_LFSQ022024E.pdf",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": "",
-  "kind": ""
+  "cover": "covers/ex264.png",
+  "cover_note": "ok (pipeline link)",
+  "kind": "cover"
  },
  "265": {
   "ex": "ex266",
   "title": "Social and economic conditions of Palestinian families in the Gaza Strip in light of the Israeli aggression on the Gaza Strip (October 2023)",
   "country": "State of Palestine",
-  "link": "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_AggressionGaza2024E.pdf",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
+  "link": "https://www.pcbs.gov.ps/",
+  "link_match": "exact",
+  "link_source": "pipeline: web search, LLM-checked",
   "cover": "",
   "cover_note": "",
   "kind": ""
  },
- "267": {
-  "ex": "ex268",
-  "title": "Administrative records available at international organizations (UNRWA)",
-  "country": "State of Palestine",
-  "link": "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_WorldRefugeesDay2024E.pdf",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
+ "266": {
+  "ex": "ex267",
+  "title": "Regional standard on forced displacement and migration statistics CEPAL - LAC",
+  "country": "",
+  "link": "https://rtc-cea.cepal.org/es/working-groups",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
   "cover": "",
   "cover_note": "",
   "kind": ""
@@ -1318,17 +1373,6 @@
   "cover": "",
   "cover_note": "",
   "kind": ""
- },
- "270": {
-  "ex": "ex271",
-  "title": "Project implemented to update of statistical matching between administrative and survey data to provide insights on socioeconomic integration of refugees with 2024 data",
-  "country": "Germany",
-  "link": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Migration-Integration/_inhalt.html",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex271.png",
-  "cover_note": "ok: web page screenshot (section page)",
-  "kind": "screenshot"
  },
  "271": {
   "ex": "ex272",
@@ -1352,27 +1396,27 @@
   "cover_note": "ok",
   "kind": "cover"
  },
- "281": {
-  "ex": "ex282",
-  "title": "Acquisition of new data sources - microdata on asylum applications and decisions",
-  "country": "Italy",
-  "link": "https://www.istat.it/infografiche/giornata-internazionale-dei-migranti-18-dicembre-2025/",
-  "link_match": "related",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex282.png",
-  "cover_note": "ok: web page screenshot (related)",
-  "kind": "screenshot"
- },
- "282": {
-  "ex": "ex283",
-  "title": "SURVEYS ON SOCIO ECONOMIC CONDITIONS OF IDS, RETURN INTENTION",
-  "country": "Mali",
-  "link": "https://dtm.iom.int/fr/reports/mali-rapport-sur-les-intentions-futures-des-personnes-deplacees-mai-2025",
-  "link_match": "related",
-  "link_source": "partner / international organisation",
+ "276": {
+  "ex": "ex277",
+  "title": "Training Course on 'Migration and Refugee Statistics'",
+  "country": "",
+  "link": "http://www.oicstatcom.org/statcab.php",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
   "cover": "",
   "cover_note": "",
   "kind": ""
+ },
+ "278": {
+  "ex": "ex279",
+  "title": "Diagnosis on the Single Registry of Victims",
+  "country": "Colombia",
+  "link": "https://www.unidadvictimas.gov.co/registro-unico-de-victimas-ruv/",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex279.png",
+  "cover_note": "ok: web page screenshot (pipeline link)",
+  "kind": "screenshot"
  },
  "283": {
   "ex": "ex284",
@@ -1384,17 +1428,6 @@
   "cover": "covers/ex284.png",
   "cover_note": "ok: presentation title slide (related)",
   "kind": "cover"
- },
- "284": {
-  "ex": "ex285",
-  "title": "Integrate and calibrate the expansion factors from both ENVIPE 2018 and ENADID 2018",
-  "country": "Mexico",
-  "link": "https://www.inegi.org.mx/programas/envipe/2018/",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex285.png",
-  "cover_note": "ok: web page screenshot (section page)",
-  "kind": "screenshot"
  },
  "286": {
   "ex": "ex287",
@@ -1495,17 +1528,6 @@
   "cover_note": "",
   "kind": ""
  },
- "309": {
-  "ex": "ex310",
-  "title": "Zimbabwe: Inclusion of Tongogara Refugee Settlement in the Multiple Indicator Cluster Survey",
-  "country": "Zimbabwe",
-  "link": "https://www.jointdatacenter.org/data-activities/inclusion/",
-  "link_match": "landing",
-  "link_source": "partner / international organisation",
-  "cover": "covers/ex310.png",
-  "cover_note": "ok: web page screenshot (section page)",
-  "kind": "screenshot"
- },
  "310": {
   "ex": "ex311",
   "title": "Mauritania: Quantifying refugee's return to the labor market & local economy: Inclusion of refugees & asylum seekers into the Mauritania Labor Force Survey",
@@ -1516,6 +1538,17 @@
   "cover": "covers/ex311.png",
   "cover_note": "ok: web page screenshot",
   "kind": "screenshot"
+ },
+ "312": {
+  "ex": "ex313",
+  "title": "Mozambique: Inclusion of IDPs in the 2025 Mozambique Household Budget Survey (IOF2025)",
+  "country": "Mozambique",
+  "link": "https://openknowledge.worldbank.org/entities/publication/98f29351-1fac-4aac-a0dd-1b6886941a0a",
+  "link_match": "exact",
+  "link_source": "pipeline: drilled from NSO portal, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
  "314": {
   "ex": "ex315",
@@ -1538,17 +1571,6 @@
   "cover": "covers/ex316.png",
   "cover_note": "ok",
   "kind": "cover"
- },
- "317": {
-  "ex": "ex318",
-  "title": "Census",
-  "country": "Iraq",
-  "link": "https://krso.gov.krd/en/indicator",
-  "link_match": "landing",
-  "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "covers/ex318.png",
-  "cover_note": "ok: web page screenshot (section page)",
-  "kind": "screenshot"
  },
  "318": {
   "ex": "ex319",
@@ -1594,6 +1616,17 @@
   "cover_note": "ok",
   "kind": "cover"
  },
+ "322": {
+  "ex": "ex323",
+  "title": "EPCV",
+  "country": "Mauritania",
+  "link": "https://ansade.mr/",
+  "link_match": "exact",
+  "link_source": "pipeline: web search, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
  "323": {
   "ex": "ex324",
   "title": "Birth Registration Assistance Project",
@@ -1638,6 +1671,149 @@
   "cover_note": "ok",
   "kind": "cover"
  },
+ "327": {
+  "ex": "ex328",
+  "title": "Integrating Syrian forcibly displaced populations into Covid-19 High Frequency Phone Surveys",
+  "country": "Jordan",
+  "link": "https://www.jointdatacenter.org/integrating-forcibly-displaced-populations-into-covid-19-high-frequency-phone-surveys/",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex328.png",
+  "cover_note": "ok: web page screenshot (pipeline link)",
+  "kind": "screenshot"
+ },
+ "334": {
+  "ex": "ex335",
+  "title": "Integrating Forcibly Displaced Populations into Covid-19 High Frequency Phone Surveys",
+  "country": "Ethiopia",
+  "link": "https://www.jointdatacenter.org/integrating-forcibly-displaced-populations-into-covid-19-high-frequency-phone-surveys/",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex335.png",
+  "cover_note": "ok: web page screenshot (pipeline link)",
+  "kind": "screenshot"
+ },
+ "336": {
+  "ex": "ex337",
+  "title": "Integrating Forcibly Displaced Populations into Covid-19 High Frequency Phone Surveys",
+  "country": "Djibouti",
+  "link": "https://www.jointdatacenter.org/integrating-forcibly-displaced-populations-into-covid-19-high-frequency-phone-surveys/",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex337.png",
+  "cover_note": "ok: web page screenshot (pipeline link)",
+  "kind": "screenshot"
+ },
+ "337": {
+  "ex": "ex338",
+  "title": "Cox's Bazar Humanitarian Development Statistics Center/ Analytical Program",
+  "country": "Bangladesh",
+  "link": "https://www.jointdatacenter.org/bangladesh-coxs-bazar-humanitarian-development-statistics-center-analytical-program/",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "344": {
+  "ex": "ex345",
+  "title": "JDC Strategy",
+  "country": "",
+  "link": "https://www.jointdatacenter.org/jdc-strategy-for-2021-2023/",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex345.png",
+  "cover_note": "ok (pipeline link)",
+  "kind": "cover"
+ },
+ "346": {
+  "ex": "ex347",
+  "title": "Categorising obstacles to returnee integration in Iraq",
+  "country": "Iraq",
+  "link": "https://iraq.iom.int/resources/home-again-categorising-obstacles-returnee-reintegration-iraq",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "352": {
+  "ex": "ex353",
+  "title": "IOM's Internal Displacement Data Strategy, 2021-2025",
+  "country": "",
+  "link": "https://publications.iom.int/fr/node/2951",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "354": {
+  "ex": "ex355",
+  "title": "Leave No Migrant Behind: The 2030 Agenda and Data Disaggregation - World | ReliefWeb",
+  "country": "",
+  "link": "https://reliefweb.int/report/world/leave-no-migrant-behind-2030-agenda-and-data-disaggregation?msclkid=864aaae2b0d411ec931dc6b589ca9adc",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex355.png",
+  "cover_note": "ok (pipeline link)",
+  "kind": "cover"
+ },
+ "355": {
+  "ex": "ex356",
+  "title": "Inter-Agency/ Inter-Sectoral Rapid Gender Analysis to Assess the Impact Of COVID-19 On Refugee and Host Communities in Uganda",
+  "country": "Uganda",
+  "link": "https://data.un.org/Data.aspx?d=UNHCR&f=indID%3AType-Ref",
+  "link_match": "exact",
+  "link_source": "pipeline: web search, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "360": {
+  "ex": "ex361",
+  "title": "SDG 16 Survey",
+  "country": "",
+  "link": "https://www.sdg16hub.org/sdg-16-survey-initiative",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "361": {
+  "ex": "ex362",
+  "title": "Sudan - JIPS - Joint IDP Profiling Service",
+  "country": "Sudan",
+  "link": "https://www.jips.org/jips-country/sudan/?msclkid=d74339f3b0d011ec917aadf685e683e2",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex362.png",
+  "cover_note": "ok: web page screenshot (pipeline link)",
+  "kind": "screenshot"
+ },
+ "363": {
+  "ex": "ex364",
+  "title": "JIPS Strategy",
+  "country": "",
+  "link": "https://www.jips.org/jips-publication/jips-strategy-2021-23/",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex364.png",
+  "cover_note": "ok (pipeline link)",
+  "kind": "cover"
+ },
+ "366": {
+  "ex": "ex367",
+  "title": "Improving tabulations on different groups of IDPs, data on vulnerabilities and progress towards solutions",
+  "country": "",
+  "link": "https://www.internal-displacement.org/research-areas/differentiated-impacts",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
  "367": {
   "ex": "ex368",
   "title": "Labor Force Survey",
@@ -1648,6 +1824,17 @@
   "cover": "covers/ex368.png",
   "cover_note": "ok: web page screenshot",
   "kind": "screenshot"
+ },
+ "368": {
+  "ex": "ex369",
+  "title": "MEDHIMS",
+  "country": "Morocco",
+  "link": "https://ec.europa.eu/eurostat/web/european-neighbourhood-policy/enp-south/med-hims",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  },
  "369": {
   "ex": "ex370",
@@ -1671,6 +1858,105 @@
   "cover_note": "ok",
   "kind": "cover"
  },
+ "376": {
+  "ex": "ex377",
+  "title": "UNFPA Strategy for the 2020 Round of Population and Housing Censuses",
+  "country": "",
+  "link": "https://www.unfpa.org/publications/unfpa-strategy-2020-round-population-housing-censuses-2015-2024",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "covers/ex377.png",
+  "cover_note": "ok (pipeline link)",
+  "kind": "cover"
+ },
+ "379": {
+  "ex": "ex380",
+  "title": "Labour Force Survey",
+  "country": "Egypt",
+  "link": "https://www.capmas.gov.eg/",
+  "link_match": "exact",
+  "link_source": "pipeline: web search, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "380": {
+  "ex": "ex381",
+  "title": "Inclusion of refugees on the Gov of Jordan's Household Income and Expenditure Survey",
+  "country": "Jordan",
+  "link": "https://dosweb.dos.gov.jo/DataBank/Services/Services2017_En.pdf",
+  "link_match": "exact",
+  "link_source": "pipeline: drilled from NSO portal, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "381": {
+  "ex": "ex382",
+  "title": "Socio-economic survey of refugees and migrants in Libya",
+  "country": "Libya",
+  "link": "https://www.jointdatacenter.org/libya-socio-economic-survey-of-refugees-and-migrants-in-libya/#:~:text=Migrants%20and%20displaced%20people%20in%20Libya%20tend%20to",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "385": {
+  "ex": "ex386",
+  "title": "Multipurpose Household Survey - PDI",
+  "country": "El Salvador",
+  "link": "https://data.un.org/Data.aspx?d=UNHCR&f=indID%3AType-Ref",
+  "link_match": "exact",
+  "link_source": "pipeline: web search, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "388": {
+  "ex": "ex389",
+  "title": "Strengthening of the Integrated Model",
+  "country": "Colombia",
+  "link": "https://datospaz.unidadvictimas.gov.co/informe-desplazamiento-forzado-colombia-primer-semestre-2025/",
+  "link_match": "exact",
+  "link_source": "pipeline: web search, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "389": {
+  "ex": "ex390",
+  "title": "Articulation between governmental and non-governmental agencies Descriptive analysis of the population victim of the armed conflict. (Document produced in collaboration between DANE and the Victims Unit)",
+  "country": "Colombia",
+  "link": "https://datospaz.unidadvictimas.gov.co/informe-desplazamiento-forzado-colombia-primer-semestre-2025/",
+  "link_match": "exact",
+  "link_source": "pipeline: web search, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "390": {
+  "ex": "ex391",
+  "title": "South - South and Triangular Cooperation (IDMC)",
+  "country": "Colombia",
+  "link": "https://datospaz.unidadvictimas.gov.co/informe-desplazamiento-forzado-colombia-primer-semestre-2025/",
+  "link_match": "exact",
+  "link_source": "pipeline: web search, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "392": {
+  "ex": "ex393",
+  "title": "Rapid assessment of the impact of the drought in the 5 regions of Djibouti",
+  "country": "Djibouti",
+  "link": "https://migration.iom.int/sites/g/files/tmzbdl1461/files/reports/Evaluation%20rapide%20Secheresse%20OIM%20INSTAD%20Septembre%202022_final%20EN.pdf",
+  "link_match": "exact",
+  "link_source": "pipeline: link reported in the GAIN roster",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
  "402": {
   "ex": "ex403",
   "title": "2022 Economic Survey Report",
@@ -1681,5 +1967,38 @@
   "cover": "covers/ex403.png",
   "cover_note": "ok",
   "kind": "cover"
+ },
+ "410": {
+  "ex": "ex411",
+  "title": "Development of IDP sector plan within National Statistical System Strategic Plan",
+  "country": "Somalia",
+  "link": "https://www.stage.jips.acw2.website/uploads/2018/10/Somalia-Mogadishu-profiling-report-2016.pdf",
+  "link_match": "exact",
+  "link_source": "pipeline: drilled from NSO portal, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "411": {
+  "ex": "ex412",
+  "title": "Study linking RUV and GEIH",
+  "country": "Colombia",
+  "link": "https://www.dane.gov.co/files/investigaciones/Inventario_Investigaciones_Dane_2014.xls",
+  "link_match": "exact",
+  "link_source": "pipeline: drilled from NSO portal, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
+ },
+ "412": {
+  "ex": "ex413",
+  "title": "Study linking RUV and NHPC",
+  "country": "Colombia",
+  "link": "https://www.dane.gov.co/files/investigaciones/Inventario_Investigaciones_Dane_2014.xls",
+  "link_match": "exact",
+  "link_source": "pipeline: drilled from NSO portal, LLM-checked",
+  "cover": "",
+  "cover_note": "",
+  "kind": ""
  }
 }
