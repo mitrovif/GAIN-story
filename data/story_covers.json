@@ -31,6 +31,14 @@
   "cover": "",
   "cover_note": ""
  },
+ "44": {
+  "ex": "ex045",
+  "title": "The NBS has implemented the first ever Survey on IDPs in seven selected states of Nigeria",
+  "country": "Nigeria",
+  "link": "https://microdata.nigerianstat.gov.ng/index.php/catalog/148",
+  "cover": "",
+  "cover_note": ""
+ },
  "52": {
   "ex": "ex053",
   "title": "the inclusion of asylum seekers in Long-term international migration, provisional: year ending December 2022 Experimental and provisional estimates of UK international migration, 2018 to 2022",
@@ -79,6 +87,14 @@
   "cover": "",
   "cover_note": ""
  },
+ "88": {
+  "ex": "ex089",
+  "title": "Development of new statistics related to the implementation of the new law on stateless persons (in particular statistics on application for authorisation to stay issued / refused to stateless persons).",
+  "country": "Belgium",
+  "link": "https://dofi.ibz.be/fr/figures/access-and-stay/rapports",
+  "cover": "",
+  "cover_note": ""
+ },
  "92": {
   "ex": "ex093",
   "title": "INSEE publication references Immigrants and descendants of immigrants",
@@ -103,6 +119,14 @@
   "cover": "covers/ex111.png",
   "cover_note": "ok"
  },
+ "112": {
+  "ex": "ex113",
+  "title": "Socio-economic survey of households of internally displaced persons and hosts in 6 regions of Burkina Faso",
+  "country": "Burkina Faso",
+  "link": "https://www.insd.bf/sites/default/files/2026-02/Rapport%20Analyse_ESEP-PDI.pdf",
+  "cover": "covers/ex113.png",
+  "cover_note": "ok"
+ },
  "113": {
   "ex": "ex114",
   "title": "UNHCR did a follow-up survey on the Shona community after acquisition of citizenship",
@@ -124,6 +148,22 @@
   "title": "How do refugees fare in the Norwegian education system?",
   "country": "Norway",
   "link": "https://www.ssb.no/befolkning/innvandrere/artikler/hvordan-presterer-flyktninger-pa-skolebenken",
+  "cover": "",
+  "cover_note": ""
+ },
+ "123": {
+  "ex": "ex124",
+  "title": "4th African School on Migration Statistics",
+  "country": "",
+  "link": "https://statafric.au.int/en/news/press-releases/2025-09-04/4th-african-school-migration-statistics",
+  "cover": "covers/ex124.png",
+  "cover_note": "ok: report cover from the page preview"
+ },
+ "127": {
+  "ex": "ex128",
+  "title": "Thailand 2025 Labour Force Survey – Migration Module",
+  "country": "Thailand",
+  "link": "https://www.nso.go.th/public/e-book/Analytical-Reports/Migration-survey-2562-2566-Eng/6",
   "cover": "",
   "cover_note": ""
  },
@@ -263,6 +303,14 @@
   "cover": "",
   "cover_note": ""
  },
+ "318": {
+  "ex": "ex319",
+  "title": "THE 2024 NATIONAL POPULATION AND HOUSING CENSUS (NPHC 2024)",
+  "country": "Uganda",
+  "link": "https://statistics.ubos.org/nphc/reports/National-Population-and-Housing-Census-2024-Final-Report-Volume-1-Main.pdf",
+  "cover": "covers/ex319.png",
+  "cover_note": "ok"
+ },
  "321": {
   "ex": "ex322",
   "title": "THE UGANDA NATIONAL GOVERNANCE, PEACE AND SECURITY SURVEY, 2024/25 (UNGPS 2024/25)",
@@ -270,6 +318,14 @@
   "link": "",
   "cover": "covers/ex322.png",
   "cover_note": "ok"
+ },
+ "323": {
+  "ex": "ex324",
+  "title": "Birth Registration Assistance Project",
+  "country": "Philippines",
+  "link": "https://rsso03.psa.gov.ph/sites/default/files/2024-11/BRAP-Press-Release-Bajau-Community-Aug-03-2024.pdf",
+  "cover": "",
+  "cover_note": ""
  },
  "326": {
   "ex": "ex327",

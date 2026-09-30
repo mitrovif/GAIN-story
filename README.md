@@ -14,10 +14,10 @@ Covers and links feed:
 | | Examples |
 |---|---|
 | GAIN examples, 2021–2025 | 413 |
-| With a source link | 37 |
-| Covers checked and in use | **9** |
+| With a source link | 44 |
+| Covers checked and in use | **12** |
 | Rejected after checking | 10 (logos, icons, stock photos, an inner page, a price list) |
-| Still missing a cover | 394 |
+| Still missing a cover | 391 |
 
 ## Files
 
@@ -43,6 +43,10 @@ Covers and links feed:
    or `rejected: <reason>`; delete rejected images; fill `checked_on`.
 4. **Export.** `python tools/export_for_story.py`, then send the new covers and `story_covers.json` to the
    scrollytelling page.
+
+## Log
+
+- **30 Sep 2026:** links found by web search for the 7 featured story examples; covers for Burkina Faso INSD (ESEP-PDI 2024), the African Union 4th School on Migration Statistics report, and the UBOS 2024 census report. Still to check by hand in a browser: Nigeria NBS (microdata catalogue), Philippines PSA (press release), Thailand (2025 module not yet published).
 
 ## Priorities
 
