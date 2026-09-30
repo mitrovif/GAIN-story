@@ -1,0 +1,314 @@
+{
+ "3": {
+  "ex": "ex004",
+  "title": "Population Census 2022 Turkmenistan",
+  "country": "Turkmenistan",
+  "link": "https://www.stat.gov.tm/",
+  "cover": "",
+  "cover_note": ""
+ },
+ "6": {
+  "ex": "ex007",
+  "title": "Census 2021",
+  "country": "Kazakhstan",
+  "link": "https://stat.gov.kz/upload/medialibrary/75f/z2gxd3z3s8gsf7em4x4q5ahd87mgoc5m/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%201%20%D1%82%D0%BE%D0%BC.pdf",
+  "cover": "covers/ex007.png",
+  "cover_note": "ok"
+ },
+ "8": {
+  "ex": "ex009",
+  "title": "UNRWA digital identity verification 2025: Resident population estimate of Palestine Refugees in Lebanon",
+  "country": "",
+  "link": "https://www.unrwa.org/resources/reports/palestinian-population-lebanon-findings-unrwa-digital-identity-verification",
+  "cover": "",
+  "cover_note": ""
+ },
+ "29": {
+  "ex": "ex030",
+  "title": "3rd Population and Housing Census (RGPH-3) that was completed in the summer of this year, 2024.",
+  "country": "Djibouti",
+  "link": "https://instad.dj/rgph",
+  "cover": "",
+  "cover_note": ""
+ },
+ "52": {
+  "ex": "ex053",
+  "title": "the inclusion of asylum seekers in Long-term international migration, provisional: year ending December 2022 Experimental and provisional estimates of UK international migration, 2018 to 2022",
+  "country": "United Kingdom",
+  "link": "https://www.ons.gov.uk/peoplepopulationandcommunity/",
+  "cover": "",
+  "cover_note": ""
+ },
+ "55": {
+  "ex": "ex056",
+  "title": "Early integration outcomes for refugees resettled in England and Wales: 2015 to 2021 New analysis on refugees resettled between 2015 and 2020 under the Vulnerable Persons and Vulnerable Children's Resettlement Schemes in England and Wales. A collaborative study between the Office for National Statistics and the Home Office.",
+  "country": "United Kingdom",
+  "link": "https://www.ons.gov.uk/peoplepopulationandcommunity/",
+  "cover": "",
+  "cover_note": ""
+ },
+ "57": {
+  "ex": "ex058",
+  "title": "Honduras, leads the working group for the Practical Guide for the production of harmonized statistics on forced displacement and migration Biennium: 2024-2025 https://rtc-cea.cepal.org/es/grupo-trabajo/guia-practica-para-la-produccion-de-estadisticas-armonizada-sobre-desplazamiento",
+  "country": "Honduras",
+  "link": "https://rtc-cea.cepal.org/es/grupo-trabajo/guia-practica-para-la-produccion-de-estadisticas-armonizadas-sobre-desplazamiento",
+  "cover": "",
+  "cover_note": ""
+ },
+ "65": {
+  "ex": "ex066",
+  "title": "General Population and Housing Census 2015",
+  "country": "Jordan",
+  "link": "https://dosweb.dos.gov.jo/ar/censuses/population_housing/census2015/census2015_tables/",
+  "cover": "",
+  "cover_note": ""
+ },
+ "81": {
+  "ex": "ex082",
+  "title": "EMOP",
+  "country": "Mali",
+  "link": "",
+  "cover": "covers/ex082.png",
+  "cover_note": "ok"
+ },
+ "83": {
+  "ex": "ex084",
+  "title": "Ukrainians in Spain",
+  "country": "Spain",
+  "link": "https://www.ine.es/infografias/ucranianos/ucranianos.htm",
+  "cover": "",
+  "cover_note": ""
+ },
+ "92": {
+  "ex": "ex093",
+  "title": "INSEE publication references Immigrants and descendants of immigrants",
+  "country": "France",
+  "link": "https://www.insee.fr/fr/statistiques/6793306?sommaire=6793391",
+  "cover": "",
+  "cover_note": ""
+ },
+ "104": {
+  "ex": "ex105",
+  "title": "A question was included in the labor force survey, the second round in 2025, question number 212: “What is the main reason for (name) coming to live in Jordan from the country? Note: The attached link for the form for the year 2024, the second round, is the same as for the year 2025, the second round.",
+  "country": "Jordan",
+  "link": "https://dosweb.dos.gov.jo/DataBank/Labour_Force/Employment_Unemployment/Labor_Force_Survey_questionnaire_2024.pdf",
+  "cover": "covers/ex105.png",
+  "cover_note": "ok: first page of the questionnaire, not a report"
+ },
+ "110": {
+  "ex": "ex111",
+  "title": "Internal movements of asylum seekers/refugees",
+  "country": "Norway",
+  "link": "https://www.ssb.no/befolkning/flytting/artikler/tidlige-asylflyttinger-i-perioden-2013-2022/_/attachment/inline/a8e35027-dda5-4a5a-94b5-8bd5d22e4a4c:dda1a4c30ebb5758191abe7900b03a39e8cc44dd/NOT2023-43.pdf",
+  "cover": "covers/ex111.png",
+  "cover_note": "ok"
+ },
+ "113": {
+  "ex": "ex114",
+  "title": "UNHCR did a follow-up survey on the Shona community after acquisition of citizenship",
+  "country": "Kenya",
+  "link": "https://data.unhcr.org/en/documents/details/111718",
+  "cover": "covers/ex114.png",
+  "cover_note": "ok"
+ },
+ "115": {
+  "ex": "ex116",
+  "title": "KNBS is continuously collecting annual data on Registered Refugees and Asylum Seekers from the Department for Refugee Services",
+  "country": "Kenya",
+  "link": "https://www.knbs.or.ke/reports/2024-economic-survey/",
+  "cover": "",
+  "cover_note": ""
+ },
+ "117": {
+  "ex": "ex118",
+  "title": "How do refugees fare in the Norwegian education system?",
+  "country": "Norway",
+  "link": "https://www.ssb.no/befolkning/innvandrere/artikler/hvordan-presterer-flyktninger-pa-skolebenken",
+  "cover": "",
+  "cover_note": ""
+ },
+ "138": {
+  "ex": "ex139",
+  "title": "Refugees in and outside the Labour Marked, 2023",
+  "country": "Norway",
+  "link": "https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/flyktninger-i-og-utenfor-arbeidsmarkedet-2023",
+  "cover": "",
+  "cover_note": ""
+ },
+ "140": {
+  "ex": "ex141",
+  "title": "Unaccompanied Minor Refugees, 2023",
+  "country": "Norway",
+  "link": "https://www.ssb.no/befolkning/innvandrere/artikler/mange-enslige-mindrearige-flyktninger-fra-ukraina",
+  "cover": "",
+  "cover_note": ""
+ },
+ "160": {
+  "ex": "ex161",
+  "title": "Health of refugees from Ukraine to Poland 2022 - survey and research report in cooperation with WHO",
+  "country": "Poland",
+  "link": "https://stat.gov.pl/wydarzenia/wydarzenia-miedzynarodowe/health-of-refugees-from-ukraine-in-poland-2022-survey-findings",
+  "cover": "",
+  "cover_note": ""
+ },
+ "176": {
+  "ex": "ex177",
+  "title": "National Survey of Victimization and Perception of Public Safety",
+  "country": "Mexico",
+  "link": "https://www.inegi.org.mx/programas/envipe/2025/#datos_abiertos",
+  "cover": "",
+  "cover_note": ""
+ },
+ "183": {
+  "ex": "ex184",
+  "title": "Refugee questions were included in the labor force survey",
+  "country": "Jordan",
+  "link": "https://dosweb.dos.gov.jo/labourforce/employment-and-unemployment/",
+  "cover": "",
+  "cover_note": ""
+ },
+ "184": {
+  "ex": "ex185",
+  "title": "Digitalized Administrative source (Migration and Citizenship Service of the M-stry of Interior) of asylum seekers and recognized refugees: https://www.armstat.am/file/article/demog_2024_7.pdf, p.160-162",
+  "country": "Armenia",
+  "link": "https://www.armstat.am/file/doc/99552283.pdf",
+  "cover": "",
+  "cover_note": ""
+ },
+ "203": {
+  "ex": "ex204",
+  "title": "FORCED DISPLACEMENT REPORT II SEMESTER 2024",
+  "country": "Colombia",
+  "link": "https://datospaz.unidadvictimas.gov.co/",
+  "cover": "covers/ex204.png",
+  "cover_note": "ok: data-portal banner, not a report"
+ },
+ "212": {
+  "ex": "ex213",
+  "title": "Refugee Integration Outcomes",
+  "country": "United Kingdom",
+  "link": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/methodologies/refugeeintegrationoutcomesriodatalinkagepilot",
+  "cover": "",
+  "cover_note": ""
+ },
+ "217": {
+  "ex": "ex218",
+  "title": "The results of 2022 Population Census in the Republic of Armenia",
+  "country": "Armenia",
+  "link": "https://www.arlis.am/DocumentView.aspx?DocID=167733",
+  "cover": "",
+  "cover_note": ""
+ },
+ "233": {
+  "ex": "ex234",
+  "title": "Unregistered Emigration from Norway: Mapping the Extent",
+  "country": "Norway",
+  "link": "https://www.ssb.no/befolkning/flytting/artikler/uregistrert-utvandring-fra-norge",
+  "cover": "",
+  "cover_note": ""
+ },
+ "235": {
+  "ex": "ex236",
+  "title": "Refugees and the Labour Market, Monitor 2022",
+  "country": "Norway",
+  "link": "https://www.ssb.no/arbeid-og-lonn/flyktninger-og-arbeidsmarkedet",
+  "cover": "",
+  "cover_note": ""
+ },
+ "252": {
+  "ex": "ex253",
+  "title": "We produced an integrated and longitudinal dataset using data derived from residence permits, from Population Register and form the Datasets of Ministry of Education. This dataset is used to study the integration paths of asylum seekers in Italy.",
+  "country": "Italy",
+  "link": "https://unece.org/sites/default/files/2024-04/2.Refugees%20WP1%20ITA%20Conti%20Pangallo.pdf",
+  "cover": "",
+  "cover_note": ""
+ },
+ "260": {
+  "ex": "ex261",
+  "title": "We included in a survey on children and young people (aged 11-19 years) a sample of young Ukrainians in Italy. We coopereted with the World Bank on survey about Ukrainians children in Italy",
+  "country": "Italy",
+  "link": "https://unece.org/sites/default/files/2024-02/2Innov%20ITA_ENG_0.pdf",
+  "cover": "",
+  "cover_note": ""
+ },
+ "263": {
+  "ex": "ex264",
+  "title": "Field Surveys: Labor Force Survey",
+  "country": "State of Palestine",
+  "link": "https://pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_LFSQ022024E.pdf",
+  "cover": "",
+  "cover_note": ""
+ },
+ "273": {
+  "ex": "ex274",
+  "title": "Health of refugees from Ukraine. A comparative analysis of 2022-2023 surveys and data innovations.",
+  "country": "Poland",
+  "link": "https://stat.gov.pl/en/events/international-events/ukrainian-refugee-health-research-2022-2023-and-data-innovation",
+  "cover": "",
+  "cover_note": ""
+ },
+ "306": {
+  "ex": "ex307",
+  "title": "Support to the Statistical Institute of Belize in the preparation of a thematic report on migration based on the 2022 census. This project was completed and the report launched in 2025.",
+  "country": "Belize",
+  "link": "https://sib.org.bz/wp-content/uploads/20251020_BelizeCensusMigrationReport.pdf",
+  "cover": "covers/ex307.png",
+  "cover_note": "ok"
+ },
+ "308": {
+  "ex": "ex309",
+  "title": "Production of two studies on returnees in Honduras using administrative data gathered at reception centers and in follow-up calls. The first study analyzes the characteristics of the returnees from 2016-2024. The second analyzes questionnaires applied to returnees by telephone a few months after return to measure their reintegration.",
+  "country": "Honduras",
+  "link": "http://dx.doi.org/10.18235/0013760",
+  "cover": "",
+  "cover_note": ""
+ },
+ "321": {
+  "ex": "ex322",
+  "title": "THE UGANDA NATIONAL GOVERNANCE, PEACE AND SECURITY SURVEY, 2024/25 (UNGPS 2024/25)",
+  "country": "Uganda",
+  "link": "",
+  "cover": "covers/ex322.png",
+  "cover_note": "ok"
+ },
+ "326": {
+  "ex": "ex327",
+  "title": "Kosovo Census 2024",
+  "country": "Kosovo*",
+  "link": "https://askapi.rks-gov.net/Custom/c973a3e6-790c-47e7-924b-4e9f5d745aec.pdf",
+  "cover": "covers/ex327.png",
+  "cover_note": "ok"
+ },
+ "367": {
+  "ex": "ex368",
+  "title": "Labor Force Survey",
+  "country": "State of Palestine",
+  "link": "http://www.erfdataportal.com/index.php/catalog/240",
+  "cover": "",
+  "cover_note": ""
+ },
+ "369": {
+  "ex": "ex370",
+  "title": "RGPH 2014 AND 2020",
+  "country": "Côte d'Ivoire",
+  "link": "https://www.gouv.ci/_actualite-article.php?recordID=12580&d=3",
+  "cover": "",
+  "cover_note": ""
+ },
+ "370": {
+  "ex": "ex371",
+  "title": "Economic Survey 2021",
+  "country": "Kenya",
+  "link": "https://drive.google.com/file/d/1q5QE1A7UkwDIsDSphr4C9NIDYho0SB1p/view",
+  "cover": "",
+  "cover_note": ""
+ },
+ "402": {
+  "ex": "ex403",
+  "title": "2022 Economic Survey Report",
+  "country": "Kenya",
+  "link": "https://www.knbs.or.ke/wp-content/uploads/2022/05/2022-Economic-Survey1.pdf",
+  "cover": "",
+  "cover_note": ""
+ }
+}

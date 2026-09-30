@@ -1,0 +1,38 @@
+ex_id,source_url,result,content_type
+ex185,https://www.armstat.am/file/doc/99552283.pdf,saved: pdf page 1 of 58,application/pdf
+ex218,https://www.arlis.am/DocumentView.aspx?DocID=167733,saved: page preview image https://arlis.am/static/img/share_logo.png,text/html; charset=utf-8
+ex307,https://sib.org.bz/wp-content/uploads/20251020_BelizeCensusMigrationReport.pdf,saved: pdf page 1 of 121,application/pdf
+ex204,https://datospaz.unidadvictimas.gov.co/,saved: page preview image https://datospaz.unidadvictimas.gov.co/wp-content/uploads/2023/04/1280-e1682458857896.png,text/html; charset=utf-8
+ex370,https://www.gouv.ci/_actualite-article.php?recordID=12580&d=3,failed: 404 Client Error: Not Found for url: https://www.gouv.ci/_actualite-article.php?recordID=12580&d=3,
+ex030,https://instad.dj/rgph,no cover: web page without a preview image,text/html;charset=utf-8
+ex093,https://www.insee.fr/fr/statistiques/6793306?sommaire=6793391,no cover: web page without a preview image,text/html;charset=utf-8
+ex058,https://rtc-cea.cepal.org/es/grupo-trabajo/guia-practica-para-la-produccion-de-estadisticas-armonizadas-sobre-desplazamiento,no cover: web page without a preview image,text/html; charset=utf-8
+ex309,http://dx.doi.org/10.18235/0013760,failed: 403 Client Error: Forbidden for url: https://publications.iadb.org/es/migrantes-retornados-en-honduras,
+ex253,https://unece.org/sites/default/files/2024-04/2.Refugees%20WP1%20ITA%20Conti%20Pangallo.pdf,failed: 403 Client Error: Forbidden for url: https://unece.org/sites/default/files/2024-04/2.Refugees%20WP1%20ITA%20Conti%20Pangallo.pdf,
+ex261,https://unece.org/sites/default/files/2024-02/2Innov%20ITA_ENG_0.pdf,failed: 403 Client Error: Forbidden for url: https://unece.org/sites/default/files/2024-02/2Innov%20ITA_ENG_0.pdf,
+ex066,https://dosweb.dos.gov.jo/ar/censuses/population_housing/census2015/census2015_tables/,saved: page preview image http://www.dos.gov.jo/image/list_icon_arrow.png,text/html; charset=utf-8
+ex105,https://dosweb.dos.gov.jo/DataBank/Labour_Force/Employment_Unemployment/Labor_Force_Survey_questionnaire_2024.pdf,saved: pdf page 1 of 14,application/pdf
+ex184,https://dosweb.dos.gov.jo/labourforce/employment-and-unemployment/,saved: page preview image http://dosweb.dos.gov.jo/wp-content/uploads/2017/05/file_formats3_pdf-128.png,text/html; charset=utf-8
+ex007,https://stat.gov.kz/upload/medialibrary/75f/z2gxd3z3s8gsf7em4x4q5ahd87mgoc5m/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%201%20%D1%82%D0%BE%D0%BC.pdf,saved: pdf page 1 of 228,application/pdf
+ex114,https://data.unhcr.org/en/documents/details/111718,saved: page preview image https://amzirlodp-prd-s3.s3.amazonaws.com/documents/images/big_1a1cab094d685f12311c4556b2529701ded2e2ed.jpg,text/html; charset=utf-8
+ex116,https://www.knbs.or.ke/reports/2024-economic-survey/,"failed: HTTPSConnectionPool(host='www.knbs.or.ke', port=443): Max retries exceeded with url: /reports/2024-economic-survey/ (Caused by SSLError(SSLCertVerificationError",
+ex371,https://drive.google.com/file/d/1q5QE1A7UkwDIsDSphr4C9NIDYho0SB1p/view,failed: 401 Client Error: Unauthorized for url: https://drive.google.com/file/d/1q5QE1A7UkwDIsDSphr4C9NIDYho0SB1p/view,
+ex403,https://www.knbs.or.ke/wp-content/uploads/2022/05/2022-Economic-Survey1.pdf,"failed: HTTPSConnectionPool(host='www.knbs.or.ke', port=443): Max retries exceeded with url: /wp-content/uploads/2022/05/2022-Economic-Survey1.pdf (Caused by SSLError(S",
+ex327,https://askapi.rks-gov.net/Custom/c973a3e6-790c-47e7-924b-4e9f5d745aec.pdf,saved: pdf page 1 of 25,application/pdf
+ex177,https://www.inegi.org.mx/programas/envipe/2025/#datos_abiertos,no cover: web page without a preview image,text/html
+ex009,https://www.unrwa.org/resources/reports/palestinian-population-lebanon-findings-unrwa-digital-identity-verification,failed: 403 Client Error: Forbidden for url: https://www.unrwa.org/resources/reports/palestinian-population-lebanon-findings-unrwa-digital-identity-verification,
+ex111,https://www.ssb.no/befolkning/flytting/artikler/tidlige-asylflyttinger-i-perioden-2013-2022/_/attachment/inline/a8e35027-dda5-4a5a-94b5-8bd5d22e4a4c:dda1a4c30ebb5758191abe7900b03a39e8cc44dd/NOT2023-43.pdf,saved: pdf page 1 of 28,application/pdf
+ex118,https://www.ssb.no/befolkning/innvandrere/artikler/hvordan-presterer-flyktninger-pa-skolebenken,saved: page preview image https://www.ssb.no/befolkning/innvandrere/artikler/hvordan-presterer-flyktninger-pa-skolebenken/_/image/6f6d3dbc-37ad-4d3d-bee4-eab7cf50c3a2:978ab977f4d6395eae3802928e8cd8a2c31a4ef9/block-1200-630/COLOURBOX21041178.jpg?quality=85,text/html;charset=utf-8
+ex139,https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/flyktninger-i-og-utenfor-arbeidsmarkedet-2023,saved: page preview image https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/flyktninger-i-og-utenfor-arbeidsmarkedet-2023/_/image/a2142825-dfe0-4043-9388-2fe7fcb2c2a1:8f7677a68dbd1ba89a945808a298b242a8c3a12c/block-1200-630/Innvandring-gruppe-D.jpg?quality=85,text/html;charset=utf-8
+ex141,https://www.ssb.no/befolkning/innvandrere/artikler/mange-enslige-mindrearige-flyktninger-fra-ukraina,saved: page preview image https://www.ssb.no/befolkning/innvandrere/artikler/mange-enslige-mindrearige-flyktninger-fra-ukraina/_/image/3a96583c-1b25-464f-b7ac-fc077947a641:d081acbf3a15408b74d758f53a6f07d1cd2c69dc/block-1200-630/ungdom.jpg?quality=85,text/html;charset=utf-8
+ex234,https://www.ssb.no/befolkning/flytting/artikler/uregistrert-utvandring-fra-norge,saved: page preview image https://www.ssb.no/befolkning/flytting/artikler/uregistrert-utvandring-fra-norge/_/image/74b440a8-f072-4c21-b348-4251114e380f:6ad9c7a9ad89fb0209cd830ae777314cb082b1ab/block-1200-630/fly.jpg?quality=85,text/html;charset=utf-8
+ex236,https://www.ssb.no/arbeid-og-lonn/flyktninger-og-arbeidsmarkedet,no cover: web page without a preview image,text/html;charset=utf-8
+ex161,https://stat.gov.pl/wydarzenia/wydarzenia-miedzynarodowe/health-of-refugees-from-ukraine-in-poland-2022-survey-findings,"failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+ex274,https://stat.gov.pl/en/events/international-events/ukrainian-refugee-health-research-2022-2023-and-data-innovation,failed: 404 Client Error: Not Found for url: https://stat.gov.pl/en/events/international-events/ukrainian-refugee-health-research-2022-2023-and-data-innovation,
+ex084,https://www.ine.es/infografias/ucranianos/ucranianos.htm,saved: page preview image https://www.ine.es/menus/_b/img/logoINESocial.png,text/html
+ex264,https://pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_LFSQ022024E.pdf,"failed: HTTPSConnectionPool(host='pcbs.gov.ps', port=443): Max retries exceeded with url: /portals/_pcbs/PressRelease/Press_En_LFSQ022024E.pdf (Caused by SSLError(SSLCe",
+ex368,http://www.erfdataportal.com/index.php/catalog/240,no cover: web page without a preview image,text/html; charset=utf-8
+ex004,https://www.stat.gov.tm/,no cover: web page without a preview image,text/html; charset=utf-8
+ex053,https://www.ons.gov.uk/peoplepopulationandcommunity/,no cover: web page without a preview image,text/html;charset=utf-8
+ex056,https://www.ons.gov.uk/peoplepopulationandcommunity/,no cover: web page without a preview image,text/html;charset=utf-8
+ex213,https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/methodologies/refugeeintegrationoutcomesriodatalinkagepilot,no cover: web page without a preview image,text/html;charset=utf-8
