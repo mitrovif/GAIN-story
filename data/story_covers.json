@@ -1297,6 +1297,17 @@
   "cover_note": "ok: web page screenshot",
   "kind": "screenshot"
  },
+ "257": {
+  "ex": "ex258",
+  "title": "Syrians in Lebanon's MICS",
+  "country": "Lebanon",
+  "link": "https://www.jointdatacenter.org/lebanon-statistical-refugees-2023/",
+  "link_match": "exact",
+  "link_source": "partner / international organisation",
+  "cover": "covers/ex258.png",
+  "cover_note": "ok: web page screenshot (shows the report cover)",
+  "kind": "screenshot"
+ },
  "258": {
   "ex": "ex259",
   "title": "We contributed to a study conducted by UNHCR in Italy about the socio-economic integration of refugees",
