@@ -15,9 +15,9 @@ Covers and links feed:
 |---|---|
 | GAIN examples, 2021–2025 | 413 |
 | With a source link (original or replacement) | 153 |
-| Covers checked and in use | **48** |
-| Rejected after checking | 30 (logos, stock photos, event photos, text pages, a restricted report, a price list) |
-| Still missing a cover | 335 |
+| Covers or page screenshots checked and in use | **111** (62 report covers or first pages, 49 web page screenshots) |
+| Rejected after checking | 19 (logos, photos, wrong documents, CAPTCHA pages, a restricted report) |
+| Still missing a cover | 302 |
 
 ## Files
 
@@ -27,7 +27,7 @@ Covers and links feed:
 | `covers/exNNN.png` | Checked cover thumbnails |
 | `data/cover_fetch_log.csv` | What happened with each link on the last fetch |
 | `data/story_covers.json` | Export for the scrollytelling page (`tools/export_for_story.py`) |
-| `tools/fetch_covers.py` | Renders page 1 of linked PDFs, or saves a web page's preview image |
+| `tools/fetch_covers.py` | Finds an image per example: a linked PDF (page 1), a report PDF linked from the page, a cover image on the page, or a screenshot of the page (headless browser; cookie banners hidden, never accepted) |
 | `tools/export_for_story.py` | Builds `story_covers.json` from checked rows |
 
 **IDs:** `exNNN` is the 1-based row in the GAIN group roster (`analysis_ready_group_roster.csv`);
@@ -38,7 +38,7 @@ Covers and links feed:
 
 1. **Add links.** Fill `source_url` (and `url_found_by`) in `data/gain_examples.csv`: from the respondent,
    the NSO website, the UNHCR or World Bank microdata libraries, or a web search on title + organisation + country.
-2. **Fetch.** `pip install pymupdf requests`, then `python tools/fetch_covers.py`.
+2. **Fetch.** `pip install pymupdf requests beautifulsoup4 playwright`, `python -m playwright install chromium`, then `python tools/fetch_covers.py`.
 3. **Check every new image by eye.** Set `cover_status` to `ok`, `ok: <note>` (e.g. questionnaire first page)
    or `rejected: <reason>`; delete rejected images; fill `checked_on`.
 4. **Export.** `python tools/export_for_story.py`, then send the new covers and `story_covers.json` to the
@@ -49,6 +49,7 @@ Covers and links feed:
 - **30 Sep 2026:** links found by web search for the 7 featured story examples; covers for Burkina Faso INSD (ESEP-PDI 2024), the African Union 4th School on Migration Statistics report, and the UBOS 2024 census report. Still to check by hand in a browser: Nigeria NBS (microdata catalogue), Philippines PSA (press release), Thailand (2025 module not yet published).
 
 - **30 Sep 2026 (NSO website pass):** 171 examples searched on NSO and organisation websites: the 34 whose link was broken, blocked or generic, and the 137 country-led 2024–2025 examples without a link, with NSO-list countries (`gain_sdg_workstream/data/nso_census_targets.csv`) first. Result: 94 exact, 31 related, 17 section pages, 29 not found. 36 new covers kept after checking, 20 rejected. Links still to open by hand (sites block scripts): PSA Philippines, IDB, UNDP, UNRWA, BPS Indonesia, dofi.ibz.be, ESCWA, Liechtenstein. Six links are news articles, flagged in `replacement_source`. The session's web-search limit was reached, so some later countries were searched by browsing sites only (Kenya, Morocco, Moldova, Burundi, CAR, South Sudan, Rwanda, Cameroon, Sweden, Bangladesh, Egypt, Sudan, Mozambique, DRC) and deserve a second pass.
+- **30 Sep 2026 (better cover search):** the fetcher now looks for report PDFs linked from a page, cover images on the page, and otherwise takes a screenshot of the page itself, retrying blocked sites in a headless browser. Over 97 linked examples without a cover: 63 kept (49 page screenshots), 16 rejected (wrong PDFs picked up from pages, photos, CAPTCHA pages, a pop-up), 18 links still failing.
 - **Next:** institution-led examples (UNHCR, World Bank / JDC, IOM, JIPS, IDMC, UNICEF…) and the 2021–2023 rounds.
 
 ## Priorities

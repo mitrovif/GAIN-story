@@ -29,6 +29,7 @@ for r in rows:
         "link_source": r.get("replacement_source", "") if link == rep else "",
         "cover": r["cover_file"] if has_cover else "",
         "cover_note": r["cover_status"] if has_cover else "",
+        "kind": ("screenshot" if "screenshot" in r["cover_status"] else "cover") if has_cover else "",
     }
 path = os.path.join(ROOT, "data", "story_covers.json")
 with open(path, "w", encoding="utf-8") as f:

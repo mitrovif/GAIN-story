@@ -7,7 +7,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex002.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "2": {
   "ex": "ex003",
@@ -17,7 +18,8 @@
   "link_match": "exact",
   "link_source": "news article (no official page found)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "3": {
   "ex": "ex004",
@@ -26,8 +28,9 @@
   "link": "https://stat.gov.tm/en/population-census",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex004.png",
+  "cover_note": "ok: first page of census results",
+  "kind": "cover"
  },
  "4": {
   "ex": "ex005",
@@ -36,8 +39,9 @@
   "link": "https://data.unhcr.org/en/documents/details/111483",
   "link_match": "related",
   "link_source": "partner / international organisation",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex005.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "6": {
   "ex": "ex007",
@@ -47,7 +51,8 @@
   "link_match": "original",
   "link_source": "",
   "cover": "covers/ex007.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "7": {
   "ex": "ex008",
@@ -56,8 +61,9 @@
   "link": "https://resultats2024.rgphapps.ma/",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex008.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "8": {
   "ex": "ex009",
@@ -67,7 +73,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "10": {
   "ex": "ex011",
@@ -77,7 +84,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex011.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "11": {
   "ex": "ex012",
@@ -87,7 +95,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex012.png",
-  "cover_note": "ok: publication banner"
+  "cover_note": "ok: publication banner",
+  "kind": "cover"
  },
  "13": {
   "ex": "ex014",
@@ -97,7 +106,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex014.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "14": {
   "ex": "ex015",
@@ -106,8 +116,9 @@
   "link": "https://www.knbs.or.ke/reports/kdhs-2022/",
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex015.png",
+  "cover_note": "ok: web page screenshot (related: 2022 KDHS)",
+  "kind": "screenshot"
  },
  "25": {
   "ex": "ex026",
@@ -117,7 +128,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex026.png",
-  "cover_note": "ok: census manual cover (related)"
+  "cover_note": "ok: census manual cover (related)",
+  "kind": "cover"
  },
  "28": {
   "ex": "ex029",
@@ -126,8 +138,9 @@
   "link": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Migration-Integration/_inhalt.html",
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex029.png",
+  "cover_note": "ok: web page screenshot (section page)",
+  "kind": "screenshot"
  },
  "29": {
   "ex": "ex030",
@@ -137,7 +150,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex030.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "32": {
   "ex": "ex033",
@@ -147,7 +161,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "33": {
   "ex": "ex034",
@@ -157,7 +172,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "35": {
   "ex": "ex036",
@@ -167,7 +183,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex036.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "36": {
   "ex": "ex037",
@@ -177,7 +194,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex037.png",
-  "cover_note": "ok: title page (related: 2019 census volume)"
+  "cover_note": "ok: title page (related: 2019 census volume)",
+  "kind": "cover"
  },
  "38": {
   "ex": "ex039",
@@ -187,7 +205,8 @@
   "link_match": "exact",
   "link_source": "partner / international organisation",
   "cover": "covers/ex039.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "44": {
   "ex": "ex045",
@@ -197,7 +216,8 @@
   "link_match": "exact",
   "link_source": "news article (no official page found)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "47": {
   "ex": "ex048",
@@ -206,8 +226,9 @@
   "link": "https://microdata.nigerianstat.gov.ng/index.php/catalog/182",
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex048.png",
+  "cover_note": "ok: related (NBS Demographic Bulletin)",
+  "kind": "cover"
  },
  "50": {
   "ex": "ex051",
@@ -217,7 +238,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex051.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "52": {
   "ex": "ex053",
@@ -227,7 +249,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "53": {
   "ex": "ex054",
@@ -237,7 +260,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex054.png",
-  "cover_note": "ok: same report as ex051"
+  "cover_note": "ok: same report as ex051",
+  "kind": "cover"
  },
  "54": {
   "ex": "ex055",
@@ -247,7 +271,8 @@
   "link_match": "exact",
   "link_source": "partner / international organisation",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "55": {
   "ex": "ex056",
@@ -256,8 +281,9 @@
   "link": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/earlyintegrationoutcomesforrefugeesresettledinenglandandwales/2015to2021",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex056.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "56": {
   "ex": "ex057",
@@ -267,7 +293,8 @@
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "57": {
   "ex": "ex058",
@@ -276,8 +303,9 @@
   "link": "https://rtc-cea.cepal.org/es/documento/guia-practica-para-la-produccion-de-estadisticas-armonizadas-sobre-desplazamiento-forzado",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex058.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "58": {
   "ex": "ex059",
@@ -287,7 +315,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "60": {
   "ex": "ex061",
@@ -297,7 +326,8 @@
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "61": {
   "ex": "ex062",
@@ -306,8 +336,9 @@
   "link": "https://microdata.pcbs.gov.ps/PCBS-Metadata-en-v5.2/index.php/catalog/708",
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex062.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "63": {
   "ex": "ex064",
@@ -316,8 +347,9 @@
   "link": "https://www.nso.go.th/nsoweb/main/summano/aE",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex064.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "64": {
   "ex": "ex065",
@@ -327,7 +359,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex065.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "65": {
   "ex": "ex066",
@@ -337,7 +370,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "66": {
   "ex": "ex067",
@@ -347,7 +381,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "67": {
   "ex": "ex068",
@@ -357,7 +392,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex068.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "75": {
   "ex": "ex076",
@@ -366,8 +402,9 @@
   "link": "https://www.gov.uk/government/statistics/irregular-migration-to-the-uk-year-ending-june-2024",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex076.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "78": {
   "ex": "ex079",
@@ -377,7 +414,8 @@
   "link_match": "exact",
   "link_source": "partner / international organisation",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "81": {
   "ex": "ex082",
@@ -387,7 +425,8 @@
   "link_match": "exact",
   "link_source": "partner / international organisation",
   "cover": "covers/ex082.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "83": {
   "ex": "ex084",
@@ -396,8 +435,9 @@
   "link": "https://www.ine.es/infografias/ucranianos/ucranianos.htm",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex084.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "84": {
   "ex": "ex085",
@@ -406,8 +446,9 @@
   "link": "https://www.jointdatacenter.org/activites/displaced-and-stateless-populations-in-car/",
   "link_match": "exact",
   "link_source": "partner / international organisation",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex085.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "88": {
   "ex": "ex089",
@@ -417,7 +458,8 @@
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "90": {
   "ex": "ex091",
@@ -426,8 +468,9 @@
   "link": "https://www.ilo.org/resource/article/ethiopia-reviews-progress-reintegration-and-labour-migration-coordination",
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex091.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "91": {
   "ex": "ex092",
@@ -437,7 +480,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex092.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "92": {
   "ex": "ex093",
@@ -447,7 +491,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex093.png",
-  "cover_note": "ok: first page of the article"
+  "cover_note": "ok: first page of the article",
+  "kind": "cover"
  },
  "93": {
   "ex": "ex094",
@@ -457,7 +502,8 @@
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "94": {
   "ex": "ex095",
@@ -467,7 +513,8 @@
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "101": {
   "ex": "ex102",
@@ -477,7 +524,8 @@
   "link_match": "exact",
   "link_source": "partner / international organisation",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "102": {
   "ex": "ex103",
@@ -487,7 +535,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "103": {
   "ex": "ex104",
@@ -496,8 +545,9 @@
   "link": "https://www.jips.org/news/strengthening-the-data-systems-and-capacities-of-the-idp-committee-in-azerbaijan/",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex104.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "104": {
   "ex": "ex105",
@@ -507,7 +557,8 @@
   "link_match": "original",
   "link_source": "",
   "cover": "covers/ex105.png",
-  "cover_note": "ok: first page of the questionnaire, not a report"
+  "cover_note": "ok: first page of the questionnaire, not a report",
+  "kind": "cover"
  },
  "105": {
   "ex": "ex106",
@@ -517,7 +568,8 @@
   "link_match": "exact",
   "link_source": "partner / international organisation",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "109": {
   "ex": "ex110",
@@ -526,8 +578,9 @@
   "link": "https://ins-cameroun.cm/mics-7-au-cameroun/",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex110.png",
+  "cover_note": "ok: first page (article on MICS7)",
+  "kind": "cover"
  },
  "110": {
   "ex": "ex111",
@@ -537,7 +590,8 @@
   "link_match": "original",
   "link_source": "",
   "cover": "covers/ex111.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "111": {
   "ex": "ex112",
@@ -546,8 +600,9 @@
   "link": "https://www.knbs.or.ke/wp-content/uploads/2025/01/2024-25-Kenya-Integrated-Household-Budget-Survey-Pilot-Report.pdf",
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex112.png",
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "112": {
   "ex": "ex113",
@@ -557,7 +612,8 @@
   "link_match": "original",
   "link_source": "",
   "cover": "covers/ex113.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "113": {
   "ex": "ex114",
@@ -567,7 +623,8 @@
   "link_match": "original",
   "link_source": "",
   "cover": "covers/ex114.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "114": {
   "ex": "ex115",
@@ -577,7 +634,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex115.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "115": {
   "ex": "ex116",
@@ -586,8 +644,9 @@
   "link": "https://www.knbs.or.ke/wp-content/uploads/2024/05/2024-Economic-Survey.pdf",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex116.png",
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "116": {
   "ex": "ex117",
@@ -597,7 +656,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex117.png",
-  "cover_note": "ok: related (EHCVM 2021 report)"
+  "cover_note": "ok: related (EHCVM 2021 report)",
+  "kind": "cover"
  },
  "117": {
   "ex": "ex118",
@@ -606,8 +666,9 @@
   "link": "https://www.ssb.no/befolkning/innvandrere/artikler/hvordan-presterer-flyktninger-pa-skolebenken",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex118.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "118": {
   "ex": "ex119",
@@ -616,8 +677,9 @@
   "link": "https://www.jointdatacenter.org/activites/internally-displaced-people-in-yemen/",
   "link_match": "exact",
   "link_source": "partner / international organisation",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex119.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "119": {
   "ex": "ex120",
@@ -627,7 +689,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex120.png",
-  "cover_note": "ok: newsletter announcing the survey"
+  "cover_note": "ok: newsletter announcing the survey",
+  "kind": "cover"
  },
  "122": {
   "ex": "ex123",
@@ -636,8 +699,9 @@
   "link": "https://www.geostat.ge/en/modules/categories/909/the-geographical-distribution-of-the-population-and-internal-migration",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex123.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "123": {
   "ex": "ex124",
@@ -647,7 +711,8 @@
   "link_match": "original",
   "link_source": "",
   "cover": "covers/ex124.png",
-  "cover_note": "ok: report cover from the page preview"
+  "cover_note": "ok: report cover from the page preview",
+  "kind": "cover"
  },
  "127": {
   "ex": "ex128",
@@ -657,7 +722,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex128.png",
-  "cover_note": "ok: related (2019-2023 trend report)"
+  "cover_note": "ok: related (2019-2023 trend report)",
+  "kind": "cover"
  },
  "131": {
   "ex": "ex132",
@@ -666,8 +732,9 @@
   "link": "https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/ukrainske-flyktninger-etter-introduksjonsprogram-pa-arbeidsmarkedet",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex132.png",
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "134": {
   "ex": "ex135",
@@ -676,8 +743,9 @@
   "link": "https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/en-av-tre-ukrainere-er-i-jobb",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex135.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "135": {
   "ex": "ex136",
@@ -686,8 +754,9 @@
   "link": "https://www.icasees.org/index.php/actualites/423-centrafrique-rgph-4-licasees-presente-les-resultats-provisoires-globaux-et-preliminaires-au-ctir",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex136.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "137": {
   "ex": "ex138",
@@ -697,7 +766,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex138.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "138": {
   "ex": "ex139",
@@ -706,8 +776,9 @@
   "link": "https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/flyktninger-i-og-utenfor-arbeidsmarkedet-2023/_/attachment/inline/346960db-ce5c-4305-ad52-637bc5ce8c55:94dcbfc7c9e1810dd8a36ce75fd16524ab739f03/RAPP2025-01.pdf",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex139.png",
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "140": {
   "ex": "ex141",
@@ -716,8 +787,9 @@
   "link": "https://www.ssb.no/befolkning/innvandrere/artikler/mange-enslige-mindrearige-flyktninger-fra-ukraina",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex141.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "144": {
   "ex": "ex145",
@@ -726,8 +798,9 @@
   "link": "https://www.internal-displacement.org/countries/south-africa",
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex145.png",
+  "cover_note": "ok: web page screenshot (section page)",
+  "kind": "screenshot"
  },
  "147": {
   "ex": "ex148",
@@ -736,8 +809,9 @@
   "link": "https://www.ssb.no/befolkning/innvandrere/artikler/stor-andel-med-lavinntekt-blant-syriske-kvoteflyktninger",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex148.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "149": {
   "ex": "ex150",
@@ -747,7 +821,8 @@
   "link_match": "exact",
   "link_source": "partner / international organisation",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "152": {
   "ex": "ex153",
@@ -756,8 +831,9 @@
   "link": "https://www.internal-displacement.org/countries/uganda/",
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex153.png",
+  "cover_note": "ok: web page screenshot (section page)",
+  "kind": "screenshot"
  },
  "160": {
   "ex": "ex161",
@@ -767,7 +843,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex161.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "167": {
   "ex": "ex168",
@@ -776,8 +853,9 @@
   "link": "https://www.internal-displacement.org/countries/marshall-islands",
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex168.png",
+  "cover_note": "ok: web page screenshot (section page)",
+  "kind": "screenshot"
  },
  "170": {
   "ex": "ex171",
@@ -787,7 +865,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "173": {
   "ex": "ex174",
@@ -797,7 +876,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex174.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "176": {
   "ex": "ex177",
@@ -807,7 +887,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex177.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "178": {
   "ex": "ex179",
@@ -817,7 +898,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "183": {
   "ex": "ex184",
@@ -826,8 +908,9 @@
   "link": "https://dosweb.dos.gov.jo/DataBank/Labour_Force/Employment_Unemployment/Labor_Force_Survey_questionnaire_2024.pdf",
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex184.png",
+  "cover_note": "ok: first page of the questionnaire",
+  "kind": "cover"
  },
  "184": {
   "ex": "ex185",
@@ -836,8 +919,9 @@
   "link": "https://www.armstat.am/file/article/demog_2024_7.pdf",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex185.png",
+  "cover_note": "ok: first page of the migration chapter",
+  "kind": "cover"
  },
  "186": {
   "ex": "ex187",
@@ -847,7 +931,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex187.png",
-  "cover_note": "ok: related (Ministry of the Interior report)"
+  "cover_note": "ok: related (Ministry of the Interior report)",
+  "kind": "cover"
  },
  "189": {
   "ex": "ex190",
@@ -857,7 +942,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "192": {
   "ex": "ex193",
@@ -867,7 +953,8 @@
   "link_match": "exact",
   "link_source": "news article (no official page found)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "194": {
   "ex": "ex195",
@@ -876,8 +963,9 @@
   "link": "https://igm.gov.md/ro/statistica",
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex195.png",
+  "cover_note": "ok: web page screenshot (section page)",
+  "kind": "screenshot"
  },
  "198": {
   "ex": "ex199",
@@ -887,7 +975,8 @@
   "link_match": "related",
   "link_source": "news article (no official page found)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "200": {
   "ex": "ex201",
@@ -897,7 +986,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex201.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "203": {
   "ex": "ex204",
@@ -907,7 +997,8 @@
   "link_match": "original",
   "link_source": "",
   "cover": "covers/ex204.png",
-  "cover_note": "ok: data-portal banner, not a report"
+  "cover_note": "ok: data-portal banner, not a report",
+  "kind": "cover"
  },
  "205": {
   "ex": "ex206",
@@ -917,7 +1008,8 @@
   "link_match": "related",
   "link_source": "news article (no official page found)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "207": {
   "ex": "ex208",
@@ -927,7 +1019,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex208.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "208": {
   "ex": "ex209",
@@ -937,7 +1030,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "209": {
   "ex": "ex210",
@@ -946,8 +1040,9 @@
   "link": "https://www.statssa.gov.za/?p=14709",
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex210.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "212": {
   "ex": "ex213",
@@ -956,8 +1051,9 @@
   "link": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/methodologies/refugeeintegrationoutcomesriodatalinkagepilot",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex213.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "216": {
   "ex": "ex217",
@@ -967,7 +1063,8 @@
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "217": {
   "ex": "ex218",
@@ -976,8 +1073,9 @@
   "link": "https://www.armstat.am/en/?nid=944",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex218.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "227": {
   "ex": "ex228",
@@ -986,8 +1084,9 @@
   "link": "https://www.sida.se/en/for-partners/methods-materials",
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex228.png",
+  "cover_note": "ok: web page screenshot (section page)",
+  "kind": "screenshot"
  },
  "228": {
   "ex": "ex229",
@@ -996,8 +1095,9 @@
   "link": "https://www.dane.gov.co/index.php/estadisticas-por-tema/pobreza-y-condiciones-de-vida/encuesta-de-goce-efectivo-de-derechos-eged",
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex229.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "230": {
   "ex": "ex231",
@@ -1007,7 +1107,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex231.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "233": {
   "ex": "ex234",
@@ -1016,8 +1117,9 @@
   "link": "https://www.ssb.no/befolkning/flytting/artikler/uregistrert-utvandring-fra-norge/_/attachment/inline/2b780628-56b2-400c-ad12-125a2b9894bc:a679064cdc81beb854dbbb730f1e0409780d1b7e/NOT2024-03.pdf",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex234.png",
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "234": {
   "ex": "ex235",
@@ -1027,7 +1129,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "235": {
   "ex": "ex236",
@@ -1037,7 +1140,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex236.png",
-  "cover_note": "ok: related (2021 edition)"
+  "cover_note": "ok: related (2021 edition)",
+  "kind": "cover"
  },
  "236": {
   "ex": "ex237",
@@ -1046,8 +1150,9 @@
   "link": "https://www.gov.si/en/topics/mednarodna-zascita/",
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex237.png",
+  "cover_note": "ok: web page screenshot (section page)",
+  "kind": "screenshot"
  },
  "238": {
   "ex": "ex239",
@@ -1057,7 +1162,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex239.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "241": {
   "ex": "ex242",
@@ -1066,8 +1172,9 @@
   "link": "https://www.ssb.no/befolkning/innvandrere/artikler/overgang-til-norsk-statsborgerskap-1977-2023",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex242.png",
+  "cover_note": "ok: related (1977-2021 edition)",
+  "kind": "cover"
  },
  "244": {
   "ex": "ex245",
@@ -1076,8 +1183,9 @@
   "link": "https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/en-av-tre-ukrainere-er-i-jobb",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex245.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "252": {
   "ex": "ex253",
@@ -1087,7 +1195,8 @@
   "link_match": "original",
   "link_source": "",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "253": {
   "ex": "ex254",
@@ -1096,8 +1205,9 @@
   "link": "https://www.jointdatacenter.org/activites/refugees-in-mauritania/",
   "link_match": "related",
   "link_source": "partner / international organisation",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex254.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "255": {
   "ex": "ex256",
@@ -1107,7 +1217,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex256.png",
-  "cover_note": "ok: first page of press release (refugee inclusion not confirmed)"
+  "cover_note": "ok: first page of press release (refugee inclusion not confirmed)",
+  "kind": "cover"
  },
  "256": {
   "ex": "ex257",
@@ -1116,8 +1227,9 @@
   "link": "https://www.jointdatacenter.org/activites/south-sudan-hbs/",
   "link_match": "exact",
   "link_source": "partner / international organisation",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex257.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "258": {
   "ex": "ex259",
@@ -1127,7 +1239,8 @@
   "link_match": "exact",
   "link_source": "partner / international organisation",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "259": {
   "ex": "ex260",
@@ -1137,7 +1250,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex260.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "260": {
   "ex": "ex261",
@@ -1146,8 +1260,9 @@
   "link": "https://www.istat.it/informazioni-sulla-rilevazione/indagine-su-bambini-e-ragazzi-comportamenti-atteggiamenti-e-progetti-futuri/",
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex261.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "261": {
   "ex": "ex262",
@@ -1157,7 +1272,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex262.png",
-  "cover_note": "ok: same report as ex051"
+  "cover_note": "ok: same report as ex051",
+  "kind": "cover"
  },
  "263": {
   "ex": "ex264",
@@ -1167,7 +1283,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "265": {
   "ex": "ex266",
@@ -1177,7 +1294,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "267": {
   "ex": "ex268",
@@ -1187,7 +1305,8 @@
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "269": {
   "ex": "ex270",
@@ -1197,7 +1316,8 @@
   "link_match": "exact",
   "link_source": "partner / international organisation",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "270": {
   "ex": "ex271",
@@ -1206,8 +1326,9 @@
   "link": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Migration-Integration/_inhalt.html",
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex271.png",
+  "cover_note": "ok: web page screenshot (section page)",
+  "kind": "screenshot"
  },
  "271": {
   "ex": "ex272",
@@ -1216,8 +1337,9 @@
   "link": "https://migration.gov.gr/en/statistika/",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex272.png",
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "273": {
   "ex": "ex274",
@@ -1227,7 +1349,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex274.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "281": {
   "ex": "ex282",
@@ -1236,8 +1359,9 @@
   "link": "https://www.istat.it/infografiche/giornata-internazionale-dei-migranti-18-dicembre-2025/",
   "link_match": "related",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex282.png",
+  "cover_note": "ok: web page screenshot (related)",
+  "kind": "screenshot"
  },
  "282": {
   "ex": "ex283",
@@ -1247,7 +1371,8 @@
   "link_match": "related",
   "link_source": "partner / international organisation",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "283": {
   "ex": "ex284",
@@ -1257,7 +1382,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex284.png",
-  "cover_note": "ok: presentation title slide (related)"
+  "cover_note": "ok: presentation title slide (related)",
+  "kind": "cover"
  },
  "284": {
   "ex": "ex285",
@@ -1266,8 +1392,9 @@
   "link": "https://www.inegi.org.mx/programas/envipe/2018/",
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex285.png",
+  "cover_note": "ok: web page screenshot (section page)",
+  "kind": "screenshot"
  },
  "286": {
   "ex": "ex287",
@@ -1277,7 +1404,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "291": {
   "ex": "ex292",
@@ -1286,8 +1414,9 @@
   "link": "https://www.jointdatacenter.org/activites/refugees-and-idps-in-sudan/",
   "link_match": "exact",
   "link_source": "partner / international organisation",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex292.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "294": {
   "ex": "ex295",
@@ -1296,8 +1425,9 @@
   "link": "https://www.jointdatacenter.org/activites/refugees-in-bangladesh/",
   "link_match": "exact",
   "link_source": "partner / international organisation",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex295.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "295": {
   "ex": "ex296",
@@ -1306,8 +1436,9 @@
   "link": "https://www.jointdatacenter.org/activites/displaced-and-stateless-populations-in-car/",
   "link_match": "exact",
   "link_source": "partner / international organisation",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex296.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "297": {
   "ex": "ex298",
@@ -1316,8 +1447,9 @@
   "link": "https://www.jointdatacenter.org/activites/refugees-in-iraq/",
   "link_match": "exact",
   "link_source": "partner / international organisation",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex298.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "298": {
   "ex": "ex299",
@@ -1327,7 +1459,8 @@
   "link_match": "exact",
   "link_source": "partner / international organisation",
   "cover": "covers/ex299.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "299": {
   "ex": "ex300",
@@ -1336,8 +1469,9 @@
   "link": "https://www.jointdatacenter.org/activites/refugees-in-turkiye/",
   "link_match": "exact",
   "link_source": "partner / international organisation",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex300.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "306": {
   "ex": "ex307",
@@ -1347,7 +1481,8 @@
   "link_match": "original",
   "link_source": "",
   "cover": "covers/ex307.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "308": {
   "ex": "ex309",
@@ -1357,7 +1492,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "309": {
   "ex": "ex310",
@@ -1366,8 +1502,9 @@
   "link": "https://www.jointdatacenter.org/data-activities/inclusion/",
   "link_match": "landing",
   "link_source": "partner / international organisation",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex310.png",
+  "cover_note": "ok: web page screenshot (section page)",
+  "kind": "screenshot"
  },
  "310": {
   "ex": "ex311",
@@ -1376,8 +1513,9 @@
   "link": "https://www.jointdatacenter.org/activites/refugees-in-mauritania/",
   "link_match": "exact",
   "link_source": "partner / international organisation",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex311.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "314": {
   "ex": "ex315",
@@ -1386,8 +1524,9 @@
   "link": "https://www.jointdatacenter.org/malawi-dhs-2024/",
   "link_match": "exact",
   "link_source": "partner / international organisation",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex315.png",
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "315": {
   "ex": "ex316",
@@ -1397,7 +1536,8 @@
   "link_match": "exact",
   "link_source": "partner / international organisation",
   "cover": "covers/ex316.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "317": {
   "ex": "ex318",
@@ -1406,8 +1546,9 @@
   "link": "https://krso.gov.krd/en/indicator",
   "link_match": "landing",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex318.png",
+  "cover_note": "ok: web page screenshot (section page)",
+  "kind": "screenshot"
  },
  "318": {
   "ex": "ex319",
@@ -1417,7 +1558,8 @@
   "link_match": "original",
   "link_source": "",
   "cover": "covers/ex319.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "319": {
   "ex": "ex320",
@@ -1426,8 +1568,9 @@
   "link": "https://www.ubos.org/wp-content/uploads/publications/05_2026Uganda_Harmonised_Integrated_Survey_2021-22_to_2024-25-Presentation.pdf",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex320.png",
+  "cover_note": "ok: first slide of the dissemination presentation",
+  "kind": "cover"
  },
  "320": {
   "ex": "ex321",
@@ -1436,8 +1579,9 @@
   "link": "https://www.ubos.org/the-uganda-malaria-indicator-survey-2024-25-report-released/",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex321.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "321": {
   "ex": "ex322",
@@ -1447,7 +1591,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "covers/ex322.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "323": {
   "ex": "ex324",
@@ -1457,7 +1602,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "324": {
   "ex": "ex325",
@@ -1467,7 +1613,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "325": {
   "ex": "ex326",
@@ -1477,7 +1624,8 @@
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "326": {
   "ex": "ex327",
@@ -1487,7 +1635,8 @@
   "link_match": "original",
   "link_source": "",
   "cover": "covers/ex327.png",
-  "cover_note": "ok"
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "367": {
   "ex": "ex368",
@@ -1496,8 +1645,9 @@
   "link": "https://microdata.pcbs.gov.ps/PCBS-Metadata-en-v5.2/index.php/catalog/715",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex368.png",
+  "cover_note": "ok: web page screenshot",
+  "kind": "screenshot"
  },
  "369": {
   "ex": "ex370",
@@ -1507,7 +1657,8 @@
   "link_match": "exact",
   "link_source": "news article (no official page found)",
   "cover": "",
-  "cover_note": ""
+  "cover_note": "",
+  "kind": ""
  },
  "370": {
   "ex": "ex371",
@@ -1516,8 +1667,9 @@
   "link": "https://www.knbs.or.ke/wp-content/uploads/2021/09/Economic-Survey-2021.pdf",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex371.png",
+  "cover_note": "ok",
+  "kind": "cover"
  },
  "402": {
   "ex": "ex403",
@@ -1526,7 +1678,8 @@
   "link": "https://www.knbs.or.ke/wp-content/uploads/2022/05/2022-Economic-Survey1.pdf",
   "link_match": "exact",
   "link_source": "official (NSO, ministry or organisation named)",
-  "cover": "",
-  "cover_note": ""
+  "cover": "covers/ex403.png",
+  "cover_note": "ok",
+  "kind": "cover"
  }
 }
