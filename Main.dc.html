@@ -246,7 +246,7 @@ a{color:#4cc3c9}a:hover{color:#8fe0e4}
 <article class="card">
 <div class="eyebrow"><span class="pill latest">LATEST ROUND</span>OVERALL TRENDS · 2025 · REGIONS</div>
 <p class="msg">Africa reported the highest number of country-led examples in 2025. Among those using the Recommendations, the region accounted for almost half of all country-led examples (23 of 51).</p>
-<p class="sub">Europe follows with 12. The globe stops at each region in turn; point at an example to pause it. Keep scrolling to see all five rounds.</p>
+<p class="sub">Europe follows with 12. Keep scrolling to see all five rounds.</p>
 <button class="exbtn" type="button" onClick="{{pick.e150}}"><span class="exmeta">DR CONGO · 2025 · SURVEY</span><span class="extitle">Survey on Household Living Conditions, with refugee and IDP modules</span></button>
 <a class="caselink" href="https://egrisstats.org/implementation/case-studies/democratic-republic-congo-2025/" target="_blank" rel="noopener"><span class="exmeta">NEW · EGRISS CASE STUDY · DR CONGO · 2026</span><span>Incorporating IRIS and IRRS into the 2025 Survey on Household Living Conditions ↗</span></a>
 <div class="src">GAIN Tables 2025, Table 1.6</div>
@@ -552,41 +552,8 @@ class Component extends DCLogic {
       legend = byLead
         ? [{ label: 'Country-led (coral, as in the Annual Report)', sw: 'lc' }, { label: 'Institution-led', sw: 'li' }, { label: 'Faded inner ring: Recommendations used', sw: 'fw4' }]
         : [{ label: 'IRRS', sw: 'fw0' }, { label: 'IRIS', sw: 'fw1' }, { label: 'IROSS', sw: 'fw2' }, { label: 'Mixed use: circle split by the Recommendations combined', sw: 'fw3' }, { label: 'Undetermined', sw: 'fw4' }, { label: 'Inner ring: country', sw: 'lc' }, { label: 'institution', sw: 'li' }];
-    } else if (layout.indexOf('regions') === 0) {
-      var ry = layout.split(':')[1] || '2025', ryN = ry === 'all' ? null : +ry;
-      var M = this.map, span = M.lat[1] - M.lat[0], RG = this.regions();
-      title = 'COUNTRY-LED EXAMPLES USING THE RECOMMENDATIONS, BY REGION · ' + (ryN || '2021–2025') + ' · POINT TO PAUSE';
-      var aL = g.wide ? Math.max(470, g.L - 60) : 8, aR = g.wide ? g.W - 24 : g.W - 8, aT = g.T - 10, aB = g.wide ? g.B + 40 : g.B;
-      var byC = {}, perR = [0, 0, 0, 0, 0];
-      rows.forEach(function (d) {
-        if (!((ryN == null || d.y === ryN) && d.lead === 0 && d.use && d.reg >= 0)) return;
-        perR[d.reg]++;
-        if (self.lonlat(d.country)) (byC[d.country] = byC[d.country] || []).push(d);
-      });
-      var maxN = 1;
-      Object.keys(byC).forEach(function (c) { maxN = Math.max(maxN, byC[c].length); });
-      // room on the right for the list of regions on wide screens
-      var listW = g.wide ? 230 : 0;
-      var hs = Math.min(0.07, 0.42 / (maxN + 1));
-      var gcx = (aL + aR - listW) / 2, gcy = (aT + aB) / 2 + 6;
-      var Rg = Math.min((aR - aL - listW) / 2, (aB - aT) / 2) / (1.1 + hs * (maxN + 1) * 0.45);
-      var bead = Math.max(2.2, Math.min(7, Rg * hs * 0.46));
-      var cts = [];
-      Object.keys(byC).forEach(function (c) {
-        var ll = self.lonlat(c), L2 = byC[c];
-        L2.sort(function (a2, b2) { return a2.id - b2.id; });
-        cts.push({ c: c, lon: ll[0], lat: ll[1], n: L2.length, nU: L2.length, rg: L2[0].reg, rings: M.hl[c] || [] });
-        L2.forEach(function (d, k) {
-          put(d.id, 0, { globe: 1, rg: d.reg, lon: ll[0], lat: ll[1], h: 1 + hs * (k + 0.7), cx: gcx, cy: gcy, R: Rg, x: gcx, y: gcy, r: bead, k: 'cU', v: 1, o: self.hash(d.id, 15) });
-        });
-      });
-      // the globe visits the regions from the most examples to the fewest
-      var order = [0, 1, 2, 3, 4].filter(function (r) { return perR[r] > 0; }).sort(function (a2, b2) { return (perR[b2] - perR[a2]) || (a2 - b2); });
-      var listX = g.wide ? aR - 8 : aL + 8, listY = g.wide ? gcy - 2.5 * 40 : aB - order.length * 22;
-      deco.push({ t: 'globe', reg: true, cx: gcx, cy: gcy, R: Rg, hs: hs, maxN: maxN, cts: cts, land: M.land, lat1: M.lat[1], span: span, minLabel: 1, order: order, perR: perR, tot: perR.reduce(function (a2, b2) { return a2 + b2; }, 0), listX: listX, listY: listY, wide: g.wide });
-      legend = [{ label: 'Country-led, using the Recommendations', sw: 'cU' }];
-    } else if (layout.indexOf('challenges') === 0) {
-      var isR = false;
+    } else if (layout.indexOf('regions') === 0 || layout.indexOf('challenges') === 0) {
+      var isR = layout.indexOf('regions') === 0;
       var ry = layout.split(':')[1] || '2025', ryN = ry === 'all' ? null : +ry;
       title = isR ? 'COUNTRY-LED EXAMPLES USING THE RECOMMENDATIONS, BY REGION · ' + (ryN || '2021–2025') : 'CHALLENGES WITH IMPLEMENTATION · ' + (ryN || '2024–2025') + ' · MULTIPLE CHOICE, ONE ENTRY PER ANSWER';
       var cats = isR ? [4, 3, 2, 1, 0] : [8, 7, 6, 5, 4, 3, 2, 1, 0];
@@ -704,29 +671,11 @@ class Component extends DCLogic {
     this._cache[key] = out;
     return out;
   }
-  // GAIN regions, indexed as in the roster: 0 Africa, 1 Europe, 2 Americas, 3 Asia and Oceania, 4 Middle East.
-  // `poly` is a rough lon/lat outline used only to light up the land; `at` is where the globe stops (lon, lat)
-  regions() {
-    return this._reg || (this._reg = [
-      { name: 'Africa', at: [18, 4], poly: [[-20, 38], [10, 38], [32, 32], [35, 29], [43, 12], [52, 12], [52, -36], [-20, -36]] },
-      { name: 'Europe', at: [18, 50], poly: [[-30, 72], [60, 72], [60, 42], [42, 42], [26, 41], [27, 36], [-10, 35], [-30, 40]] },
-      { name: 'Americas', at: [-78, 8], poly: [[-180, 84], [-30, 84], [-30, -58], [-180, -58]] },
-      { name: 'Asia and Oceania', at: [108, 12], poly: [[60, 84], [180, 84], [180, -58], [105, -58], [95, 6], [60, 20], [62, 40], [60, 42]] },
-      { name: 'Middle East', at: [44, 28], poly: [[32, 32], [35, 29], [43, 12], [60, 12], [62, 26], [62, 40], [42, 42], [26, 41], [27, 36]] }
-    ]);
-  }
-  // a country's centre as [lon, lat]: from the map file, or a fallback for the few countries it lacks
-  lonlat(c) {
-    var M = this.map, k = M && M.cent[c];
-    if (k) return [k[0] * 360 - 180, M.lat[1] - k[1] * (M.lat[1] - M.lat[0])];
-    var F = { 'Afghanistan': [66, 34], 'Ecuador': [-78.5, -1.5], 'Guatemala': [-90.3, 15.7], 'Libya': [17, 27], 'Malaysia': [102, 4], 'Pakistan': [70, 30], 'Republic of the Congo': [15, -1], 'Syrian Arab Republic': [38.5, 35], 'United States of America': [-98, 39] };
-    return F[c] || null;
-  }
   // orthographic projection of lon/lat onto the unit sphere seen from space; z > 0 faces the reader
   // examples whose newest EGRISS case study was published in 2025 or later
   isRecentCase(id) { return !!(this.caseYear && this.caseYear[id] >= 2025); }
   orth(lon, lat) {
-    var D2R = Math.PI / 180, l0 = (this.gRot == null ? 20 : this.gRot) * D2R, f0 = (this.gTilt == null ? 12 : this.gTilt) * D2R;
+    var D2R = Math.PI / 180, l0 = (this.gRot == null ? 20 : this.gRot) * D2R, f0 = 12 * D2R;
     var la = lat * D2R, lo = lon * D2R - l0, cl = Math.cos(la);
     return [cl * Math.sin(lo), Math.cos(f0) * Math.sin(la) - Math.sin(f0) * cl * Math.cos(lo), Math.sin(f0) * Math.sin(la) + Math.cos(f0) * cl * Math.cos(lo)];
   }
@@ -750,9 +699,7 @@ class Component extends DCLogic {
       if (p.globe) {
         // place the example on the turning globe; circles on the far side fade out behind the horizon
         var q = this.orth(p.lon, p.lat), vis = Math.max(0, Math.min(1, (q[2] - 0.02) / 0.18));
-        // on the regions globe, examples outside the lit region stay faint
-        var lit = p.rg == null || this.gFocus == null || p.rg === this.gFocus;
-        p = { x: p.cx + q[0] * p.R * p.h, y: p.cy - q[1] * p.R * p.h, r: p.r * (0.8 + 0.2 * Math.max(0, q[2])) * (lit ? 1 : 0.8), k: p.k, v: p.v * vis * (lit ? 1 : 0.22), o: p.o };
+        p = { x: p.cx + q[0] * p.R * p.h, y: p.cy - q[1] * p.R * p.h, r: p.r * (0.8 + 0.2 * Math.max(0, q[2])), k: p.k, v: p.v * vis, o: p.o };
       }
       if (p.bg) {
         var gb = this.geo(), hb = function (k) { return self.hash(id, k); }, tb2 = this.reduce ? 0 : time, spanb = gb.H + 40;
@@ -882,26 +829,12 @@ class Component extends DCLogic {
         var landP = ringPath(s.land);
         ctx.fillStyle = '#2a3f78'; ctx.fill(landP);
         ctx.strokeStyle = 'rgba(217,226,239,0.16)'; ctx.lineWidth = 0.6; ctx.stroke(landP);
-        var foc = s.reg ? self.gFocus : null;
-        if (foc != null) {
-          // light up the land of the region the globe has stopped at
-          var poly = self.regions()[foc].poly, dense = [];
-          poly.forEach(function (a4, i4) {
-            var b4 = poly[(i4 + 1) % poly.length], n4 = Math.max(1, Math.ceil(Math.max(Math.abs(b4[0] - a4[0]), Math.abs(b4[1] - a4[1])) / 3));
-            for (var u = 0; u < n4; u++) dense.push((a4[0] + (b4[0] - a4[0]) * u / n4 + 180) / 360, (s.lat1 - (a4[1] + (b4[1] - a4[1]) * u / n4)) / s.span);
-          });
-          ctx.save(); ctx.clip(ringPath([dense]));
-          ctx.fillStyle = '#4f7fc9'; ctx.fill(landP);
-          ctx.strokeStyle = 'rgba(217,226,239,0.35)'; ctx.lineWidth = 0.6; ctx.stroke(landP);
-          ctx.restore();
-        }
-        // countries with examples, shaded by how many (as in the GAIN Tables maps); on the regions globe only the lit region's
+        // countries with examples, shaded by how many (as in the GAIN Tables maps)
         s.cts.forEach(function (ct) {
           if (!ct.rings.length) return;
-          var on = foc == null || ct.rg === foc;
           var cp = ringPath(ct.rings);
-          ctx.fillStyle = 'rgba(76,195,201,' + (on ? 0.28 + 0.5 * Math.min(1, ct.n / Math.max(2, s.maxN)) : 0.12).toFixed(3) + ')'; ctx.fill(cp);
-          ctx.strokeStyle = 'rgba(143,224,228,' + (on ? 0.75 : 0.2) + ')'; ctx.lineWidth = 0.8; ctx.stroke(cp);
+          ctx.fillStyle = 'rgba(76,195,201,' + (0.28 + 0.5 * Math.min(1, ct.n / Math.max(2, s.maxN))).toFixed(3) + ')'; ctx.fill(cp);
+          ctx.strokeStyle = 'rgba(143,224,228,0.75)'; ctx.lineWidth = 0.8; ctx.stroke(cp);
         });
         // night side shading for depth
         var sh = ctx.createRadialGradient(gx - R * 0.3, gy - R * 0.35, R * 0.2, gx, gy, R * 1.02);
@@ -912,7 +845,7 @@ class Component extends DCLogic {
         // columns and count bubbles, back to front
         var order = s.cts.map(function (ct) { return { ct: ct, q: P2(ct.lon, ct.lat) }; }).filter(function (o) { return o.q[2] > -0.04; });
         order.sort(function (a3, b3) { return a3.q[2] - b3.q[2]; });
-        order = order.filter(function (o) { return o.q[2] > 0.02 && (foc == null || o.ct.rg === foc); });
+        order = order.filter(function (o) { return o.q[2] > 0.02; });
         order.forEach(function (o) {
           var q = o.q, ct = o.ct, top = 1 + s.hs * (ct.n + 0.4), fade = Math.max(0, Math.min(1, (q[2] + 0.04) / 0.2));
           var bx = gx + q[0] * R, by = gy - q[1] * R, tx = gx + q[0] * R * top, ty = gy - q[1] * R * top;
@@ -931,35 +864,6 @@ class Component extends DCLogic {
             ctx.globalAlpha = alpha;
           }
         });
-        if (s.reg && !self.gHold) {
-          // the regions, most examples first (hidden while the featured example's card is open); the lit one is large, with a bar that fills until the globe moves on
-          var RGs = self.regions(), rowH = s.wide ? 40 : 22, right = s.wide;
-          ctx.textBaseline = 'middle'; ctx.textAlign = right ? 'right' : 'left';
-          s.order.forEach(function (r, i5) {
-            var y5 = s.listY + i5 * rowH, on = r === foc;
-            ctx.globalAlpha = alpha * (on ? 1 : 0.6);
-            ctx.fillStyle = on ? '#ffffff' : '#cfe0f4';
-            ctx.font = (on ? '600 ' : '400 ') + (s.wide ? (on ? 20 : 15) : (on ? 14 : 12)) + "px Figtree, 'IBM Plex Sans', sans-serif";
-            var nm = RGs[r].name, num = String(s.perR[r]);
-            if (right) {
-              ctx.fillText(nm, s.listX - (s.wide ? 44 : 30), y5);
-              ctx.font = '500 ' + (s.wide ? (on ? 20 : 15) : 12) + "px 'IBM Plex Mono', monospace"; ctx.fillStyle = on ? '#4cc3c9' : '#8db8e3';
-              ctx.fillText(num, s.listX, y5);
-            } else {
-              ctx.fillText(nm + '  ', s.listX, y5);
-              var w5 = ctx.measureText(nm + '  ').width;
-              ctx.font = "500 12px 'IBM Plex Mono', monospace"; ctx.fillStyle = on ? '#4cc3c9' : '#8db8e3';
-              ctx.fillText(num, s.listX + w5, y5);
-            }
-            if (on && self.gPhase != null && s.wide) {
-              var bw5 = 150, bx5 = s.listX - bw5;
-              ctx.fillStyle = 'rgba(207,224,244,0.18)'; ctx.fillRect(bx5, y5 + 15, bw5, 2);
-              ctx.fillStyle = '#4cc3c9'; ctx.fillRect(bx5, y5 + 15, bw5 * self.gPhase, 2);
-            }
-          });
-          ctx.globalAlpha = alpha;
-          ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
-        }
       }
       else if (s.t === 'map') {
         // quiet land so the example circles carry the map: navy land, hairline borders, outlined countries with examples
@@ -1023,33 +927,9 @@ class Component extends DCLogic {
     var st = this.state || {}, steps = this.steps();
     // the globe turns about 4 degrees a second, and holds still while an example is pointed at or open
     var gPaused = this.reduce || st.hover != null || (st.sel != null && st.sel !== -1);
+    this.gRot = (this.gRot == null ? 20 : this.gRot) - (gPaused ? 0 : dt * 0.004);
     var sc = this.scrollState();
     var act = sc.t > 0.5 ? Math.min(sc.i + 1, steps.length - 1) : sc.i;
-    var gLay = st.layout || steps[act].layout;
-    this.gRot = this.gRot == null ? 20 : this.gRot;
-    this.gTilt = this.gTilt == null ? 12 : this.gTilt;
-    if (gLay.indexOf('regions') === 0) {
-      // regions: turn to each region in turn, about 4.5 seconds a stop; hold on the featured example's region while its card is open
-      var gd = this.build(gLay).deco.filter(function (s0) { return s0.t === 'globe'; })[0], ord = gd ? gd.order : [0];
-      if (!this.gWasReg) this.gFocusT = 0;
-      this.gWasReg = true;
-      var fx = steps[act].feat;
-      var hold = !st.layout && fx != null && st.sel !== -1 && st.hover == null ? this.rows[fx].reg : null;
-      var paused = st.hover != null || (st.sel != null && st.sel !== -1);
-      if (hold == null && !paused) this.gFocusT += dt;
-      var STOP = 4500, gi = Math.floor(this.gFocusT / STOP) % ord.length;
-      this.gFocus = hold != null ? hold : ord[gi];
-      this.gHold = hold != null;
-      this.gPhase = hold != null || paused ? null : (this.gFocusT % STOP) / STOP;
-      var at = this.regions()[this.gFocus].at, ke = this.reduce ? 1 : 1 - Math.pow(0.93, dt / 16.7);
-      var dl = ((at[0] - this.gRot) % 360 + 540) % 360 - 180;
-      this.gRot += dl * ke;
-      this.gTilt += (Math.max(-30, Math.min(40, at[1] * 0.75)) - this.gTilt) * ke;
-    } else {
-      this.gWasReg = false; this.gFocus = null; this.gPhase = null; this.gHold = false;
-      this.gRot -= gPaused ? 0 : dt * 0.004;
-      this.gTilt += (12 - this.gTilt) * (this.reduce ? 1 : 1 - Math.pow(0.97, dt / 16.7));
-    }
     if (act !== (st.active || 0)) this.setState({ active: act, sel: undefined, layout: null, hover: null });
     var A = steps[sc.i], Bs = steps[Math.min(sc.i + 1, steps.length - 1)], t = sc.t;
     var la = A.layout, lb = Bs.layout;
@@ -1307,7 +1187,7 @@ class Component extends DCLogic {
     else if (st.sel !== -1 && step.feat != null && B) {
       exId = step.feat; pinned = true; featured = true;
       var fp = B.pos[this.first[exId]];
-      ax = fp.globe ? fp.cx + fp.R * 0.15 : fp.x; ay = fp.globe ? fp.cy - fp.R * 0.6 : fp.y;
+      ax = fp.x; ay = fp.y;
     }
     this.ringE = exId;
     var ex = base.ex, panelStyle = 'display: none';
