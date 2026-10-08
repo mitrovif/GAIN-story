@@ -581,7 +581,7 @@ class Component extends DCLogic {
         var wv = Math.ceil(b.length / per2) * pitch2;
         if (b.length) deco.push({ t: 'pill', x: x0, y: yc - pitch2 * per2 / 2 - 2, w: wv + 4 + pitch2 / 2, h: pitch2 * per2 + 4, c: BLUE, a: 0.16 });
         // a small globe per region, rocking about the region; pointing at it or its row picks the region out in the chart
-        if (isR) deco.push({ t: 'mini', cx: g.L + iconW / 2, cy: yc, R: iconW / 2, reg: cats[qi], x0: g.L - 8, x1: x0 - 4, y0: yc - rowH / 2, y1: yc + rowH / 2 });
+        if (isR) deco.push({ t: 'mini', cx: g.L + iconW / 2, cy: yc, R: iconW / 2, reg: cats[qi], n: b.length, x0: g.L - 8, x1: x0 - 4, y0: yc - rowH / 2, y1: yc + rowH / 2 });
         labels.push(self.label(x0 - 14, yc, names[qi], '', 'right', 'font: 400 ' + (g.wide ? 13 : 11) + 'px \'IBM Plex Sans\', sans-serif; color: #cfe0f4'));
         labels.push(self.label(x0 + wv + 12, yc, String(b.length), '', 'left', self.mono(g.wide ? 15 : 12, '#ffffff')));
       });
@@ -837,6 +837,16 @@ class Component extends DCLogic {
         ctx.globalAlpha = alpha * (on ? 1 : 0.45);
         ctx.strokeStyle = me ? 'rgba(143,224,228,0.9)' : 'rgba(143,224,228,0.35)'; ctx.lineWidth = me ? 1.5 : 1;
         ctx.beginPath(); ctx.arc(gx2, gy2, gr, 0, 6.2832); ctx.stroke();
+        if (me) {
+          // the picked region's count, in a bubble on the globe's upper right edge
+          var bx6 = gx2 + gr * 0.74, by6 = gy2 - gr * 0.74, br6 = s.n > 99 ? 15 : (s.n > 9 ? 13 : 11);
+          ctx.globalAlpha = alpha;
+          ctx.fillStyle = '#4cc3c9'; ctx.beginPath(); ctx.arc(bx6, by6, br6, 0, 6.2832); ctx.fill();
+          ctx.strokeStyle = '#ffffff'; ctx.lineWidth = 1.5; ctx.stroke();
+          ctx.fillStyle = '#0a1430'; ctx.font = "600 12px 'IBM Plex Mono', monospace"; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+          ctx.fillText(String(s.n), bx6, by6 + 0.5);
+          ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+        }
         ctx.restore();
       }
       else if (s.t === 'globe') {
