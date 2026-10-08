@@ -128,7 +128,7 @@ a{color:#4cc3c9}a:hover{color:#8fe0e4}
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; padding-top: 8px; border-top: 1px solid rgba(207,224,244,0.14); font: 400 11px 'IBM Plex Mono', monospace; color: #8db8e3">
 <span>{{ex.foot}}</span>
 <sc-if value="{{ex.hasLink}}" hint-placeholder-val="{{ false }}">
-<a href="{{ex.link}}" target="_blank" rel="noopener" style="color: #4cc3c9">Open the example's source ↗ <span style="color: #8db8e3">{{ex.linkHost}}</span></a>
+<a href="{{ex.link}}" target="_blank" rel="noopener" style="color: #4cc3c9">{{ex.linkText}} ↗ <span style="color: #8db8e3">{{ex.linkHost}}</span></a>
 </sc-if>
 </div>
 </div>
@@ -1266,6 +1266,7 @@ class Component extends DCLogic {
       var cov = st2.cover && !shot ? { src: st2.cover, alt: st2.alt || 'Report cover' } : (shot || inStory ? null : COVERS[exId]);
       var lnk = inStory ? (st2.link || '') : (LINKS[exId] || '');
       var lnkNews = !!st2.news;
+      var lnkRel = !!st2.related;  // held-back covers: the link is a related edition or section page, not the example's own document
       var CL = this.caseList || [], csKeys = (this.caseOf || {})[exId] || [];
       var csList = csKeys.slice().sort(function (a4, b4) { return CL[b4][0] - CL[a4][0]; }).map(function (k) { return { y: CL[k][0] >= 2025 ? 'NEW · ' + CL[k][0] : String(CL[k][0]), t: CL[k][1], url: CL[k][2] }; });
       var csHead = (csList.length > 1 ? 'EGRISS CASE STUDIES' : 'EGRISS CASE STUDY') + ' ON THIS EXAMPLE';
@@ -1293,7 +1294,7 @@ class Component extends DCLogic {
         hasCover: !!cov, cover: cov ? cov.src : '', coverAlt: cov ? cov.alt : '',
         hasCases: csList.length > 0, cases: csList, casesHead: csHead,
         hasWhy: !!(featured && step.why), why: featured ? (step.why || '') : '',
-        hasLink: !!lnk, link: lnk, linkHost: lnk ? lnk.replace(/^https?:\/\/(www\.)?/, '').split('/')[0] + (lnkNews ? ' · news article, no official page found' : '') : ''
+        hasLink: !!lnk, link: lnk, linkText: lnkRel ? 'Open a related source' : "Open the example's source", linkHost: lnk ? lnk.replace(/^https?:\/\/(www\.)?/, '').split('/')[0] + (lnkNews ? ' · news article, no official page found' : '') + (lnkRel ? ' · not this example\'s own document' : '') : ''
       };
     }
     var show = !!B;
