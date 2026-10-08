@@ -13,8 +13,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700&amp;family=IBM+Plex+Sans:wght@400;500&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <style>
-/* Obvia, the EGRISS heading face; its hyphen glyph is broken in this file, so the hyphen falls back to Figtree */
-@font-face{font-family:"Obvia";src:url("./assets/fonts/Obvia-SemiBold.otf") format("opentype");font-weight:600;font-style:normal;font-display:swap;unicode-range:U+0000-002C,U+002E-FFFF}
+/* Obvia, the EGRISS heading face. This font file only draws plain letters and a few marks (the 4, hyphen, brackets, %, / and others are placeholders), so Obvia is used for letters only and everything else, digits included, falls back to Figtree */
+@font-face{font-family:"Obvia";src:url("./assets/fonts/Obvia-SemiBold.otf") format("opentype");font-weight:600;font-style:normal;font-display:swap;unicode-range:U+0020,U+002C,U+002E,U+003A-003B,U+003F,U+0041-005A,U+0061-007A}
 body{margin:0;background:#0a1430;font-family:"IBM Plex Sans",system-ui,sans-serif;color:#ffffff}
 a{color:#4cc3c9}a:hover{color:#8fe0e4}
 .card{pointer-events:auto;width:420px;max-width:calc(100vw - 32px);box-sizing:border-box;padding:26px 28px;background:rgba(26,40,82,0.94);border:1px solid rgba(207,224,244,0.14);border-radius:3px;display:flex;flex-direction:column;gap:14px;font-size:17px;line-height:1.6}
