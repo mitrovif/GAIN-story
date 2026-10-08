@@ -1,0 +1,1329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Counted, and counting — GAIN 2021–2025</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700&amp;family=IBM+Plex+Sans:wght@400;500&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0a1430;font-family:"IBM Plex Sans",system-ui,sans-serif;color:#ffffff}
+a{color:#4cc3c9}a:hover{color:#8fe0e4}
+.card{pointer-events:auto;width:420px;max-width:calc(100vw - 32px);box-sizing:border-box;padding:26px 28px;background:rgba(26,40,82,0.94);border:1px solid rgba(207,224,244,0.14);border-radius:3px;display:flex;flex-direction:column;gap:14px;font-size:17px;line-height:1.6}
+.eyebrow{font:500 12px "IBM Plex Mono",monospace;letter-spacing:0.12em;color:#4cc3c9}
+.msg{margin:0;font-family:Figtree,system-ui,sans-serif;font-weight:600;font-size:19px;line-height:1.4;color:#ffffff}
+.sub{margin:0;font-size:15px;line-height:1.6;color:#cfe0f4}
+.explore{padding:12px 14px;border:1px dashed rgba(76,195,201,0.5);border-radius:3px}
+.keys{display:flex;flex-direction:column;gap:8px}
+.key{margin:0;display:flex;gap:10px;align-items:center;font-size:15px;color:#cfe0f4}
+.exmeta{font:400 11px "IBM Plex Mono",monospace;color:#8db8e3}
+.extitle{font-size:15px;line-height:1.4}
+.ring{display:inline-block;width:10px;height:10px;border-radius:50%;background:#5b8fd9;box-shadow:0 0 0 1.5px #ffffff;vertical-align:middle}
+.src{padding-top:10px;border-top:1px solid rgba(207,224,244,0.14);font:400 11px "IBM Plex Mono",monospace;color:#8db8e3}
+.caselink{pointer-events:auto;display:flex;flex-direction:column;gap:3px;padding:10px 14px;border:1px dashed rgba(76,195,201,0.5);border-radius:3px;color:#4cc3c9;text-decoration:none;font-size:14px;line-height:1.4}.caselink:hover{border-color:#4cc3c9;color:#8fe0e4}
+.pill{display:inline-block;margin-right:8px;padding:2px 7px;border-radius:2px;font:500 10px "IBM Plex Mono",monospace;letter-spacing:0.1em;vertical-align:1px}.pill.latest{background:#4cc3c9;color:#0a1430}.pill.all{border:1px solid rgba(207,224,244,0.55);color:#cfe0f4}
+.skip{align-self:flex-end;display:flex;align-items:center;gap:12px;font:400 13px "IBM Plex Mono",monospace;color:#8db8e3}
+.skipbtn{min-height:40px;padding:0 16px;background:transparent;border:1px solid rgba(207,224,244,0.4);border-radius:3px;color:#cfe0f4;font:400 13px "IBM Plex Mono",monospace;cursor:pointer;transition:border-color .2s,color .2s}
+.skipbtn:hover{border-color:#4cc3c9;color:#4cc3c9}
+.exbtn{text-align:left;width:100%;padding:12px 14px;background:rgba(10,20,48,0.7);border:1px solid rgba(207,224,244,0.16);border-radius:3px;color:#ffffff;cursor:pointer;display:flex;flex-direction:column;gap:3px;font-family:"IBM Plex Sans",sans-serif;transition:border-color .2s}
+.exbtn:hover{border-color:#4cc3c9}
+.seg{min-height:34px;padding:0 12px;border-radius:3px;border:1px solid rgba(207,224,244,0.3);background:rgba(10,20,48,0.6);color:#cfe0f4;font:400 12px "IBM Plex Mono",monospace;cursor:pointer;transition:border-color .2s,color .2s}
+.seg:hover{border-color:#4cc3c9}
+.skipbtn:focus-visible,.exbtn:focus-visible,.seg:focus-visible,.x:focus-visible{outline:3px solid rgba(59,113,185,0.8);outline-offset:2px}
+.x{width:32px;height:32px;border-radius:3px;border:1px solid rgba(207,224,244,0.3);background:transparent;color:#cfe0f4;cursor:pointer;font:400 16px "IBM Plex Mono",monospace;flex-shrink:0}
+.cards{padding-left:48px}
+.step{min-height:115vh;padding-top:14vh;box-sizing:border-box}
+.dotkey{display:inline-block;width:12px;height:12px;border-radius:50%;flex-shrink:0}
+@media (max-width: 1000px){.msg{font-size:17px}.sub{font-size:14px}.cards{padding-left:16px;padding-right:16px}.step{padding-top:62vh}.card{padding:18px 20px;font-size:15px;gap:10px}}
+@media (max-width: 700px){h1{font-size:52px !important}}
+</style>
+</helmet>
+<div style="width: 100%; background: #0a1430; color: #ffffff; font-family: 'IBM Plex Sans', system-ui, sans-serif">
+
+<section style="position: relative">
+<div ref="{{stageRef}}" style="position: sticky; top: 0; width: 100%; height: 100vh; overflow: hidden; background: #0a1430">
+<canvas ref="{{canvasRef}}" role="img" aria-label="Circles for the examples reported to the GAIN Survey 2021 to 2025, re-forming into the charts of the GAIN Tables 2025. The story cards describe each chart." style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: block" onMouseMove="{{onMove}}" onMouseLeave="{{leave}}" onClick="{{onTap}}"></canvas>
+<sc-for list="{{labels}}" as="lb" hint-placeholder-count="0">
+<div style="{{lb.style}}"><span style="{{lb.aStyle}}">{{lb.a}}</span><span style="{{lb.bStyle}}">{{lb.b}}</span></div>
+</sc-for>
+<div style="{{legendBox}}">
+<div style="width: 100%"><span style="{{mode.style}}">{{mode.text}}</span></div>
+<div style="font: 400 12px 'IBM Plex Mono', monospace; letter-spacing: 0.1em; color: #8db8e3; width: 100%">{{chartTitle}}</div>
+<sc-for list="{{legend}}" as="lg" hint-placeholder-count="2">
+<div style="display: flex; align-items: center; gap: 8px; font: 400 13px 'IBM Plex Mono', monospace; color: #cfe0f4">
+<span style="{{lg.sw}}"></span><span>{{lg.label}}</span>
+</div>
+</sc-for>
+</div>
+<div style="{{yearBox}}">
+<span style="font: 400 12px 'IBM Plex Mono', monospace; color: #8db8e3">Year</span>
+<button class="seg" type="button" style="{{ys.all}}" onClick="{{setYear.all}}">All years</button>
+<button class="seg" type="button" style="{{ys.y2021}}" onClick="{{setYear.y2021}}">2021</button>
+<button class="seg" type="button" style="{{ys.y2022}}" onClick="{{setYear.y2022}}">2022</button>
+<button class="seg" type="button" style="{{ys.y2023}}" onClick="{{setYear.y2023}}">2023</button>
+<button class="seg" type="button" style="{{ys.y2024}}" onClick="{{setYear.y2024}}">2024</button>
+<button class="seg" type="button" style="{{ys.y2025}}" onClick="{{setYear.y2025}}">2025</button>
+</div>
+<div style="{{exploreBox}}">
+<span style="font: 400 12px 'IBM Plex Mono', monospace; color: #8db8e3">Show</span>
+<button class="seg" type="button" style="{{seg.bars}}" onClick="{{setLayout.bars}}">By year</button>
+<button class="seg" type="button" style="{{seg.donut}}" onClick="{{setLayout.donut}}">2025 donut</button>
+<button class="seg" type="button" style="{{seg.regions}}" onClick="{{setLayout.regions}}">Regions</button>
+<button class="seg" type="button" style="{{seg.sources}}" onClick="{{setLayout.sources}}">Data sources</button>
+<button class="seg" type="button" style="{{seg.challenges}}" onClick="{{setLayout.challenges}}">Challenges</button>
+<button class="seg" type="button" style="{{seg.map}}" onClick="{{setLayout.map}}">Map</button>
+</div>
+<sc-if value="{{loading}}" hint-placeholder-val="{{ false }}">
+<div style="position: absolute; right: 48px; bottom: 32px; font: 400 13px 'IBM Plex Mono', monospace; color: #8db8e3">Loading GAIN examples…</div>
+</sc-if>
+<sc-if value="{{hasEx}}" hint-placeholder-val="{{ false }}">
+<div style="{{panelStyle}}" role="dialog" aria-label="Example details" aria-live="polite">
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<div style="font: 500 11px 'IBM Plex Mono', monospace; letter-spacing: 0.1em; color: #4cc3c9">{{ex.head}}</div>
+<div style="font-family: Figtree, sans-serif; font-weight: 600; font-size: 17px; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden">{{ex.title}}</div>
+<div style="font-size: 12px; line-height: 1.4; color: #cfe0f4">{{ex.org}}</div>
+<sc-if value="{{ex.hasWhy}}" hint-placeholder-val="{{ false }}">
+<div style="margin-top: 4px; font: 500 11px 'IBM Plex Mono', monospace; color: #e0a93b">{{ex.why}}</div>
+</sc-if>
+</div>
+<sc-if value="{{ex.pinned}}" hint-placeholder-val="{{ false }}">
+<button class="x" type="button" aria-label="Close example" onClick="{{closeEx}}">×</button>
+</sc-if>
+</div>
+<sc-if value="{{ex.hasCases}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 5px; padding: 8px 10px; border: 1px solid rgba(76,195,201,0.55); border-radius: 3px; background: rgba(76,195,201,0.08)">
+<div style="font: 400 11px 'IBM Plex Mono', monospace; letter-spacing: 0.03em; color: #4cc3c9">{{ex.casesHead}}</div>
+<sc-for list="{{ex.cases}}" as="cs" hint-placeholder-count="1">
+<a href="{{cs.url}}" target="_blank" rel="noopener" style="font-size: 12px; line-height: 1.4; color: #4cc3c9; text-decoration: none"><span style="font: 400 11px 'IBM Plex Mono', monospace; color: #8db8e3">{{cs.y}}</span> {{cs.t}} ↗</a>
+</sc-for>
+</div>
+</sc-if>
+<sc-if value="{{ex.hasImg}}" hint-placeholder-val="{{ false }}">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 4px">
+<img src="{{ex.img}}" alt="{{ex.imgAlt}}" style="{{ex.imgStyle}}">
+<figcaption style="font: 400 11px 'IBM Plex Mono', monospace; color: #8db8e3">{{ex.cap}}</figcaption>
+</figure>
+</sc-if>
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<sc-if value="{{ex.hasCover}}" hint-placeholder-val="{{ false }}">
+<img src="{{ex.cover}}" alt="{{ex.coverAlt}}" style="display: block; flex-shrink: 0; width: 72px; height: 96px; object-fit: cover; object-position: top; border-radius: 2px; border: 1px solid rgba(207,224,244,0.25); background: #ffffff">
+</sc-if>
+<div style="{{ex.descStyle}}">{{ex.desc}}</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding-top: 10px; border-top: 1px solid rgba(207,224,244,0.14)">
+<sc-for list="{{ex.facts}}" as="f" hint-placeholder-count="6">
+<div style="display: flex; gap: 12px; align-items: baseline">
+<div style="width: 132px; flex-shrink: 0; font: 400 11px 'IBM Plex Mono', monospace; letter-spacing: 0.03em; color: #8db8e3">{{f.k}}</div>
+<div style="{{f.vStyle}}"><span style="{{f.sw}}"></span><span>{{f.v}}</span></div>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; padding-top: 8px; border-top: 1px solid rgba(207,224,244,0.14); font: 400 11px 'IBM Plex Mono', monospace; color: #8db8e3">
+<span>{{ex.foot}}</span>
+<sc-if value="{{ex.hasLink}}" hint-placeholder-val="{{ false }}">
+<a href="{{ex.link}}" target="_blank" rel="noopener" style="color: #4cc3c9">Open the example's source ↗ <span style="color: #8db8e3">{{ex.linkHost}}</span></a>
+</sc-if>
+</div>
+</div>
+</sc-if>
+</div>
+
+<div class="cards" style="position: relative; margin-top: -100vh; display: flex; flex-direction: column; pointer-events: none">
+
+<div ref="{{refs.hero}}" style="min-height: 120vh; box-sizing: border-box; padding: 18vh 0 0; display: flex; flex-direction: column; gap: 28px; max-width: 1000px">
+<div style="font: 500 13px 'IBM Plex Mono', monospace; letter-spacing: 0.12em; text-transform: uppercase; color: #4cc3c9">EGRISS · GAIN Survey 2021–2025</div>
+<h1 style="margin: 0; font-family: Figtree, system-ui, sans-serif; font-weight: 600; font-size: 88px; line-height: 1.02; letter-spacing: -0.02em; text-shadow: 0 2px 24px rgba(10,20,48,0.9)">Counted, and counting</h1>
+<div style="width: 72px; height: 3px; background: linear-gradient(90deg, #4cc3c9, rgba(76,195,201,0))"></div>
+<p style="margin: 0; max-width: 640px; font-size: 21px; line-height: 1.6; color: #cfe0f4; text-shadow: 0 1px 16px rgba(10,20,48,0.95)">Five years of implementation examples: countries and institutions including refugees, internally displaced persons and stateless persons in official statistics, and applying the International Statistical Recommendations developed by EGRISS.</p>
+<p style="margin: 16px 0 0; font: 400 14px 'IBM Plex Mono', monospace; color: #8db8e3">Each circle is one example reported to GAIN. Twinkling ones open a report or source page; teal glints have an EGRISS case study. Hover or tap. Scroll ↓</p>
+</div>
+
+<div ref="{{refs.s0}}" class="step">
+<article class="card">
+<div class="eyebrow"><span class="pill all">ALL ROUNDS</span>GAIN SURVEY · 2021–2025</div>
+<p class="msg">413 examples were reported to the GAIN Survey between 2021 and 2025. Each circle is one example.</p>
+<p class="sub">An example can be a data source, such as a census, survey, administrative data or data integration, or a tool, such as a strategy, guidance, toolkit, workshop or training.</p>
+<div class="keys">
+<p class="key"><span class="dotkey" style="background: #5b8fd9"></span><span>Country-led, using the Recommendations</span></p>
+<p class="key"><span class="dotkey" style="background: #4cc3c9"></span><span>Institution-led, using the Recommendations</span></p>
+<p class="key"><span class="dotkey" style="box-shadow: inset 0 0 0 1.5px #cfe0f4"></span><span>Hollow: not using, or don't know if used</span></p>
+</div>
+<div class="src">GAIN Tables 2025, Annex 1: GAIN Glossary</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s1}}" class="step">
+<article class="card">
+<div class="eyebrow"><span class="pill all">ALL ROUNDS</span>OVERALL TRENDS · 2021–2025</div>
+<p class="msg">Adoption of the Recommendations remained high in 2025, with 81 per cent of country-led and 74 per cent of institution-led examples applying them, despite a challenging landscape and a decline in country-led examples.</p>
+<p class="sub">A total of 117 examples were reported in 2025: 63 <span style="color: #5b8fd9; font-weight: 500">country-led</span> and 54 <span style="color: #4cc3c9; font-weight: 500">institution-led</span>. Filled circles are examples using the Recommendations; hollow ones are not using them or don't know. The number on top of each bar counts all examples, the number below those using the Recommendations.</p>
+<div class="src">GAIN Tables 2025, Table 1.1</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s2}}" class="step">
+<article class="card">
+<div class="eyebrow">STATELESS PERSONS · IROSS · 2023–2025</div>
+<p class="msg">14 examples applied IROSS alone, all reported after IROSS was adopted in 2023.</p>
+<p class="sub">In the Philippines, the statistics authority used IROSS to bring people at risk of statelessness into civil registration, including undocumented Filipinos in Sabah. A 2026 EGRISS case study tells the story.</p>
+<button class="exbtn" type="button" onClick="{{pick.e325}}"><span class="exmeta">PHILIPPINES · 2024 · IROSS</span><span class="extitle">Registration of Undocumented Filipinos in Sabah</span></button>
+<a class="caselink" href="https://egrisstats.org/implementation/case-studies/philippines-2025/" target="_blank" rel="noopener"><span class="exmeta">NEW · EGRISS CASE STUDY · PHILIPPINES · 2026</span><span>Expanding civil registration and administrative records to include people at risk of statelessness ↗</span></a>
+<div class="src">GAIN Survey 2023–2025, examples roster</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s3}}" class="step">
+<article class="card">
+<div class="eyebrow">BEHIND EACH EXAMPLE</div>
+<p class="msg">Each example is statistical work by a national statistical system or an institution. In the Philippines, the statistics authority applied IROSS in a birth registration project, reported to GAIN in 2024.</p>
+<button class="exbtn" type="button" onClick="{{pick.e44}}"><span class="exmeta">NIGERIA · 2024 · IRIS</span><span class="extitle">The first-ever survey on IDPs, in seven selected states</span></button>
+<a class="caselink" href="https://egrisstats.org/implementation/case-studies/philippines-2025/" target="_blank" rel="noopener"><span class="exmeta">NEW · EGRISS CASE STUDY · PHILIPPINES · 2026</span><span>Expanding civil registration and administrative records to include people at risk of statelessness ↗</span></a>
+<a class="caselink" href="https://egrisstats.org/implementation/case-studies/nigeria/" target="_blank" rel="noopener"><span class="exmeta">NEW · EGRISS CASE STUDY · NIGERIA · 2025</span><span>Strengthening national ownership in data collection and analysis on internal displacement ↗</span></a>
+<div class="src">GAIN Survey 2024, examples roster</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s4}}" class="step">
+<article class="card">
+<div class="eyebrow"><span class="pill all">ALL ROUNDS</span>EGRISS CASE STUDIES · 2022–2026</div>
+<p class="msg">26 EGRISS case studies tell the story behind 42 of these examples. The highlighted ones have case studies published in 2025 and 2026.</p>
+<p class="sub">Throughout the charts, a bright teal ring marks a recent case study and a faint ring an earlier one. Point at a ringed example to see the others its case study covers.</p>
+<button class="exbtn" type="button" onClick="{{pick.e14}}"><span class="exmeta">NEW · KENYA · 2026 CASE STUDY</span><span class="extitle">Refugees in the 2025 Mini DHS and the household budget survey</span></button>
+<button class="exbtn" type="button" onClick="{{pick.e150}}"><span class="exmeta">NEW · DR CONGO · 2026 CASE STUDY</span><span class="extitle">IRIS and IRRS in the 2025 Survey on Household Living Conditions</span></button>
+<button class="exbtn" type="button" onClick="{{pick.e216}}"><span class="exmeta">NEW · MALI · 2026 CASE STUDY</span><span class="extitle">IDPs in the Modular and Permanent Household Survey</span></button>
+<button class="exbtn" type="button" onClick="{{pick.e173}}"><span class="exmeta">NEW · MEXICO · 2026 CASE STUDY</span><span class="extitle">The 2025 Intercensal Survey and IDP statistics</span></button>
+<button class="exbtn" type="button" onClick="{{pick.e221}}"><span class="exmeta">NEW · UNHCR · 2026 CASE STUDY</span><span class="extitle">Aligning UNHCR statistics with IRRS, IRIS and IROSS</span></button>
+<a class="caselink" href="https://egrisstats.org/implementation/case-studies/" target="_blank" rel="noopener"><span class="exmeta">EGRISS WEBSITE</span><span>All country case studies ↗</span></a>
+<div class="src">egrisstats.org, Implementation: case studies</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s5}}" class="step">
+<article class="card">
+<div class="eyebrow"><span class="pill latest">LATEST ROUND</span>OVERALL TRENDS · 2025 · IRRS, IRIS AND IROSS</div>
+<p class="msg">IRIS-only examples surpassed IRRS-only examples for the first time since 2022, with 34 and 27 examples respectively, driven by a rise in institution-led IRIS implementation.</p>
+<p class="sub"><span class="pill latest">LATEST ROUND</span>Each chart first shows the newest results, GAIN 2025, then opens up to <span class="pill all">ALL ROUNDS</span>since 2021. Examples from other rounds, or outside a chart, stay in the background as faint circles. The 91 examples using the Recommendations in 2025 form the ring: <span style="color: #3f78d6; font-weight: 500">IRIS</span> 34, <span style="color: #8db8e3; font-weight: 500">IRRS</span> 27, mixed use 24, undetermined 4 and <span style="color: #e3c3a0; font-weight: 500">IROSS</span> 2.</p>
+<p class="sub">Each mixed-use circle is split into the Recommendations it combines. All three Recommendations combined was the most common mix (11), followed by IRRS and IRIS (10) and IRRS and IROSS (3). No IRIS and IROSS examples were reported in 2025.</p>
+<p class="sub"> The inner ring splits them by example lead: <span style="color: #f06667">51 country-led</span> and <span style="color: #4cc3c9">40 institution-led</span>.</p>
+<div class="src">GAIN Tables 2025, Tables 1.2 and 1.3</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s6}}" class="step">
+<article class="card">
+<div class="eyebrow"><span class="pill latest">LATEST ROUND</span>OVERALL TRENDS · 2025 · EXAMPLE LEAD</div>
+<p class="msg">Institution-led examples using the Recommendations rose from 19 in 2024 to 40 in 2025, while country-led examples using them fell from 87 to 51.</p>
+<p class="sub">The same 91 examples sorted by lead: <span style="color: #f06667; font-weight: 500">51 country-led</span>, by national statistical offices and other government entities, and <span style="color: #4cc3c9; font-weight: 500">40 institution-led</span>, by international, regional and civil society organizations. The faded inner ring keeps the breakdown by Recommendation in view.</p>
+<div class="src">GAIN Tables 2025, Tables 1.1 and 1.2</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s7}}" class="step">
+<article class="card">
+<div class="eyebrow"><span class="pill all">ALL ROUNDS</span>OVERALL TRENDS · 2021–2025 · ALL YEARS</div>
+<p class="msg">Across five rounds, 337 examples used the Recommendations: 207 country-led and 130 institution-led.</p>
+<p class="sub">IRRS remains the most used overall (123), followed by mixed use (99) and IRIS (93). IROSS, adopted in 2023, accounts for 14. Use the <b>Year</b> buttons above the ring to see any single round.</p>
+<div class="src">GAIN Tables 2025, Tables 1.1 and 1.2, 2021–2025</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s8}}" class="step">
+<article class="card">
+<div class="eyebrow"><span class="pill latest">LATEST ROUND</span>OVERALL TRENDS · 2025 · REGIONS</div>
+<p class="msg">Africa reported the highest number of country-led examples in 2025. Among those using the Recommendations, the region accounted for almost half of all country-led examples (23 of 51).</p>
+<p class="sub">Europe follows with 12. Keep scrolling to see all five rounds.</p>
+<button class="exbtn" type="button" onClick="{{pick.e150}}"><span class="exmeta">DR CONGO · 2025 · SURVEY</span><span class="extitle">Survey on Household Living Conditions, with refugee and IDP modules</span></button>
+<a class="caselink" href="https://egrisstats.org/implementation/case-studies/democratic-republic-congo-2025/" target="_blank" rel="noopener"><span class="exmeta">NEW · EGRISS CASE STUDY · DR CONGO · 2026</span><span>Incorporating IRIS and IRRS into the 2025 Survey on Household Living Conditions ↗</span></a>
+<div class="src">GAIN Tables 2025, Table 1.6</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s9}}" class="step">
+<article class="card">
+<div class="eyebrow"><span class="pill all">ALL ROUNDS</span>OVERALL TRENDS · 2021–2025 · REGIONS</div>
+<p class="msg">Africa accounts for the most country-led examples using the Recommendations across all rounds: 91 of 207 since 2021.</p>
+<p class="sub">Europe follows with 44, then the Americas 35, Asia and Oceania 20 and the Middle East 17.</p>
+<div class="src">GAIN Tables 2025, Table 1.6, 2021–2025</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s10}}" class="step">
+<article class="card">
+<div class="eyebrow"><span class="pill latest">LATEST ROUND</span>OVERALL TRENDS · 2025 · DATA SOURCES AND TOOLS</div>
+<p class="msg">Surveys remained the most common data source for country-led examples.</p>
+<p class="sub">Data sources are a multiple-choice question: an example can report more than one. From here an example appears once for each answer, and examples that appear more than once are <span class="ring"></span> ringed in white. The 63 country-led examples of 2025 reported 94 data sources: surveys 32, administrative data 30.</p>
+<p class="sub">Hover over an example to highlight its other answers.</p>
+<div class="src">GAIN Tables 2025, Table 1.4.a</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s11}}" class="step">
+<article class="card">
+<div class="eyebrow"><span class="pill all">ALL ROUNDS</span>OVERALL TRENDS · 2024–2025 · DATA SOURCES AND TOOLS</div>
+<p class="msg">Across both rounds that asked about data sources, surveys and administrative data stay well ahead.</p>
+<p class="sub">160 country-led examples reported 249 data sources in 2024 and 2025: surveys 84, administrative data 75, census 36 and Tools and Other 26. GAIN first asked about data sources in 2024.</p>
+<div class="src">GAIN Tables 2025, Table 1.4.a, 2024–2025</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s12}}" class="step">
+<article class="card">
+<div class="eyebrow"><span class="pill latest">LATEST ROUND</span>IMPLEMENTATION · 2025 · CHALLENGES</div>
+<p class="msg">While most examples did not report challenges, resource constraints were the top challenge among those that did (25), jumping ahead of any other challenge compared with 2024.</p>
+<p class="sub">Challenges are also multiple-choice. 48 examples reported 120 challenges between them, so an example that reported three challenges appears three times, <span class="ring"></span> ringed in white. Identification of populations follows with 15.</p>
+<div class="src">GAIN Tables 2025, Table 2.6</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s13}}" class="step">
+<article class="card">
+<div class="eyebrow"><span class="pill all">ALL ROUNDS</span>IMPLEMENTATION · 2024–2025 · CHALLENGES</div>
+<p class="msg">Resource constraints and identification of populations are the most reported challenges across both rounds.</p>
+<p class="sub">84 examples reported 206 challenges in 2024 and 2025: resource constraints 40, identification of populations 32, then safety concerns and political issues with 27 each.</p>
+<div class="src">GAIN Tables 2025, Table 2.6, 2024–2025</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s14}}" class="step">
+<article class="card">
+<div class="eyebrow"><span class="pill latest">LATEST ROUND</span>MAPS OF EXAMPLES · 2025</div>
+<p class="msg">The 63 country-led examples of 2025, each shown once in its country.</p>
+<p class="sub">Filled circles are examples using the Recommendations; hollow ones are not using them or don't know. Each country's examples rise from it as a column, with the count on top, and countries with examples are shaded teal as in the GAIN Tables maps. The globe turns slowly; point at an example to pause it. Keep scrolling for all 257 country-led examples since 2021.</p>
+<div class="src">GAIN Tables 2025, Maps of Examples</div>
+<div class="skip">Keep scrolling or <button class="skipbtn" type="button" onClick="{{next}}">Skip to next →</button></div>
+</article>
+</div>
+
+<div ref="{{refs.s15}}" class="step">
+<article class="card">
+<div style="font: 500 64px 'IBM Plex Mono', monospace; line-height: 1; color: #4cc3c9">413</div>
+<p class="msg">examples, and counting.</p>
+<p class="sub">The map now shows all 257 country-led examples since 2021. Explore them yourself: switch charts with the buttons at the bottom right, pick a year, and hover over or tap any example to open its card.</p>
+</article>
+</div>
+
+</div>
+</section>
+
+<footer style="background: #f7fafd; color: #1d2940; padding: 112px 48px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<a href="https://egrisstats.org/implementation/gain-survey/gain-tables-dataset/" style="display: block; flex-shrink: 0" aria-label="GAIN Tables 2025, second edition">
+<img src="./assets/13408d91b4fb859b1b751bed9ba0ff80.jpg" alt="Cover of GAIN Tables 2025, second edition, May 2026" style="display: block; width: 240px; height: auto; border-radius: 3px; box-shadow: 0 12px 34px rgba(20, 35, 76, 0.18)">
+</a>
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 22px">
+<div style="font: 500 13px 'IBM Plex Mono', monospace; letter-spacing: 0.12em; color: #3b71b9">GAIN 2026</div>
+<h2 style="margin: 0; max-width: 760px; font-family: Figtree, system-ui, sans-serif; font-weight: 600; font-size: 48px; line-height: 1.08; letter-spacing: -0.02em; color: #14234c">Is your work in the record?</h2>
+<p style="margin: 0; max-width: 640px; font-size: 18px; line-height: 1.65">Reporting to GAIN is the most direct way to get national work into global implementation records. It also helps EGRISS decide where to put training, guidance and technical support.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="https://egrisstats.org/implementation/gain-survey/" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 6px; background: #14234c; color: #ffffff; font-weight: 500; text-decoration: none">About the GAIN Survey →</a>
+<a href="https://egrisstats.org/implementation/gain-survey/gain-tables-dataset/" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 6px; border: 1px solid #b9c7dc; color: #14234c; font-weight: 500; text-decoration: none">GAIN Tables 2025</a>
+</div>
+<p style="margin: 24px 0 0; max-width: 760px; font: 400 12px 'IBM Plex Mono', monospace; line-height: 1.7; color: #5a6884">Source: GAIN Survey 2021–2025, group roster (413 examples) · GAIN Tables 2025, Tables 1.1, 1.2, 1.4.a, 1.6, 2.6 and Map 7.1 · EGRISS Secretariat. Data sources and challenges are multiple-choice questions, so one example can appear once for each answer (GAIN Tables 2025, Annex 1). “Tools and Other” shows 11 country-led examples here against 13 in Table 1.4.a, where two free-text answers were recoded. Map: Natural Earth outlines (public domain) on an orthographic globe; boundaries are approximate and do not imply official endorsement. Example titles and descriptions appear as respondents entered them, shortened. Photo: © UNHCR (credit and clearance to be confirmed).</p>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#4cc3c9","options":["#4cc3c9","#8db8e3","#e0a93b"]},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  hash(i, k) {
+    var a = Math.sin(i * 12.9898 + k * 78.233) * 43758.5453;
+    return a - Math.floor(a);
+  }
+  // the newest GAIN round shown first in each chart; set to 2026 for the GAIN Tables 2026 edition
+  latest() { return 2025; }
+  steps() {
+    var Y = String(this.latest()), self = this;
+    return [
+      { layout: 'snow', soft: true },
+      { layout: 'snow' },
+      { layout: 'bars' },
+      { layout: 'bars', hl: function (d) { return d.fw === 2; }, feat: 325, why: 'Highlighted: one of 14 examples applying IROSS alone, with a 2026 EGRISS case study' },
+      { layout: 'bars', hl: function (d) { return d.id === 323; }, feat: 323, why: 'Highlighted: the subject of an EGRISS case study' },
+      { layout: 'bars', hl: function (d) { return self.isRecentCase(d.id); }, feat: 14, why: 'Highlighted: covered by a 2026 EGRISS case study' },
+      { layout: 'donut:' + Y + ':fw' },
+      { layout: 'donut:' + Y + ':lead' },
+      { layout: 'donut:all:lead' },
+      { layout: 'regions:' + Y, feat: 150, why: 'Highlighted: a ' + Y + ' country-led example from Africa, covered by an EGRISS case study' },
+      { layout: 'regions:all' },
+      { layout: 'sources:' + Y },
+      { layout: 'sources:all' },
+      { layout: 'challenges:' + Y },
+      { layout: 'challenges:all' },
+      { layout: 'map:' + Y },
+      { layout: 'map:all', explore: true }
+    ];
+  }
+  palette(accent) {
+    var BLUE = '#5b8fd9';
+    function rgb(h) { return [parseInt(h.substr(1, 2), 16), parseInt(h.substr(3, 2), 16), parseInt(h.substr(5, 2), 16)]; }
+    function fill(h) { var c = rgb(h); return { f: c.concat([1]), s: c.concat([0]) }; }
+    function ring(h) { var c = rgb(h); return { f: c.concat([0]), s: c.concat([0.9]) }; }
+    return {
+      snow: { f: [207, 224, 244, 0.6], s: [207, 224, 244, 0] },
+      cU: fill(BLUE), iU: fill(accent), cN: ring(BLUE), iN: ring(accent),
+      // the same, ringed in white: examples that gave more than one answer to a multiple-choice question
+      cUm: { f: rgb(BLUE).concat([1]), s: [255, 255, 255, 0.85] }, iUm: { f: rgb(accent).concat([1]), s: [255, 255, 255, 0.85] }, cNm: { f: rgb(BLUE).concat([0]), s: [255, 255, 255, 0.85] },
+      lc: fill('#f06667'), li: fill(accent),
+      fw0: fill('#8db8e3'), fw1: fill('#3f78d6'), fw2: fill('#e3c3a0'), fw3: fill('#d7dde6'), fw4: fill('#6b7a99'),
+      dim: { f: [207, 224, 244, 0.1], s: [207, 224, 244, 0] },
+      ring: { f: [0, 0, 0, 0], s: [143, 224, 228, 0.95] },
+      bg: { f: [207, 224, 244, 0.16], s: [207, 224, 244, 0] }
+    };
+  }
+  geo() {
+    var W = this.W || 1440, H = this.H || 900, wide = W >= 1000;
+    return { W: W, H: H, wide: wide, L: wide ? Math.max(500, Math.round(W * 0.36)) : 16, R: W - (wide ? 56 : 16), T: wide ? 170 : 112, B: wide ? H - 72 : Math.round(H * 0.58) };
+  }
+  mono(size, color, extra) { return 'font: 500 ' + size + 'px \'IBM Plex Mono\', monospace; color: ' + color + ';' + (extra || ''); }
+  label(x, y, a, b, align, aStyle, bStyle) {
+    var tx = align === 'right' ? '-100%' : (align === 'center' ? '-50%' : '0');
+    return { a: a, b: b || '', aStyle: aStyle, bStyle: bStyle || 'display: block; font: 400 11px \'IBM Plex Mono\', monospace; color: #cfe0f4; white-space: nowrap', style: 'position: absolute; left: ' + Math.round(x) + 'px; top: ' + Math.round(y) + 'px; transform: translate(' + tx + ', -50%); text-align: ' + (align || 'left') + '; pointer-events: none; white-space: nowrap' };
+  }
+  // slots for n points in a bar `per` points wide with a semicircular top; returns offsets from the bar's bottom centre
+  tomb(n, per, pitch) {
+    var R = per * pitch / 2, pts = [], Hb = 0;
+    if (!n) return { pts: [], H: 0 };
+    for (var guard = 0; guard < 400; guard++, Hb += pitch) {
+      pts = [];
+      for (var k = 0; (k + 0.5) * pitch <= Hb + R; k++) {
+        var yc = (k + 0.5) * pitch;
+        for (var c = 0; c < per; c++) {
+          var xc = (c - (per - 1) / 2) * pitch;
+          if (yc <= Hb || Math.sqrt(xc * xc + (yc - Hb) * (yc - Hb)) <= R - pitch * 0.3) pts.push([xc, yc]);
+        }
+      }
+      if (pts.length >= n) break;
+    }
+    return { pts: pts.slice(0, n), H: Hb + R };
+  }
+  // on-chart note explaining why a multiple-choice chart holds more example circles than examples
+  multiNote(g, buckets, one, many) {
+    var per = {}, answers = 0;
+    buckets.forEach(function (b) { b.forEach(function (it) { per[it.d.id] = (per[it.d.id] || 0) + 1; answers++; }); });
+    var ids = Object.keys(per), multi = ids.filter(function (k) { return per[k] > 1; }).length;
+    var text = ids.length
+      ? ids.length + ' examples reported ' + answers + ' ' + many + '. ' + multi + ' of them reported more than one ' + one + ', so they appear once per answer and are ringed in white. Hover over one to highlight its other answers.'
+      : '';
+    var box = 'display: block; width: ' + (g.wide ? 300 : 260) + 'px; white-space: normal; padding: 10px 12px; background: rgba(20,35,76,0.92); border: 1px dashed rgba(224,169,59,0.8); border-radius: 3px; font: 400 12px \'IBM Plex Sans\', sans-serif; line-height: 1.5; color: #e6eef8';
+    return this.label(g.wide ? g.R : 16, g.wide ? g.T - 20 : g.B + 70, text, '', g.wide ? 'right' : 'left', ids.length ? box : 'display: none', 'display: none');
+  }
+  build(layout) {
+    var g = this.geo();
+    var key = layout + '|' + g.W + '|' + g.H;
+    this._cache = this._cache || {};
+    if (this._cache[key]) return this._cache[key];
+    var self = this, rows = this.rows, P = this.P, first = this.first;
+    var pos = new Array(P.length), deco = [], labels = [], legend = [], title = '';
+    var BLUE = '#5b8fd9', TEAL = this._accent;
+    function put(e, j, o) { var idx = self.parts[e][j]; pos[idx] = o; }
+    if (layout === 'bars') {
+      title = 'EXAMPLES BY YEAR AND LEAD · 2021–2025';
+      var band = (g.R - g.L) / 5, per = 4;
+      var pitch = Math.min(Math.min(64, band * 0.34) / per, (g.B - g.T - 40) / (Math.ceil(99 / per) + per / 2));
+      var bw = per * pitch, gap = Math.max(6, pitch * 0.8);
+      [2021, 2022, 2023, 2024, 2025].forEach(function (y, i) {
+        var gx = g.L + band * i + band / 2;
+        [0, 1].forEach(function (lead) {
+          var list = rows.filter(function (d) { return d.y === y && d.lead === lead; });
+          list.sort(function (a, b) { return (b.use - a.use) || (a.id - b.id); });
+          var x0 = gx - bw - gap / 2 + lead * (bw + gap);
+          var u = list.filter(function (d) { return d.use; }).length, n = list.length;
+          // points fill a rounded-top bar, so the rounded top holds points too and height stays true to the count
+          var T1 = self.tomb(n, per, pitch);
+          list.forEach(function (d, k) {
+            put(d.id, 0, { x: x0 + bw / 2 + T1.pts[k][0], y: g.B - T1.pts[k][1], r: pitch * 0.36, k: d.use ? (lead ? 'iU' : 'cU') : (lead ? 'iN' : 'cN'), v: 1, o: k / n });
+          });
+          var col = lead ? TEAL : BLUE;
+          var hU = u ? T1.pts[u - 1][1] + pitch / 2 : 0;
+          deco.push({ t: 'tomb', x: x0 - 2, b: g.B, w: bw + 4, h: T1.H + 2, fillH: u === n ? T1.H + 2 : hU, c: col });
+          labels.push(self.label(x0 + bw / 2, g.B - T1.H - 14, String(n), '', 'center', self.mono(g.wide ? 15 : 11, col)));
+          labels.push(self.label(x0 + bw / 2, g.B + 13, String(u), '', 'center', self.mono(g.wide ? 12 : 10, '#ffffff', ' opacity: 0.9;')));
+        });
+        labels.push(self.label(gx, g.B + 36, String(y), '', 'center', self.mono(g.wide ? 14 : 11, '#ffffff')));
+      });
+      legend = [{ label: 'Country-led, using', sw: 'cU' }, { label: 'Institution-led, using', sw: 'iU' }, { label: 'Not using / did not know', sw: 'cN' }];
+    } else if (layout.indexOf('donut') === 0) {
+      var parts = layout.split(':'), yr = parts[1] === 'all' ? null : +parts[1], byLead = parts[2] === 'lead';
+      title = 'EXAMPLES USING THE RECOMMENDATIONS · ' + (yr || '2021–2025') + (byLead ? ' · BY LEAD' : ' · BY RECOMMENDATIONS');
+      var list = rows.filter(function (d) { return d.use && (yr == null || d.y === yr); });
+      var ORD = [0, 1, 4, 3, 2];
+      list.sort(function (a, b) {
+        if (byLead) return (a.lead - b.lead) || (ORD.indexOf(a.fw) - ORD.indexOf(b.fw)) || (a.id - b.id);
+        return (ORD.indexOf(a.fw) - ORD.indexOf(b.fw)) || (a.mix - b.mix) || (a.lead - b.lead) || (a.id - b.id);
+      });
+      var N = list.length;
+      var RC = { IRRS: [141, 184, 227], IRIS: [63, 120, 214], IROSS: [227, 195, 160] };
+      var MXC = [[RC.IRRS, RC.IRIS, RC.IROSS], [RC.IRRS, RC.IRIS], [RC.IRRS, RC.IROSS], [RC.IRIS, RC.IROSS]];
+      var MXN = ['All three combined', 'IRRS + IRIS', 'IRRS + IROSS', 'IRIS + IROSS'];
+      var cx = (g.L + g.R) / 2, cy = (g.T + g.B) / 2 + 10;
+      var rO = Math.max(70, Math.min((g.R - g.L) / 2 - (g.wide ? 190 : 96), (g.B - g.T) / 2 - 24));
+      var rowsN = N <= 130 ? 3 : 5, p = 30, cnt = 0;
+      for (p = 30; p > 3; p -= 0.25) {
+        cnt = 0;
+        for (var q = 0; q < rowsN; q++) cnt += Math.floor(2 * Math.PI * (rO - (q + 0.5) * p) / p);
+        if (cnt >= N) break;
+      }
+      var pts = [];
+      for (var q2 = 0; q2 < rowsN; q2++) {
+        var rk = rO - (q2 + 0.5) * p, nk = Math.floor(2 * Math.PI * rk / p);
+        for (var m = 0; m < nk; m++) { var an = (m + 0.5 + q2 * 0.33) / nk * 2 * Math.PI; pts.push({ a: an % (2 * Math.PI), r: rk }); }
+      }
+      pts.sort(function (a, b) { return a.a - b.a; });
+      var pick = [];
+      for (var i2 = 0; i2 < N; i2++) pick.push(pts[Math.floor((i2 + 0.5) * pts.length / N)]);
+      list.forEach(function (d, k) {
+        var pt = pick[k];
+        put(d.id, 0, { x: cx + Math.sin(pt.a) * pt.r, y: cy - Math.cos(pt.a) * pt.r, r: p * 0.38, k: byLead ? (d.lead ? 'li' : 'lc') : 'fw' + d.fw, v: 1, o: k / N, mx: !byLead && d.fw === 3 && d.mix >= 0 ? MXC[d.mix] : null });
+      });
+      var nC = list.filter(function (d) { return d.lead === 0; }).length, nI = N - nC;
+      var band0 = rO - rowsN * p - 3, band1 = rO + 3;
+      var rin = band0 - (g.wide ? 26 : 18);
+      var reach = g.wide ? 74 : 30;
+      if (!byLead) {
+        // inner ring by lead, labelled with leader lines as in the Annual Report donut
+        var lwI = g.wide ? 22 : 14;
+        deco.push({ t: 'arc', x: cx, y: cy, r: rin, a0: 0, a1: nC / N, c: '#f06667', lw: lwI });
+        deco.push({ t: 'arc', x: cx, y: cy, r: rin, a0: nC / N, a1: 1, c: TEAL, lw: lwI });
+        [[1, nC, 'Country', '#f06667'], [-1, nI, 'Institutional', TEAL]].forEach(function (s) {
+          var hx2 = cx + s[0] * (band1 + reach + 40);
+          hx2 = s[0] > 0 ? Math.min(hx2, g.W - 90) : Math.max(hx2, 90);
+          deco.push({ t: 'leader', pts: [[cx + s[0] * (rin + lwI / 2), cy], [hx2, cy]], c: s[3] });
+          labels.push(self.label(hx2 + s[0] * 6, cy, String(s[1]), s[2], s[0] > 0 ? 'left' : 'right', 'display: block; ' + self.mono(g.wide ? 26 : 16, s[3], ' line-height: 1.05;')));
+        });
+      } else {
+        // the Recommendations breakdown stays as a faded inner ring
+        var FC = ['#8db8e3', '#3f78d6', '#e3c3a0', '#d7dde6', '#8b98b3'], a0 = 0;
+        ORD.forEach(function (fw) {
+          var nf = list.filter(function (d) { return d.fw === fw; }).length;
+          if (!nf) return;
+          deco.push({ t: 'arc', x: cx, y: cy, r: rin, a0: a0 / N, a1: (a0 + nf) / N, c: FC[fw], lw: 12, ga: 0.3 });
+          a0 += nf;
+        });
+      }
+      var small = 'display: block; font: 400 ' + (g.wide ? 12 : 10) + 'px \'IBM Plex Mono\', monospace; color: #cfe0f4; margin-top: 4px; line-height: 1.4; white-space: normal; width: ' + Math.round(rin * 1.5) + 'px';
+      labels.push(self.label(cx, cy, String(N), 'examples', 'center', 'display: block; font: 600 ' + (g.wide ? (N > 99 ? 54 : 64) : 34) + 'px Figtree, sans-serif; line-height: 1; color: #ffffff', small));
+      var groups = byLead
+        ? [{ n: nC, name: 'Country-led', col: '#f06667' }, { n: nI, name: 'Institution-led', col: TEAL }]
+        : ORD.map(function (fw) {
+          var NAMES = ['IRRS', 'IRIS', 'IROSS', 'Mixed', 'Undetermined'], COLS = ['#8db8e3', '#3f78d6', '#e3c3a0', '#d7dde6', '#8b98b3'];
+          var nfw = list.filter(function (d) { return d.fw === fw; }).length;
+          if (fw !== 3) return { n: nfw, name: NAMES[fw], col: COLS[fw] };
+          // the mixed-use label lists its combinations, as in Table 1.3
+          var lines = MXN.map(function (nm, m) { var c = list.filter(function (d) { return d.fw === 3 && d.mix === m; }).length; return c ? c + '  ' + nm : ''; }).filter(Boolean);
+          return { n: nfw, name: 'Mixed use\n' + lines.join('\n'), col: COLS[fw], bs: 'display: block; font: 400 ' + (g.wide ? 12 : 10) + 'px \'IBM Plex Mono\', monospace; color: #cfe0f4; white-space: pre; line-height: 1.5' };
+        });
+      var acc = 0, GAP = 0.004;
+      groups.forEach(function (gr) {
+        if (!gr.n) return;
+        var f0 = acc / N, f1 = (acc + gr.n) / N; acc += gr.n;
+        // an outlined segment around each group of example circles
+        deco.push({ t: 'sector', x: cx, y: cy, r0: band0, r1: band1, a0: f0 + GAP, a1: f1 - GAP, c: gr.col });
+        // leader line from the segment out to its number, as in the GAIN Tables donut
+        var mid = (f0 + f1) / 2 * 2 * Math.PI, right = Math.sin(mid) >= 0;
+        var sx = cx + Math.sin(mid) * band1, sy = cy - Math.cos(mid) * band1;
+        var ex = cx + Math.sin(mid) * (band1 + 16), ey = cy - Math.cos(mid) * (band1 + 16);
+        var hx = cx + (right ? 1 : -1) * (band1 + reach);
+        if (right ? hx < ex + 14 : hx > ex - 14) hx = ex + (right ? 14 : -14);
+        hx = right ? Math.min(hx, g.W - 90) : Math.max(hx, 90);
+        deco.push({ t: 'leader', pts: [[sx, sy], [ex, ey], [hx, ey]], c: gr.col });
+        labels.push(self.label(hx + (right ? 6 : -6), ey, String(gr.n), gr.name, right ? 'left' : 'right', 'display: block; ' + self.mono(g.wide ? 26 : 16, gr.col, ' line-height: 1.05;'), gr.bs));
+      });
+      legend = byLead
+        ? [{ label: 'Country-led (coral, as in the Annual Report)', sw: 'lc' }, { label: 'Institution-led', sw: 'li' }, { label: 'Faded inner ring: Recommendations used', sw: 'fw4' }]
+        : [{ label: 'IRRS', sw: 'fw0' }, { label: 'IRIS', sw: 'fw1' }, { label: 'IROSS', sw: 'fw2' }, { label: 'Mixed use: circle split by the Recommendations combined', sw: 'fw3' }, { label: 'Undetermined', sw: 'fw4' }, { label: 'Inner ring: country', sw: 'lc' }, { label: 'institution', sw: 'li' }];
+    } else if (layout.indexOf('regions') === 0 || layout.indexOf('challenges') === 0) {
+      var isR = layout.indexOf('regions') === 0;
+      var ry = layout.split(':')[1] || '2025', ryN = ry === 'all' ? null : +ry;
+      title = isR ? 'COUNTRY-LED EXAMPLES USING THE RECOMMENDATIONS, BY REGION · ' + (ryN || '2021–2025') : 'CHALLENGES WITH IMPLEMENTATION · ' + (ryN || '2024–2025') + ' · MULTIPLE CHOICE, ONE ENTRY PER ANSWER';
+      var cats = isR ? [4, 3, 2, 1, 0] : [8, 7, 6, 5, 4, 3, 2, 1, 0];
+      // names follow the display order (top to bottom), as in the GAIN Tables charts
+      var names = isR ? ['Middle East', 'Asia and Oceania', 'Americas', 'Europe', 'Africa'] : ['Sampling errors', 'Data confidentiality and privacy', 'Non-response bias', 'Political issues', 'Timeliness and data quality', 'Limited technical capacity', 'Safety concerns', 'Identification of populations', 'Resource constraints'];
+      var buckets = cats.map(function () { return []; });
+      rows.forEach(function (d) {
+        if (isR) { if ((ryN == null || d.y === ryN) && d.lead === 0 && d.use && d.reg >= 0) buckets[cats.indexOf(d.reg)].push({ d: d, j: 0 }); }
+        else if (ryN == null || d.y === ryN) d.ch.forEach(function (c, j) { buckets[cats.indexOf(c)].push({ d: d, j: j }); });
+      });
+      var maxN = Math.max(1, Math.max.apply(null, buckets.map(function (b) { return b.length; })));
+      if (!isR && ryN != null && ryN < 2024) labels.push(self.label((g.L + g.R) / 2, g.T - 20, 'Challenges were first asked in GAIN 2024. Pick 2024, 2025 or All years.', '', 'center', 'font: 400 14px \'IBM Plex Sans\', sans-serif; color: #e0a93b'));
+      var rowH = Math.min(isR ? 76 : 52, (g.B - g.T) / cats.length);
+      var top = g.T + ((g.B - g.T) - rowH * cats.length) / 2;
+      var iconW = isR ? (g.wide ? 52 : 34) : 0;
+      var x0 = g.L + (g.wide ? (isR ? 200 : 210) : (isR ? 150 : 120));
+      var per2 = maxN > 40 ? 4 : 2;
+      var pitch2 = Math.min(16, rowH * 0.7 / per2, (g.R - 50 - x0) / Math.ceil(maxN / per2));
+      buckets.forEach(function (b, qi) {
+        b.sort(function (a, c) { return (a.d.lead - c.d.lead) || (a.d.y - c.d.y) || (a.d.id - c.d.id); });
+        var yc = top + qi * rowH + rowH / 2;
+        b.forEach(function (it, k) {
+          put(it.d.id, it.j, { x: x0 + (Math.floor(k / per2) + 0.5) * pitch2, y: yc + (k % per2 - (per2 - 1) / 2) * pitch2, r: pitch2 * 0.38, k: (it.d.lead ? 'iU' : 'cU') + (!isR && it.d.ch.length > 1 ? 'm' : ''), v: 1, o: k / Math.max(1, b.length) });
+        });
+        var wv = Math.ceil(b.length / per2) * pitch2;
+        if (b.length) deco.push({ t: 'pill', x: x0, y: yc - pitch2 * per2 / 2 - 2, w: wv + 4 + pitch2 / 2, h: pitch2 * per2 + 4, c: BLUE, a: 0.16 });
+        if (isR) deco.push({ t: 'mini', x: g.L, y: yc - iconW / 4, w: iconW, h: iconW / 2, reg: cats[qi] });
+        labels.push(self.label(x0 - 14, yc, names[qi], '', 'right', 'font: 400 ' + (g.wide ? 13 : 11) + 'px \'IBM Plex Sans\', sans-serif; color: #cfe0f4'));
+        labels.push(self.label(x0 + wv + 12, yc, String(b.length), '', 'left', self.mono(g.wide ? 15 : 12, '#ffffff')));
+      });
+      legend = isR ? [{ label: 'Country-led, using', sw: 'cU' }] : [{ label: 'Country-led', sw: 'cU' }, { label: 'Institution-led', sw: 'iU' }, { label: 'Ringed: example reported several challenges', sw: 'cUm' }];
+      if (!isR) labels.push(self.multiNote(g, buckets, 'challenge', 'challenges'));
+    } else if (layout.indexOf('sources') === 0) {
+      var sy = layout.split(':')[1] || '2025', syN = sy === 'all' ? null : +sy;
+      title = 'DATA SOURCES OF COUNTRY-LED EXAMPLES · ' + (syN || '2024–2025') + ' · MULTIPLE CHOICE, ONE ENTRY PER ANSWER';
+      var NM = ['Survey', 'Administrative data', 'Census', 'Data integration', 'Non-traditional', 'Tools and Other'];
+      var bk = NM.map(function () { return []; });
+      rows.forEach(function (d) { if ((syN == null || d.y === syN) && d.lead === 0) d.src.forEach(function (c, j) { bk[c].push({ d: d, j: j }); }); });
+      if (syN != null && syN < 2024) labels.push(self.label((g.L + g.R) / 2, g.T - 20, 'Data sources were first asked in GAIN 2024. Pick 2024, 2025 or All years.', '', 'center', 'font: 400 14px \'IBM Plex Sans\', sans-serif; color: #e0a93b'));
+      var maxB = Math.max(1, Math.max.apply(null, bk.map(function (b) { return b.length; })));
+      var band3 = (g.R - g.L) / 6, per3 = maxB > 45 ? 6 : 4;
+      var pitch3 = Math.min(18, Math.min(72, band3 * 0.6) / per3, (g.B - g.T - 40) / (Math.ceil(maxB / per3) + per3 / 2));
+      var bw3 = per3 * pitch3;
+      bk.forEach(function (b, ci) {
+        b.sort(function (a, c) { return (c.d.use - a.d.use) || (a.d.y - c.d.y) || (a.d.id - c.d.id); });
+        var x0b = g.L + band3 * ci + band3 / 2 - bw3 / 2;
+        var u3 = b.filter(function (it) { return it.d.use; }).length;
+        var T3 = self.tomb(b.length, per3, pitch3);
+        b.forEach(function (it, k) {
+          put(it.d.id, it.j, { x: x0b + bw3 / 2 + T3.pts[k][0], y: g.B - T3.pts[k][1], r: pitch3 * 0.36, k: (it.d.use ? 'cU' : 'cN') + (it.d.src.length > 1 ? 'm' : ''), v: 1, o: k / Math.max(1, b.length) });
+        });
+        if (!b.length) return;
+        var hU3 = u3 ? T3.pts[u3 - 1][1] + pitch3 / 2 : 0;
+        deco.push({ t: 'tomb', x: x0b - 2, b: g.B, w: bw3 + 4, h: T3.H + 2, fillH: u3 === b.length ? T3.H + 2 : hU3, c: BLUE });
+        labels.push(self.label(x0b + bw3 / 2, g.B - T3.H - 14, String(b.length), '', 'center', self.mono(g.wide ? 15 : 11, BLUE)));
+        labels.push(self.label(x0b + bw3 / 2, g.B + 13, String(u3), '', 'center', self.mono(g.wide ? 12 : 10, '#ffffff', ' opacity: 0.9;')));
+      });
+      NM.forEach(function (nm, ci) { labels.push(self.label(g.L + band3 * ci + band3 / 2, g.B + 36, nm, '', 'center', 'font: 400 ' + (g.wide ? 13 : 10) + 'px \'IBM Plex Sans\', sans-serif; color: #ffffff')); });
+      legend = [{ label: 'Example using the Recommendations', sw: 'cU' }, { label: 'Not using / did not know', sw: 'cN' }, { label: 'Ringed: example used several sources', sw: 'cUm' }];
+      labels.push(self.multiNote(g, bk, 'source', 'sources'));
+    } else if (layout.indexOf('map') === 0) {
+      var my0 = layout.split(':')[1] || '2025', myN = my0 === 'all' ? null : +my0;
+      var M = this.map, span = M.lat[1] - M.lat[0];
+      // Equal Earth projection (Šavrič, Patterson and Jenny, 2018), as adopted by the UN in 2026
+      var EA1 = 1.340264, EA2 = -0.081106, EA3 = 0.000893, EA4 = 0.003796, EM = Math.sqrt(3) / 2;
+      function ee(lon, lat) {
+        var th = Math.asin(EM * Math.sin(lat * Math.PI / 180)), t2 = th * th, t6 = t2 * t2 * t2;
+        return [lon * Math.PI / 180 * Math.cos(th) / (EM * (EA1 + 3 * EA2 * t2 + t6 * (7 * EA3 + 9 * EA4 * t2))), th * (EA1 + EA2 * t2 + t6 * (EA3 + EA4 * t2))];
+      }
+      var xMax = ee(180, 0)[0], yTop = ee(0, M.lat[1])[1], yBot = ee(0, -56)[1], aspect = 2 * xMax / (yTop - yBot);
+      var aL = g.wide ? Math.max(470, g.L - 60) : 8, aR = g.wide ? g.W - 24 : g.W - 8, aT = g.T - 10, aB = g.wide ? g.B + 40 : g.B;
+      var mw = aR - aL, mh = mw / aspect;
+      if (mh > aB - aT) { mh = aB - aT; mw = mh * aspect; }
+      var mx = (aL + aR) / 2 - mw / 2, my = (aT + aB) / 2 - mh / 2;
+      function pr(nx, ny) {
+        var p = ee(nx * 360 - 180, M.lat[1] - ny * span);
+        return [mx + (p[0] + xMax) / (2 * xMax) * mw, my + (yTop - p[1]) / (yTop - yBot) * mh];
+      }
+      var byC = {}, tot = 0;
+      rows.forEach(function (d) { if ((myN == null || d.y === myN) && d.lead === 0 && M.cent[d.country]) { (byC[d.country] = byC[d.country] || []).push(d); tot++; } });
+      var nCty = Object.keys(byC).length;
+      title = 'COUNTRY-LED EXAMPLES · ' + (myN || '2021–2025') + ' · ' + tot + ' IN ' + nCty + ' COUNTRIES · GLOBE TURNS, POINT TO PAUSE';
+      // a 3D globe (orthographic view): each country's examples stack outward from its surface as a column of circles
+      var maxN = 1;
+      Object.keys(byC).forEach(function (c) { maxN = Math.max(maxN, byC[c].length); });
+      var hs = Math.min(0.07, 0.42 / (maxN + 1));
+      var gcx = (aL + aR) / 2, gcy = (aT + aB) / 2 + 6;
+      var Rg = Math.min((aR - aL) / 2, (aB - aT) / 2) / (1.1 + hs * (maxN + 1) * 0.45);
+      var bead = Math.max(2.2, Math.min(7, Rg * hs * 0.46));
+      var cts = [];
+      Object.keys(byC).forEach(function (c) {
+        var lon = M.cent[c][0] * 360 - 180, lat = M.lat[1] - M.cent[c][1] * span, L2 = byC[c];
+        L2.sort(function (a2, b2) { return (b2.use - a2.use) || (a2.id - b2.id); });
+        cts.push({ c: c, lon: lon, lat: lat, n: L2.length, nU: L2.filter(function (d) { return d.use; }).length, rings: M.hl[c] || [] });
+        L2.forEach(function (d, k) {
+          put(d.id, 0, { globe: 1, lon: lon, lat: lat, h: 1 + hs * (k + 0.7), cx: gcx, cy: gcy, R: Rg, x: gcx, y: gcy, r: bead, k: d.use ? 'cU' : 'cN', v: 1, o: self.hash(d.id, 15) });
+        });
+      });
+      deco.push({ t: 'globe', cx: gcx, cy: gcy, R: Rg, hs: hs, maxN: maxN, cts: cts, land: M.land, lat1: M.lat[1], span: span, minLabel: myN == null ? 3 : 2 });
+      legend = [{ label: 'Using the Recommendations', sw: 'cU' }, { label: 'Not using / did not know', sw: 'cN' }, { label: 'Teal country: has examples (darker = more)', sw: 'iU' }, { label: 'Column: one circle per example', sw: 'dim' }];
+    }
+    // particles with no place in this chart hide under their example's first dot, or at home in the year bars
+    var home = layout === 'bars' ? null : this.build('bars').pos, nbg = 0;
+    for (var n = 0; n < P.length; n++) {
+      if (pos[n]) continue;
+      var e = P[n].e, f = first[e];
+      var src = pos[f] && pos[f].v ? pos[f] : (home ? home[f] : null);
+      pos[n] = src ? { x: src.x, y: src.y, r: src.r, k: src.k, v: 0, o: 0 } : { x: 0, y: g.H + 40, r: 2, k: 'dim', v: 0, o: 0 };
+      // an example with no place in this view (another round, or outside this chart) drifts faintly in the background, once
+      if (P[n].j === 0 && !(pos[f] && pos[f].v) && layout !== 'bars') { pos[n].bg = true; nbg++; }
+    }
+    if (layout !== 'bars') legend.push({ label: 'Teal ring: EGRISS case study (bright: 2025–2026)', sw: 'ring' });
+    if (nbg) legend.push({ label: 'Faint: examples not in this view', sw: 'bg' });
+    var out = { pos: pos, deco: deco, labels: labels, legend: legend, title: title };
+    this._cache[key] = out;
+    return out;
+  }
+  // orthographic projection of lon/lat onto the unit sphere seen from space; z > 0 faces the reader
+  // examples whose newest EGRISS case study was published in 2025 or later
+  isRecentCase(id) { return !!(this.caseYear && this.caseYear[id] >= 2025); }
+  orth(lon, lat) {
+    var D2R = Math.PI / 180, l0 = (this.gRot == null ? 20 : this.gRot) * D2R, f0 = 12 * D2R;
+    var la = lat * D2R, lo = lon * D2R - l0, cl = Math.cos(la);
+    return [cl * Math.sin(lo), Math.cos(f0) * Math.sin(la) - Math.sin(f0) * cl * Math.cos(lo), Math.sin(f0) * Math.sin(la) + Math.cos(f0) * cl * Math.cos(lo)];
+  }
+  target(n, step, layout, time) {
+    var p, id = this.P[n].e, j = this.P[n].j, self = this;
+    if (layout === 'snow') {
+      var g = this.geo();
+      function h(k) { return self.hash(id, k); }
+      var spd = 0.012 + h(3) * 0.024, span = g.H + 40;
+      p = { x: h(1) * g.W + Math.sin(time * 0.001 * (0.35 + h(5) * 0.8) + h(6) * 6.28) * (6 + h(4) * 16), y: ((h(2) * span + time * spd) % span) - 20, r: 1.8 + h(7) * 2.2, k: (this.rows[id].lead ? 'i' : 'c') + (this.rows[id].use ? 'U' : 'N'), v: j === 0 ? 1 : 0, o: h(12) };
+      var sto = this.story && this.story[id];
+      var hasCase = !!(this.caseOf && this.caseOf[id]);
+      if (j === 0 && ((sto && (sto.cover || sto.link)) || hasCase)) {
+        p.cs = hasCase;
+        // short, sharp glints at a random rhythm; a steady small glint when motion is reduced
+        p.tw = this.reduce ? 0.3 : Math.pow(Math.max(0, Math.sin(time * (this.isRecentCase(id) ? 0.0016 : 0.0009) * (0.6 + h(14) * 0.8) + h(15) * 6.2832)), this.isRecentCase(id) ? 8 : 16);
+        p.r *= 1 + 0.12 * p.tw;
+      }
+    } else {
+      p = this.build(layout).pos[n];
+      if (p.globe) {
+        // place the example on the turning globe; circles on the far side fade out behind the horizon
+        var q = this.orth(p.lon, p.lat), vis = Math.max(0, Math.min(1, (q[2] - 0.02) / 0.18));
+        p = { x: p.cx + q[0] * p.R * p.h, y: p.cy - q[1] * p.R * p.h, r: p.r * (0.8 + 0.2 * Math.max(0, q[2])), k: p.k, v: p.v * vis, o: p.o };
+      }
+      if (p.bg) {
+        var gb = this.geo(), hb = function (k) { return self.hash(id, k); }, tb2 = this.reduce ? 0 : time, spanb = gb.H + 40;
+        p = { x: hb(1) * gb.W + Math.sin(tb2 * 0.0005 * (0.35 + hb(5) * 0.8) + hb(6) * 6.28) * (4 + hb(4) * 10), y: ((hb(2) * spanb + tb2 * (0.004 + hb(3) * 0.008)) % spanb) - 20, r: 1.1 + hb(7) * 1.3, k: 'bg', v: 1, o: hb(12) };
+      }
+    }
+    var k = p.k;
+    if (step.hl && p.v && !step.hl(this.rows[id])) k = 'dim';
+    var pal = this.pal[k], a = p.v * (step.soft ? 0.7 : 1);
+    var big = step.hl && p.v && k !== 'dim' ? 1.5 : 1;
+    return { x: p.x, y: p.y, r: p.r * big, o: p.o, f: pal.f, s: pal.s, a: a, mx: k === 'dim' ? null : p.mx, tw: p.tw || 0, bg: p.k === 'bg', cs: !!p.cs };
+  }
+  scrollState() {
+    var els = this.stepEls || [], n = this.steps().length;
+    var vh = window.innerHeight || 800, anchor = vh * 0.55, i = 0;
+    for (var k = 0; k < n; k++) { if (els[k] && els[k].getBoundingClientRect().top <= anchor) i = k; }
+    var t = 0;
+    if (i < n - 1 && els[i] && els[i + 1]) {
+      var a = els[i].getBoundingClientRect().top, b = els[i + 1].getBoundingClientRect().top;
+      t = Math.max(0, Math.min(1, ((anchor - a) / Math.max(1, b - a) - 0.4) / 0.55));
+    }
+    return { i: i, t: t };
+  }
+  measure() {
+    var st = this.stageEl, cv = this.canvasEl;
+    if (!st || !cv) return;
+    var r = st.getBoundingClientRect(), W = Math.round(r.width), H = Math.round(r.height);
+    if (!W || !H) return;
+    var dpr = Math.min(2, window.devicePixelRatio || 1);
+    if (W !== this.W || H !== this.H || dpr !== this.dpr) {
+      this.W = W; this.H = H; this.dpr = dpr;
+      cv.width = W * dpr; cv.height = H * dpr;
+      this._cache = {};
+      this.setState({ W: W, H: H });
+    }
+  }
+  unitPaths() {
+    if (this._unit) return this._unit;
+    var M = this.map, span = M.lat[1] - M.lat[0];
+    function nx(lon) { return (lon + 180) / 360; }
+    function ny(lat) { return (M.lat[1] - lat) / span; }
+    var land = new Path2D();
+    M.land.forEach(function (R) {
+      for (var z = 0; z < R.length; z += 2) {
+        if (z === 0 || Math.abs(R[z] - R[z - 2]) > 0.5) land.moveTo(R[z], R[z + 1]); else land.lineTo(R[z], R[z + 1]);
+      }
+    });
+    // rough lon/lat outlines of the GAIN regions, used only to light up the icon
+    var REG = [
+      [[-20, 38], [10, 38], [32, 32], [35, 29], [43, 12], [52, 12], [52, -36], [-20, -36]],
+      [[-30, 72], [60, 72], [60, 42], [42, 42], [26, 41], [27, 36], [-10, 35], [-30, 40]],
+      [[-180, 84], [-30, 84], [-30, -58], [-180, -58]],
+      [[60, 84], [180, 84], [180, -58], [105, -58], [95, 6], [60, 20], [62, 40], [60, 42]],
+      [[32, 32], [35, 29], [43, 12], [60, 12], [62, 26], [62, 40], [42, 42], [26, 41], [27, 36]]
+    ].map(function (poly) {
+      var p = new Path2D();
+      poly.forEach(function (pt, i) { if (i === 0) p.moveTo(nx(pt[0]), ny(pt[1])); else p.lineTo(nx(pt[0]), ny(pt[1])); });
+      p.closePath();
+      return p;
+    });
+    this._unit = { land: land, reg: REG };
+    return this._unit;
+  }
+  drawDeco(ctx, layout, alpha) {
+    var d = this.build(layout).deco, self = this;
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    d.forEach(function (s) {
+      if (s.t === 'dash') { ctx.setLineDash([3, 3]); ctx.strokeStyle = s.c; ctx.lineWidth = 1; ctx.strokeRect(s.x, s.y, s.w, s.h); ctx.setLineDash([]); }
+      else if (s.t === 'fill') { ctx.globalAlpha = alpha * s.a; ctx.fillStyle = s.c; ctx.fillRect(s.x, s.y, s.w, s.h); ctx.globalAlpha = alpha; }
+      else if (s.t === 'arc') { ctx.globalAlpha = alpha * (s.ga || 1); ctx.beginPath(); ctx.arc(s.x, s.y, s.r, -Math.PI / 2 + s.a0 * 2 * Math.PI + 0.02, -Math.PI / 2 + s.a1 * 2 * Math.PI - 0.02); ctx.strokeStyle = s.c; ctx.lineWidth = s.lw; ctx.stroke(); ctx.globalAlpha = alpha; }
+      else if (s.t === 'cap') {
+        var rr = s.w / 2;
+        ctx.beginPath();
+        ctx.moveTo(s.x, s.y + s.h);
+        ctx.lineTo(s.x, s.y + rr);
+        ctx.arc(s.x + rr, s.y + rr, rr, Math.PI, 0);
+        ctx.lineTo(s.x + s.w, s.y + s.h);
+        if (s.dash) { ctx.setLineDash([3, 3]); ctx.strokeStyle = s.c; ctx.lineWidth = 1; ctx.stroke(); ctx.setLineDash([]); }
+        else { ctx.globalAlpha = alpha * s.a; ctx.fillStyle = s.c; ctx.closePath(); ctx.fill(); ctx.globalAlpha = alpha; }
+      }
+      else if (s.t === 'mini') {
+        var U = self.unitPaths();
+        ctx.save();
+        ctx.translate(s.x, s.y); ctx.scale(s.w, s.h);
+        ctx.fillStyle = 'rgba(207,224,244,0.22)'; ctx.fill(U.land);
+        ctx.clip(U.reg[s.reg]);
+        ctx.fillStyle = '#5b8fd9'; ctx.fill(U.land);
+        ctx.restore();
+      }
+      else if (s.t === 'globe') {
+        var gx = s.cx, gy = s.cy, R = s.R, TAU = 6.2832;
+        var P2 = function (lon, lat) { var q = self.orth(lon, lat); return q; };
+        // atmosphere glow
+        var ag = ctx.createRadialGradient(gx, gy, R * 0.96, gx, gy, R * 1.2);
+        ag.addColorStop(0, 'rgba(76,195,201,0.32)'); ag.addColorStop(0.35, 'rgba(76,195,201,0.10)'); ag.addColorStop(1, 'rgba(76,195,201,0)');
+        ctx.fillStyle = ag; ctx.beginPath(); ctx.arc(gx, gy, R * 1.2, 0, TAU); ctx.fill();
+        // ocean, lit from the upper left
+        var og = ctx.createRadialGradient(gx - R * 0.38, gy - R * 0.42, R * 0.05, gx, gy, R);
+        og.addColorStop(0, '#22468c'); og.addColorStop(0.55, '#14295a'); og.addColorStop(1, '#0a1634');
+        ctx.fillStyle = og; ctx.beginPath(); ctx.arc(gx, gy, R, 0, TAU); ctx.fill();
+        ctx.save();
+        ctx.beginPath(); ctx.arc(gx, gy, R, 0, TAU); ctx.clip();
+        // graticule every 30 degrees, front side only
+        ctx.strokeStyle = 'rgba(207,224,244,0.08)'; ctx.lineWidth = 0.7; ctx.beginPath();
+        var gl = function (pts) { var on = false; pts.forEach(function (ll) { var q = P2(ll[0], ll[1]); if (q[2] > 0) { var X = gx + q[0] * R, Y = gy - q[1] * R; if (on) ctx.lineTo(X, Y); else ctx.moveTo(X, Y); on = true; } else on = false; }); };
+        for (var la = -60; la <= 60; la += 30) { var pts = []; for (var lo = -180; lo <= 180; lo += 4) pts.push([lo, la]); gl(pts); }
+        for (var lo2 = -180; lo2 < 180; lo2 += 30) { var pts2 = []; for (var la2 = -84; la2 <= 84; la2 += 4) pts2.push([lo2, la2]); gl(pts2); }
+        ctx.stroke();
+        // rings onto the sphere; points past the horizon are pulled to the edge so fills stay closed
+        var ringPath = function (rings) {
+          var path = new Path2D();
+          rings.forEach(function (Rr) {
+            var front = false, first = true;
+            for (var z = 0; z < Rr.length; z += 2) { var q0 = P2(Rr[z] * 360 - 180, s.lat1 - Rr[z + 1] * s.span); if (q0[2] > 0) { front = true; break; } }
+            if (!front) return;
+            for (var z2 = 0; z2 < Rr.length; z2 += 2) {
+              var q = P2(Rr[z2] * 360 - 180, s.lat1 - Rr[z2 + 1] * s.span), X, Y;
+              if (q[2] < 0) { var l = Math.sqrt(q[0] * q[0] + q[1] * q[1]) || 1; X = gx + q[0] / l * R; Y = gy - q[1] / l * R; }
+              else { X = gx + q[0] * R; Y = gy - q[1] * R; }
+              if (first) { path.moveTo(X, Y); first = false; } else path.lineTo(X, Y);
+            }
+            path.closePath();
+          });
+          return path;
+        };
+        var landP = ringPath(s.land);
+        ctx.fillStyle = '#2a3f78'; ctx.fill(landP);
+        ctx.strokeStyle = 'rgba(217,226,239,0.16)'; ctx.lineWidth = 0.6; ctx.stroke(landP);
+        // countries with examples, shaded by how many (as in the GAIN Tables maps)
+        s.cts.forEach(function (ct) {
+          if (!ct.rings.length) return;
+          var cp = ringPath(ct.rings);
+          ctx.fillStyle = 'rgba(76,195,201,' + (0.28 + 0.5 * Math.min(1, ct.n / Math.max(2, s.maxN))).toFixed(3) + ')'; ctx.fill(cp);
+          ctx.strokeStyle = 'rgba(143,224,228,0.75)'; ctx.lineWidth = 0.8; ctx.stroke(cp);
+        });
+        // night side shading for depth
+        var sh = ctx.createRadialGradient(gx - R * 0.3, gy - R * 0.35, R * 0.2, gx, gy, R * 1.02);
+        sh.addColorStop(0, 'rgba(255,255,255,0.06)'); sh.addColorStop(0.6, 'rgba(5,10,30,0)'); sh.addColorStop(1, 'rgba(5,10,30,0.55)');
+        ctx.fillStyle = sh; ctx.fillRect(gx - R, gy - R, 2 * R, 2 * R);
+        ctx.restore();
+        ctx.strokeStyle = 'rgba(143,224,228,0.35)'; ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(gx, gy, R, 0, TAU); ctx.stroke();
+        // columns and count bubbles, back to front
+        var order = s.cts.map(function (ct) { return { ct: ct, q: P2(ct.lon, ct.lat) }; }).filter(function (o) { return o.q[2] > -0.04; });
+        order.sort(function (a3, b3) { return a3.q[2] - b3.q[2]; });
+        order = order.filter(function (o) { return o.q[2] > 0.02; });
+        order.forEach(function (o) {
+          var q = o.q, ct = o.ct, top = 1 + s.hs * (ct.n + 0.4), fade = Math.max(0, Math.min(1, (q[2] + 0.04) / 0.2));
+          var bx = gx + q[0] * R, by = gy - q[1] * R, tx = gx + q[0] * R * top, ty = gy - q[1] * R * top;
+          var lg = ctx.createLinearGradient(bx, by, tx, ty);
+          lg.addColorStop(0, 'rgba(143,224,228,' + (0.9 * fade).toFixed(3) + ')'); lg.addColorStop(1, 'rgba(143,224,228,0)');
+          ctx.strokeStyle = lg; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(bx, by); ctx.lineTo(tx, ty); ctx.stroke();
+          ctx.fillStyle = 'rgba(143,224,228,' + (0.9 * fade).toFixed(3) + ')'; ctx.beginPath(); ctx.arc(bx, by, 2, 0, TAU); ctx.fill();
+          if (ct.n >= s.minLabel && fade > 0.3) {
+            var ux = q[0], uy = q[1], ul = Math.sqrt(ux * ux + uy * uy) || 1, off = 13;
+            var lx = tx + ux / ul * off, ly = ty - uy / ul * off, br = ct.n > 9 ? 10 : 8.5;
+            ctx.globalAlpha = alpha * fade;
+            ctx.fillStyle = ct.nU * 2 >= ct.n ? '#4cc3c9' : '#3b71b9'; ctx.beginPath(); ctx.arc(lx, ly, br, 0, TAU); ctx.fill();
+            ctx.strokeStyle = '#ffffff'; ctx.lineWidth = 1.5; ctx.stroke();
+            ctx.fillStyle = '#ffffff'; ctx.font = "600 10px 'IBM Plex Mono', monospace"; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+            ctx.fillText(String(ct.n), lx, ly + 0.5);
+            ctx.globalAlpha = alpha;
+          }
+        });
+      }
+      else if (s.t === 'map') {
+        // quiet land so the example circles carry the map: navy land, hairline borders, outlined countries with examples
+        ctx.fillStyle = '#14234c'; ctx.fill(s.land);
+        ctx.strokeStyle = 'rgba(217,226,239,0.10)'; ctx.lineWidth = 0.6; ctx.stroke(s.land);
+        ctx.strokeStyle = 'rgba(91,143,217,0.55)'; ctx.lineWidth = 1; ctx.stroke(s.hi);
+      }
+      else if (s.t === 'sector') {
+        var b0 = -Math.PI / 2 + s.a0 * 2 * Math.PI, b1 = -Math.PI / 2 + s.a1 * 2 * Math.PI;
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r1, b0, b1);
+        ctx.arc(s.x, s.y, s.r0, b1, b0, true);
+        ctx.closePath();
+        ctx.globalAlpha = alpha * 0.1; ctx.fillStyle = s.c; ctx.fill();
+        ctx.globalAlpha = alpha * 0.85; ctx.strokeStyle = s.c; ctx.lineWidth = 1.2; ctx.stroke();
+        ctx.globalAlpha = alpha;
+      }
+      else if (s.t === 'leader') {
+        ctx.beginPath();
+        s.pts.forEach(function (pt, i) { if (i === 0) ctx.moveTo(pt[0], pt[1]); else ctx.lineTo(pt[0], pt[1]); });
+        ctx.globalAlpha = alpha * 0.85; ctx.strokeStyle = s.c; ctx.lineWidth = 1.2; ctx.stroke();
+        ctx.globalAlpha = alpha;
+      }
+      else if (s.t === 'tomb') {
+        var R0 = s.w / 2;
+        ctx.beginPath();
+        ctx.moveTo(s.x, s.b);
+        ctx.lineTo(s.x, s.b - s.h + R0);
+        ctx.arc(s.x + R0, s.b - s.h + R0, R0, Math.PI, 0);
+        ctx.lineTo(s.x + s.w, s.b);
+        if (s.fillH) {
+          ctx.save(); ctx.closePath(); ctx.clip();
+          ctx.globalAlpha = alpha * 0.2; ctx.fillStyle = s.c; ctx.fillRect(s.x, s.b - s.fillH, s.w, s.fillH);
+          ctx.restore();
+          ctx.beginPath();
+          ctx.moveTo(s.x, s.b);
+          ctx.lineTo(s.x, s.b - s.h + R0);
+          ctx.arc(s.x + R0, s.b - s.h + R0, R0, Math.PI, 0);
+          ctx.lineTo(s.x + s.w, s.b);
+        }
+        ctx.setLineDash([3, 3]); ctx.strokeStyle = s.c; ctx.lineWidth = 1; ctx.stroke(); ctx.setLineDash([]);
+      }
+      else if (s.t === 'pill') {
+        var pr2 = Math.min(s.h / 2, s.w / 2);
+        ctx.globalAlpha = alpha * s.a; ctx.fillStyle = s.c;
+        ctx.beginPath();
+        ctx.moveTo(s.x, s.y); ctx.lineTo(s.x + s.w - pr2, s.y);
+        ctx.arc(s.x + s.w - pr2, s.y + pr2, pr2, -Math.PI / 2, Math.PI / 2);
+        ctx.lineTo(s.x, s.y + s.h); ctx.closePath(); ctx.fill();
+        ctx.globalAlpha = alpha;
+      }
+    });
+    ctx.restore();
+  }
+  tick(now) {
+    this.raf = requestAnimationFrame(this.tickFn);
+    var cv = this.canvasEl;
+    if (!cv || !this.P || !this.W) return;
+    var dt = Math.min(64, now - (this.last || now));
+    this.last = now;
+    var st = this.state || {}, steps = this.steps();
+    // the globe turns about 4 degrees a second, and holds still while an example is pointed at or open
+    var gPaused = this.reduce || st.hover != null || (st.sel != null && st.sel !== -1);
+    this.gRot = (this.gRot == null ? 20 : this.gRot) - (gPaused ? 0 : dt * 0.004);
+    var sc = this.scrollState();
+    var act = sc.t > 0.5 ? Math.min(sc.i + 1, steps.length - 1) : sc.i;
+    if (act !== (st.active || 0)) this.setState({ active: act, sel: undefined, layout: null, hover: null });
+    var A = steps[sc.i], Bs = steps[Math.min(sc.i + 1, steps.length - 1)], t = sc.t;
+    var la = A.layout, lb = Bs.layout;
+    if (st.layout) { A = Bs = steps[act]; la = lb = st.layout; t = 0; }
+    var falling = la === 'snow' && lb !== 'snow';
+    var time = this.reduce ? 0 : now;
+    var ctx = cv.getContext('2d'), W = this.W, H = this.H;
+    ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+    // chart furniture fades with the scroll
+    var wts = {};
+    wts[la] = (wts[la] || 0) + (1 - t);
+    wts[lb] = (wts[lb] || 0) + t;
+    var kd = this.reduce ? 1 : 1 - Math.pow(0.9, dt / 16.7);
+    this.decoA = this.decoA || {};
+    var self = this;
+    var keys = Object.keys(wts).concat(Object.keys(this.decoA)).filter(function (L, i, arr) { return L !== 'snow' && arr.indexOf(L) === i; });
+    keys.forEach(function (L) {
+      var tg = wts[L] || 0;
+      self.decoA[L] = (self.decoA[L] || 0) + (tg - (self.decoA[L] || 0)) * kd;
+      if (self.decoA[L] > 0.01) self.drawDeco(ctx, L, self.decoA[L]);
+    });
+    var cur = this.cur, P = this.P;
+    var kc = this.reduce ? 1 : 1 - Math.pow(0.9, dt / 16.7);
+    for (var n = 0; n < P.length; n++) {
+      var c = cur[n];
+      var ta = this.target(n, A, la, time);
+      var tb = t > 0 ? this.target(n, Bs, lb, time) : ta;
+      var tt;
+      if (falling) { tt = Math.max(0, Math.min(1, (t - tb.o * 0.55) / 0.45)); tt = tt * tt; }
+      else { tt = Math.max(0, Math.min(1, t * 1.5 - tb.o * 0.5)); tt = tt * tt * (3 - 2 * tt); }
+      var tx = ta.x + (tb.x - ta.x) * tt, ty = ta.y + (tb.y - ta.y) * tt, tr = ta.r + (tb.r - ta.r) * tt;
+      var k = this.reduce ? 1 : 1 - Math.pow(1 - (falling ? 0.16 : 0.05 + this.hash(n, 13) * 0.07), dt / 16.7);
+      if (c.live && Math.abs(ty - c.y) > H * 0.6 && la === 'snow' && lb === 'snow') { c.y = ty; c.x = tx; }
+      c.x += (tx - c.x) * k; c.y += (ty - c.y) * k; c.r += (tr - c.r) * k;
+      if (!c.live && Math.abs(ty - c.y) < 24) c.live = true;
+      for (var q = 0; q < 4; q++) {
+        c.f[q] += ((ta.f[q] + (tb.f[q] - ta.f[q]) * tt) - c.f[q]) * kc;
+        c.s[q] += ((ta.s[q] + (tb.s[q] - ta.s[q]) * tt) - c.s[q]) * kc;
+      }
+      c.a += ((ta.a + (tb.a - ta.a) * tt) - c.a) * kc;
+      c.bg = tt > 0.5 ? tb.bg : ta.bg;
+      var fa = c.f[3] * c.a, sa = c.s[3] * c.a;
+      if (c.y < -10 || c.y > H + 10 || (fa < 0.01 && sa < 0.01)) continue;
+      ctx.beginPath();
+      ctx.arc(c.x, c.y, Math.max(0.8, c.r), 0, 6.2832);
+      if (fa > 0.01) {
+        var fc = 'rgba(' + (c.f[0] | 0) + ',' + (c.f[1] | 0) + ',' + (c.f[2] | 0) + ',' + fa.toFixed(3) + ')';
+        // example circles: a soft halo in their own colour
+        ctx.shadowColor = fc; ctx.shadowBlur = this.reduce ? 0 : 6;
+        ctx.fillStyle = fc; ctx.fill();
+        ctx.shadowBlur = 0;
+        // mixed-use examples: one wedge per Recommendation combined, faded in as the circle arrives
+        var mxs = tb.mx && tt > 0.6 ? [tb.mx, (tt - 0.6) / 0.4] : (ta.mx && tt < 0.4 ? [ta.mx, (0.4 - tt) / 0.4] : null);
+        if (mxs) {
+          var rr = Math.max(0.8, c.r), nW = mxs[0].length, wa = (fa * mxs[1]).toFixed(3);
+          for (var w = 0; w < nW; w++) {
+            ctx.beginPath(); ctx.moveTo(c.x, c.y);
+            ctx.arc(c.x, c.y, rr, -1.5708 + w * 6.2832 / nW, -1.5708 + (w + 1) * 6.2832 / nW);
+            ctx.closePath(); ctx.fillStyle = 'rgba(' + mxs[0][w].join(',') + ',' + wa + ')'; ctx.fill();
+          }
+          ctx.beginPath(); ctx.arc(c.x, c.y, rr, 0, 6.2832);
+        }
+      }
+      if (sa > 0.01) { ctx.strokeStyle = 'rgba(' + (c.s[0] | 0) + ',' + (c.s[1] | 0) + ',' + (c.s[2] | 0) + ',' + sa.toFixed(3) + ')'; ctx.lineWidth = 1.3; ctx.stroke(); }
+      // case-study ring: bright for case studies published 2025-2026, faint for older ones; not in the opening scene
+      var eid = P[n].e, lay = tt > 0.5 ? lb : la;
+      if (P[n].j === 0 && lay !== 'snow' && this.caseYear && this.caseYear[eid] && Math.max(fa, sa) > 0.05) {
+        var rec = this.caseYear[eid] >= 2025, ra = (rec ? 0.95 : 0.35) * Math.min(1, Math.max(fa, sa) * 1.6);
+        ctx.beginPath(); ctx.arc(c.x, c.y, Math.max(0.8, c.r) + (rec ? 3 : 2.2), 0, 6.2832);
+        ctx.strokeStyle = 'rgba(143,224,228,' + ra.toFixed(3) + ')'; ctx.lineWidth = rec ? 1.6 : 0.9; ctx.stroke();
+        ctx.beginPath(); ctx.arc(c.x, c.y, Math.max(0.8, c.r), 0, 6.2832);
+      }
+      // twinkle: a four-point glint on examples that open a report or source page (filled or hollow)
+      var tw = ta.tw * (1 - tt) + tb.tw * tt;
+      if (tw > 0.04) {
+        var gl = Math.max(0.8, c.r) * (1.6 + 1.6 * tw), ga = (tw * 0.5 * Math.max(fa, sa)).toFixed(3);
+        var gcol = (tt > 0.5 ? tb.cs : ta.cs) ? '143,224,228' : '255,255,255';
+        ctx.strokeStyle = 'rgba(' + gcol + ',' + ga + ')'; ctx.lineWidth = 0.7;
+        ctx.beginPath(); ctx.moveTo(c.x - gl, c.y); ctx.lineTo(c.x + gl, c.y); ctx.moveTo(c.x, c.y - gl); ctx.lineTo(c.x, c.y + gl); ctx.stroke();
+        ctx.beginPath(); ctx.arc(c.x, c.y, Math.max(0.8, c.r) * 0.4, 0, 6.2832); ctx.fillStyle = 'rgba(' + gcol + ',' + ga + ')'; ctx.fill();
+      }
+    }
+    var ring = this.ringE;
+    if (ring != null && this.caseOf && this.caseOf[ring]) {
+      var sib = {}, self2 = this;
+      this.caseOf[ring].forEach(function (k) { self2.caseEx[k].forEach(function (e2) { if (e2 !== ring) sib[e2] = 1; }); });
+      Object.keys(sib).forEach(function (e2) {
+        var q3 = cur[self2.first[e2]];
+        if (!q3) return;
+        ctx.beginPath();
+        ctx.arc(q3.x, q3.y, Math.max(7, q3.r + 5), 0, 6.2832);
+        ctx.setLineDash([3, 3]); ctx.strokeStyle = 'rgba(143,224,228,0.95)'; ctx.lineWidth = 1.5; ctx.stroke(); ctx.setLineDash([]);
+      });
+    }
+    if (ring != null && this.parts[ring]) {
+      this.parts[ring].forEach(function (idx) {
+        var q2 = cur[idx];
+        if (q2.a * Math.max(q2.f[3], q2.s[3]) < 0.2 && !q2.bg) return;
+        ctx.beginPath();
+        ctx.arc(q2.x, q2.y, Math.max(6, q2.r + 4), 0, 6.2832);
+        ctx.strokeStyle = '#ffffff'; ctx.lineWidth = 1.5; ctx.stroke();
+      });
+    }
+  }
+  nearest(e) {
+    var cv = this.canvasEl;
+    if (!cv || !this.cur) return null;
+    var r = cv.getBoundingClientRect(), mx = e.clientX - r.left, my = e.clientY - r.top;
+    var best = null, bd = 1e9;
+    for (var n = 0; n < this.cur.length; n++) {
+      var c = this.cur[n];
+      if (c.a * Math.max(c.f[3], c.s[3]) < 0.2 && !c.bg) continue;
+      var dx = c.x - mx, dy = c.y - my, dd = dx * dx + dy * dy, lim = Math.max(8, c.r + 4);
+      if (dd < lim * lim && dd < bd) { bd = dd; best = n; }
+    }
+    return best;
+  }
+  componentDidMount() {
+    var self = this;
+    this.reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.tickFn = function (now) { self.tick(now); };
+    this.onResize = function () { self.measure(); };
+    window.addEventListener('resize', this.onResize);
+    function get(u) { return fetch(u).then(function (r) { return r.json(); }); }
+    Promise.all([get('./assets/327ec8f9d9b25a43bb01173c45375b10.json'), get('./assets/6794b02ec5b52640a5ed6e238c4bd0bf.json'), get('./assets/bdf389090d13a90c6c8dc9e4a5c402e4.json'), get('./assets/c92c0aa4e7ae0e7003c152db6be5c09a.json').catch(function () { return {}; })]).then(function (res) {
+      var ex = res[0], ch = res[1];
+      // covers and source links from the GAIN_post-collection workstream (data/story_covers.json), keyed by 0-based roster row
+      self.story = res[3] || {};
+      self.map = res[2];
+      // mixed-use examples: 0 all three, 1 IRRS + IRIS, 2 IRRS + IROSS, 3 IRIS + IROSS (roster PRO10.A/B/C, as in GAIN Tables Table 1.3)
+      var MIX = {"0":1,"1":0,"7":1,"10":1,"13":1,"14":0,"15":2,"19":0,"21":0,"24":0,"25":1,"29":0,"30":0,"32":0,"35":2,"37":0,"39":1,"40":0,"45":1,"47":1,"50":1,"53":1,"57":1,"58":0,"66":0,"84":3,"95":1,"120":0,"122":1,"123":0,"124":2,"125":0,"132":1,"139":0,"145":0,"148":0,"150":1,"151":0,"154":0,"157":1,"170":0,"171":0,"172":0,"180":0,"199":1,"201":1,"204":0,"206":0,"209":0,"210":2,"216":1,"219":1,"221":2,"222":1,"225":1,"229":0,"232":0,"239":1,"246":0,"249":0,"251":1,"256":0,"262":1,"264":0,"265":1,"266":1,"269":0,"271":1,"284":1,"289":0,"291":1,"293":1,"294":2,"295":0,"305":0,"307":0,"313":0,"317":1,"318":2,"326":0,"343":1,"344":1,"345":1,"357":1,"358":1,"359":1,"360":1,"371":1,"372":1,"376":1,"377":0,"394":1,"395":1,"396":1,"398":1,"399":1,"400":1,"404":1,"407":1};
+      // EGRISS case studies (egrisstats.org/implementation/case-studies/), matched to the GAIN examples they describe
+      self.caseList = [[2022,"Collecting demographic and socio-economic data on refugees through surveys","https://egrisstats.org/implementation/case-studies/morocco/","Morocco"],[2022,"2021 Harmonised Household Living Conditions Survey","https://egrisstats.org/implementation/case-studies/central-african-republic/","Central African Republic"],[2024,"Data integration for better analysis of socio-economic outcomes for refugees","https://egrisstats.org/implementation/case-studies/canada/","Canada"],[2024,"Informing durable solutions for IDPs with national statistics","https://egrisstats.org/implementation/case-studies/honduras/","Honduras"],[2022,"Making refugees visible in population statistics","https://egrisstats.org/implementation/case-studies/germany/","Germany"],[2022,"Linking administrative data records to analyse refugee mobility and duration of stay","https://egrisstats.org/implementation/case-studies/italy/","Italy"],[2023,"Including refugees in the Demographic and Health Survey","https://egrisstats.org/implementation/case-studies/uganda/","Uganda"],[2023,"Integrating data on displacement into the 2022 Census","https://egrisstats.org/implementation/case-studies/republic-of-armenia/","Armenia"],[2024,"Enabling sociodemographic and economic analysis of internal displacement through data integration","https://egrisstats.org/implementation/case-studies/colombia/","Colombia"],[2022,"First efforts to produce official statistics on internally displaced persons","https://egrisstats.org/implementation/case-studies/mexico/","Mexico"],[2026,"The 2025 Intercensal Survey as a foundation for strengthened IDP statistics","https://egrisstats.org/implementation/case-studies/mexico-2025/","Mexico"],[2023,"Identifying forcibly displaced and stateless persons in the 2022 Census","https://egrisstats.org/implementation/case-studies/south-africa/","South Africa"],[2024,"Strategic planning for improved national statistics on internal displacement","https://egrisstats.org/implementation/case-studies/somalia/","Somalia"],[2024,"Official and experimental refugee statistics","https://egrisstats.org/implementation/case-studies/poland/","Poland"],[2024,"Including refugees and statelessness in the population census","https://egrisstats.org/implementation/case-studies/rwanda/","Rwanda"],[2025,"Describing displacement and statelessness dynamics in post-conflict contexts through the Census","https://egrisstats.org/implementation/case-studies/kosovo/","Kosovo*"],[2025,"Putting GRF pledges into action: refugees and displaced persons in the 2024 Census","https://egrisstats.org/implementation/case-studies/djibouti/","Djibouti"],[2025,"Strengthening national ownership in data collection and analysis on internal displacement","https://egrisstats.org/implementation/case-studies/nigeria/","Nigeria"],[2025,"Including refugees, IDPs and statelessness in the Population and Housing Census","https://egrisstats.org/implementation/case-studies/iraq/","Iraq"],[2025,"Capturing displacement and statelessness in the Population and Housing Census","https://egrisstats.org/implementation/case-studies/moldova/","Republic of Moldova"],[2022,"2021 Kenyan Economic Survey","https://egrisstats.org/implementation/case-studies/kenya/","Kenya"],[2026,"Including refugees in national demographic and household budget surveys","https://egrisstats.org/implementation/case-studies/kenya-2025/","Kenya"],[2026,"Incorporating IRIS and IRRS into the 2025 Survey on Household Living Conditions","https://egrisstats.org/implementation/case-studies/democratic-republic-congo-2025/","Democratic Republic of the Congo"],[2026,"Integrating IDPs into the Modular and Permanent Household Survey","https://egrisstats.org/implementation/case-studies/mali-2025/","Mali"],[2026,"Expanding civil registration and administrative records to include people at risk of statelessness","https://egrisstats.org/implementation/case-studies/philippines-2025/","Philippines"],[2026,"Aligning UNHCR's statistics with the IRRS, IRIS and IROSS","https://egrisstats.org/implementation/case-studies/unhcr-frameworks-alignment/","UNHCR"]];
+      self.caseOf = {"368":[0],"330":[1],"126":[2],"97":[2],"124":[2],"128":[2],"50":[3],"53":[3],"261":[3],"406":[4],"252":[5],"283":[5],"403":[6],"217":[7],"411":[8],"412":[8],"373":[9],"374":[9],"173":[10],"396":[11],"33":[11],"410":[12],"31":[12],"160":[13],"273":[13],"401":[14],"1":[14],"21":[14],"326":[15],"29":[16],"44":[17],"317":[18],"286":[19],"370":[20],"14":[21],"111":[21],"150":[22],"216":[23],"81":[23],"323":[24],"325":[24],"221":[25]};
+      self.caseEx = [[368],[330],[126,97,124,128],[50,53,261],[406],[252,283],[403],[217],[411,412],[373,374],[173],[396,33],[410,31],[160,273],[401,1,21],[326],[29],[44],[317],[286],[370],[14,111],[150],[216,81],[323,325],[221]];
+      // newest case-study year per example; 'recent' = published in the last two years
+      self.caseYear = {};
+      Object.keys(self.caseOf).forEach(function (e) { self.caseYear[e] = Math.max.apply(null, self.caseOf[e].map(function (k) { return self.caseList[k][0]; })); });
+      self.rows = ex.map(function (r, i) {
+        var c = ch[i];
+        return { id: i, y: r[0], lead: r[1], fw: r[2], country: r[3], org: r[4], title: r[5], src1: r[6], pop: r[7], desc: r[8], use: c[0], reg: c[1], src: c[2], ch: c[3], mix: MIX[i] == null ? -1 : MIX[i] };
+      });
+      self.P = []; self.parts = []; self.first = [];
+      self.rows.forEach(function (d) {
+        var n = Math.max(1, d.lead === 0 ? d.src.length : 0, d.ch.length);
+        self.parts[d.id] = [];
+        for (var j = 0; j < n; j++) { self.parts[d.id].push(self.P.length); self.P.push({ e: d.id, j: j }); }
+        self.first[d.id] = self.parts[d.id][0];
+      });
+      self.measure();
+      var W = self.W || 1440, H = self.H || 900;
+      self.cur = self.P.map(function (p) {
+        return { x: self.hash(p.e, 1) * W, y: -30 - self.hash(p.e, 14) * H * 1.4, r: 2, f: [207, 224, 244, 0.6], s: [207, 224, 244, 0], a: p.j === 0 ? 1 : 0, live: false };
+      });
+      self.setState({ ready: true });
+    }).catch(function () { self.setState({ failed: true }); });
+    this.measure();
+    this.raf = requestAnimationFrame(this.tickFn);
+  }
+  componentWillUnmount() {
+    cancelAnimationFrame(this.raf);
+    window.removeEventListener('resize', this.onResize);
+  }
+  go(i) {
+    var n = this.steps().length;
+    i = Math.max(0, Math.min(n - 1, i));
+    var el = this.stepEls && this.stepEls[i];
+    if (el && el.scrollIntoView) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  renderVals() {
+    var self = this;
+    var st = this.state || {};
+    var accent = this.props.accent ?? '#4cc3c9';
+    if (this._accent !== accent) { this._accent = accent; this.pal = this.palette(accent); this._cache = {}; }
+    var steps = this.steps();
+    var active = st.active || 0;
+    var step = steps[active];
+    if (!this._refs) {
+      this.stepEls = [];
+      this._refs = { hero: function (el) { self.stepEls[0] = el; } };
+      for (var k = 0; k < steps.length - 1; k++) {
+        (function (j) { self._refs['s' + j] = function (el) { self.stepEls[j + 1] = el; }; })(k);
+      }
+      this._stageRef = function (el) { self.stageEl = el; };
+      this._canvasRef = function (el) { self.canvasEl = el; };
+      this._pick = {};
+      for (var i = 0; i < 413; i++) {
+        (function (id) {
+          self._pick['e' + id] = function () {
+            var c = self.cur && self.parts && self.cur[self.first[id]];
+            self.setState({ sel: id, sx: c ? c.x : null, sy: c ? c.y : null, hover: null });
+          };
+        })(i);
+      }
+      this._setLayout = {};
+      var Y0 = String(self.latest()), LAY = { bars: 'bars', donut: 'donut:' + Y0 + ':fw', regions: 'regions:' + Y0, sources: 'sources:' + Y0, challenges: 'challenges:' + Y0, map: 'map:' + Y0 };
+      Object.keys(LAY).forEach(function (key) { self._setLayout[key] = function () { self.setState({ layout: LAY[key], sel: -1 }); }; });
+      // the year filter swaps the year part of the current region or donut chart
+      this._setYear = {};
+      ['all', '2021', '2022', '2023', '2024', '2025'].forEach(function (y) {
+        self._setYear[y === 'all' ? 'all' : 'y' + y] = function () {
+          var s = self.state || {}, cur = s.layout || self.steps()[s.active || 0].layout, bits = cur.split(':');
+          if (bits[0] === 'snow' || bits[0] === 'bars') return;
+          bits[1] = y;
+          if (bits[0] === 'donut' && !bits[2]) bits[2] = 'fw';
+          self.setState({ layout: bits.join(':'), sel: -1 });
+        };
+      });
+      this._onMove = function (e) {
+        var n = self.nearest(e);
+        if (self.canvasEl) self.canvasEl.style.cursor = n != null ? 'pointer' : 'default';
+        var id = n != null ? self.P[n].e : null;
+        var s = self.state || {};
+        if (id !== s.hover) {
+          var c = n != null ? self.cur[n] : null;
+          self.setState({ hover: id, hx: c ? c.x : null, hy: c ? c.y : null });
+        }
+      };
+      this._onTap = function (e) {
+        var n = self.nearest(e);
+        if (n == null) return;
+        var c = self.cur[n];
+        self.setState({ sel: self.P[n].e, sx: c.x, sy: c.y, hover: null });
+      };
+    }
+    var base = {
+      refs: this._refs, stageRef: this._stageRef, canvasRef: this._canvasRef, pick: this._pick, setLayout: this._setLayout, setYear: this._setYear,
+      yearBox: 'display: none', ys: {},
+      onMove: this._onMove, onTap: this._onTap,
+      next: function () { self.go(active + 1); },
+      leave: function () { if ((self.state || {}).hover != null) self.setState({ hover: null }); },
+      closeEx: function () { self.setState({ sel: -1, hover: null }); },
+      loading: !st.ready, labels: [], legend: [], chartTitle: '', hasEx: false,
+      ex: { head: '', title: '', org: '', desc: '', descStyle: '', facts: [], foot: '', hasImg: false, pinned: false, img: '', imgStyle: '', imgAlt: '', cap: '', hasCover: false, cover: '', coverAlt: '', hasLink: false, link: '', linkHost: '', hasCases: false, cases: [], casesHead: '', hasWhy: false, why: '' },
+      panelStyle: 'display: none', legendBox: 'display: none', exploreBox: 'display: none', seg: {}, mode: { text: '', style: 'display: none' }
+    };
+    this.ringE = null;
+    if (!st.ready || !this.rows) return base;
+    var g = this.geo();
+    var layout = st.layout || step.layout;
+    var B = layout === 'snow' ? null : this.build(layout);
+    var pal = this.pal;
+    function sw(k) {
+      var p = pal[k];
+      var c = 'rgb(' + p.f[0] + ',' + p.f[1] + ',' + p.f[2] + ')';
+      if (p.f[3] === 0) return 'display: inline-block; flex-shrink: 0; width: 10px; height: 10px; border-radius: 50%; box-shadow: inset 0 0 0 1.5px ' + 'rgb(' + p.s[0] + ',' + p.s[1] + ',' + p.s[2] + ')';
+      return 'display: inline-block; flex-shrink: 0; width: 10px; height: 10px; border-radius: 50%; background: ' + c + (p.s[3] > 0 ? '; box-shadow: 0 0 0 1.5px rgb(' + p.s[0] + ',' + p.s[1] + ',' + p.s[2] + ')' : '');
+    }
+    var legend = B ? B.legend.map(function (l) { return { label: l.label, sw: sw(l.sw) }; }) : [];
+    var labels = B ? B.labels : [];
+    var exId = null, ax = null, ay = null, pinned = false, featured = false;
+    if (st.hover != null) { exId = st.hover; ax = st.hx; ay = st.hy; }
+    else if (st.sel != null && st.sel !== -1) { exId = st.sel; ax = st.sx; ay = st.sy; pinned = true; }
+    else if (st.sel !== -1 && step.feat != null && B) {
+      exId = step.feat; pinned = true; featured = true;
+      var fp = B.pos[this.first[exId]];
+      ax = fp.x; ay = fp.y;
+    }
+    this.ringE = exId;
+    var ex = base.ex, panelStyle = 'display: none';
+    if (exId != null) {
+      var d = this.rows[exId];
+      // every pop-up has the same fields, in the same order; missing answers say why they are missing
+      var FW = ['IRRS', 'IRIS', 'IROSS', 'Mixed use', 'Undetermined'];
+      var SN = ['Survey', 'Administrative data', 'Census', 'Data integration', 'Non-traditional', 'Tools and Other'];
+      var CN = ['Resource constraints', 'Identification of populations', 'Safety concerns', 'Limited technical capacity', 'Timeliness and data quality', 'Political issues', 'Non-response bias', 'Data confidentiality and privacy', 'Sampling errors'];
+      var early = d.y < 2024;
+      var vOn = 'display: flex; gap: 6px; align-items: baseline; font-size: 13px; line-height: 1.4; color: #ffffff; min-width: 0';
+      var vOff = 'display: flex; gap: 6px; align-items: baseline; font-size: 13px; line-height: 1.4; color: #8b98b3; font-style: italic; min-width: 0';
+      var noSw = 'display: none';
+      function fact(k, v, sw2, missing) { return { k: k, v: v, sw: sw2 || noSw, vStyle: missing ? vOff : vOn }; }
+      var facts = [
+        fact('Example lead', d.lead === 0 ? 'Country-led' : 'Institution-led', sw(d.lead ? 'iU' : 'cU')),
+        fact('Use of the Recommendations', d.use ? 'Using EGRISS Recommendations' : 'Not using, or don\'t know if used', sw((d.lead ? 'i' : 'c') + (d.use ? 'U' : 'N'))),
+        fact('Recommendations applied', d.fw === 3 && d.mix >= 0 ? 'Mixed use: ' + ['IRRS + IRIS + IROSS', 'IRRS + IRIS', 'IRRS + IROSS', 'IRIS + IROSS'][d.mix] : FW[d.fw], sw('fw' + d.fw), d.fw === 4),
+        d.src.length ? fact('Data sources and tools', d.src.map(function (c) { return SN[c]; }).join(', ')) : fact('Data sources and tools', early ? 'Not collected before GAIN 2024' : (d.src1 || 'Not reported'), null, early || !d.src1),
+        d.pop ? fact('Population groups', d.pop) : fact('Population groups', early ? 'Not collected before GAIN 2024' : 'Not reported', null, true),
+        d.ch.length ? fact('Challenges', d.ch.map(function (c) { return CN[c]; }).join(', ')) : fact('Challenges', early ? 'Not collected before GAIN 2024' : 'No challenges reported', null, true)
+      ];
+      var nParts = this.parts[exId].length;
+      var imgs = { 323: { src: './assets/1110a486746e18db4bb386297de61251.jpg', alt: 'A birth registration officer fills in a form with a woman in the Philippines', cap: 'Birth registration, Philippines · © UNHCR' } };
+      var im = imgs[exId];
+      // report covers and source links collected by the GAIN SDG workstream (covers.html); keyed by example row
+      var COVERS = {
+        81: { src: './assets/412852248cb174627ac2563a9574674b.png', alt: 'Cover of INSTAT Mali, EMOP annual report 2024: household consumption, poverty and well-being' },
+        321: { src: './assets/81dbdb37ac3968339a481610d3a967e1.png', alt: 'Cover of UBOS, National Governance, Peace and Security Survey Report 2024/25' },
+        306: { src: './assets/066895a9e1a1cab8c6a7f7c139d2f6d2.png', alt: 'Cover of Statistical Institute of Belize, Migration Report: Belize 2022 Census' },
+        6: { src: './assets/f3424ff00ad4ab16a55f45e5ef8c0a50.png', alt: 'Cover of the Bureau of National Statistics of Kazakhstan, Population of the Republic of Kazakhstan (2023)' },
+        113: { src: './assets/dba817fd964c048e2f30ae927785f7fc.png', alt: 'Cover of UNHCR policy brief, From Stateless to Citizens: the journey of the Shona community in Kenya (2024)' },
+        326: { src: './assets/56b20ce66c4a9483009dfbbd8ce9126b.png', alt: 'Cover of Kosovo Agency of Statistics, Report on the Census of Population, Households and Housing 2024' },
+        110: { src: './assets/401fbae97f2c0a5023410f3967cd5808.png', alt: 'Cover of Statistics Norway note, Tidlige asylflyttinger i perioden 2013–2022' },
+        104: { src: './assets/fbd6ca034c87f1b231bd244f913182c5.png', alt: 'First page of the Jordan Department of Statistics Labour Force Survey 2024 questionnaire' },
+        203: { src: './assets/f6f66f7fb1f8045090fcfa37bfad189c.png', alt: 'Datos para la Paz, the data portal of the Colombia Victims Unit' },
+        112: { src: './assets/1c0563e4391df2b949776b58b8e7c354.png', alt: 'Cover of INSD Burkina Faso, ESEP-PDI 2024 socio-economic and protection survey of IDPs and host communities, main results (May 2025)' },
+        123: { src: './assets/8f98a71d6d24b2c69b478e9167f9c918.png', alt: 'Cover of the report of the 4th African School on Migration Statistics, Abidjan, May 2025' },
+        318: { src: './assets/69d8ced83de0a135d0aad028d0ec256e.png', alt: 'Cover of UBOS, National Population and Housing Census 2024 Final Report, Volume 1' }
+      };
+      var LINKS = {
+        3: 'https://www.stat.gov.tm/', 6: 'https://stat.gov.kz/upload/medialibrary/75f/z2gxd3z3s8gsf7em4x4q5ahd87mgoc5m/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%201%20%D1%82%D0%BE%D0%BC.pdf',
+        8: 'https://www.unrwa.org/resources/reports/palestinian-population-lebanon-findings-unrwa-digital-identity-verification', 29: 'https://instad.dj/rgph',
+        52: 'https://www.ons.gov.uk/peoplepopulationandcommunity/', 55: 'https://www.ons.gov.uk/peoplepopulationandcommunity/',
+        57: 'https://rtc-cea.cepal.org/es/grupo-trabajo/guia-practica-para-la-produccion-de-estadisticas-armonizadas-sobre-desplazamiento',
+        65: 'https://dosweb.dos.gov.jo/ar/censuses/population_housing/census2015/census2015_tables/', 83: 'https://www.ine.es/infografias/ucranianos/ucranianos.htm',
+        92: 'https://www.insee.fr/fr/statistiques/6793306?sommaire=6793391', 104: 'https://dosweb.dos.gov.jo/DataBank/Labour_Force/Employment_Unemployment/Labor_Force_Survey_questionnaire_2024.pdf',
+        110: 'https://www.ssb.no/befolkning/flytting/artikler/tidlige-asylflyttinger-i-perioden-2013-2022/_/attachment/inline/a8e35027-dda5-4a5a-94b5-8bd5d22e4a4c:dda1a4c30ebb5758191abe7900b03a39e8cc44dd/NOT2023-43.pdf',
+        113: 'https://data.unhcr.org/en/documents/details/111718', 115: 'https://www.knbs.or.ke/reports/2024-economic-survey/',
+        117: 'https://www.ssb.no/befolkning/innvandrere/artikler/hvordan-presterer-flyktninger-pa-skolebenken', 138: 'https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/flyktninger-i-og-utenfor-arbeidsmarkedet-2023',
+        140: 'https://www.ssb.no/befolkning/innvandrere/artikler/mange-enslige-mindrearige-flyktninger-fra-ukraina', 160: 'https://stat.gov.pl/wydarzenia/wydarzenia-miedzynarodowe/health-of-refugees-from-ukraine-in-poland-2022-survey-findings',
+        176: 'https://www.inegi.org.mx/programas/envipe/2025/#datos_abiertos', 183: 'https://dosweb.dos.gov.jo/labourforce/employment-and-unemployment/',
+        184: 'https://www.armstat.am/file/doc/99552283.pdf', 203: 'https://datospaz.unidadvictimas.gov.co/',
+        212: 'https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/methodologies/refugeeintegrationoutcomesriodatalinkagepilot',
+        217: 'https://www.arlis.am/DocumentView.aspx?DocID=167733', 233: 'https://www.ssb.no/befolkning/flytting/artikler/uregistrert-utvandring-fra-norge',
+        235: 'https://www.ssb.no/arbeid-og-lonn/flyktninger-og-arbeidsmarkedet', 252: 'https://unece.org/sites/default/files/2024-04/2.Refugees%20WP1%20ITA%20Conti%20Pangallo.pdf',
+        260: 'https://unece.org/sites/default/files/2024-02/2Innov%20ITA_ENG_0.pdf', 263: 'https://pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_LFSQ022024E.pdf',
+        273: 'https://stat.gov.pl/en/events/international-events/ukrainian-refugee-health-research-2022-2023-and-data-innovation',
+        306: 'https://sib.org.bz/wp-content/uploads/20251020_BelizeCensusMigrationReport.pdf', 308: 'https://dx.doi.org/10.18235/0013760',
+        326: 'https://askapi.rks-gov.net/Custom/c973a3e6-790c-47e7-924b-4e9f5d745aec.pdf', 367: 'http://www.erfdataportal.com/index.php/catalog/240',
+        369: 'https://www.gouv.ci/_actualite-article.php?recordID=12580&d=3', 370: 'https://drive.google.com/file/d/1q5QE1A7UkwDIsDSphr4C9NIDYho0SB1p/view',
+        402: 'https://www.knbs.or.ke/wp-content/uploads/2022/05/2022-Economic-Survey1.pdf',
+        // featured story examples, found by web search (GAIN_post-collection, 30 Sep 2026)
+        112: 'https://www.insd.bf/sites/default/files/2026-02/Rapport%20Analyse_ESEP-PDI.pdf',
+        44: 'https://microdata.nigerianstat.gov.ng/index.php/catalog/148',
+        323: 'https://rsso03.psa.gov.ph/sites/default/files/2024-11/BRAP-Press-Release-Bajau-Community-Aug-03-2024.pdf',
+        88: 'https://dofi.ibz.be/fr/figures/access-and-stay/rapports',
+        318: 'https://statistics.ubos.org/nphc/reports/National-Population-and-Housing-Census-2024-Final-Report-Volume-1-Main.pdf',
+        127: 'https://www.nso.go.th/public/e-book/Analytical-Reports/Migration-survey-2562-2566-Eng/6',
+        123: 'https://statafric.au.int/en/news/press-releases/2025-09-04/4th-african-school-migration-statistics'
+      };
+      var inStory = !!(this.story && Object.keys(this.story).length);  // once the checked list loads it is the only source: no fallback to held-back covers or related links
+      var st2 = (this.story || {})[exId] || {};
+      var shot = st2.cover && st2.kind === 'screenshot';
+      if (shot && !im) im = { src: st2.cover, alt: st2.alt || 'Source web page', cap: st2.cap || 'Source page' };
+      var cov = st2.cover && !shot ? { src: st2.cover, alt: st2.alt || 'Report cover' } : (shot || inStory ? null : COVERS[exId]);
+      var lnk = inStory ? (st2.link || '') : (LINKS[exId] || '');
+      var lnkNews = !!st2.news;
+      var CL = this.caseList || [], csKeys = (this.caseOf || {})[exId] || [];
+      var csList = csKeys.slice().sort(function (a4, b4) { return CL[b4][0] - CL[a4][0]; }).map(function (k) { return { y: CL[k][0] >= 2025 ? 'NEW · ' + CL[k][0] : String(CL[k][0]), t: CL[k][1], url: CL[k][2] }; });
+      var csHead = (csList.length > 1 ? 'EGRISS CASE STUDIES' : 'EGRISS CASE STUDY') + ' ON THIS EXAMPLE';
+      var pw = Math.min(360, g.W - 32);
+      var ph = (im ? 175 : 0) + 90 + 6 * 34 + 120 + (csList.length ? 30 + csList.length * 34 : 0);
+      var px, py;
+      if (g.wide && ax != null) {
+        px = ax + 24;
+        if (px + pw > g.W - 16) px = ax - 24 - pw;
+        px = Math.max(16, px);
+        py = Math.max(16, Math.min(g.H - ph - 16, ay - 60));
+      } else { px = 16; py = null; }
+      // wide screens: next to the example, never past the bottom edge; narrow screens: a sheet along the bottom
+      var vpos = py == null ? 'bottom: 16px; max-height: ' + Math.round(g.H * 0.6) + 'px;' : 'top: ' + Math.round(py) + 'px; max-height: ' + Math.round(g.H - py - 16) + 'px;';
+      panelStyle = 'position: absolute; left: ' + Math.round(px) + 'px; ' + vpos + ' overflow-y: auto; overscroll-behavior: contain; width: ' + pw + 'px; box-sizing: border-box; padding: 16px 18px; background: rgba(14,27,61,0.97); border: 1px solid rgba(207,224,244,0.22); border-radius: 3px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 12px 34px rgba(0,0,0,0.35); z-index: 10;' + (pinned ? '' : ' pointer-events: none;');
+      var clamp = 'display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; font-size: 13px; line-height: 1.55;';
+      ex = {
+        head: ('GAIN ' + d.y + ' · ' + (d.country || 'Regional / global')).toUpperCase(),
+        title: d.title, org: d.org || 'Organisation not reported', pinned: pinned,
+        desc: d.desc || 'No description was provided for this example.',
+        descStyle: clamp + (d.desc ? ' color: #e6eef8' : ' color: #8b98b3; font-style: italic'),
+        facts: facts,
+        foot: nParts > 1 ? 'Multiple-choice answers: shown ' + nParts + ' times in the data sources and challenges charts' : 'GAIN Survey ' + d.y,
+        hasImg: !!im, img: im ? im.src : '', imgStyle: 'display: block; width: 100%; height: 150px; object-fit: cover; border-radius: 3px;' + (shot && im && im.src === st2.cover ? ' object-position: top; border: 1px solid rgba(207,224,244,0.25); background: #ffffff' : ''), imgAlt: im ? im.alt : '', cap: im ? im.cap : '',
+        hasCover: !!cov, cover: cov ? cov.src : '', coverAlt: cov ? cov.alt : '',
+        hasCases: csList.length > 0, cases: csList, casesHead: csHead,
+        hasWhy: !!(featured && step.why), why: featured ? (step.why || '') : '',
+        hasLink: !!lnk, link: lnk, linkHost: lnk ? lnk.replace(/^https?:\/\/(www\.)?/, '').split('/')[0] + (lnkNews ? ' · news article, no official page found' : '') : ''
+      };
+    }
+    var show = !!B;
+    var legendBox = 'position: absolute; left: ' + (g.wide ? g.L : 16) + 'px; top: ' + (g.wide ? 32 : 8) + 'px; display: flex; flex-wrap: wrap; gap: 4px 12px; max-width: ' + (g.W - (g.wide ? g.L : 16) - 24) + 'px; pointer-events: none; transition: opacity .4s; opacity: ' + (show ? 1 : 0);
+    var exploreBox = 'position: absolute; right: 24px; bottom: 12px; display: ' + (step.explore ? 'flex' : 'none') + '; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 6px; max-width: calc(100% - 48px)';
+    var on = 'border-color: #4cc3c9; color: #4cc3c9';
+    var seg = {};
+    ['bars', 'donut', 'regions', 'sources', 'challenges', 'map'].forEach(function (k2) { seg[k2] = layout.split(':')[0] === k2 ? on : ''; });
+    var lb = layout.split(':');
+    var hasYear = lb[0] !== 'snow' && lb[0] !== 'bars';
+    var yearBox = 'position: absolute; left: ' + (g.wide ? g.L : 16) + 'px; top: ' + (g.wide ? 118 : 68) + 'px; display: ' + (hasYear ? 'flex' : 'none') + '; flex-wrap: wrap; align-items: center; gap: 6px; z-index: 5';
+    var ys = {};
+    ['all', '2021', '2022', '2023', '2024', '2025'].forEach(function (y) { ys[y === 'all' ? 'all' : 'y' + y] = hasYear && lb[1] === y ? on : ''; });
+    return Object.assign(base, {
+      yearBox: yearBox, ys: ys,
+      loading: false, labels: labels, legend: legend, chartTitle: B ? B.title : '',
+      hasEx: exId != null, ex: ex, panelStyle: panelStyle, legendBox: legendBox, exploreBox: exploreBox, seg: seg,
+      mode: (function () {
+        // which rounds the chart shows: the latest round (GAIN 2025 now, 2026 next) or all rounds
+        var bits = layout.split(':'), kind = bits[0], yv = bits[1], L = String(self.latest());
+        var pill = 'display: inline-block; margin-bottom: 6px; padding: 3px 8px; border-radius: 2px; font: 500 11px \'IBM Plex Mono\', monospace; letter-spacing: 0.1em;';
+        var asked = kind === 'sources' || kind === 'challenges' ? '2024–' : '2021–';
+        if (kind === 'snow') return { text: '', style: 'display: none' };
+        if (kind === 'bars' || yv === 'all') return { text: 'ALL ROUNDS · GAIN ' + asked + L, style: pill + ' border: 1px solid rgba(207,224,244,0.55); color: #cfe0f4' };
+        if (yv === L) return { text: 'LATEST ROUND · GAIN ' + L, style: pill + ' background: #4cc3c9; color: #0a1430' };
+        return { text: 'SINGLE ROUND · GAIN ' + yv, style: pill + ' border: 1px solid rgba(207,224,244,0.35); color: #8db8e3' };
+      })()
+    });
+  }
+}
+</script>
+</body>
+</html>
