@@ -21,6 +21,14 @@ python3 -m http.server 8123
 
 Then open http://localhost:8123/Main.dc.html.
 
+## Updating the design artifact
+
+The design copy loads images and data from its own uploads (`/_blob/<id>`), not from this repo.
+`tools/design_blob_map.json` maps the covers added on 8 Oct 2026 (`exNNN`) to their upload ids;
+the other covers keep their original ids (the file name in `assets/covers-web/`). To push new covers:
+upload the images and a covers JSON with `/_blob/` paths, then point `Main.dc.html` at the new JSON.
+Version 42 (8 Oct 2026) loads covers data `/_blob/9dfe56f7a1da716ccffe14e8ab417ea2`.
+
 ## Links
 
 - Story (design tool): https://claude.ai/artifact/Frysz8mQTSS5Rv8GX5LRMi
