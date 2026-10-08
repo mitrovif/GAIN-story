@@ -117,7 +117,8 @@ class Browser:
         if not self.ctx:
             from playwright.sync_api import sync_playwright
             self.pw = sync_playwright().start()
-            self.browser = self.pw.chromium.launch()
+            # CHROME_PATH: use an installed Chrome instead of Playwright's own download
+            self.browser = self.pw.chromium.launch(executable_path=os.environ.get("CHROME_PATH") or None)
             self.ctx = self.browser.new_context(viewport={"width": 1280, "height": 900}, user_agent=UA, locale="en-GB")
 
     def get(self, url):

@@ -1,10 +1,13 @@
 """Add covers to the story that the "own document only" rule held back (decision of 8 Oct 2026).
 
-Two sources, for examples that show no image in the story yet:
+Three sources, for examples that show no image in the story yet:
   - pipeline/covers/      rows with cover_status "held:": the image is fine but its link is a
                           related edition or a section page. Marked related=True so the page says so.
   - pipeline/covers-sdg/  covers from gain_sdg_workstream that pipeline/covers lacks (rendered from
                           reports on SharePoint). Link from data/sdg_example_links.csv when there is one.
+  - search                rows whose link was found by the web search of 8 Oct 2026 and whose cover was
+                          checked by eye (cover_status "ok…", replacement_on 2026-10-08). The new link
+                          replaces any older one; related links are marked as such.
 
 An example that already has a story link keeps it. Writes 480px JPEGs to assets/covers-web/ and
 updates the story covers file in place. Safe to re-run.
@@ -39,9 +42,10 @@ def main():
     have_pc = {f[:-4] for f in os.listdir(os.path.join(P, 'covers'))}
     have_sdg = {f[:-4] for f in os.listdir(os.path.join(P, 'covers-sdg')) if f.endswith('.png')}
 
-    added = {'held': 0, 'sdg': 0, 'no_link': 0}
+    added = {'held': 0, 'sdg': 0, 'search': 0, 'no_link': 0}
     candidates = [(e, 'held') for e, r in rows.items() if r['cover_status'].startswith('held') and e in have_pc]
     candidates += [(e, 'sdg') for e in sorted(have_sdg - have_pc)]
+    candidates += [(e, 'search') for e, r in rows.items() if r['cover_status'].startswith('ok') and r.get('replacement_on') == '2026-10-08' and e in have_pc]
     for ex_id, src in candidates:
         key = str(int(ex_id[2:]) - 1)  # story keys are the 0-based roster row
         entry = story.get(key, {})
@@ -49,7 +53,14 @@ def main():
             continue
         r = rows.get(ex_id, {})
         title, country = r.get('title', ''), r.get('country', '')
-        if src == 'held':
+        if src == 'search':
+            img = os.path.join(P, 'covers', ex_id + '.png')
+            kind = 'screenshot' if 'screenshot' in r['cover_status'] else 'cover'
+            entry['link'] = r['replacement_url']
+            entry['related'] = r.get('replacement_match') == 'related'
+            entry['news'] = r.get('replacement_source', '').startswith('news')
+            alt = ('Source web page' if kind == 'screenshot' else 'Cover or first page') + (' (related document)' if entry['related'] else '') + ': ' + title + ' (' + country + ')'
+        elif src == 'held':
             img = os.path.join(P, 'covers', ex_id + '.png')
             kind = 'screenshot' if 'screenshot' in r['cover_status'] else 'cover'
             if not entry.get('link'):

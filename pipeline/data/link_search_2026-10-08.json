@@ -1,0 +1,1882 @@
+[
+ {
+  "ex_id": "ex089",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No Immigration Office publication of statelessness-stay statistics found; only the general dofi reports page (already tried)."
+ },
+ {
+  "ex_id": "ex095",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No detention/ATD statistics publication found; search budget ran out before a dedicated search."
+ },
+ {
+  "ex_id": "ex086",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not yet published: the IDAC/IDEAS assessment with BPS is only in a UNHCR consultancy notice (contract Feb-Jul 2026)."
+ },
+ {
+  "ex_id": "ex103",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No ESS page on the refugee technical working group or NPC MoU found."
+ },
+ {
+  "ex_id": "ex217",
+  "url": "https://www.jointdatacenter.org/?p=68306",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "JDC project page 'Internally Displaced People in Mali': INSTAT to add 2,700 IDP households to the EMOP sample; no INSTAT report yet."
+ },
+ {
+  "ex_id": "ex055",
+  "url": "https://dtm.iom.int/reports/haiti-report-internal-displacement-situation-round-14-august-2026",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "IOM DTM/DGPC publication page, Haiti report on the internal displacement situation Round 14 (Aug 2026), latest round of this monitoring; has a Download button."
+ },
+ {
+  "ex_id": "ex003",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not yet published: KRSO refugee livelihood survey fieldwork reported by Rudaw (2026, already tried); no KRSO report found."
+ },
+ {
+  "ex_id": "ex193",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not yet published: same KRSO refugee livelihood survey as ex003; no official report found."
+ },
+ {
+  "ex_id": "ex016",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public LISGIS page on coordination with LRRRC/UNHCR/Red Cross found; search budget ran out."
+ },
+ {
+  "ex_id": "ex097",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No official page found for MJSP/DAV human mobility workshops."
+ },
+ {
+  "ex_id": "ex100",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public copy of the MJSP/DAV human mobility guidelines found; only the 2020 IDP law context."
+ },
+ {
+  "ex_id": "ex206",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No 2025 NCFRMI registration product found; the tried reliefweb item is 2024; search budget ran out."
+ },
+ {
+  "ex_id": "ex209",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Only news on 2024 plans and 2026 returns from Chad; the Keffi press release was already tried and covers only part of the example."
+ },
+ {
+  "ex_id": "ex199",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Survey appears as 'EMI 2025' led by ONP with IOM; no published report found, only news (already tried)."
+ },
+ {
+  "ex_id": "ex171",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No published INSTAD/TWG 2025 action plan found; only the 2024 IGAD coordination-meeting news (already tried)."
+ },
+ {
+  "ex_id": "ex031",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page found on the approved departmental migration reporting forms."
+ },
+ {
+  "ex_id": "ex046",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page found on the Belarus delegation study visit to Baku."
+ },
+ {
+  "ex_id": "ex006",
+  "url": "https://www.lse.ac.uk/international-development/research/british-society-for-population-studies/Assets/Conference-2026/Abstracts/Developments-in-official-statistics.pdf",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": true,
+  "note": "BSPS 2026 conference abstracts (with ONS co-author) proposing the Zhang method to estimate the UK unauthorised population; no ONS publication yet."
+ },
+ {
+  "ex_id": "ex059",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not yet published: no PCBS page for the planned 2026 Gaza population listing."
+ },
+ {
+  "ex_id": "ex273",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Title too vague; no State Statistical Committee publication on refugee/IDP administrative data found."
+ },
+ {
+  "ex_id": "ex034",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public Stats SA concept note on IDPs in Census 2022 found."
+ },
+ {
+  "ex_id": "ex249",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not yet published: no EPCV 2025-26 report or page found on ANSADE."
+ },
+ {
+  "ex_id": "ex251",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not yet published: Mauritania MICS 2026 is planned; no survey page found."
+ },
+ {
+  "ex_id": "ex121",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No 2025 AU guidelines on migration and forced displacement found; only the 2018-2030 Migration Policy Framework."
+ },
+ {
+  "ex_id": "ex211",
+  "url": "https://data.unhcr.org/en/documents/details/99692",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "UNHCR data portal page for the EAC International Migration Statistics Report, Edition 1 (May 2022); edition three not found online."
+ },
+ {
+  "ex_id": "ex018",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No ECOWAS international mobility webinar page for 2025 found."
+ },
+ {
+  "ex_id": "ex021",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not yet published: planned 2026 webinar on IDPs and refugees; no page found."
+ },
+ {
+  "ex_id": "ex024",
+  "url": "https://www.ecowas.int/ecowas-strengthens-the-harmonization-of-migration-data-and-macroeconomic-convergence-in-west-africa/",
+  "match": "related",
+  "source": "official",
+  "is_pdf": false,
+  "note": "ECOWAS press release (20 Aug 2026) on the Abidjan workshop to validate the third edition of the Regional Report on International Migration in West Africa."
+ },
+ {
+  "ex_id": "ex305",
+  "url": "https://www.iadb.org/en/project/RG-T4896",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "IDB project page RG-T4896 'Support to Identify Return Migrants in Household Surveys' (Honduras, Guatemala, El Salvador; approved 2026); returns 403 to automated fetch."
+ },
+ {
+  "ex_id": "ex157",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public IDMC output on optimising Bangladesh displacement data systems (RMMRU/DDM) found."
+ },
+ {
+  "ex_id": "ex160",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page found for IDMC's 2025 Guatemala training of CONRED/INE."
+ },
+ {
+  "ex_id": "ex163",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page found for IDMC's 2025 Kenya IRIS-focused training."
+ },
+ {
+  "ex_id": "ex166",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page found for IDMC's 2025 Nigeria training for NCFRMI/NBS."
+ },
+ {
+  "ex_id": "ex169",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page found for IDMC's 2025 Ghana training."
+ },
+ {
+  "ex_id": "ex052",
+  "url": "https://reliefweb.int/report/haiti/haiti-report-internal-displacement-situation-haiti-round-10-june-2025",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "ReliefWeb page for IOM DTM Haiti internal displacement report Round 10 (June 2025); found via search, fetch returned 403 so not opened."
+ },
+ {
+  "ex_id": "ex126",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page found for the 2025 IOM-NSO Thailand workshop (only a 2026 joint workplan mention on LinkedIn)."
+ },
+ {
+  "ex_id": "ex130",
+  "url": "https://bangladesh.un.org/en/306903-iom-launches-first-nationwide-estimate-disaster-induced-internal-displacement-bangladesh",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "UN Bangladesh press release (11 Dec 2025) on IOM's first nationwide disaster-IDP estimate launched with the Government; no PDF link, REMAP not named."
+ },
+ {
+  "ex_id": "ex133",
+  "url": "https://www.thailand-business-news.com/news/259776-new-iom-report-warns-of-record-mobility-displacement-and-migrant-deaths-across-asia-pacific",
+  "match": "exact",
+  "source": "news",
+  "is_pdf": false,
+  "note": "News article (21 Nov 2025) on the IOM Asia-Pacific Migration Data Report 2025; IOM's own PDF (already tried) blocks with 403 and publications.iom.int guess 404."
+ },
+ {
+  "ex_id": "ex049",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No published JIPS methodological paper on the Progress Measure found; likely not yet published."
+ },
+ {
+  "ex_id": "ex243",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public report found for the JIPS West Cameroon (5 municipalities) survey; likely not yet published."
+ },
+ {
+  "ex_id": "ex246",
+  "url": "https://unhabitat.org/sites/default/files/2026/09/pemba_urban_profile_2026.pdf",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": true,
+  "note": "UN-Habitat/JIPS/IOM report 'Progress Towards Durable Solutions for IDPs in Greater Pemba' (2026), the output of this survey; page: unhabitat.org/progress-towards-durable-solutions-for-idps-in-greater-pemba-opportunities-and-challenges-in-pemba."
+ },
+ {
+  "ex_id": "ex267",
+  "url": "https://repositorio.cepal.org/bitstreams/2359657e-4c3b-44cb-8719-269e103fe069/download",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": true,
+  "note": "ECLAC repository PDF of the 'Guia practica para la produccion de estadisticas armonizadas sobre desplazamiento forzado y migracion en ALC' (LC/CEA.13/5, Nov 2025); publication page cepal.org/es/node/71477."
+ },
+ {
+  "ex_id": "ex269",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public output found for the JIPS/DRC Sokoto durable solutions profiling; likely not yet published."
+ },
+ {
+  "ex_id": "ex154",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched in depth (web search budget exhausted); entry too vague ('Data base') to identify a product."
+ },
+ {
+  "ex_id": "ex196",
+  "url": "https://sesric.org/event-detail.php?id=3771",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "SESRIC event page for the StatCaB training course on 'Migration and Refugee Statistics' (held online 9-10 June 2026, with PCBS), the planned course reported in 2025."
+ },
+ {
+  "ex_id": "ex275",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Broad multi-country UNDP programme summary; not searched (web search budget exhausted)."
+ },
+ {
+  "ex_id": "ex276",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Broad multi-country UNDP programme summary; not searched (web search budget exhausted)."
+ },
+ {
+  "ex_id": "ex278",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Broad multi-country UNDP programme summary; not searched (web search budget exhausted)."
+ },
+ {
+  "ex_id": "ex280",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Broad multi-country UNDP programme summary; not searched (web search budget exhausted)."
+ },
+ {
+  "ex_id": "ex041",
+  "url": "https://shop.un.org/books/ces-rcmmd-2030-pop-hsng-consnsus-27220",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "UN Publications bookshop page for the CES Recommendations for the 2030 Round of Population and Housing Censuses (Dec 2025, 329 pp); UN iLibrary page (un-ilibrary.org/content/books/9789211594010) blocked with 403."
+ },
+ {
+  "ex_id": "ex043",
+  "url": "https://indico.un.org/event/1011945/",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "UN Indico event page for the Group of Experts on Statistics on Population and Migration, Geneva 26-28 Nov 2025 (no cover image likely)."
+ },
+ {
+  "ex_id": "ex186",
+  "url": "https://microdata.unhcr.org/index.php/catalog/1175/download/3826",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "PDF of the South Sudan Forced Displacement Survey 2023 report in the UNHCR Microdata Library (latest published FDS South Sudan round)."
+ },
+ {
+  "ex_id": "ex188",
+  "url": "https://ins-cameroun.cm/en/unhcr-seeks-the-expertise-of-the-ins/",
+  "match": "related",
+  "source": "official",
+  "is_pdf": false,
+  "note": "INS Cameroon news on the 2024 UNHCR-INS agreement to run the FDS; no Cameroon FDS report or microdata entry published yet."
+ },
+ {
+  "ex_id": "ex191",
+  "url": "https://microdata.unhcr.org/index.php/catalog/1421/download/4229",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "PDF of the Forced Displacement Survey Pakistan 2024 report in the UNHCR Microdata Library."
+ },
+ {
+  "ex_id": "ex265",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page for the UNHCR Data Academy e-learning found (internal UNHCR learning); the similar public SIAP/EGRISS e-learning is a different product."
+ },
+ {
+  "ex_id": "ex286",
+  "url": "https://data.unhcr.org/en/documents/details/124274",
+  "match": "related",
+  "source": "official",
+  "is_pdf": false,
+  "note": "UNHCR data portal page for the Hungary SEIS 2025 final report (one country of the 2025 round); the 2025 regional factsheet (May 2026) exists but its URL was not found before search budget ran out."
+ },
+ {
+  "ex_id": "ex288",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page found on UNHCR support to Ukraine's statistics office for displaced-inclusive surveys."
+ },
+ {
+  "ex_id": "ex290",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public copy found of UNHCR Europe's statistical inclusion guidance for operations; likely internal."
+ },
+ {
+  "ex_id": "ex220",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched (web search budget exhausted)."
+ },
+ {
+  "ex_id": "ex223",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched (web search budget exhausted)."
+ },
+ {
+  "ex_id": "ex226",
+  "url": "https://uaps2024.popconf.org/abstracts/192405",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "UAPS 2024 conference abstract by UNFPA staff on the 10-country Arab-region marriage/divorce registration study; the full assessment report was not found online."
+ },
+ {
+  "ex_id": "ex071",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public World Bank product found on geospatial displacement–poverty analytics for Afghanistan."
+ },
+ {
+  "ex_id": "ex074",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public World Bank document found on school-language mismatch for refugees in Cameroon."
+ },
+ {
+  "ex_id": "ex077",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public document found on accessibility models to estimate refugees' country of origin in Cameroon."
+ },
+ {
+  "ex_id": "ex080",
+  "url": "https://www.jointdatacenter.org/wp-content/uploads/2022/08/WB_CHAD_EN_ONLINE.pdf",
+  "match": "related",
+  "source": "official",
+  "is_pdf": true,
+  "note": "World Bank 'Refugees in Chad: The Road Forward' (2021) PDF; the camp market-access analysis itself was not found."
+ },
+ {
+  "ex_id": "ex083",
+  "url": "https://id4d.worldbank.org/sites/id4d/files/2018-04/Cote%20d'Ivoire_ID4D_Diagnostic_Web040618.pdf",
+  "match": "related",
+  "source": "official",
+  "is_pdf": true,
+  "note": "World Bank ID4D Country Diagnostic for Côte d'Ivoire (2018); the accessibility/service-area analysis itself was not found."
+ },
+ {
+  "ex_id": "ex183",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Planned World Bank IDP survey for Ethiopia (TF0C7841); not yet published."
+ },
+ {
+  "ex_id": "ex293",
+  "url": "https://documents1.worldbank.org/curated/en/099022626224014785/pdf/P505739-7107d32c-e673-4613-841a-a985b430f3f4.pdf",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "World Bank (2026) 'Building Statelessness-Sensitive ID Systems' PDF on the Documents & Reports server."
+ },
+ {
+  "ex_id": "ex297",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No JDC activity page or report found for the Colombia data-driven durable solutions project (search budget ran out before a JDC-site check)."
+ },
+ {
+  "ex_id": "ex301",
+  "url": "https://www.jointdatacenter.org/activites/internally-displaced-guatemala/",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "JDC activity page 'Building the Evidence Base on Internal Displacement in Guatemala' (ongoing, ENCOVI 2023); report not yet published; it links to INE's Sept 2025 release."
+ },
+ {
+  "ex_id": "ex232",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page found for WHS+ in Cox's Bazar."
+ },
+ {
+  "ex_id": "ex190",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page found for the 2024 SUPAS pilot apart from the BPS Babel item already tried; only 2025 SUPAS training news items exist."
+ },
+ {
+  "ex_id": "ex020",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Generic title 'Ongoing Examples' and no matching DCS product."
+ },
+ {
+  "ex_id": "ex038",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public source found for an Energy Commission of Nigeria IDP survey."
+ },
+ {
+  "ex_id": "ex023",
+  "url": "https://www.immigration.interieur.gouv.fr/documentation/etudes-et-statistiques/enquete-longitudinale-sur-lintegration-des-primo-arrivants-2-elipa-2.html",
+  "match": "related",
+  "source": "official",
+  "is_pdf": false,
+  "note": "DGEF/DSED page for the previous edition ELIPA 2 (FR); ELIPA 3 is still in planning and not yet published."
+ },
+ {
+  "ex_id": "ex281",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page found on proGres v4 at the Ghana Refugee Board."
+ },
+ {
+  "ex_id": "ex057",
+  "url": "https://ine.gob.hn/wp-content/uploads/2026/04/Estudio-Poblacion-Desplazada-Internamente-EPHPM-2024.pdf",
+  "match": "related",
+  "source": "official",
+  "is_pdf": true,
+  "note": "INE Honduras study of IDPs from EPHPM 2024 (ES, Apr 2026, with UNHCR); the census questionnaire was not posted (census moved to 2026)."
+ },
+ {
+  "ex_id": "ex061",
+  "url": "https://ine.gob.hn/wp-content/uploads/2026/04/Estudio-Poblacion-Desplazada-Internamente-EPHPM-2024.pdf",
+  "match": "related",
+  "source": "official",
+  "is_pdf": true,
+  "note": "INE Honduras IDP study from EPHPM 2024 (ES); no census results have been published yet."
+ },
+ {
+  "ex_id": "ex143",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page found on the IDMC-advised NCFRMI survey that used IRIS."
+ },
+ {
+  "ex_id": "ex147",
+  "url": "https://ine.gob.hn/wp-content/uploads/2026/04/Estudio-Poblacion-Desplazada-Internamente-EPHPM-2024.pdf",
+  "match": "related",
+  "source": "official",
+  "is_pdf": true,
+  "note": "INE Honduras IDP study (EPHPM 2024), a related INE output; nothing found on the May 2024 IDMC IRIS workshop itself."
+ },
+ {
+  "ex_id": "ex150",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Only the PDD news item already tried exists; no other page found."
+ },
+ {
+  "ex_id": "ex283",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "The 2024 socio-economic/return-intention report was not located; the closest item is the DTM May 2025 intentions report, which was already tried."
+ },
+ {
+  "ex_id": "ex102",
+  "url": "https://www.undp.org/sites/g/files/zskgke326/files/2026-08/context-analysis.pdf",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": true,
+  "note": "'Context Analysis' PDF (Oct 2025), a component of the UNDP/NCRDS/JIPS Data for Solutions Toolkit (IDSF); the toolkit landing page returns 403."
+ },
+ {
+  "ex_id": "ex106",
+  "url": "https://colombia.un.org/sites/default/files/2025-06/CIERRE%20IDSF%20Final.pdf",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": true,
+  "note": "IDSF Colombia phase-1 close-out PDF (ES, June 2025); the exact UNDP MPSD page (undp.org/es/node/597391) was already tried and returns 403."
+ },
+ {
+  "ex_id": "ex040",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page found for the Ministry of Interior administrative databases."
+ },
+ {
+  "ex_id": "ex323",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No recent EPCV publication page found; IHSN lists only the 2000 and 2004 rounds."
+ },
+ {
+  "ex_id": "ex287",
+  "url": "https://statistica.gov.md/en/final-results-of-the-2024-population-and-housing-census-migration-10121_61958.html",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "NBS release 'Final Results of the 2024 PHC: Migration Characteristics' (EN, 25 Aug 2025), with forced displacement and stateless counts."
+ },
+ {
+  "ex_id": "ex033",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No EDAM-5 report found beyond the gamma.site microsite already tried; the latest catalogued round is EDAM4 (2017)."
+ },
+ {
+  "ex_id": "ex176",
+  "url": "https://www.iom.int/project/strengthening-implementation-monitoring-evaluation-and-reporting-migration-related-sdgs-belarus",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "IOM project page on migration-related SDG reporting in Belarus (2024-25), which likely hosted the workshop; Belstat is not named."
+ },
+ {
+  "ex_id": "ex179",
+  "url": "https://www.mfa.gov.by/en/press/news_mfa/ec0edfebea3271d2.html",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "Belarus MFA news item on the 15 Nov 2024 Minsk conference on illegal migration (already tried, but it is the event's own page; it is a news page, not a PDF)."
+ },
+ {
+  "ex_id": "ex182",
+  "url": "https://iom.int/project/strengthening-implementation-monitoring-evaluation-and-reporting-migration-related-sdgs-belarus",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "IOM project page 'Strengthening the Implementation, Monitoring, Evaluation and Reporting of Migration-Related SDGs in Belarus' (2024-2025)."
+ },
+ {
+  "ex_id": "ex325",
+  "url": "https://rsso05.psa.gov.ph/system/files/attachment-dir/2024%20POPCEN-CBMS-Press-Release-Camarines%20Norte.pdf",
+  "match": "related",
+  "source": "official",
+  "is_pdf": true,
+  "note": "PSA regional (Camarines Norte) press release PDF on the 2024 POPCEN-CBMS; national press release PDF was 403."
+ },
+ {
+  "ex_id": "ex094",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public Probation and Aftercare Service statistics publication disaggregated by nationality found (search budget ran out before a second pass)."
+ },
+ {
+  "ex_id": "ex079",
+  "url": "https://microdata.unhcr.org/index.php/catalog/1466/pdf-documentation",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": true,
+  "note": "PDF documentation of the UNHCR Microdata Library entry 'Burkina Faso - Project 21 Socioeconomic and Protection Survey of IDPs and Host Communities 2024' (INSD/UNHCR/JDC); JDC project page is https://www.jointdatacenter.org/?p=67755."
+ },
+ {
+  "ex_id": "ex317",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public EPCV 2024/25 page or report found on ANSADE or partner sites; likely not yet published."
+ },
+ {
+  "ex_id": "ex294",
+  "url": "https://www.jointdatacenter.org/activites/fdps-burundi/",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "JDC project page 'FDPs in Burundi': support to INSBU on refugees/returnees in the 2024 census and EICVMB (page now says 2026/27 round)."
+ },
+ {
+  "ex_id": "ex313",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not yet published: no IOF 2025 report or JDC page found; latest INE report is IOF 2022."
+ },
+ {
+  "ex_id": "ex088",
+  "url": "https://cros.ec.europa.eu/book-page/catalogue-ess-standards",
+  "match": "landing",
+  "source": "official",
+  "is_pdf": false,
+  "note": "Eurostat CROS page describing the Catalogue of ESS Standards; no page found listing IRRS/IRIS/IROSS in it."
+ },
+ {
+  "ex_id": "ex156",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public record of the IMWG West and Central Africa online workshop on disaster displacement data found."
+ },
+ {
+  "ex_id": "ex159",
+  "url": "https://api.internal-displacement.org/sites/default/files/publications/documents/idmc-2024-internal-displacement-in-africa.pdf",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "IDMC (2024) report PDF 'Internal Displacement in Africa: An overview of trends and developments (2009-2023)'."
+ },
+ {
+  "ex_id": "ex162",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page on the Syria IDP Taskforce or the December 2024 Istanbul workshop found."
+ },
+ {
+  "ex_id": "ex165",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page on the Somalia IDP Working Group stock-figure work found."
+ },
+ {
+  "ex_id": "ex214",
+  "url": "https://reliefweb.int/report/ghana/ghana-registration-report-mop-north-and-shai-osudoku-september-2024",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "ReliefWeb page of IOM DTM 'Ghana: Registration Report - Mop-up North and Shai Osudoku (September 2024)'; DTM site itself returns 403."
+ },
+ {
+  "ex_id": "ex216",
+  "url": "https://displacement.iom.int/sites/g/files/tmzbdl1461/files/reports/DTM%20Chad%20Round%2022%20Dashboard_V1.pdf",
+  "match": "related",
+  "source": "official",
+  "is_pdf": true,
+  "note": "IOM DTM Chad Round 22 dashboard PDF (Lac province, Dec 2023-Jan 2024 data); the tried Round 23 page was 403."
+ },
+ {
+  "ex_id": "ex219",
+  "url": "https://dtm.iom.int/sites/g/files/tmzbdl1461/files/reports/IOM%20Chap%20Sudan%20Update%2036_EN.pdf",
+  "match": "related",
+  "source": "official",
+  "is_pdf": true,
+  "note": "IOM Chad Sudan Crisis Response Situation Update No. 36 PDF (June 2024) on Chadian returnees; Update No. 46 not found."
+ },
+ {
+  "ex_id": "ex070",
+  "url": "https://simn-global.org/serve/welcoming-center-in-tacna/?lang=fr",
+  "match": "landing",
+  "source": "official",
+  "is_pdf": false,
+  "note": "Scalabrini (SIMN) page on its Tacna welcoming center; no page on the focus-group work found."
+ },
+ {
+  "ex_id": "ex073",
+  "url": "https://simn-global.org/?p=1703",
+  "match": "landing",
+  "source": "official",
+  "is_pdf": false,
+  "note": "SIMN article on Casa Scalabrini shelter in Lima; no public page on the shelter database."
+ },
+ {
+  "ex_id": "ex277",
+  "url": "https://content-api.sesric.org/event-detail.php?id=3240",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "SESRIC event page 'Training Course on Migration and Refugee Statistics', 2-4 December 2024, 19 experts from 11 OIC countries."
+ },
+ {
+  "ex_id": "ex198",
+  "url": "https://crvs.unescap.org/news/report-workshop-inclusive-crvs-systems-focus-forced-displacement-statelessness-and-children",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "ESCAP CRVS page with the report of the Workshop on Inclusive CRVS Systems (forced displacement, statelessness, children)."
+ },
+ {
+  "ex_id": "ex025",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Only the UNECE event page (403) exists; no other public page on the 6 May 2024 workshop found."
+ },
+ {
+  "ex_id": "ex222",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public UNHCR document on aligning its population statistics with IRRS/IROSS found."
+ },
+ {
+  "ex_id": "ex289",
+  "url": "https://data.unhcr.org/en/documents/details/119726",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "UNHCR data portal page for the Zambia Forced Displacement Survey press release (ZamStats/COR/UNHCR, launched Nov 2025); microdata at microdata.unhcr.org catalog 1423."
+ },
+ {
+  "ex_id": "ex291",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public UNHCR Zambia agriculture roadmap found."
+ },
+ {
+  "ex_id": "ex203",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched: web search budget ran out."
+ },
+ {
+  "ex_id": "ex173",
+  "url": "https://www.unsiap.or.jp/on_line/Guideline/2024/2024_06_IRRIS.pdf",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "SIAP guideline PDF for the 2024 e-learning course on the International Recommendations on Refugee, IDP and Statelessness Statistics (1 Apr-24 May 2024); event page https://www.unsiap.or.jp/event/2024-04-01_IRRIS.html."
+ },
+ {
+  "ex_id": "ex096",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Title too generic to identify; not searched as web search budget ran out."
+ },
+ {
+  "ex_id": "ex099",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Title too generic to identify; not searched as web search budget ran out."
+ },
+ {
+  "ex_id": "ex302",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched: web search budget ran out."
+ },
+ {
+  "ex_id": "ex306",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched: web search budget ran out."
+ },
+ {
+  "ex_id": "ex308",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched: web search budget ran out."
+ },
+ {
+  "ex_id": "ex312",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No JDC/World Bank publication with this title found; likely not yet published."
+ },
+ {
+  "ex_id": "ex314",
+  "url": "https://www.jointdatacenter.org/wp-content/uploads/2024/04/JDC-Strategy2024-27.pdf",
+  "match": "related",
+  "source": "official",
+  "is_pdf": true,
+  "note": "JDC Strategy 2024-2027 PDF, which sets out JDC technical and financial support to EGRISS; no dedicated page for the EGRISS support activity."
+ },
+ {
+  "ex_id": "ex022",
+  "url": "https://statistics.gov.rw/sites/default/files/documents/2025-02/RPHC2022_Refugees%20Thematic_report.pdf",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "NISR RPHC5 2022 thematic report 'Socio-Economic Status of Refugees' (May 2024) PDF."
+ },
+ {
+  "ex_id": "ex028",
+  "url": "https://www.destatis.de/EN/Press/2023/03/PE23_091_125.html",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "Destatis press release No. 091 of 9 March 2023: 29,455 people recognised as stateless at end of 2022."
+ },
+ {
+  "ex_id": "ex108",
+  "url": "https://www.ksh.hu/evkonyvek/2022/demografiai-evkonyv-2022/html/indexeng.html",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "KSH Demographic Yearbook 2022 online edition (HTML; no single PDF found)."
+ },
+ {
+  "ex_id": "ex060",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Only the already-tried MVD forced-migration section page exists (now reachable, but a generic section page); no stats document found."
+ },
+ {
+  "ex_id": "ex042",
+  "url": "https://migration.gov.gr/wp-content/uploads/2024/01/Report_A_December-2023_International-Protection_NEW.pdf",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "Ministry of Migration and Asylum monthly International Protection report, December 2023 edition (PDF)."
+ },
+ {
+  "ex_id": "ex044",
+  "url": "https://ec.europa.eu/eurostat/web/migration-asylum/asylum",
+  "match": "landing",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "Eurostat asylum statistics section, where the Reg. 862/2007 data Greece transmits are published; no Greek ministry document."
+ },
+ {
+  "ex_id": "ex047",
+  "url": "https://migration.gov.gr/wp-content/uploads/2023/12/SGVP_Statistics_2023_12_01.pdf",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "Monthly unaccompanied minors accommodation statistics factsheet, December 2023 edition (PDF)."
+ },
+ {
+  "ex_id": "ex050",
+  "url": "https://migration.gov.gr/wp-content/uploads/2024/04/2023_Registrations_12month.pdf",
+  "match": "related",
+  "source": "official",
+  "is_pdf": true,
+  "note": "Reception and Identification Service 2023 registrations (12-month) PDF; quarterly edition not separately found."
+ },
+ {
+  "ex_id": "ex227",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public DANE document for the victims statistical-offer research project found."
+ },
+ {
+  "ex_id": "ex101",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "RGPH2 census not yet conducted/published; no document found."
+ },
+ {
+  "ex_id": "ex027",
+  "url": "https://www.statistikportal.li/de/publikation/asylwesen-2022/2022/01/v-1/p17839/pdf",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "Amt fuer Statistik 'Asylwesen 2022' report PDF (site returns 403 to scripted HEAD requests, may need a browser)."
+ },
+ {
+  "ex_id": "ex131",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public document for the PMM project 'Support the PDMMs - Phase V' found."
+ },
+ {
+  "ex_id": "ex134",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public document for the PMM/UNHCR asylum procedures project found."
+ },
+ {
+  "ex_id": "ex137",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public document for the Turkiye-Italy bilateral cooperation project found."
+ },
+ {
+  "ex_id": "ex035",
+  "url": "https://statbel.fgov.be/en/themes/population/structure-population",
+  "match": "landing",
+  "source": "official",
+  "is_pdf": false,
+  "note": "Statbel population structure page; no separate refugee/stateless product exists."
+ },
+ {
+  "ex_id": "ex019",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52023PC0031",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "European Commission proposal COM(2023) 31 for the ESOP regulation on population and housing statistics (EUR-Lex)."
+ },
+ {
+  "ex_id": "ex122",
+  "url": "https://www.cbs.nl/-/media/_pdf/2022/46/integratie-en-samenleven-2022.pdf",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "CBS Rapportage Integratie en Samenleven 2022 report PDF (linked from the publication page already tried)."
+ },
+ {
+  "ex_id": "ex098",
+  "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710012101",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "StatCan table 17-10-0121-01, quarterly estimates of non-permanent residents by type (incl. asylum claimants) by province; a data table, not a report."
+ },
+ {
+  "ex_id": "ex125",
+  "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/221026/dq221026a-eng.htm",
+  "match": "related",
+  "source": "official",
+  "is_pdf": false,
+  "note": "2021 Census immigration release in The Daily (26 Oct 2022), which covers refugees."
+ },
+ {
+  "ex_id": "ex129",
+  "url": "https://www150.statcan.gc.ca/n1/en/catalogue/91-528-X",
+  "match": "related",
+  "source": "official",
+  "is_pdf": false,
+  "note": "StatCan Technical Guide on Demographic Estimates (cat. 91-528-X), which documents the Demographic Estimates Program."
+ },
+ {
+  "ex_id": "ex221",
+  "url": "https://www.bfs.admin.ch/bfs/en/home/statistics/population/migration-integration.html",
+  "match": "landing",
+  "source": "official",
+  "is_pdf": false,
+  "note": "FSO migration and integration section; no specific STATPOP-by-permit page confirmed."
+ },
+ {
+  "ex_id": "ex075",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public document on including stateless people in the Lao PDR census found."
+ },
+ {
+  "ex_id": "ex194",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No published UNHCR Italy socioeconomic survey report found; may not be published yet."
+ },
+ {
+  "ex_id": "ex263",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public JDC or BUCREP document on refugee inclusion in the Cameroon census found."
+ },
+ {
+  "ex_id": "ex241",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public CAPMAS international migration survey report found (search budget exhausted)."
+ },
+ {
+  "ex_id": "ex244",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public CAPMAS/UNHCR/WFP study on refugee conditions found (search budget exhausted)."
+ },
+ {
+  "ex_id": "ex175",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public COMESA capacity-development document found (search budget exhausted)."
+ },
+ {
+  "ex_id": "ex140",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "EAC Migration Statistics Report Edition Two not yet published."
+ },
+ {
+  "ex_id": "ex238",
+  "url": "https://unstats.un.org/unsd/demographic-social/migrationstat-forum-2023/presentations/Plenary5/1.Silvere.pdf",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": true,
+  "note": "ECOWAS presentation at the UN Migration Statistics Forum (Jan 2023) on its regional migration indicators report; the annual report itself was not found online."
+ },
+ {
+  "ex_id": "ex247",
+  "url": "https://data.unhcr.org/en/documents/details/99693",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "IGAD Migration Statistics Report (Oct 2021), produced with STATAFRIC, Statistics Sweden, GIZ, ILO and IOM under the AU/RECs project; it is an earlier output, not a 2023 one."
+ },
+ {
+  "ex_id": "ex250",
+  "url": "https://giz.de/de/downloads/giz2025-en-SIMPI-factsheet.pdf",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": true,
+  "note": "GIZ factsheet (2025) for the IGAD-GIZ SIMPI/SIMPI II migration project; it covers the project, not a specific IGAD 2023 product."
+ },
+ {
+  "ex_id": "ex205",
+  "url": "https://data.unicef.org/resources/data-and-children-on-the-move-unpacking-relevant-terminology-concepts-and-data-sources/",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "UNICEF Data page (Aug 2023) hosting IDAC brief 'Children on the Move: Key terms, definitions and concepts'; the site returned HTTP 403 to fetch, so it was not checked directly."
+ },
+ {
+  "ex_id": "ex207",
+  "url": "https://data.unicef.org/resources/indicators-for-children-on-the-move/",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "UNICEF Data page for IDAC 'Indicators for Children on the Move: A guideline' (final version published Mar 2025); the site returned HTTP 403 to fetch."
+ },
+ {
+  "ex_id": "ex013",
+  "url": "https://www.oecd.org/en/publications/international-migration-outlook-2023_b0f40584-en.html",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "OECD publication page for International Migration Outlook 2023 (DOI 10.1787/b0f40584-en); oecd.org returned HTTP 403 to fetch, so the URL was built from the DOI."
+ },
+ {
+  "ex_id": "ex017",
+  "url": "https://reforms-investments.ec.europa.eu/technical-support-instrument-0/labour-market-and-social-protection/assessment-recognition-and-validation-skills-and-qualifications-people-displaced-ukraine_en",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "European Commission TSI page for the OECD-supported project on recognising qualifications of people displaced from Ukraine in France; no OECD publication was found."
+ },
+ {
+  "ex_id": "ex202",
+  "url": "https://statafric.au.int/index.php/en/news/press-releases/2023-07-14/african-union-and-sweden-sign-second-phase-migration-statistics",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "STATAFRIC press release on signing Phase II (2023-2026) of the AU/RECs-Sweden migration statistics cooperation project; the page returned 403 to fetch, so it was confirmed from search results only."
+ },
+ {
+  "ex_id": "ex181",
+  "url": "https://www.migrationdataportal.org/sites/g/files/tmzbdl251/files/2023-10/UNHCR-UNICEF-Guidance-Note-on-Responsible-Disaggregation-of-Data-on-Refugee-and-Other-Forcibly-Displaced-Children.pdf",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": true,
+  "note": "PDF of the UNHCR-UNICEF guidance note mirrored on the Migration Data Portal; the UNICEF original PDF (data.unicef.org/wp-content/uploads/2023/09/...) may also return 403."
+ },
+ {
+  "ex_id": "ex142",
+  "url": "https://crvs.unescap.org/news/report-workshop-inclusive-crvs-systems-focus-forced-displacement-statelessness-and-children",
+  "match": "related",
+  "source": "official",
+  "is_pdf": false,
+  "note": "ESCAP CRVS page with the report of the 2024 workshop on inclusive CRVS for forced displacement and statelessness; no specific 2023 ESCAP CRVS product was found."
+ },
+ {
+  "ex_id": "ex144",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "The title is too generic and no ESCAP census or population-register product on displacement was identified (search budget ran out)."
+ },
+ {
+  "ex_id": "ex172",
+  "url": "https://unescwa.org/news/modernization-demographic-and-social-statistics-arab-countries",
+  "match": "related",
+  "source": "official",
+  "is_pdf": false,
+  "note": "ESCWA news item on its programme 'Supporting the Promotion and Modernization of Demographic and Social Statistics in Arab Countries'; not verified because ESCWA returns 403."
+ },
+ {
+  "ex_id": "ex178",
+  "url": "https://inee.org/sites/default/files/resources/387957eng.pdf",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": true,
+  "note": "PDF of UNESCO-UNHCR 2023 'Paving pathways for inclusion: towards evidence-based policy-making for refugee education' (UNESDOC pf0000387957), the output of this partnership."
+ },
+ {
+  "ex_id": "ex072",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No published JDC social cohesion study for Afghanistan was found; it may not be published yet."
+ },
+ {
+  "ex_id": "ex078",
+  "url": "https://data.unhcr.org/en/documents/download/124022",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "PDF 'Well-being and Labor Market Outcomes of refugees in Malaysia' (UNHCR, Sep 2026), likely the output of the JDC HARMONY survey; JDC project page: jointdatacenter.org/activites/refugees-hosts-malaysia/."
+ },
+ {
+  "ex_id": "ex146",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Internal UNHCR capacity-building activities have no public document."
+ },
+ {
+  "ex_id": "ex149",
+  "url": "https://unescwa.org/events/international-recommendations-refugee-internally-displaced-persons-and-statelessness",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "ESCWA event page for the ESCWA/AITRS/EGRISS training workshop on IRRS/IRIS/IROSS, Cairo, 26-28 Nov 2024 (the workshop planned in 2023); ESCWA returned 403 to fetch."
+ },
+ {
+  "ex_id": "ex152",
+  "url": "https://crvs.unescap.org/event/asia-pacific-regional-workshop-implementing-guidance-inclusive-crvs-systems-focus-forced",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "ESCAP event page for the joint ESCAP-EGRISS-IDAC Asia-Pacific workshop, Bangkok, 18-21 Mar 2024; ESCAP returned 403 to fetch."
+ },
+ {
+  "ex_id": "ex155",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "A collection of online trainings with no single public document."
+ },
+ {
+  "ex_id": "ex164",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public paper on UNHCR age/sex modelling (Iran, Europe) was found; the earlier refugee-statistics link returned 403."
+ },
+ {
+  "ex_id": "ex167",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public document on the UNHCR/IOM/OCHA harmonisation of IDP data in DRC was found."
+ },
+ {
+  "ex_id": "ex189",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public methodology paper on UNHCR's modelled refugee estimates for 14 European countries was found."
+ },
+ {
+  "ex_id": "ex192",
+  "url": "https://microdata.unhcr.org/index.php/catalog/1393",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "UNHCR Microdata Library entry 'Socio-Economic Assessment 2024' Moldova (UNHCR/Ipsos, JDC-funded), the dataset page; it shows no final report and the JDC page lists the study as ongoing."
+ },
+ {
+  "ex_id": "ex197",
+  "url": "https://microdata.unhcr.org/index.php/catalog/1057",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "UNHCR Microdata Library entry 'Multi-Sector Needs Assessment (MSNA) - 2023', the regional dataset for 7 countries; it is a dataset page, not a report, and the documentation PDF is at /catalog/1057/pdf-documentation."
+ },
+ {
+  "ex_id": "ex158",
+  "url": "https://statistics.unsdglearn.org/courses/introduction-to-the-international-recommendations-on-refugee-and-idp-statistics/",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "UN SDG:Learn course page for the EGRISS/UN-SIAP e-learning 'Introduction to the International Recommendations on Refugee and IDP Statistics'."
+ },
+ {
+  "ex_id": "ex230",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Generic technical-assistance activity with no specific public document (not searched; search budget ran out)."
+ },
+ {
+  "ex_id": "ex233",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Working-group participation with no public document (not searched; search budget ran out)."
+ },
+ {
+  "ex_id": "ex380",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched because the search budget ran out; the CAPMAS home page was already tried."
+ },
+ {
+  "ex_id": "ex406",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched because the search budget ran out; the description does not identify a specific ISTAT product."
+ },
+ {
+  "ex_id": "ex407",
+  "url": "https://www.destatis.de/DE/Methoden/Qualitaet/Qualitaetsberichte/Bevoelkerung/schutzsuchende.pdf",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "Destatis quality report (PDF) for the annual 'Statistik über Schutzsuchende' (people seeking protection); the yearly tables are xlsx only."
+ },
+ {
+  "ex_id": "ex379",
+  "url": "https://www.hcp.ma/Atelier-technique-Vers-un-systeme-d-information-integre-et-harmonise-sur-les-migrations-internationales-de-la-main-d_a3088.html",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "HCP page on the Feb 2022 HCP-ILO workshop 'Vers un systeme d'information integre et harmonise sur les migrations internationales de la main d'oeuvre au Maroc'."
+ },
+ {
+  "ex_id": "ex413",
+  "url": "https://rtc-cea.cepal.org/sites/default/files/2023-05/Presentacio%CC%81n%20DANE%2024_05_23.pdf",
+  "match": "related",
+  "source": "official",
+  "is_pdf": true,
+  "note": "DANE presentation (May 2023, CEPAL) describing the CNPV 2018-RUV linkage analysis of victims; no standalone study report found."
+ },
+ {
+  "ex_id": "ex393",
+  "url": "https://dtm.iom.int/fr/node/22841",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "IOM DTM page: Djibouti Mobility Tracking assessment Round 1, Sept 2022, drought rapid assessment in 5 regions with INSTAD."
+ },
+ {
+  "ex_id": "ex409",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Nov 2022 UNHCR workshop on IDP data systems in Mexico is mentioned in secondary sources, but no public page or document for it was found."
+ },
+ {
+  "ex_id": "ex398",
+  "url": "https://anad.inseed.td/index.php/catalog/18",
+  "match": "related",
+  "source": "official",
+  "is_pdf": false,
+  "note": "INSEED microdata catalog entry for ECOSIT4 (2018-19), the previous round; no ECOSIT5 publication found."
+ },
+ {
+  "ex_id": "ex383",
+  "url": "https://www.jointdatacenter.org/wp-content/uploads/2026/06/Lisungi-project-report-FINAL-1.pdf",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": true,
+  "note": "JDC-hosted report 'The impacts of the Lisungi Project on refugees and host populations in Likouala, Republic of Congo' (2026)."
+ },
+ {
+  "ex_id": "ex384",
+  "url": "https://microdata.unhcr.org/index.php/catalog/1027",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "UNHCR Microdata Library entry for the Grand Kasai socio-economic survey 2022-23 (IDPs, returnees, repatriated refugees, hosts)."
+ },
+ {
+  "ex_id": "ex385",
+  "url": "https://www.jointdatacenter.org/activites/internal-displacement-in-honduras/",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "JDC project page for the UNHCR-INE Honduras annual IDP survey series (now via EPHPM), with EGRISS/IRIS support; no PDF linked."
+ },
+ {
+  "ex_id": "ex386",
+  "url": "https://microdata.worldbank.org/catalog/5328",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "Earlier product: El Salvador Internal Displacement Profiling 2016 (UNHCR, DIGESTYC, JIPS); no EHPM IDP booster publication found."
+ },
+ {
+  "ex_id": "ex390",
+  "url": "https://rtc-cea.cepal.org/sites/default/files/2023-05/Presentacio%CC%81n%20DANE%2024_05_23.pdf",
+  "match": "related",
+  "source": "official",
+  "is_pdf": true,
+  "note": "DANE presentation (May 2023) covering the descriptive analysis of conflict victims from the CNPV 2018-RUV link; the joint DANE-Victims Unit document itself was not found."
+ },
+ {
+  "ex_id": "ex391",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public page found on the Victims Unit-IDMC South-South exchange with Mexico."
+ },
+ {
+  "ex_id": "ex405",
+  "url": "https://www.comesa.int/wp-content/uploads/2023/08/COMESA-Report-on-Labour-Migration-Statistics-English.pdf",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "The 1st COMESA Report on Labour Migration Statistics (2022 ed.) validated at the March 2022 workshop; workshop news: https://www.comesa.int/labour-migration-statistics-report-developed/."
+ },
+ {
+  "ex_id": "ex400",
+  "url": "https://unstats.un.org/unsd/demographic-social/migrationstat-forum-2023/presentations/D.1/4.Jean-Pierre-Ntezimana.pdf",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": true,
+  "note": "Statistics Sweden presentation (2023) on refugee/IDP statistics in ECOWAS naming EGRISS as partner; no page for the 2022 joint activities found."
+ },
+ {
+  "ex_id": "ex401",
+  "url": "https://unstats.un.org/unsd/demographic-social/migrationstat-forum-2023/presentations/D.1/4.Jean-Pierre-Ntezimana.pdf",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": true,
+  "note": "Same Statistics Sweden ECOWAS forced-displacement statistics presentation; no page for the IRIS/IRRS enabling-factors workshop found."
+ },
+ {
+  "ex_id": "ex392",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public record found of the IOM Mozambique workshop for statistics officials."
+ },
+ {
+  "ex_id": "ex410",
+  "url": "https://www.unhcr.org/blogs/improving-internal-displacement-statistics-in-central-america/",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "UNHCR blog 'Improving Internal Displacement Statistics in Central America' (Feb 2023) on the 16-17 Nov 2022 CENTROESTAD/SICA workshop (site blocked direct fetch; confirmed via search)."
+ },
+ {
+  "ex_id": "ex395",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public UNICEF IDEAS document for Jordan/Thailand found."
+ },
+ {
+  "ex_id": "ex396",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public UNICEF IDEAS document for Jordan/Thailand found."
+ },
+ {
+  "ex_id": "ex408",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public UNESCO page found for these refugee/IDP education data workstreams."
+ },
+ {
+  "ex_id": "ex382",
+  "url": "https://www.jointdatacenter.org/activites/socioeconomic-survey-of-refugees-and-migrants-in-libya/",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "JDC project page 'Socioeconomic survey of refugees & migrants in Libya' (status ongoing, no report PDF linked)."
+ },
+ {
+  "ex_id": "ex388",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Generic workshop title; no specific public page identified."
+ },
+ {
+  "ex_id": "ex369",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched: shared web search budget exhausted before this example."
+ },
+ {
+  "ex_id": "ex351",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched: shared web search budget exhausted before this example."
+ },
+ {
+  "ex_id": "ex376",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched: shared web search budget exhausted before this example."
+ },
+ {
+  "ex_id": "ex356",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched: shared web search budget exhausted before this example."
+ },
+ {
+  "ex_id": "ex330",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched: web search budget exhausted; guessed JDC HFPS URL returned 404."
+ },
+ {
+  "ex_id": "ex331",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched: shared web search budget exhausted before this example."
+ },
+ {
+  "ex_id": "ex332",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched: web search budget exhausted; guessed JDC HFPS URL returned 404."
+ },
+ {
+  "ex_id": "ex336",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched: shared web search budget exhausted before this example."
+ },
+ {
+  "ex_id": "ex339",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not searched: shared web search budget exhausted before this example."
+ },
+ {
+  "ex_id": "ex340",
+  "url": "https://www.jointdatacenter.org/resources/publications-and-reports/venezuela-migration-report/",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "JDC publication page for the 2024 report 'Venezuelans in Chile, Colombia, Ecuador, and Peru', the later output of the regional data collection."
+ },
+ {
+  "ex_id": "ex341",
+  "url": "https://www.jointdatacenter.org/resources/publications-and-reports/venezuela-migration-report/",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "JDC publication page for the 2024 report 'Venezuelans in Chile, Colombia, Ecuador, and Peru', the later output of the regional data collection."
+ },
+ {
+  "ex_id": "ex372",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Webinar (21 April 2021) is only described in an EGRIS newsletter on unhcr.org, which returned HTTP 403; no own page found."
+ },
+ {
+  "ex_id": "ex373",
+  "url": "https://data.unhcr.org/en/documents/details/99693",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "IGAD Migration Statistics Report (Oct 2021) on UNHCR data portal; the harmonisation guidelines themselves appear to be unpublished drafts."
+ },
+ {
+  "ex_id": "ex365",
+  "url": "https://api.internal-displacement.org/sites/default/files/2019-GRID-methodology.pdf",
+  "match": "related",
+  "source": "official",
+  "is_pdf": true,
+  "note": "IDMC GRID 2019 methodological annex, which sets out the displacement (flows-and-stocks) model; no standalone model publication found."
+ },
+ {
+  "ex_id": "ex366",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No IDMC publication with this title found."
+ },
+ {
+  "ex_id": "ex347",
+  "url": "https://iraqdtm.iom.int/files/DurableSolutions/202216553131_iom_Iraq_Home_Again_Categorising_Obstacles_to_Returnee_Reintegration_in_Iraq.pdf",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "PDF of the IOM Iraq / RWG / Social Inquiry report 'Home Again?' (Feb 2021), hosted on Iraq DTM site (not fetched)."
+ },
+ {
+  "ex_id": "ex348",
+  "url": "https://dtm.iom.int/reports/cameroon-%E2%80%94-return-intention-survey-round-10-august-2017",
+  "match": "related",
+  "source": "official",
+  "is_pdf": false,
+  "note": "Earlier DTM Cameroon Return Intention Survey (round 10, Aug 2017); no 2021 durable solutions survey report found."
+ },
+ {
+  "ex_id": "ex349",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No DTM Chad durable solutions or return intention survey report found."
+ },
+ {
+  "ex_id": "ex352",
+  "url": "https://dtm.iom.int/",
+  "match": "landing",
+  "source": "official",
+  "is_pdf": false,
+  "note": "DTM home page; the institutional alignment work has no own public document."
+ },
+ {
+  "ex_id": "ex353",
+  "url": "https://publications.iom.int/system/files/pdf/IOM-IDDS-2021_1.pdf",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "PDF of IOM Internal Displacement Data Strategy 2021-2025 (PUB2021/167/R), link taken from the IOM publication page."
+ },
+ {
+  "ex_id": "ex354",
+  "url": "https://publications.iom.int/system/files/pdf/IOM-IDDS-2021_1.pdf",
+  "match": "related",
+  "source": "official",
+  "is_pdf": true,
+  "note": "The IDDS strategy itself; the engagement plan is internal and not published."
+ },
+ {
+  "ex_id": "ex357",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "Not yet published; questionnaire was under revision, no public HEAT survey document found."
+ },
+ {
+  "ex_id": "ex358",
+  "url": "https://data.unhcr.org/en/documents/details/93791",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": false,
+  "note": "UNHCR Global Trends 2021 report page on the data portal (PDF download there); the 2020 edition is the other candidate."
+ },
+ {
+  "ex_id": "ex359",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "ODMLP is an internal UNHCR staff learning programme with no public page found."
+ },
+ {
+  "ex_id": "ex360",
+  "url": "https://www.unhcr.org/sites/default/files/2025-06/unhcr-statistical-quality-assurance-framework.pdf",
+  "match": "exact",
+  "source": "official",
+  "is_pdf": true,
+  "note": "PDF of the UNHCR Statistical Quality Assurance Framework, published June 2025 (forthcoming in 2021)."
+ },
+ {
+  "ex_id": "ex361",
+  "url": "https://statistics.unsdglearn.org/files/statistics/pdf/SDG16-Survey-Initiative-Implementation-manual_0.pdf",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": true,
+  "note": "PDF of the SDG16 Survey Initiative Implementation Manual (UNDP/UNODC/OHCHR, 2022)."
+ },
+ {
+  "ex_id": "ex329",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No JDC Yemen forced displacement monitoring system page found (search budget ran out)."
+ },
+ {
+  "ex_id": "ex333",
+  "url": "https://www.jointdatacenter.org/?p=63364",
+  "match": "exact",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "JDC activity page 'Forced displacement in the eastern Democratic Republic of Congo' describing the Crisis Observatory and household survey (confirmed)."
+ },
+ {
+  "ex_id": "ex334",
+  "url": "https://data.unhcr.org/en/documents/details/85273",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "Full report 'Understanding the Socioeconomic Conditions of Refugees in Kenya' (2019 Kakuma survey, published March 2021), likely this JDC household survey."
+ },
+ {
+  "ex_id": "ex338",
+  "url": "https://www.worldbank.org/en/country/bangladesh/brief/cox-s-bazar-panel-survey-briefs",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "World Bank Cox's Bazar Panel Survey briefs page, a product of the same analytical programme; the JDC activity page is 404."
+ },
+ {
+  "ex_id": "ex342",
+  "url": "https://www.jointdatacenter.org/resources/publications-and-reports/venezuela-migration-report/",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "JDC publication page for the 2024 report 'Venezuelans in Chile, Colombia, Ecuador, and Peru', the later output of the regional data collection."
+ },
+ {
+  "ex_id": "ex343",
+  "url": "https://www.jointdatacenter.org/resources/publications-and-reports/venezuela-migration-report/",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "JDC publication page for the 2024 report 'Venezuelans in Chile, Colombia, Ecuador, and Peru', the later output of the regional data collection."
+ },
+ {
+  "ex_id": "ex344",
+  "url": "https://www.jointdatacenter.org/activites/unhcrs-microdata-library",
+  "match": "related",
+  "source": "partner",
+  "is_pdf": false,
+  "note": "JDC activity page on curating UNHCR's Microdata Library for open and responsible data sharing (confirmed)."
+ },
+ {
+  "ex_id": "ex346",
+  "url": "",
+  "match": "none",
+  "source": "",
+  "is_pdf": false,
+  "note": "No public JDC guidance note on aligning questionnaires with IRRS/IRIS found."
+ }
+]
