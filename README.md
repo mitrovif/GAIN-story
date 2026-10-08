@@ -27,7 +27,7 @@ The design copy loads images and data from its own uploads (`/_blob/<id>`), not 
 `tools/design_blob_map.json` maps the covers added on 8 Oct 2026 (`exNNN`) to their upload ids;
 the other covers keep their original ids (the file name in `assets/covers-web/`). To push new covers:
 upload the images and a covers JSON with `/_blob/` paths, then point `Main.dc.html` at the new JSON.
-Version 42 (8 Oct 2026) loads covers data `/_blob/9dfe56f7a1da716ccffe14e8ab417ea2`.
+Since 8 Oct 2026 (244 covers) it loads covers data `/_blob/1b6f97288b7bb43b217b860e0c27b52a`.
 
 ## Links
 
