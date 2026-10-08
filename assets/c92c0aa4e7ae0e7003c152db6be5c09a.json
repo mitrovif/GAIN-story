@@ -2,7 +2,7 @@
 "1": {
 "link": "https://statistics.gov.rw/sites/default/files/documents/2025-02/RPHC2022_Refugees%20Thematic_report.pdf",
 "news": false,
-"cover": "/_blob/dae5d15cc6c63d3af894d756d14f3d85",
+"cover": "assets/covers-web/dae5d15cc6c63d3af894d756d14f3d85.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Refugees Thematic report published (Rwanda)"
 },
@@ -13,7 +13,7 @@
 "3": {
 "link": "https://stat.gov.tm/en/population-census",
 "news": false,
-"cover": "/_blob/d0d3b369a41c918ccf2d93a5ab7614da",
+"cover": "assets/covers-web/d0d3b369a41c918ccf2d93a5ab7614da.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Population Census 2022 Turkmenistan (Turkmenistan)"
 },
@@ -24,14 +24,14 @@
 "6": {
 "link": "https://stat.gov.kz/upload/medialibrary/75f/z2gxd3z3s8gsf7em4x4q5ahd87mgoc5m/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%201%20%D1%82%D0%BE%D0%BC.pdf",
 "news": false,
-"cover": "/_blob/f3424ff00ad4ab16a55f45e5ef8c0a50",
+"cover": "assets/covers-web/f3424ff00ad4ab16a55f45e5ef8c0a50.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Census 2021 (Kazakhstan)"
 },
 "7": {
 "link": "https://resultats2024.rgphapps.ma/",
 "news": false,
-"cover": "/_blob/5871df5ac23f20257c3233338e5a7196",
+"cover": "assets/covers-web/5871df5ac23f20257c3233338e5a7196.jpg",
 "kind": "screenshot",
 "alt": "Source page: 2024 General Population and Housing Census - Suryve Data (Morocco)",
 "cap": "Source page · resultats2024.rgphapps.ma"
@@ -43,14 +43,14 @@
 "10": {
 "link": "https://www.hcp.ma/file/248404/",
 "news": false,
-"cover": "/_blob/b27721e30f1054ae7f7bf83763594117",
+"cover": "assets/covers-web/b27721e30f1054ae7f7bf83763594117.jpg",
 "kind": "cover",
 "alt": "Cover or first page: General Population and Housing Census of 2024 (Morocco)"
 },
 "11": {
 "link": "https://www.cbs.nl/nl-nl/publicatie/2025/16/asiel-en-integratie-2025-2014-eerste-helft-2024",
 "news": false,
-"cover": "/_blob/fa22fa5c308928ecf8b53bbd9a03a589",
+"cover": "assets/covers-web/fa22fa5c308928ecf8b53bbd9a03a589.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Report on asylum migrants (asylum seekers with a residence permit) (Netherlands)"
 },
@@ -69,7 +69,7 @@
 "29": {
 "link": "https://firebasestorage.googleapis.com/v0/b/instad-dj.appspot.com/o/D%C3%A9mographie%2F0%2FTome%2014_Profil%20des%20r%C3%A9fugi%C3%A9s%20et%20des%20demandeurs%20d'asile_Rapport%20Provisoire_15072025.pdf?alt=media&token=ecc9d430-38e0-45e0-99dc-d77791454e42",
 "news": false,
-"cover": "/_blob/a874620444afdc836c21955741ab5cff",
+"cover": "assets/covers-web/a874620444afdc836c21955741ab5cff.jpg",
 "kind": "cover",
 "alt": "Cover or first page: 3rd Population and Housing Census (RGPH-3) that was completed in the summer of this year, 2024. (Djibouti)"
 },
@@ -88,7 +88,7 @@
 "38": {
 "link": "https://data.unhcr.org/en/documents/details/122243",
 "news": false,
-"cover": "/_blob/06bb21fd3ffefff8bf13c3bfc5d5213b",
+"cover": "assets/covers-web/06bb21fd3ffefff8bf13c3bfc5d5213b.jpg",
 "kind": "cover",
 "alt": "Cover or first page: The Joint Assessment between the World Food Programme (WFP) and the United Nations High Commissioner for Refugees (UNHCR) for Refugees and Asylum Seekers. (Egypt)"
 },
@@ -119,7 +119,7 @@
 "50": {
 "link": "https://ine.gob.hn/wp-content/uploads/2026/04/Estudio-Poblacion-Desplazada-Internamente-EPHPM-2024.pdf",
 "news": false,
-"cover": "/_blob/22669126f327342e6e030ff0489122cb",
+"cover": "assets/covers-web/22669126f327342e6e030ff0489122cb.jpg",
 "kind": "cover",
 "alt": "Cover or first page: INE Honduras in 2023 and 2024 has been collecting statistics on forced displacement in Honduras. (Honduras)"
 },
@@ -138,7 +138,7 @@
 "55": {
 "link": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/articles/earlyintegrationoutcomesforrefugeesresettledinenglandandwales/2015to2021",
 "news": false,
-"cover": "/_blob/cf2534272b2f17898ddb61e14641c2cb",
+"cover": "assets/covers-web/cf2534272b2f17898ddb61e14641c2cb.jpg",
 "kind": "screenshot",
 "alt": "Source page: Early integration outcomes for refugees resettled in England and Wales: 2015 to 2021 New analysis on refugees resettled between 2015 and 2020 under the Vulnerable Persons and Vulnerable Children's Resettlement Schemes in England and Wales. A collaborative study between the Office for National Statistics and the Home Office. (United Kingdom)",
 "cap": "Source page · ons.gov.uk"
@@ -146,7 +146,7 @@
 "57": {
 "link": "https://rtc-cea.cepal.org/es/documento/guia-practica-para-la-produccion-de-estadisticas-armonizadas-sobre-desplazamiento-forzado",
 "news": false,
-"cover": "/_blob/d819519144c0026aea8d47210fd9cad8",
+"cover": "assets/covers-web/d819519144c0026aea8d47210fd9cad8.jpg",
 "kind": "screenshot",
 "alt": "Source page: Honduras, leads the working group for the Practical Guide for the production of harmonized statistics on forced displacement and migration Biennium: 2024-2025 https://rtc-cea.cepal.org/es/grupo-trabajo/guia-practica-para-la-produccion-de-estadisticas-armonizada-sobre-desplazamiento (Honduras)",
 "cap": "Source page · rtc-cea.cepal.org"
@@ -166,7 +166,7 @@
 "63": {
 "link": "https://www.nso.go.th/nsoweb/main/summano/aE",
 "news": false,
-"cover": "/_blob/2a629e4f31b6cfd46cf8504cc6640845",
+"cover": "assets/covers-web/2a629e4f31b6cfd46cf8504cc6640845.jpg",
 "kind": "screenshot",
 "alt": "Source page: Thailand 2025 Population and Housing Census (Thailand)",
 "cap": "Source page · nso.go.th"
@@ -174,7 +174,7 @@
 "64": {
 "link": "https://www.statistikportal.li/de/publikation/asylwesen-2023/2023/01/v-1/p30362/pdf",
 "news": false,
-"cover": "/_blob/c619f3177159ad10050105ee9b777be9",
+"cover": "assets/covers-web/c619f3177159ad10050105ee9b777be9.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Asylum Statistics 2023 (Liechtenstein)"
 },
@@ -189,14 +189,14 @@
 "67": {
 "link": "https://www.statistikportal.li/de/publikation/asylwesen-2024/2024/01/v-1/p32568/pdf",
 "news": false,
-"cover": "/_blob/b86bd8534ec63df92a4cefba76c3a587",
+"cover": "assets/covers-web/b86bd8534ec63df92a4cefba76c3a587.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Asylum Statistics 2024 (Liechtenstein)"
 },
 "75": {
 "link": "https://www.gov.uk/government/statistics/irregular-migration-to-the-uk-year-ending-june-2024",
 "news": false,
-"cover": "/_blob/ca2ff39772e772be38f20032d3147fdc",
+"cover": "assets/covers-web/ca2ff39772e772be38f20032d3147fdc.jpg",
 "kind": "screenshot",
 "alt": "Source page: Irregular Migration to the UK Estimates, (includes asylum seekers and irregular migrants who are undocumented refugees). (United Kingdom)",
 "cap": "Source page · gov.uk"
@@ -208,7 +208,7 @@
 "80": {
 "link": "https://www.stat.ee/en/find-statistics/short-term-statistics/ukrainians-estonian-labour-market",
 "news": false,
-"cover": "/_blob/0908172b3d4f2a7746f7266d936c3405",
+"cover": "assets/covers-web/0908172b3d4f2a7746f7266d936c3405.jpg",
 "kind": "screenshot",
 "alt": "Source page: Ukrainians in the Estonian labour market (Estonia)",
 "cap": "Source page · stat.ee"
@@ -216,14 +216,14 @@
 "81": {
 "link": "https://www.jointdatacenter.org/?p=68306",
 "news": false,
-"cover": "/_blob/412852248cb174627ac2563a9574674b",
+"cover": "assets/covers-web/412852248cb174627ac2563a9574674b.jpg",
 "kind": "cover",
 "alt": "Cover or first page: EMOP (Mali)"
 },
 "83": {
 "link": "https://www.ine.es/infografias/ucranianos/ucranianos.htm",
 "news": false,
-"cover": "/_blob/fee4df8141531b4a9294754ce11cb311",
+"cover": "assets/covers-web/fee4df8141531b4a9294754ce11cb311.jpg",
 "kind": "screenshot",
 "alt": "Source page: Ukrainians in Spain (Spain)",
 "cap": "Source page · ine.es"
@@ -231,7 +231,7 @@
 "84": {
 "link": "https://www.jointdatacenter.org/activites/displaced-and-stateless-populations-in-car/",
 "news": false,
-"cover": "/_blob/89dcd0bf4d4fe5ffbc7baea0941e4174",
+"cover": "assets/covers-web/89dcd0bf4d4fe5ffbc7baea0941e4174.jpg",
 "kind": "screenshot",
 "alt": "Source page: MICS 2025 CAR (Central African Republic)",
 "cap": "Source page · jointdatacenter.org"
@@ -239,7 +239,7 @@
 "86": {
 "link": "https://www.insee.fr/fr/information/7634303",
 "news": false,
-"cover": "/_blob/9f5fd3e2ec5cbe50433da1fa808c9ab5",
+"cover": "assets/covers-web/9f5fd3e2ec5cbe50433da1fa808c9ab5.jpg",
 "kind": "screenshot",
 "alt": "Source page: Homeless Survey 2025 (France)",
 "cap": "Source page · insee.fr"
@@ -251,7 +251,7 @@
 "92": {
 "link": "https://www.insee.fr/fr/statistiques/fichier/6793306/IMMFRA23-D1.pdf",
 "news": false,
-"cover": "/_blob/0d11ae5b8012221456b2266e056bd0be",
+"cover": "assets/covers-web/0d11ae5b8012221456b2266e056bd0be.jpg",
 "kind": "cover",
 "alt": "Cover or first page: INSEE publication references Immigrants and descendants of immigrants (France)"
 },
@@ -262,7 +262,7 @@
 "103": {
 "link": "https://www.jips.org/news/strengthening-the-data-systems-and-capacities-of-the-idp-committee-in-azerbaijan/",
 "news": false,
-"cover": "/_blob/ccfd9368ba9ffd088b488bbfdc23dcb9",
+"cover": "assets/covers-web/ccfd9368ba9ffd088b488bbfdc23dcb9.jpg",
 "kind": "screenshot",
 "alt": "Source page: Azerbaijan - supporting the State Committee for Affairs of Refugees and IDPs to strengthen their statistical capacity to produce statistics on IDPs based on IDP registry. (Azerbaijan)",
 "cap": "Source page · jips.org"
@@ -270,7 +270,7 @@
 "104": {
 "link": "https://dosweb.dos.gov.jo/DataBank/Labour_Force/Employment_Unemployment/Labor_Force_Survey_questionnaire_2024.pdf",
 "news": false,
-"cover": "/_blob/fbd6ca034c87f1b231bd244f913182c5",
+"cover": "assets/covers-web/fbd6ca034c87f1b231bd244f913182c5.jpg",
 "kind": "cover",
 "alt": "Cover or first page: A question was included in the labor force survey, the second round in 2025, question number 212: “What is the main reason for (name) coming to live in Jordan from the country? Note: The attached link for the form for the year 2024, the second round, is the same as for the year 2025, the second round. (Jordan)"
 },
@@ -281,56 +281,56 @@
 "108": {
 "link": "https://www.jips.org/jips-publication/monitoring-progress-towards-solutions-to-internal-displacement-a-development-oriented-indicator-framework-undp-jips-2024/",
 "news": false,
-"cover": "/_blob/bbc9fffad137f4a1b1507ce3fbb81b4a",
+"cover": "assets/covers-web/bbc9fffad137f4a1b1507ce3fbb81b4a.jpg",
 "kind": "cover",
 "alt": "Cover or first page: UNDP-JIPS publication: Monitoring progress towards solutions to internal displacement, a development oriented indicator framework. September 2024 ()"
 },
 "109": {
 "link": "https://ins-cameroun.cm/mics-7-au-cameroun/",
 "news": false,
-"cover": "/_blob/0591b0aaa123c963cda4a392696ebcf3",
+"cover": "assets/covers-web/0591b0aaa123c963cda4a392696ebcf3.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Since August 2025, the INS has launched mapping work for the collection of data from the multiple indicator survey (MICS 6). This operation targets women and children. Furthermore, the UNHCR joined forces to ensure that the refugee aspect was taken into account. In reality, in Cameroon, IDPs are in households and MICS will capture them. The collection will take place in the first quarter of 2026 (Cameroon)"
 },
 "110": {
 "link": "https://www.ssb.no/befolkning/flytting/artikler/tidlige-asylflyttinger-i-perioden-2013-2022/_/attachment/inline/a8e35027-dda5-4a5a-94b5-8bd5d22e4a4c:dda1a4c30ebb5758191abe7900b03a39e8cc44dd/NOT2023-43.pdf",
 "news": false,
-"cover": "/_blob/401fbae97f2c0a5023410f3967cd5808",
+"cover": "assets/covers-web/401fbae97f2c0a5023410f3967cd5808.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Internal movements of asylum seekers/refugees (Norway)"
 },
 "112": {
 "link": "https://www.insd.bf/sites/default/files/2026-02/Rapport%20Analyse_ESEP-PDI.pdf",
 "news": false,
-"cover": "/_blob/1c0563e4391df2b949776b58b8e7c354",
+"cover": "assets/covers-web/1c0563e4391df2b949776b58b8e7c354.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Socio-economic survey of households of internally displaced persons and hosts in 6 regions of Burkina Faso (Burkina Faso)"
 },
 "113": {
 "link": "https://data.unhcr.org/en/documents/details/111718",
 "news": false,
-"cover": "/_blob/dba817fd964c048e2f30ae927785f7fc",
+"cover": "assets/covers-web/dba817fd964c048e2f30ae927785f7fc.jpg",
 "kind": "cover",
 "alt": "Cover or first page: UNHCR did a follow-up survey on the Shona community after acquisition of citizenship (Kenya)"
 },
 "114": {
 "link": "https://www.insd.bf/sites/default/files/2026-02/Rapport%20Analyse_ESEP-PDI.pdf",
 "news": false,
-"cover": "/_blob/2b518f9c6b5f2e164f39a9f9676c9e94",
+"cover": "assets/covers-web/2b518f9c6b5f2e164f39a9f9676c9e94.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Study on the living conditions of forced displaced persons: baseline survey (Burkina Faso)"
 },
 "115": {
 "link": "https://www.knbs.or.ke/wp-content/uploads/2024/05/2024-Economic-Survey.pdf",
 "news": false,
-"cover": "/_blob/da1f7b083137dc1d1aea128b0fca12a2",
+"cover": "assets/covers-web/da1f7b083137dc1d1aea128b0fca12a2.jpg",
 "kind": "cover",
 "alt": "Cover or first page: KNBS is continuously collecting annual data on Registered Refugees and Asylum Seekers from the Department for Refugee Services (Kenya)"
 },
 "117": {
 "link": "https://www.ssb.no/befolkning/innvandrere/artikler/hvordan-presterer-flyktninger-pa-skolebenken",
 "news": false,
-"cover": "/_blob/d26ff4a86921fb722d5db798a4498f86",
+"cover": "assets/covers-web/d26ff4a86921fb722d5db798a4498f86.jpg",
 "kind": "screenshot",
 "alt": "Source page: How do refugees fare in the Norwegian education system? (Norway)",
 "cap": "Source page · ssb.no"
@@ -338,7 +338,7 @@
 "118": {
 "link": "https://www.jointdatacenter.org/activites/internally-displaced-people-in-yemen/",
 "news": false,
-"cover": "/_blob/b1622a23e7597375ec0c96c812843655",
+"cover": "assets/covers-web/b1622a23e7597375ec0c96c812843655.jpg",
 "kind": "screenshot",
 "alt": "Source page: Yemen Household Budget Survey 2025 (Yemen)",
 "cap": "Source page · jointdatacenter.org"
@@ -346,7 +346,7 @@
 "119": {
 "link": "https://www.insd.bf/sites/default/files/journal-2025-07/JBS%20017.pdf",
 "news": false,
-"cover": "/_blob/b992fbe49cd5ad1651c3c7ebd7fa4f63",
+"cover": "assets/covers-web/b992fbe49cd5ad1651c3c7ebd7fa4f63.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Multiple Indicator Cluster Survey (MICS-BFA 2026) (Burkina Faso)"
 },
@@ -357,7 +357,7 @@
 "122": {
 "link": "https://www.geostat.ge/en/modules/categories/909/the-geographical-distribution-of-the-population-and-internal-migration",
 "news": false,
-"cover": "/_blob/b947b29e1fcc6ba1bf99d826aa608381",
+"cover": "assets/covers-web/b947b29e1fcc6ba1bf99d826aa608381.jpg",
 "kind": "screenshot",
 "alt": "Source page: Census collects information on refugees, idps and migrants by reason of migration (Georgia)",
 "cap": "Source page · geostat.ge"
@@ -365,7 +365,7 @@
 "123": {
 "link": "https://statafric.au.int/en/news/press-releases/2025-09-04/4th-african-school-migration-statistics",
 "news": false,
-"cover": "/_blob/8f98a71d6d24b2c69b478e9167f9c918",
+"cover": "assets/covers-web/8f98a71d6d24b2c69b478e9167f9c918.jpg",
 "kind": "cover",
 "alt": "Cover or first page: 4th African School on Migration Statistics ()"
 },
@@ -376,7 +376,7 @@
 "126": {
 "link": "https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=5057&lang=en&db=imdb&adm=8&dis=2",
 "news": false,
-"cover": "/_blob/cc1009ba11902ffcac7b38f9f54dc5a0",
+"cover": "assets/covers-web/cc1009ba11902ffcac7b38f9f54dc5a0.jpg",
 "kind": "screenshot",
 "alt": "Source page: Longitudinal Immigration Database (Canada)",
 "cap": "Source page · www23.statcan.gc.ca"
@@ -384,7 +384,7 @@
 "131": {
 "link": "https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/ukrainske-flyktninger-etter-introduksjonsprogram-pa-arbeidsmarkedet",
 "news": false,
-"cover": "/_blob/60cd49424dbc793a60dd935364436d16",
+"cover": "assets/covers-web/60cd49424dbc793a60dd935364436d16.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Statistics on refugees with collective protection who have completed the introduction program, employment: https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/ukrainske-flyktninger-etter-introduksjonsprogram-pa-arbeidsmarkedet (Norway)"
 },
@@ -395,7 +395,7 @@
 "134": {
 "link": "https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/en-av-tre-ukrainere-er-i-jobb",
 "news": false,
-"cover": "/_blob/eed06f37204916dff145620f557956d9",
+"cover": "assets/covers-web/eed06f37204916dff145620f557956d9.jpg",
 "kind": "screenshot",
 "alt": "Source page: Ukrainian refugees in employment: https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/en-av-tre-ukrainere-er-i-jobb (Norway)",
 "cap": "Source page · ssb.no"
@@ -403,7 +403,7 @@
 "135": {
 "link": "https://www.icasees.org/index.php/actualites/423-centrafrique-rgph-4-licasees-presente-les-resultats-provisoires-globaux-et-preliminaires-au-ctir",
 "news": false,
-"cover": "/_blob/45b4d9ac7dea761e937ba1f79114b2c6",
+"cover": "assets/covers-web/45b4d9ac7dea761e937ba1f79114b2c6.jpg",
 "kind": "screenshot",
 "alt": "Source page: this is the case where ICASEES took these types of population into account in the RGPH-4 (Central African Republic)",
 "cap": "Source page · icasees.org"
@@ -411,14 +411,14 @@
 "137": {
 "link": "https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/unge-med-innvandrerbakgrunn-i-arbeid-og-utdanning-2022/_/attachment/inline/fe8ef8ee-f5d6-4ce0-a450-d403b3680509:2d91694759b67e3e11c0cc559f5d2185d74c787c/RAPP2023-42.pdf",
 "news": false,
-"cover": "/_blob/c51a6388c1b47a539e061974ff4bad1d",
+"cover": "assets/covers-web/c51a6388c1b47a539e061974ff4bad1d.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Youth with an immigrant background in employment and education: https://www.ssb.no/arbeid-og-lonn/unge-med-innvandrerbakgrunn-i-arbeid-og-utdanning (Norway)"
 },
 "138": {
 "link": "https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/flyktninger-i-og-utenfor-arbeidsmarkedet-2023/_/attachment/inline/346960db-ce5c-4305-ad52-637bc5ce8c55:94dcbfc7c9e1810dd8a36ce75fd16524ab739f03/RAPP2025-01.pdf",
 "news": false,
-"cover": "/_blob/694df9faa99347bfae4be9a180c3fbe8",
+"cover": "assets/covers-web/694df9faa99347bfae4be9a180c3fbe8.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Refugees in and outside the Labour Marked, 2023 (Norway)"
 },
@@ -429,7 +429,7 @@
 "140": {
 "link": "https://www.ssb.no/befolkning/innvandrere/artikler/mange-enslige-mindrearige-flyktninger-fra-ukraina",
 "news": false,
-"cover": "/_blob/3ece6fa6764daf0e3b1073fce4324cae",
+"cover": "assets/covers-web/3ece6fa6764daf0e3b1073fce4324cae.jpg",
 "kind": "screenshot",
 "alt": "Source page: Unaccompanied Minor Refugees, 2023 (Norway)",
 "cap": "Source page · ssb.no"
@@ -437,7 +437,7 @@
 "147": {
 "link": "https://www.ssb.no/befolkning/innvandrere/artikler/stor-andel-med-lavinntekt-blant-syriske-kvoteflyktninger",
 "news": false,
-"cover": "/_blob/99bc2d4a29c0618e0878ec15b9e904f5",
+"cover": "assets/covers-web/99bc2d4a29c0618e0878ec15b9e904f5.jpg",
 "kind": "screenshot",
 "alt": "Source page: Resettlement refugees, 2024 (Norway)",
 "cap": "Source page · ssb.no"
@@ -457,7 +457,7 @@
 "160": {
 "link": "https://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/6377/7/1/1/raport__who_21.02.pdf",
 "news": false,
-"cover": "/_blob/c6f692b7fb344da06a9535b1c4432265",
+"cover": "assets/covers-web/c6f692b7fb344da06a9535b1c4432265.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Health of refugees from Ukraine to Poland 2022 - survey and research report in cooperation with WHO (Poland)"
 },
@@ -468,7 +468,7 @@
 "169": {
 "link": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52023PC0031",
 "news": false,
-"cover": "/_blob/2812733c3d5a57a4a02388203b00895e",
+"cover": "assets/covers-web/2812733c3d5a57a4a02388203b00895e.jpg",
 "kind": "screenshot",
 "alt": "Source page: Redeveloping European statistics on population and housing (ESOP) ()",
 "cap": "Source page · eur-lex.europa.eu"
@@ -484,7 +484,7 @@
 "173": {
 "link": "https://www.inegi.org.mx/contenidos/programas/eic/2025/doc/eic2025_presentacion_00.pdf",
 "news": false,
-"cover": "/_blob/340c9ac2cfcf52586136574f22e87956",
+"cover": "assets/covers-web/340c9ac2cfcf52586136574f22e87956.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Intercensal Survey (Mexico)"
 },
@@ -495,7 +495,7 @@
 "176": {
 "link": "https://www.inegi.org.mx/contenidos/programas/envipe/2025/doc/envipe2025_presentacion_nacional.pdf",
 "news": false,
-"cover": "/_blob/9dc1579b5147cd05f99dcc636a7ae142",
+"cover": "assets/covers-web/9dc1579b5147cd05f99dcc636a7ae142.jpg",
 "kind": "cover",
 "alt": "Cover or first page: National Survey of Victimization and Perception of Public Safety (Mexico)"
 },
@@ -510,14 +510,14 @@
 "183": {
 "link": "",
 "news": false,
-"cover": "/_blob/3952b3a607cd06a9a33d6cfd6bb06ce5",
+"cover": "assets/covers-web/3952b3a607cd06a9a33d6cfd6bb06ce5.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Refugee questions were included in the labor force survey (Jordan)"
 },
 "184": {
 "link": "https://www.armstat.am/file/article/demog_2024_7.pdf",
 "news": false,
-"cover": "/_blob/c5737e5110e135db92ceaf09d57c5839",
+"cover": "assets/covers-web/c5737e5110e135db92ceaf09d57c5839.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Digitalized Administrative source (Migration and Citizenship Service of the M-stry of Interior) of asylum seekers and recognized refugees: https://www.armstat.am/file/article/demog_2024_7.pdf, p.160-162 (Armenia)"
 },
@@ -540,7 +540,7 @@
 "199": {
 "link": "https://data.unhcr.org/en/documents/details/101747",
 "news": false,
-"cover": "/_blob/e9d23fe79e893d54aa991ea985209350",
+"cover": "assets/covers-web/e9d23fe79e893d54aa991ea985209350.jpg",
 "kind": "screenshot",
 "alt": "Source page: Intentions Surveys with Refugee from Ukraine ()",
 "cap": "Source page · data.unhcr.org"
@@ -548,21 +548,21 @@
 "200": {
 "link": "https://datospaz.unidadvictimas.gov.co/wp-content/uploads/2025/11/ESPECIAL_EVENTOS_MASIVOS0007_ESP_0_NA_131125-2.pdf",
 "news": false,
-"cover": "/_blob/648dc756dece5317720c4ef4b251e273",
+"cover": "assets/covers-web/648dc756dece5317720c4ef4b251e273.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Massive events in Colombia: memory, figures and current dynamics (Colombia)"
 },
 "203": {
 "link": "https://datospaz.unidadvictimas.gov.co/",
 "news": false,
-"cover": "/_blob/f6f66f7fb1f8045090fcfa37bfad189c",
+"cover": "assets/covers-web/f6f66f7fb1f8045090fcfa37bfad189c.jpg",
 "kind": "cover",
 "alt": "Cover or first page: FORCED DISPLACEMENT REPORT II SEMESTER 2024 (Colombia)"
 },
 "207": {
 "link": "https://www.nis.gov.kh/nis/CIPS/Cambodia%20Inter-censal%20Population%20Survey%202024.pdf",
 "news": false,
-"cover": "/_blob/e72858ae2f3cd1d44c48b0ccd5d2ac3b",
+"cover": "assets/covers-web/e72858ae2f3cd1d44c48b0ccd5d2ac3b.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Cambodia Inter-Censal Population Survey (Cambodia)"
 },
@@ -573,7 +573,7 @@
 "212": {
 "link": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/methodologies/refugeeintegrationoutcomesriodatalinkagepilot",
 "news": false,
-"cover": "/_blob/63c7e7e03e0cedf5e2ba418b4e9950af",
+"cover": "assets/covers-web/63c7e7e03e0cedf5e2ba418b4e9950af.jpg",
 "kind": "screenshot",
 "alt": "Source page: Refugee Integration Outcomes (United Kingdom)",
 "cap": "Source page · ons.gov.uk"
@@ -593,7 +593,7 @@
 "217": {
 "link": "https://www.armstat.am/en/?nid=944",
 "news": false,
-"cover": "/_blob/e89bd6a17267708cf864f2f3e0603d23",
+"cover": "assets/covers-web/e89bd6a17267708cf864f2f3e0603d23.jpg",
 "kind": "screenshot",
 "alt": "Source page: The results of 2022 Population Census in the Republic of Armenia (Armenia)",
 "cap": "Source page · armstat.am"
@@ -609,14 +609,14 @@
 "230": {
 "link": "https://www.ssb.no/befolkning/innvandrere/artikler/overforingsflyktninger-i-norge-2023/_/attachment/inline/65b39e47-cbb6-485e-a2df-b6afc476224a:df489e76b5176126a3fb9cdd525c67f6b07f20d3/RAPP2023-45.pdf",
 "news": false,
-"cover": "/_blob/404b8657c66945269696d7405fa41721",
+"cover": "assets/covers-web/404b8657c66945269696d7405fa41721.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Resettlement refugees (Norway)"
 },
 "233": {
 "link": "https://www.ssb.no/befolkning/flytting/artikler/uregistrert-utvandring-fra-norge/_/attachment/inline/2b780628-56b2-400c-ad12-125a2b9894bc:a679064cdc81beb854dbbb730f1e0409780d1b7e/NOT2024-03.pdf",
 "news": false,
-"cover": "/_blob/462eed9a8b3a4972d0a35e9df18c6af9",
+"cover": "assets/covers-web/462eed9a8b3a4972d0a35e9df18c6af9.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Unregistered Emigration from Norway: Mapping the Extent (Norway)"
 },
@@ -627,14 +627,14 @@
 "238": {
 "link": "https://www.ssb.no/befolkning/innvandrere/artikler/enslige-mindrearige-flyktninger-19962022/_/attachment/inline/329e70fc-153d-43cb-a735-d8d3344579d0:dbd9531252785fba0016b1b9633a3231b656430e/RAPP2024-10.pdf",
 "news": false,
-"cover": "/_blob/08c7575ff336cbe0b580cd0061c3ff71",
+"cover": "assets/covers-web/08c7575ff336cbe0b580cd0061c3ff71.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Unaccompanied Minor Refugees 1996-2022, Monitor: Demographics, Education, Employment, and Income (Norway)"
 },
 "239": {
 "link": "https://www.adb.org/publications/displacement-data-asia-pacific",
 "news": false,
-"cover": "/_blob/c4d3ca6600058016b2562fb65069e11e",
+"cover": "assets/covers-web/c4d3ca6600058016b2562fb65069e11e.jpg",
 "kind": "screenshot",
 "alt": "Source page: Publication: Towards Durable Solutions: Mapping and Analysis of Displacement Data in Asia and the Pacific ()",
 "cap": "Source page · adb.org"
@@ -646,7 +646,7 @@
 "244": {
 "link": "https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/en-av-tre-ukrainere-er-i-jobb",
 "news": false,
-"cover": "/_blob/976b597dc2fa2b5b60d6bfbe22fc32db",
+"cover": "assets/covers-web/976b597dc2fa2b5b60d6bfbe22fc32db.jpg",
 "kind": "screenshot",
 "alt": "Source page: Ukrainians in Employment in Norway, (Norway)",
 "cap": "Source page · ssb.no"
@@ -654,7 +654,7 @@
 "247": {
 "link": "https://www.ssb.no/inntekt-og-forbruk/inntekt-og-formue/artikler/inntektene-til-flyktninger-bosatt-mellom-2015-og-2018",
 "news": false,
-"cover": "/_blob/1959c08d428b61d5b2d1948e45733c1a",
+"cover": "assets/covers-web/1959c08d428b61d5b2d1948e45733c1a.jpg",
 "kind": "screenshot",
 "alt": "Source page: Income of Refugees Settled Between 2015 and 2018 (Norway)",
 "cap": "Source page · ssb.no"
@@ -674,14 +674,14 @@
 "255": {
 "link": "https://www.istat.it/wp-content/uploads/2025/11/La-violenza-contro-le-donne-dentro-e-fuori-la-famiglia_Anno-2025.pdf",
 "news": false,
-"cover": "/_blob/3a45bb00e11578c8709b8f74176e5432",
+"cover": "assets/covers-web/3a45bb00e11578c8709b8f74176e5432.jpg",
 "kind": "cover",
 "alt": "Cover or first page: A sample of refugees women will be included in the next survey about the violence on women (Italy)"
 },
 "256": {
 "link": "https://www.jointdatacenter.org/activites/south-sudan-hbs/",
 "news": false,
-"cover": "/_blob/b977a15240ddb4e7a516e7c142adb110",
+"cover": "assets/covers-web/b977a15240ddb4e7a516e7c142adb110.jpg",
 "kind": "screenshot",
 "alt": "Source page: Household Budget Survey 2025 (South Sudan)",
 "cap": "Source page · jointdatacenter.org"
@@ -693,7 +693,7 @@
 "259": {
 "link": "https://www.nbs.gov.ss/assets/images/Key%20Findings%20Report%20(KFR)%202026.04.13.pdf",
 "news": false,
-"cover": "/_blob/bf4c3f2e4707e599056e1e37fae5f701",
+"cover": "assets/covers-web/bf4c3f2e4707e599056e1e37fae5f701.jpg",
 "kind": "cover",
 "alt": "Cover or first page: MICS Round 7 (South Sudan)"
 },
@@ -704,7 +704,7 @@
 "263": {
 "link": "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_LFSQ022024E.pdf",
 "news": false,
-"cover": "/_blob/b1b1f60e710e8ee947a0c8451d0cf02c",
+"cover": "assets/covers-web/b1b1f60e710e8ee947a0c8451d0cf02c.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Field Surveys: Labor Force Survey (State of Palestine)"
 },
@@ -723,14 +723,14 @@
 "271": {
 "link": "https://migration.gov.gr/en/statistika/",
 "news": false,
-"cover": "/_blob/4fd85defcb80ac9b2f7a937691006066",
+"cover": "assets/covers-web/4fd85defcb80ac9b2f7a937691006066.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Monthly report regarding receptiom, asylum and integration procedures that is being uploaded on the website of ministry of migration and asylum. The data provided in this report refers to refugees/people in need of international protection. (Greece)"
 },
 "273": {
 "link": "https://stat.gov.pl/download/gfx/portalinformacyjny/en/defaultaktualnosci/3595/7/1/1/health_of_refugees_in_poland_2022-2023.pdf",
 "news": false,
-"cover": "/_blob/e04938592140f1d7d7996bdcda9accea",
+"cover": "assets/covers-web/e04938592140f1d7d7996bdcda9accea.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Health of refugees from Ukraine. A comparative analysis of 2022-2023 surveys and data innovations. (Poland)"
 },
@@ -741,7 +741,7 @@
 "278": {
 "link": "https://www.unidadvictimas.gov.co/registro-unico-de-victimas-ruv/",
 "news": false,
-"cover": "/_blob/d7ced944ca86e5215bb14a141ba4e7c9",
+"cover": "assets/covers-web/d7ced944ca86e5215bb14a141ba4e7c9.jpg",
 "kind": "screenshot",
 "alt": "Source page: Diagnosis on the Single Registry of Victims (Colombia)",
 "cap": "Source page · unidadvictimas.gov.co"
@@ -749,7 +749,7 @@
 "283": {
 "link": "https://www.istat.it/wp-content/uploads/2025/09/Conti_Cinzia_23_settembre.pdf",
 "news": false,
-"cover": "/_blob/ceed4f5227d2f972e64c8509a6b55824",
+"cover": "assets/covers-web/ceed4f5227d2f972e64c8509a6b55824.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Enhanced the use of record linkage techniques to connect administrative data with other databases (marriages and acquisition of citizenship) (Italy)"
 },
@@ -760,7 +760,7 @@
 "291": {
 "link": "https://www.jointdatacenter.org/activites/refugees-and-idps-in-sudan/",
 "news": false,
-"cover": "/_blob/985bef812aedc95a4812a1509233fbb5",
+"cover": "assets/covers-web/985bef812aedc95a4812a1509233fbb5.jpg",
 "kind": "screenshot",
 "alt": "Source page: Sudan: Inclusion of IDPs and Refugees in Sudan High-Frequency Households' Welfare Monitoring Survey (Sudan)",
 "cap": "Source page · jointdatacenter.org"
@@ -768,7 +768,7 @@
 "294": {
 "link": "https://www.jointdatacenter.org/activites/refugees-in-bangladesh/",
 "news": false,
-"cover": "/_blob/7ff183eaae406f2f4c6f082dfc570370",
+"cover": "assets/covers-web/7ff183eaae406f2f4c6f082dfc570370.jpg",
 "kind": "screenshot",
 "alt": "Source page: MICS (Bangladesh)",
 "cap": "Source page · jointdatacenter.org"
@@ -776,7 +776,7 @@
 "295": {
 "link": "https://www.jointdatacenter.org/activites/displaced-and-stateless-populations-in-car/",
 "news": false,
-"cover": "/_blob/b3111027e1725318e9dac176dc84aa1a",
+"cover": "assets/covers-web/b3111027e1725318e9dac176dc84aa1a.jpg",
 "kind": "screenshot",
 "alt": "Source page: Central African Republic: Building Inclusive Statistics: Integrating Forced Displacement and people at risk of statelessness into Central African Republic 4th General Population and Housing Census (RGPH4) and the Multiple Indicator Cluster Surveys (Central African Republic)",
 "cap": "Source page · jointdatacenter.org"
@@ -784,7 +784,7 @@
 "297": {
 "link": "https://www.jointdatacenter.org/activites/refugees-in-iraq/",
 "news": false,
-"cover": "/_blob/070562ed488bcb1edf867b3dbc9776d7",
+"cover": "assets/covers-web/070562ed488bcb1edf867b3dbc9776d7.jpg",
 "kind": "screenshot",
 "alt": "Source page: Iraq: Including Refugees into the Iraq Household and Socioeconomic Survey (IHSES- III) (Iraq)",
 "cap": "Source page · jointdatacenter.org"
@@ -792,14 +792,14 @@
 "298": {
 "link": "https://www.jointdatacenter.org/wp-content/uploads/2025/08/Uganda-National-Household-Survey-Report-20232024.pdf",
 "news": false,
-"cover": "/_blob/6be17b46a38326dd02cc2c2c533d5b8a",
+"cover": "assets/covers-web/6be17b46a38326dd02cc2c2c533d5b8a.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Uganda: Inclusion of Refugees in National Household Survey (Uganda)"
 },
 "299": {
 "link": "https://www.jointdatacenter.org/activites/refugees-in-turkiye/",
 "news": false,
-"cover": "/_blob/e629f102d26b39f8033d86a17a4c82c2",
+"cover": "assets/covers-web/e629f102d26b39f8033d86a17a4c82c2.jpg",
 "kind": "screenshot",
 "alt": "Source page: Turkiye: Inclusion of Forcibly Displaced Persons in the World Bank's Enterprise Surveys Series Enterprise Surveys Series (Turkiye)",
 "cap": "Source page · jointdatacenter.org"
@@ -807,7 +807,7 @@
 "306": {
 "link": "https://sib.org.bz/wp-content/uploads/20251020_BelizeCensusMigrationReport.pdf",
 "news": false,
-"cover": "/_blob/066895a9e1a1cab8c6a7f7c139d2f6d2",
+"cover": "assets/covers-web/066895a9e1a1cab8c6a7f7c139d2f6d2.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Support to the Statistical Institute of Belize in the preparation of a thematic report on migration based on the 2022 census. This project was completed and the report launched in 2025. (Belize)"
 },
@@ -818,7 +818,7 @@
 "310": {
 "link": "https://www.jointdatacenter.org/activites/refugees-in-mauritania/",
 "news": false,
-"cover": "/_blob/1a980e0139da035556831870c3a8927f",
+"cover": "assets/covers-web/1a980e0139da035556831870c3a8927f.jpg",
 "kind": "screenshot",
 "alt": "Source page: Mauritania: Quantifying refugee's return to the labor market & local economy: Inclusion of refugees & asylum seekers into the Mauritania Labor Force Survey (Mauritania)",
 "cap": "Source page · jointdatacenter.org"
@@ -830,35 +830,35 @@
 "314": {
 "link": "https://www.jointdatacenter.org/malawi-dhs-2024/",
 "news": false,
-"cover": "/_blob/a0f39023d4e1966e6e1dee2613f39873",
+"cover": "assets/covers-web/a0f39023d4e1966e6e1dee2613f39873.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Malawi: Inclusion of refugees in Malawi's Demographic and Health Survey 2023/24 (Malawi)"
 },
 "315": {
 "link": "https://www.jointdatacenter.org/wp-content/uploads/2026/07/IHS6_Cross_Section-Report-1.pdf",
 "news": false,
-"cover": "/_blob/1c49d56a858eaaf2d8468ed4fd0aac56",
+"cover": "assets/covers-web/1c49d56a858eaaf2d8468ed4fd0aac56.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Malawi: Inclusion of refugees in Malawi's Integrated Household Survey (IHS) 2024 (Malawi)"
 },
 "318": {
 "link": "https://statistics.ubos.org/nphc/reports/National-Population-and-Housing-Census-2024-Final-Report-Volume-1-Main.pdf",
 "news": false,
-"cover": "/_blob/69d8ced83de0a135d0aad028d0ec256e",
+"cover": "assets/covers-web/69d8ced83de0a135d0aad028d0ec256e.jpg",
 "kind": "cover",
 "alt": "Cover or first page: THE 2024 NATIONAL POPULATION AND HOUSING CENSUS (NPHC 2024) (Uganda)"
 },
 "319": {
 "link": "https://www.ubos.org/wp-content/uploads/publications/05_2026Uganda_Harmonised_Integrated_Survey_2021-22_to_2024-25-Presentation.pdf",
 "news": false,
-"cover": "/_blob/6105c4e7c89c040fd718e89b803d2dd9",
+"cover": "assets/covers-web/6105c4e7c89c040fd718e89b803d2dd9.jpg",
 "kind": "cover",
 "alt": "Cover or first page: THE UGANDA NATIONAL INTEGRATED SURVEY, 2024/25 (UHIS 2024/25) (Uganda)"
 },
 "320": {
 "link": "https://www.ubos.org/the-uganda-malaria-indicator-survey-2024-25-report-released/",
 "news": false,
-"cover": "/_blob/d59c2b706596f2b37d35c6355d622c3b",
+"cover": "assets/covers-web/d59c2b706596f2b37d35c6355d622c3b.jpg",
 "kind": "screenshot",
 "alt": "Source page: THE UGANDA MALARIA INDICATOR SURVEY, 2024/25 (UMIS, 2024/25) (Uganda)",
 "cap": "Source page · ubos.org"
@@ -866,7 +866,7 @@
 "321": {
 "link": "https://www.ubos.org/wp-content/uploads/publications/02_2026NGPSS_REPORT_2024-2025.pdf",
 "news": false,
-"cover": "/_blob/81dbdb37ac3968339a481610d3a967e1",
+"cover": "assets/covers-web/81dbdb37ac3968339a481610d3a967e1.jpg",
 "kind": "cover",
 "alt": "Cover or first page: THE UGANDA NATIONAL GOVERNANCE, PEACE AND SECURITY SURVEY, 2024/25 (UNGPS 2024/25) (Uganda)"
 },
@@ -889,14 +889,14 @@
 "326": {
 "link": "https://askapi.rks-gov.net/Custom/c973a3e6-790c-47e7-924b-4e9f5d745aec.pdf",
 "news": false,
-"cover": "/_blob/56b20ce66c4a9483009dfbbd8ce9126b",
+"cover": "assets/covers-web/56b20ce66c4a9483009dfbbd8ce9126b.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Kosovo Census 2024 (Kosovo*)"
 },
 "327": {
 "link": "https://www.jointdatacenter.org/integrating-forcibly-displaced-populations-into-covid-19-high-frequency-phone-surveys/",
 "news": false,
-"cover": "/_blob/64b2102af020c8a38aa866ad2ec2fce5",
+"cover": "assets/covers-web/64b2102af020c8a38aa866ad2ec2fce5.jpg",
 "kind": "screenshot",
 "alt": "Source page: Integrating Syrian forcibly displaced populations into Covid-19 High Frequency Phone Surveys (Jordan)",
 "cap": "Source page · jointdatacenter.org"
@@ -904,7 +904,7 @@
 "334": {
 "link": "https://www.jointdatacenter.org/integrating-forcibly-displaced-populations-into-covid-19-high-frequency-phone-surveys/",
 "news": false,
-"cover": "/_blob/9443a372ab8fc216824206a3cc779597",
+"cover": "assets/covers-web/9443a372ab8fc216824206a3cc779597.jpg",
 "kind": "screenshot",
 "alt": "Source page: Integrating Forcibly Displaced Populations into Covid-19 High Frequency Phone Surveys (Ethiopia)",
 "cap": "Source page · jointdatacenter.org"
@@ -912,7 +912,7 @@
 "336": {
 "link": "https://www.jointdatacenter.org/integrating-forcibly-displaced-populations-into-covid-19-high-frequency-phone-surveys/",
 "news": false,
-"cover": "/_blob/369e1e43469a194f426b2ca4bd4a082d",
+"cover": "assets/covers-web/369e1e43469a194f426b2ca4bd4a082d.jpg",
 "kind": "screenshot",
 "alt": "Source page: Integrating Forcibly Displaced Populations into Covid-19 High Frequency Phone Surveys (Djibouti)",
 "cap": "Source page · jointdatacenter.org"
@@ -924,7 +924,7 @@
 "344": {
 "link": "https://www.jointdatacenter.org/jdc-strategy-for-2021-2023/",
 "news": false,
-"cover": "/_blob/75e47108add6cf6271a8783bff578847",
+"cover": "assets/covers-web/75e47108add6cf6271a8783bff578847.jpg",
 "kind": "cover",
 "alt": "Cover or first page: JDC Strategy ()"
 },
@@ -939,7 +939,7 @@
 "354": {
 "link": "https://reliefweb.int/report/world/leave-no-migrant-behind-2030-agenda-and-data-disaggregation?msclkid=864aaae2b0d411ec931dc6b589ca9adc",
 "news": false,
-"cover": "/_blob/66c07f8d3ac5cce9ae7713d7337cf085",
+"cover": "assets/covers-web/66c07f8d3ac5cce9ae7713d7337cf085.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Leave No Migrant Behind: The 2030 Agenda and Data Disaggregation - World | ReliefWeb ()"
 },
@@ -954,7 +954,7 @@
 "361": {
 "link": "https://www.jips.org/jips-country/sudan/?msclkid=d74339f3b0d011ec917aadf685e683e2",
 "news": false,
-"cover": "/_blob/01d70db9fca22374525c184c6a0bb971",
+"cover": "assets/covers-web/01d70db9fca22374525c184c6a0bb971.jpg",
 "kind": "screenshot",
 "alt": "Source page: Sudan - JIPS - Joint IDP Profiling Service (Sudan)",
 "cap": "Source page · jips.org"
@@ -962,7 +962,7 @@
 "363": {
 "link": "https://www.jips.org/jips-publication/jips-strategy-2021-23/",
 "news": false,
-"cover": "/_blob/052864f6e139a07c9e79d57951946c53",
+"cover": "assets/covers-web/052864f6e139a07c9e79d57951946c53.jpg",
 "kind": "cover",
 "alt": "Cover or first page: JIPS Strategy ()"
 },
@@ -973,7 +973,7 @@
 "367": {
 "link": "https://microdata.pcbs.gov.ps/PCBS-Metadata-en-v5.2/index.php/catalog/715",
 "news": false,
-"cover": "/_blob/3181071ff3e3541169c31be278a87ddc",
+"cover": "assets/covers-web/3181071ff3e3541169c31be278a87ddc.jpg",
 "kind": "screenshot",
 "alt": "Source page: Labor Force Survey (State of Palestine)",
 "cap": "Source page · microdata.pcbs.gov.ps"
@@ -989,14 +989,14 @@
 "370": {
 "link": "https://www.knbs.or.ke/wp-content/uploads/2021/09/Economic-Survey-2021.pdf",
 "news": false,
-"cover": "/_blob/7958f57569a7d5771a3e2e32458533ea",
+"cover": "assets/covers-web/7958f57569a7d5771a3e2e32458533ea.jpg",
 "kind": "cover",
 "alt": "Cover or first page: Economic Survey 2021 (Kenya)"
 },
 "376": {
 "link": "https://www.unfpa.org/publications/unfpa-strategy-2020-round-population-housing-censuses-2015-2024",
 "news": false,
-"cover": "/_blob/a793e9104feeeb373a929126d189cb53",
+"cover": "assets/covers-web/a793e9104feeeb373a929126d189cb53.jpg",
 "kind": "cover",
 "alt": "Cover or first page: UNFPA Strategy for the 2020 Round of Population and Housing Censuses ()"
 },
@@ -1035,7 +1035,7 @@
 "402": {
 "link": "https://www.knbs.or.ke/wp-content/uploads/2022/05/2022-Economic-Survey1.pdf",
 "news": false,
-"cover": "/_blob/697021f9fe118191887daa0056811058",
+"cover": "assets/covers-web/697021f9fe118191887daa0056811058.jpg",
 "kind": "cover",
 "alt": "Cover or first page: 2022 Economic Survey Report (Kenya)"
 },
@@ -1054,7 +1054,7 @@
 "257": {
 "link": "https://www.jointdatacenter.org/lebanon-statistical-refugees-2023/",
 "news": false,
-"cover": "/_blob/ad17764b63543b8e323a6a5f48c00d9f",
+"cover": "assets/covers-web/ad17764b63543b8e323a6a5f48c00d9f.jpg",
 "kind": "screenshot",
 "alt": "Source page: Syrians in Lebanon's MICS (Lebanon)",
 "cap": "Source page · jointdatacenter.org"
