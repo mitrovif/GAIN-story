@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "gain-story",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8123", "--directory", "/Users/filipmitrovic/Documents/GitHub/GAIN-story"],
+      "port": 8123
+    }
+  ]
+}
