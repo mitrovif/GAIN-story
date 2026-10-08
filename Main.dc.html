@@ -246,7 +246,7 @@ a{color:#4cc3c9}a:hover{color:#8fe0e4}
 <article class="card">
 <div class="eyebrow"><span class="pill latest">LATEST ROUND</span>OVERALL TRENDS · 2025 · REGIONS</div>
 <p class="msg">Africa reported the highest number of country-led examples in 2025. Among those using the Recommendations, the region accounted for almost half of all country-led examples (23 of 51).</p>
-<p class="sub">Europe follows with 12. Keep scrolling to see all five rounds.</p>
+<p class="sub">Europe follows with 12. Point at a small globe to pick out its region. Keep scrolling to see all five rounds.</p>
 <button class="exbtn" type="button" onClick="{{pick.e150}}"><span class="exmeta">DR CONGO · 2025 · SURVEY</span><span class="extitle">Survey on Household Living Conditions, with refugee and IDP modules</span></button>
 <a class="caselink" href="https://egrisstats.org/implementation/case-studies/democratic-republic-congo-2025/" target="_blank" rel="noopener"><span class="exmeta">NEW · EGRISS CASE STUDY · DR CONGO · 2026</span><span>Incorporating IRIS and IRRS into the 2025 Survey on Household Living Conditions ↗</span></a>
 <div class="src">GAIN Tables 2025, Table 1.6</div>
@@ -568,7 +568,7 @@ class Component extends DCLogic {
       if (!isR && ryN != null && ryN < 2024) labels.push(self.label((g.L + g.R) / 2, g.T - 20, 'Challenges were first asked in GAIN 2024. Pick 2024, 2025 or All years.', '', 'center', 'font: 400 14px \'IBM Plex Sans\', sans-serif; color: #e0a93b'));
       var rowH = Math.min(isR ? 76 : 52, (g.B - g.T) / cats.length);
       var top = g.T + ((g.B - g.T) - rowH * cats.length) / 2;
-      var iconW = isR ? (g.wide ? 52 : 34) : 0;
+      var iconW = isR ? Math.min(rowH * 0.82, g.wide ? 60 : 36) : 0;
       var x0 = g.L + (g.wide ? (isR ? 200 : 210) : (isR ? 150 : 120));
       var per2 = maxN > 40 ? 4 : 2;
       var pitch2 = Math.min(16, rowH * 0.7 / per2, (g.R - 50 - x0) / Math.ceil(maxN / per2));
@@ -580,7 +580,8 @@ class Component extends DCLogic {
         });
         var wv = Math.ceil(b.length / per2) * pitch2;
         if (b.length) deco.push({ t: 'pill', x: x0, y: yc - pitch2 * per2 / 2 - 2, w: wv + 4 + pitch2 / 2, h: pitch2 * per2 + 4, c: BLUE, a: 0.16 });
-        if (isR) deco.push({ t: 'mini', x: g.L, y: yc - iconW / 4, w: iconW, h: iconW / 2, reg: cats[qi] });
+        // a small globe per region, rocking about the region; pointing at it or its row picks the region out in the chart
+        if (isR) deco.push({ t: 'mini', cx: g.L + iconW / 2, cy: yc, R: iconW / 2, reg: cats[qi], x0: g.L - 8, x1: x0 - 4, y0: yc - rowH / 2, y1: yc + rowH / 2 });
         labels.push(self.label(x0 - 14, yc, names[qi], '', 'right', 'font: 400 ' + (g.wide ? 13 : 11) + 'px \'IBM Plex Sans\', sans-serif; color: #cfe0f4'));
         labels.push(self.label(x0 + wv + 12, yc, String(b.length), '', 'left', self.mono(g.wide ? 15 : 12, '#ffffff')));
       });
@@ -671,6 +672,38 @@ class Component extends DCLogic {
     this._cache[key] = out;
     return out;
   }
+  // GAIN regions, indexed as in the roster: 0 Africa, 1 Europe, 2 Americas, 3 Asia and Oceania, 4 Middle East.
+  // `poly`: a rough lon/lat outline used only to light up the land; `at`: the lon/lat the small globe faces
+  regions() {
+    return this._reg || (this._reg = [
+      { at: [18, 4], poly: [[-20, 38], [10, 38], [32, 32], [35, 29], [43, 12], [52, 12], [52, -36], [-20, -36]] },
+      { at: [18, 48], poly: [[-30, 72], [60, 72], [60, 42], [42, 42], [26, 41], [27, 36], [-10, 35], [-30, 40]] },
+      { at: [-80, 10], poly: [[-180, 84], [-30, 84], [-30, -58], [-180, -58]] },
+      { at: [105, 15], poly: [[60, 84], [180, 84], [180, -58], [105, -58], [95, 6], [60, 20], [62, 40], [60, 42]] },
+      { at: [45, 28], poly: [[32, 32], [35, 29], [43, 12], [60, 12], [62, 26], [62, 40], [42, 42], [26, 41], [27, 36]] }
+    ]);
+  }
+  // land outlines thinned for the small globes, as lon/lat pairs
+  miniLand() {
+    if (this._mland) return this._mland;
+    var M = this.map, span = M.lat[1] - M.lat[0];
+    this._mland = M.land.filter(function (R) { return R.length >= 24; }).map(function (R) {
+      var out = [];
+      for (var z = 0; z < R.length; z += 6) out.push(R[z] * 360 - 180, M.lat[1] - R[z + 1] * span);
+      return out;
+    });
+    return this._mland;
+  }
+  // the region under the pointer in the regions chart: its small globe, or the row's name beside it
+  regionAt(e) {
+    var cv = this.canvasEl, st = this.state || {};
+    if (!cv || !this.parts) return null;
+    var L = st.layout || this.steps()[st.active || 0].layout;
+    if (L.indexOf('regions') !== 0) return null;
+    var r = cv.getBoundingClientRect(), mx = e.clientX - r.left, my = e.clientY - r.top, hit = null;
+    this.build(L).deco.forEach(function (s) { if (s.t === 'mini' && mx >= s.x0 && mx <= s.x1 && my >= s.y0 && my <= s.y1) hit = s.reg; });
+    return hit;
+  }
   // orthographic projection of lon/lat onto the unit sphere seen from space; z > 0 faces the reader
   // examples whose newest EGRISS case study was published in 2025 or later
   isRecentCase(id) { return !!(this.caseYear && this.caseYear[id] >= 2025); }
@@ -708,6 +741,8 @@ class Component extends DCLogic {
     }
     var k = p.k;
     if (step.hl && p.v && !step.hl(this.rows[id])) k = 'dim';
+    var rp = layout.indexOf('regions') === 0 ? this.regPick() : null;
+    if (rp != null && p.v && this.rows[id].reg !== rp) k = 'dim';
     var pal = this.pal[k], a = p.v * (step.soft ? 0.7 : 1);
     var big = step.hl && p.v && k !== 'dim' ? 1.5 : 1;
     return { x: p.x, y: p.y, r: p.r * big, o: p.o, f: pal.f, s: pal.s, a: a, mx: k === 'dim' ? null : p.mx, tw: p.tw || 0, bg: p.k === 'bg', cs: !!p.cs };
@@ -736,33 +771,6 @@ class Component extends DCLogic {
       this.setState({ W: W, H: H });
     }
   }
-  unitPaths() {
-    if (this._unit) return this._unit;
-    var M = this.map, span = M.lat[1] - M.lat[0];
-    function nx(lon) { return (lon + 180) / 360; }
-    function ny(lat) { return (M.lat[1] - lat) / span; }
-    var land = new Path2D();
-    M.land.forEach(function (R) {
-      for (var z = 0; z < R.length; z += 2) {
-        if (z === 0 || Math.abs(R[z] - R[z - 2]) > 0.5) land.moveTo(R[z], R[z + 1]); else land.lineTo(R[z], R[z + 1]);
-      }
-    });
-    // rough lon/lat outlines of the GAIN regions, used only to light up the icon
-    var REG = [
-      [[-20, 38], [10, 38], [32, 32], [35, 29], [43, 12], [52, 12], [52, -36], [-20, -36]],
-      [[-30, 72], [60, 72], [60, 42], [42, 42], [26, 41], [27, 36], [-10, 35], [-30, 40]],
-      [[-180, 84], [-30, 84], [-30, -58], [-180, -58]],
-      [[60, 84], [180, 84], [180, -58], [105, -58], [95, 6], [60, 20], [62, 40], [60, 42]],
-      [[32, 32], [35, 29], [43, 12], [60, 12], [62, 26], [62, 40], [42, 42], [26, 41], [27, 36]]
-    ].map(function (poly) {
-      var p = new Path2D();
-      poly.forEach(function (pt, i) { if (i === 0) p.moveTo(nx(pt[0]), ny(pt[1])); else p.lineTo(nx(pt[0]), ny(pt[1])); });
-      p.closePath();
-      return p;
-    });
-    this._unit = { land: land, reg: REG };
-    return this._unit;
-  }
   drawDeco(ctx, layout, alpha) {
     var d = this.build(layout).deco, self = this;
     ctx.save();
@@ -782,12 +790,53 @@ class Component extends DCLogic {
         else { ctx.globalAlpha = alpha * s.a; ctx.fillStyle = s.c; ctx.closePath(); ctx.fill(); ctx.globalAlpha = alpha; }
       }
       else if (s.t === 'mini') {
-        var U = self.unitPaths();
+        var RG = self.regions()[s.reg], picked = self.regPick(), on = picked == null || picked === s.reg, me = picked === s.reg;
+        var tm = self.reduce ? 0 : self.now || 0, D2 = Math.PI / 180;
+        // rock about 35 degrees either side of the region, wider and quicker when it is picked, so the region always faces the reader
+        var l0 = (RG.at[0] + (me ? 40 * Math.sin(tm * 0.0012 + s.reg * 1.7) : 35 * Math.sin(tm * 0.00045 + s.reg * 1.7))) * D2, f0 = Math.max(-25, Math.min(45, RG.at[1] * 0.85)) * D2;
+        var gr = s.R * (me ? 1.12 : 1), gx2 = s.cx, gy2 = s.cy;
+        var pj = function (lon, lat) {
+          var la = lat * D2, lo = lon * D2 - l0, cl = Math.cos(la);
+          return [cl * Math.sin(lo), Math.cos(f0) * Math.sin(la) - Math.sin(f0) * cl * Math.cos(lo), Math.sin(f0) * Math.sin(la) + Math.cos(f0) * cl * Math.cos(lo)];
+        };
+        var path = function (rings) {
+          var P3 = new Path2D();
+          rings.forEach(function (Rr) {
+            var front = false;
+            for (var z = 0; z < Rr.length; z += 2) if (pj(Rr[z], Rr[z + 1])[2] > 0) { front = true; break; }
+            if (!front) return;
+            for (var z2 = 0; z2 < Rr.length; z2 += 2) {
+              var q = pj(Rr[z2], Rr[z2 + 1]), X, Y;
+              if (q[2] < 0) { var l = Math.sqrt(q[0] * q[0] + q[1] * q[1]) || 1; X = gx2 + q[0] / l * gr; Y = gy2 - q[1] / l * gr; }
+              else { X = gx2 + q[0] * gr; Y = gy2 - q[1] * gr; }
+              if (z2 === 0) P3.moveTo(X, Y); else P3.lineTo(X, Y);
+            }
+            P3.closePath();
+          });
+          return P3;
+        };
         ctx.save();
-        ctx.translate(s.x, s.y); ctx.scale(s.w, s.h);
-        ctx.fillStyle = 'rgba(207,224,244,0.22)'; ctx.fill(U.land);
-        ctx.clip(U.reg[s.reg]);
-        ctx.fillStyle = '#5b8fd9'; ctx.fill(U.land);
+        ctx.globalAlpha = alpha * (on ? 1 : 0.45);
+        if (me) { ctx.fillStyle = 'rgba(76,195,201,0.18)'; ctx.beginPath(); ctx.arc(gx2, gy2, gr * 1.25, 0, 6.2832); ctx.fill(); }
+        var og2 = ctx.createRadialGradient(gx2 - gr * 0.35, gy2 - gr * 0.4, gr * 0.05, gx2, gy2, gr);
+        og2.addColorStop(0, '#22468c'); og2.addColorStop(1, '#0a1634');
+        ctx.fillStyle = og2; ctx.beginPath(); ctx.arc(gx2, gy2, gr, 0, 6.2832); ctx.fill();
+        ctx.beginPath(); ctx.arc(gx2, gy2, gr, 0, 6.2832); ctx.clip();
+        var lp = path(self.miniLand());
+        ctx.fillStyle = 'rgba(207,224,244,0.16)'; ctx.fill(lp);
+        // the region's land, lit
+        var poly = RG.poly, dense = [];
+        poly.forEach(function (a4, i4) {
+          var b4 = poly[(i4 + 1) % poly.length], n4 = Math.max(1, Math.ceil(Math.max(Math.abs(b4[0] - a4[0]), Math.abs(b4[1] - a4[1])) / 4));
+          for (var u = 0; u < n4; u++) dense.push(a4[0] + (b4[0] - a4[0]) * u / n4, a4[1] + (b4[1] - a4[1]) * u / n4);
+        });
+        ctx.clip(path([dense]));
+        ctx.fillStyle = me ? '#4cc3c9' : '#6fa3ec'; ctx.fill(lp);
+        ctx.restore();
+        ctx.save();
+        ctx.globalAlpha = alpha * (on ? 1 : 0.45);
+        ctx.strokeStyle = me ? 'rgba(143,224,228,0.9)' : 'rgba(143,224,228,0.35)'; ctx.lineWidth = me ? 1.5 : 1;
+        ctx.beginPath(); ctx.arc(gx2, gy2, gr, 0, 6.2832); ctx.stroke();
         ctx.restore();
       }
       else if (s.t === 'globe') {
@@ -923,6 +972,7 @@ class Component extends DCLogic {
     var cv = this.canvasEl;
     if (!cv || !this.P || !this.W) return;
     var dt = Math.min(64, now - (this.last || now));
+    this.now = now;
     this.last = now;
     var st = this.state || {}, steps = this.steps();
     // the globe turns about 4 degrees a second, and holds still while an example is pointed at or open
@@ -930,7 +980,7 @@ class Component extends DCLogic {
     this.gRot = (this.gRot == null ? 20 : this.gRot) - (gPaused ? 0 : dt * 0.004);
     var sc = this.scrollState();
     var act = sc.t > 0.5 ? Math.min(sc.i + 1, steps.length - 1) : sc.i;
-    if (act !== (st.active || 0)) this.setState({ active: act, sel: undefined, layout: null, hover: null });
+    if (act !== (st.active || 0)) this.setState({ active: act, sel: undefined, layout: null, hover: null, regPin: null, regHover: null });
     var A = steps[sc.i], Bs = steps[Math.min(sc.i + 1, steps.length - 1)], t = sc.t;
     var la = A.layout, lb = Bs.layout;
     if (st.layout) { A = Bs = steps[act]; la = lb = st.layout; t = 0; }
@@ -1035,6 +1085,7 @@ class Component extends DCLogic {
       });
     }
   }
+  regPick() { var s = this.state || {}; return s.regHover != null ? s.regHover : (s.regPin != null ? s.regPin : null); }
   nearest(e) {
     var cv = this.canvasEl;
     if (!cv || !this.cur) return null;
@@ -1140,6 +1191,9 @@ class Component extends DCLogic {
         };
       });
       this._onMove = function (e) {
+        var rh = self.regionAt(e), s0 = self.state || {};
+        if (rh !== (s0.regHover == null ? null : s0.regHover)) self.setState({ regHover: rh });
+        if (rh != null) { if (self.canvasEl) self.canvasEl.style.cursor = 'pointer'; return; }
         var n = self.nearest(e);
         if (self.canvasEl) self.canvasEl.style.cursor = n != null ? 'pointer' : 'default';
         var id = n != null ? self.P[n].e : null;
@@ -1150,6 +1204,8 @@ class Component extends DCLogic {
         }
       };
       this._onTap = function (e) {
+        var rt = self.regionAt(e);
+        if (rt != null) { var s1 = self.state || {}; self.setState({ regPin: s1.regPin === rt ? null : rt }); return; }
         var n = self.nearest(e);
         if (n == null) return;
         var c = self.cur[n];
@@ -1161,7 +1217,7 @@ class Component extends DCLogic {
       yearBox: 'display: none', ys: {},
       onMove: this._onMove, onTap: this._onTap,
       next: function () { self.go(active + 1); },
-      leave: function () { if ((self.state || {}).hover != null) self.setState({ hover: null }); },
+      leave: function () { var s2 = self.state || {}; if (s2.hover != null || s2.regHover != null) self.setState({ hover: null, regHover: null }); },
       closeEx: function () { self.setState({ sel: -1, hover: null }); },
       loading: !st.ready, labels: [], legend: [], chartTitle: '', hasEx: false,
       ex: { head: '', title: '', org: '', desc: '', descStyle: '', facts: [], foot: '', hasImg: false, pinned: false, img: '', imgStyle: '', imgAlt: '', cap: '', hasCover: false, cover: '', coverAlt: '', hasLink: false, link: '', linkHost: '', hasCases: false, cases: [], casesHead: '', hasWhy: false, why: '' },
