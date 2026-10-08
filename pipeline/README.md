@@ -73,3 +73,17 @@ Related documents (another edition, another product by the same office) and sect
 - Covers are shown as small thumbnails, always linked to the source and credited to the producer.
   Confirm this use with Secretariat communications; keep photo credits (e.g. © UNHCR) verbatim.
 - Prefer the specific publication over a landing page (`ons.gov.uk/peoplepopulationandcommunity/` is not enough).
+
+## Merged into GAIN-story (8 Oct 2026)
+
+This folder is the `GAIN_post-collection` repo, brought into
+[GAIN-story](https://github.com/mitrovif/GAIN-story) with its history (`git subtree`), so the
+covers, links and the story live together.
+
+- `covers-sdg/` holds the 96 cover thumbnails from
+  [gain_sdg_workstream](https://github.com/mitrovif/gain_sdg_workstream) (rendered from reports held on
+  SharePoint), with that repo's `covers.html` gallery. 40 of them are for examples that have no cover
+  in `covers/`, including the featured Nigeria NBS (`ex045`) and Philippines PSA (`ex324`) examples.
+  Only 6 of those 40 have a public source link; their links are in `data/sdg_example_links.csv`.
+- As of 8 Oct 2026 the story shows 96 images. The 42 `held:` covers here plus the 40 SDG-only covers
+  could take it to 178 of 413, if the "own document only" rule is relaxed for them.

@@ -1,29 +1,27 @@
-# Counted, and counting — design reference
+# Counted, and counting
 
-This is a design mockup created in a visual design tool, exported as a
-standalone page. Treat it as a REFERENCE MOCKUP, not production code:
-the markup and inline styles carry the design's precise values — colors,
-font sizes, spacing, radii, shadows, layout — which an implementation
-should replicate faithfully in its own components and styling system
-rather than copy wholesale.
+The GAIN 2021–2025 scrollytelling page for the GAIN 2026 launch on the EGRISS website: 413
+implementation examples, drawn as points of light, re-forming into the charts of the GAIN Tables 2025.
 
-## Contents
+| Path | What it is |
+|---|---|
+| `Main.dc.html` | The page (exported from the "GAIN Scrollytelling" design on claude.ai). Serve the folder and open it; `index.html` redirects to it. |
+| `support.js`, `vendor/` | Runtime the page needs (React and the design-component loader). |
+| `assets/*.json` | Examples roster, chart layouts, world map and `c92c…json`: covers and source links per example (0-based roster row). |
+| `assets/covers/`, `assets/covers-web/` | The 96 images the story uses: originals, and 480px JPEGs the page loads. |
+| `assets/fonts/` | Obvia, the EGRISS heading face (from the EGRISS design system). Check the licence before the repo goes public. |
+| `pipeline/` | The cover and link scraping workstream (formerly `GAIN_post-collection`), with the SDG-map covers in `pipeline/covers-sdg/`. See its README. |
+| `review/` | Review material: story frames, EGRISS case study captures and the review board page. |
 
-- `Main.dc.html` — the artboard (a Design Component: an `<x-dc>`
-  template + a small logic class). The values to replicate live in its
-  inline `style="…"` attributes and the `<helmet><style>` block.
-- `assets/` — files uploaded to the design (images, fonts, media)
-- `support.js`, `vendor/react*.js` — the runtime that renders the
-  component in a browser; not part of the design.
+## Preview
 
-## Uploaded files
+```bash
+python3 -m http.server 8123
+```
 
-Images, fonts and media uploaded to the design are written once each under
-`assets/` — 18 in this export — and the exported files refer to them there. A
-reference a script puts together while the page runs (for example
-`"/_blob/" + id`) is not rewritten and does not load from this folder.
+Then open http://localhost:8123/Main.dc.html.
 
-## Viewing
+## Links
 
-Serve the folder (e.g. `python3 -m http.server`) and open `Main.dc.html`;
-some browsers block the scripts over file://.
+- Story (design tool): https://claude.ai/artifact/Frysz8mQTSS5Rv8GX5LRMi
+- Review board: https://claude.ai/artifact/L4amtyMx6v3FKYuZAWLK1t
