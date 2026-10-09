@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example card ideas</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:"Obvia";src:url("../assets/fonts/Obvia-SemiBold.otf") format("opentype");font-weight:600;unicode-range:U+0020,U+002C,U+002E,U+003A-003B,U+003F,U+0041-005A,U+0061-007A}
+:root{--ground:#0a1430;--panel:#0e1b3d;--card:#1a2852;--line:rgba(207,224,244,.16);--ink:#fff;--sub:#cfe0f4;--mono:#8db8e3;--teal:#4cc3c9;--coral:#f06667;--blue:#5b8fd9;--gold:#e0a93b;
+--head:"Obvia",Figtree,system-ui,sans-serif;--body:"IBM Plex Sans",system-ui,sans-serif;--m:"IBM Plex Mono",monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 14px/1.5 var(--body);padding:28px 32px}
+h1{font:600 26px/1.2 var(--head);margin:0 0 4px}
+.lede{color:var(--sub);margin:0 0 22px;max-width:90ch}
+.row{display:grid;grid-template-columns:330px 300px 1fr;gap:28px;align-items:start}
+.lab{font:500 11px var(--m);letter-spacing:.12em;color:var(--teal);margin-bottom:8px;text-transform:uppercase}
+.note{font:400 12px/1.5 var(--body);color:var(--mono);margin-top:10px}
+/* A: current */
+.cur{background:rgba(14,27,61,.97);border:1px solid rgba(207,224,244,.22);border-radius:3px;padding:16px 18px;display:grid;gap:10px}
+.cur .h{font:500 11px var(--m);letter-spacing:.1em;color:var(--teal)}
+.cur .t{font:600 17px/1.3 var(--head)}
+.cur .o{font-size:12px;color:var(--sub)}
+.cur .w{font:500 11px var(--m);color:var(--gold)}
+.cur .d{display:flex;gap:12px;font-size:13px;line-height:1.55}
+.cur .d img{width:72px;height:96px;object-fit:cover;object-position:top;border-radius:2px;background:#fff;flex-shrink:0}
+.cur dl{margin:0;display:grid;grid-template-columns:110px 1fr;gap:6px 10px;padding-top:10px;border-top:1px solid var(--line);font-size:12px}
+.cur dt{font:400 11px var(--m);color:var(--mono)}
+.cur dd{margin:0}
+.cur a{color:var(--teal);font-size:12px}
+/* B: hover preview */
+.pre{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:0 12px 34px rgba(0,0,0,.4)}
+.pre .img{height:150px;background:#fff;overflow:hidden}
+.pre .img img{width:100%;object-fit:cover;object-position:top}
+.pre .b{padding:12px 14px;display:grid;gap:6px}
+.meta{font:500 11px var(--m);letter-spacing:.08em;color:var(--mono);text-transform:uppercase}
+.pre .t{font:600 16px/1.3 var(--head)}
+.pre .s{font-size:13px;color:var(--sub)}
+.pre .hint{font:400 11px var(--m);color:var(--teal);padding-top:6px;border-top:1px solid var(--line)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:500 11px var(--body);padding:3px 8px;border-radius:999px;border:1px solid var(--line);color:var(--sub);white-space:nowrap}
+.chip.idp{border-color:#8fe0e4;color:#8fe0e4}
+.chip.rec{background:var(--blue);border-color:var(--blue);color:#fff}
+.chip.on{outline:2px solid var(--gold);outline-offset:1px}
+/* C: profile drawer */
+.drawer{background:var(--panel);border:1px solid var(--line);border-radius:6px;display:grid;grid-template-columns:200px 1fr;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+.drawer .side{background:#fff;padding:14px;display:grid;gap:8px;align-content:start}
+.drawer .side img{width:100%;border:1px solid #d9e2ef}
+.drawer .side .cr{font:400 10px var(--m);color:#5a6884}
+.drawer .main{padding:18px 22px;display:grid;gap:14px;align-content:start}
+.top{display:flex;justify-content:space-between;gap:10px;align-items:start}
+.nav{display:flex;gap:6px}
+.nav button{font:400 12px var(--m);height:30px;padding:0 10px;border:1px solid var(--line);border-radius:3px;background:transparent;color:var(--sub)}
+.drawer .t{font:600 22px/1.25 var(--head);margin:0}
+.by{font-size:13px;color:var(--sub)}
+.stand{font-size:15px;line-height:1.6;margin:0}
+.draft{font:400 10px var(--m);color:var(--gold);letter-spacing:.06em}
+.asrep{font-size:12px;color:var(--mono);border-left:2px solid var(--line);padding-left:10px;font-style:italic}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 18px}
+.f .k{font:400 10px var(--m);letter-spacing:.1em;color:var(--mono);text-transform:uppercase;margin-bottom:4px}
+.here{font-size:12px;color:var(--gold);display:flex;gap:6px;align-items:center}
+.case{display:grid;grid-template-columns:110px 1fr;gap:12px;align-items:center;border:1px solid rgba(76,195,201,.55);background:rgba(76,195,201,.08);border-radius:4px;padding:10px}
+.case img{width:110px;height:70px;object-fit:cover;object-position:top;border-radius:2px}
+.case .k{font:500 10px var(--m);letter-spacing:.1em;color:var(--teal)}
+.case a{color:#fff;text-decoration:none;font-size:13px;font-weight:500}
+.tl{display:flex;gap:14px;align-items:flex-end}
+.yr{display:grid;justify-items:center;gap:4px;font:400 10px var(--m);color:var(--mono)}
+.dots{display:flex;flex-direction:column-reverse;gap:3px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--blue)}
+.dot.i{background:var(--teal)}
+.dot.me{box-shadow:0 0 0 2px #fff}
+.acts{display:flex;gap:8px;flex-wrap:wrap;padding-top:12px;border-top:1px solid var(--line)}
+.btn{font:500 13px var(--body);padding:9px 14px;border-radius:3px;border:1px solid var(--teal);color:var(--teal);text-decoration:none}
+.btn.p{background:var(--teal);color:var(--ground)}
+.src{font:400 11px var(--m);color:var(--mono)}
+</style>
+</head>
+<body>
+<h1>The example card: today and a proposed redesign</h1>
+<p class="lede">Nigeria, GAIN 2024: the National Bureau of Statistics' first survey of internally displaced persons. A: the card as it is now. B: a short preview when the reader points at a circle. C: the full profile when they click it.</p>
+<div class="row">
+
+<div>
+<div class="lab">A · Today</div>
+<div class="cur">
+  <div class="h">GAIN 2024 · NIGERIA</div>
+  <div class="t">The NBS has implemented the first ever Survey on IDPs in seven selected states of Nigeria</div>
+  <div class="o">National Bureau of Statistics Real Sector and Household Statistics…</div>
+  <div class="d"><img src="../assets/covers-web/ex045.jpg" alt=""><span>this survey is completely sponsored by NBS</span></div>
+  <dl>
+    <dt>Example lead</dt><dd>Country-led</dd>
+    <dt>Use of the Recommendations</dt><dd>Using EGRISS Recommendations</dd>
+    <dt>Recommendations applied</dt><dd>IRIS</dd>
+    <dt>Data sources and tools</dt><dd>Survey, Administrative data, Tools and Other</dd>
+    <dt>Population groups</dt><dd>IDPs</dd>
+    <dt>Challenges</dt><dd>None reported</dd>
+  </dl>
+  <a href="#">Open the example's source ↗ microdata.nigerianstat.gov.ng</a>
+</div>
+<p class="note">Tiny cover, a one-line respondent note as the only story, and a form-like table. The title runs long and the organisation is cut off.</p>
+</div>
+
+<div>
+<div class="lab">B · Pointing at a circle</div>
+<div class="pre">
+  <div class="img"><img src="../assets/covers-web/ex045.jpg" alt="Cover: Report of Internally Displaced Persons in Nigeria 2023"></div>
+  <div class="b">
+    <div class="meta">Nigeria · 2024 · Country-led</div>
+    <div class="t">First national survey of internally displaced people</div>
+    <div class="s">National Bureau of Statistics, in seven states</div>
+    <div class="chips"><span class="chip idp">IDPs</span><span class="chip rec">IRIS</span><span class="chip">Survey</span></div>
+    <div class="hint">Click to read the full example →</div>
+  </div>
+</div>
+<p class="note">Cover first and a short headline. Readers can tell the kind of work at a glance without opening anything.</p>
+</div>
+
+<div>
+<div class="lab">C · Clicked: the example's profile</div>
+<div class="drawer" role="dialog" aria-label="Example profile">
+  <div class="side">
+    <img src="../assets/covers-web/ex045.jpg" alt="Cover: Report of Internally Displaced Persons in Nigeria 2023">
+    <div class="cr">Cover: National Bureau of Statistics, Nigeria</div>
+  </div>
+  <div class="main">
+    <div class="top">
+      <div class="meta">GAIN 2024 · Nigeria · Country-led</div>
+      <div class="nav"><button>← Prev</button><button>Next →</button><button aria-label="Close">×</button></div>
+    </div>
+    <div>
+      <h2 class="t">Nigeria's first national survey of internally displaced people</h2>
+      <div class="by">National Bureau of Statistics · Real Sector and Household Statistics</div>
+    </div>
+    <div>
+      <p class="stand">Nigeria's statistics office ran its first survey of internally displaced people in seven states, applying the International Recommendations on IDP Statistics (IRIS). It combined survey and administrative data and was funded by the office itself.</p>
+      <div class="draft">EDITED SUMMARY · CHECKED AGAINST THE GAIN RESPONSE</div>
+    </div>
+    <div class="asrep">As reported to GAIN: “this survey is completely sponsored by NBS”</div>
+    <div class="grid">
+      <div class="f"><div class="k">Who is counted</div><div class="chips"><span class="chip idp">IDPs</span></div></div>
+      <div class="f"><div class="k">Recommendations applied</div><div class="chips"><span class="chip rec">IRIS</span></div></div>
+      <div class="f"><div class="k">Data sources and tools</div><div class="chips"><span class="chip on">Survey</span><span class="chip">Administrative data</span><span class="chip">Tools</span></div></div>
+      <div class="f"><div class="k">Challenges reported</div><div style="font-size:13px;color:var(--sub)">None</div></div>
+    </div>
+    <div class="here"><span class="chip on" style="padding:1px 6px">Survey</span> This is why the circle sits in the Survey column of the chart you are on.</div>
+    <div class="case">
+      <img src="case-studies/nigeria.jpg" alt="">
+      <div><div class="k">EGRISS CASE STUDY · 2025</div><a href="#">Strengthening national ownership in data collection and analysis on internal displacement ↗</a></div>
+    </div>
+    <div class="f"><div class="k">Nigeria in GAIN, 2021–2025 · 9 examples</div>
+      <div class="tl">
+        <div class="yr"><div class="dots"><span class="dot i"></span></div>2021</div>
+        <div class="yr"><div class="dots"></div>2022</div>
+        <div class="yr"><div class="dots"></div>2023</div>
+        <div class="yr"><div class="dots"><span class="dot"></span><span class="dot me"></span><span class="dot"></span><span class="dot"></span></div>2024</div>
+        <div class="yr"><div class="dots"><span class="dot i"></span><span class="dot"></span><span class="dot"></span><span class="dot i"></span></div>2025</div>
+        <div style="font-size:12px;color:var(--sub);max-width:28ch">Click a dot to open Nigeria's other examples. Blue: country-led · teal: institution-led.</div>
+      </div>
+    </div>
+    <div class="acts">
+      <a class="btn p" href="#">Open the report ↗</a>
+      <a class="btn" href="#">Read the case study ↗</a>
+      <span class="src">Source: GAIN Survey 2024 · microdata.nigerianstat.gov.ng</span>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+</body>
+</html>

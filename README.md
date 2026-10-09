@@ -31,5 +31,7 @@ Since 8 Oct 2026 (244 covers) it loads covers data `/_blob/1b6f97288b7bb43b217b8
 
 ## Links
 
+- Public site (GitHub Pages, republished on every push to main): https://mitrovif.github.io/GAIN-story/
+
 - Story (design tool): https://claude.ai/artifact/Frysz8mQTSS5Rv8GX5LRMi
 - Review board: https://claude.ai/artifact/L4amtyMx6v3FKYuZAWLK1t
