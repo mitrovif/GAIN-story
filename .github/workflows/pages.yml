@@ -18,6 +18,8 @@ concurrency:
 
 jobs:
   publish:
+    # only the original publishes; the EGRISS copy (egrisstats/GAIN-story) skips this
+    if: github.repository == 'mitrovif/GAIN-story'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
