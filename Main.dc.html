@@ -50,10 +50,10 @@ a{color:#4cc3c9}a:hover{color:#8fe0e4}
 .tiles{display:flex;flex-wrap:wrap;gap:8px}
 .tile{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:6px 12px 6px 9px;border-radius:4px;background:rgba(207,224,244,0.07);border:1px solid rgba(207,224,244,0.16);font:500 13px "IBM Plex Sans",sans-serif;color:#ffffff}
 .ico{width:20px;height:20px;flex-shrink:0}
-.recs{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
-.rec{display:flex;gap:12px;align-items:center;padding:8px;border-radius:4px;background:rgba(207,224,244,0.06);border:1px solid rgba(207,224,244,0.16);text-decoration:none}.rec:hover{border-color:#4cc3c9}
-.rec img{width:56px;height:79px;object-fit:cover;border-radius:2px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.35)}
-.rect{display:flex;flex-direction:column;gap:2px;min-width:0}.recc{font:600 15px "IBM Plex Sans",sans-serif;color:#ffffff}.recn{font-size:12px;line-height:1.35;color:#cfe0f4}.recy{font:400 11px "IBM Plex Mono",monospace;color:#4cc3c9}
+.recs{display:flex;flex-wrap:wrap;gap:8px}
+.rec{display:inline-flex;gap:9px;align-items:center;max-width:100%;padding:4px 12px 4px 4px;border-radius:4px;background:rgba(207,224,244,0.06);border:1px solid rgba(207,224,244,0.16);text-decoration:none}.rec:hover{border-color:#4cc3c9}
+.rec img{width:26px;height:37px;object-fit:cover;border-radius:2px;flex-shrink:0}
+.rect{display:flex;flex-direction:column;gap:0;min-width:0}.recc{font:600 13px "IBM Plex Sans",sans-serif;color:#ffffff}.recy{font:400 11px "IBM Plex Mono",monospace;color:#4cc3c9;margin-left:6px}.recn{font-size:11px;line-height:1.3;color:#cfe0f4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .chl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:6px 14px}
 .chl li{display:flex;align-items:center;gap:9px;font-size:13px;line-height:1.35}
 .sims{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
@@ -357,7 +357,7 @@ a{color:#4cc3c9}a:hover{color:#8fe0e4}
 <section class="psec">
 <h3 class="phead">Recommendations applied</h3>
 <sc-if value="{{dr.hasRecs}}" hint-placeholder-val="{{ false }}">
-<div class="recs"><sc-for list="{{dr.recs}}" as="rc" hint-placeholder-count="1"><a href="{{rc.url}}" target="_blank" rel="noopener" class="rec"><img src="{{rc.img}}" alt="{{rc.alt}}"><span class="rect"><span class="recc">{{rc.code}}</span><span class="recn">{{rc.name}}</span><span class="recy">{{rc.year}} ↗</span></span></a></sc-for></div>
+<div class="recs"><sc-for list="{{dr.recs}}" as="rc" hint-placeholder-count="1"><a href="{{rc.url}}" target="_blank" rel="noopener" class="rec"><img src="{{rc.img}}" alt="{{rc.alt}}"><span class="rect"><span class="recc">{{rc.code}}<span class="recy">{{rc.year}} ↗</span></span><span class="recn">{{rc.name}}</span></span></a></sc-for></div>
 </sc-if>
 <sc-if value="{{dr.hasRecNote}}" hint-placeholder-val="{{ false }}">
 <p class="pnote">{{dr.recNote}}</p>
@@ -1506,9 +1506,9 @@ class Component extends DCLogic {
         var chs = d.ch.length ? d.ch.map(function (c) { return { t: CN[c], icon: self2.icon(CHI[c], '#f06667'), style: 'color: #ffffff' }; })
           : [{ t: early ? notAsked : 'No challenges reported', icon: self2.icon(early ? 'dash' : 'check', early ? '#8b98b3' : '#2e9e7b'), style: 'color: ' + (early ? '#8b98b3' : '#cfe0f4') }];
         var REC = [
-          { code: 'IRRS', name: 'International Recommendations on Refugee Statistics', year: 'Adopted 2018', img: './assets/recs/IRRS.jpg', url: 'https://egrisstats.org/recommendations/international-recommendations-on-refugee-statistics-irrs/' },
-          { code: 'IRIS', name: 'International Recommendations on IDP Statistics', year: 'Adopted 2020', img: './assets/recs/IRIS.jpg', url: 'https://egrisstats.org/recommendations/international-recommendations-on-idp-statistics-iris/' },
-          { code: 'IROSS', name: 'International Recommendations on Statelessness Statistics', year: 'Adopted 2023', img: './assets/recs/IROSS.jpg', url: 'https://egrisstats.org/recommendations/international-recommendations-on-statelessness-statistics-iross/' }
+          { code: 'IRRS', name: 'International Recommendations on Refugee Statistics', year: '2018', img: './assets/recs/IRRS.jpg', url: 'https://egrisstats.org/recommendations/international-recommendations-on-refugee-statistics-irrs/' },
+          { code: 'IRIS', name: 'International Recommendations on IDP Statistics', year: '2020', img: './assets/recs/IRIS.jpg', url: 'https://egrisstats.org/recommendations/international-recommendations-on-idp-statistics-iris/' },
+          { code: 'IROSS', name: 'International Recommendations on Statelessness Statistics', year: '2023', img: './assets/recs/IROSS.jpg', url: 'https://egrisstats.org/recommendations/international-recommendations-on-statelessness-statistics-iross/' }
         ];
         var MIXR = [[0, 1, 2], [0, 1], [0, 2], [1, 2]];
         var recIdx = !d.use ? [] : (d.fw <= 2 ? [d.fw] : (d.fw === 3 && d.mix >= 0 ? MIXR[d.mix] : []));
