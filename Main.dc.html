@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Counted, and counting — GAIN 2021–2025</title>
 <script src="./vendor/react.js"></script>
 <script src="./vendor/react-dom.js"></script>
@@ -38,6 +39,11 @@ a{color:#4cc3c9}a:hover{color:#8fe0e4}
 .seg{min-height:34px;padding:0 12px;border-radius:3px;border:1px solid rgba(207,224,244,0.3);background:rgba(10,20,48,0.6);color:#cfe0f4;font:400 12px "IBM Plex Mono",monospace;cursor:pointer;transition:border-color .2s,color .2s}
 .seg:hover{border-color:#4cc3c9}
 .skipbtn:focus-visible,.exbtn:focus-visible,.seg:focus-visible,.x:focus-visible{outline:3px solid rgba(59,113,185,0.8);outline-offset:2px}
+.openbtn{pointer-events:auto;align-self:flex-start;min-height:40px;padding:0 14px;border-radius:3px;border:1px solid #4cc3c9;background:#4cc3c9;color:#0a1430;font:600 13px "IBM Plex Sans",sans-serif;cursor:pointer}.openbtn:hover{background:#8fe0e4}
+.actbtn{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:3px;border:1px solid #4cc3c9;color:#4cc3c9;text-decoration:none;font:500 14px "IBM Plex Sans",sans-serif}.actbtn.primary{background:#4cc3c9;color:#0a1430}.actbtn:hover{border-color:#8fe0e4}
+.casecard{display:flex;gap:12px;align-items:center;padding:8px;border:1px solid rgba(76,195,201,0.45);border-radius:4px;background:rgba(76,195,201,0.07);text-decoration:none}.casecard:hover{border-color:#4cc3c9}
+.otherex{display:flex;gap:12px;align-items:baseline;text-align:left;width:100%;min-height:36px;padding:7px 10px;border:1px solid rgba(207,224,244,0.14);border-radius:3px;background:rgba(10,20,48,0.5);color:#ffffff;font:400 13px/1.4 "IBM Plex Sans",sans-serif;cursor:pointer}.otherex:hover{border-color:#4cc3c9}
+.openbtn:focus-visible,.actbtn:focus-visible,.otherex:focus-visible,.casecard:focus-visible{outline:3px solid rgba(59,113,185,0.8);outline-offset:2px}
 .x{width:32px;height:32px;border-radius:3px;border:1px solid rgba(207,224,244,0.3);background:transparent;color:#cfe0f4;cursor:pointer;font:400 16px "IBM Plex Mono",monospace;flex-shrink:0}
 .cards{padding-left:48px}
 .step{min-height:115vh;padding-top:14vh;box-sizing:border-box}
@@ -58,11 +64,8 @@ a{color:#4cc3c9}a:hover{color:#8fe0e4}
 <div style="width: 100%"><span style="{{mode.style}}">{{mode.text}}</span></div>
 <div style="font: 400 12px 'IBM Plex Mono', monospace; letter-spacing: 0.1em; color: #8db8e3; width: 100%">{{chartTitle}}</div>
 <sc-for list="{{legend}}" as="lg" hint-placeholder-count="2">
-<div style="display: flex; align-items: center; gap: 8px; font: 400 13px 'IBM Plex Mono', monospace; color: #cfe0f4">
-<span style="{{lg.sw}}"></span><span>{{lg.label}}</span>
-</div>
+<div style="{{lg.style}}"><span style="{{lg.sw}}"></span><span>{{lg.label}}</span></div>
 </sc-for>
-</div>
 <div style="{{yearBox}}">
 <span style="font: 400 12px 'IBM Plex Mono', monospace; color: #8db8e3">Year</span>
 <button class="seg" type="button" style="{{ys.all}}" onClick="{{setYear.all}}">All years</button>
@@ -71,6 +74,7 @@ a{color:#4cc3c9}a:hover{color:#8fe0e4}
 <button class="seg" type="button" style="{{ys.y2023}}" onClick="{{setYear.y2023}}">2023</button>
 <button class="seg" type="button" style="{{ys.y2024}}" onClick="{{setYear.y2024}}">2024</button>
 <button class="seg" type="button" style="{{ys.y2025}}" onClick="{{setYear.y2025}}">2025</button>
+</div>
 </div>
 <div style="{{exploreBox}}">
 <span style="font: 400 12px 'IBM Plex Mono', monospace; color: #8db8e3">Show</span>
@@ -83,57 +87,6 @@ a{color:#4cc3c9}a:hover{color:#8fe0e4}
 </div>
 <sc-if value="{{loading}}" hint-placeholder-val="{{ false }}">
 <div style="position: absolute; right: 48px; bottom: 32px; font: 400 13px 'IBM Plex Mono', monospace; color: #8db8e3">Loading GAIN examples…</div>
-</sc-if>
-<sc-if value="{{hasEx}}" hint-placeholder-val="{{ false }}">
-<div style="{{panelStyle}}" role="dialog" aria-label="Example details" aria-live="polite">
-<div style="display: flex; gap: 12px; align-items: flex-start">
-<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px; min-width: 0">
-<div style="font: 500 11px 'IBM Plex Mono', monospace; letter-spacing: 0.1em; color: #4cc3c9">{{ex.head}}</div>
-<div style="font-family: Obvia, Figtree, sans-serif; font-weight: 600; font-size: 17px; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden">{{ex.title}}</div>
-<div style="font-size: 12px; line-height: 1.4; color: #cfe0f4">{{ex.org}}</div>
-<sc-if value="{{ex.hasWhy}}" hint-placeholder-val="{{ false }}">
-<div style="margin-top: 4px; font: 500 11px 'IBM Plex Mono', monospace; color: #e0a93b">{{ex.why}}</div>
-</sc-if>
-</div>
-<sc-if value="{{ex.pinned}}" hint-placeholder-val="{{ false }}">
-<button class="x" type="button" aria-label="Close example" onClick="{{closeEx}}">×</button>
-</sc-if>
-</div>
-<sc-if value="{{ex.hasCases}}" hint-placeholder-val="{{ false }}">
-<div style="display: flex; flex-direction: column; gap: 5px; padding: 8px 10px; border: 1px solid rgba(76,195,201,0.55); border-radius: 3px; background: rgba(76,195,201,0.08)">
-<div style="font: 400 11px 'IBM Plex Mono', monospace; letter-spacing: 0.03em; color: #4cc3c9">{{ex.casesHead}}</div>
-<sc-for list="{{ex.cases}}" as="cs" hint-placeholder-count="1">
-<a href="{{cs.url}}" target="_blank" rel="noopener" style="font-size: 12px; line-height: 1.4; color: #4cc3c9; text-decoration: none"><span style="font: 400 11px 'IBM Plex Mono', monospace; color: #8db8e3">{{cs.y}}</span> {{cs.t}} ↗</a>
-</sc-for>
-</div>
-</sc-if>
-<sc-if value="{{ex.hasImg}}" hint-placeholder-val="{{ false }}">
-<figure style="margin: 0; display: flex; flex-direction: column; gap: 4px">
-<img src="{{ex.img}}" alt="{{ex.imgAlt}}" style="{{ex.imgStyle}}">
-<figcaption style="font: 400 11px 'IBM Plex Mono', monospace; color: #8db8e3">{{ex.cap}}</figcaption>
-</figure>
-</sc-if>
-<div style="display: flex; gap: 12px; align-items: flex-start">
-<sc-if value="{{ex.hasCover}}" hint-placeholder-val="{{ false }}">
-<img src="{{ex.cover}}" alt="{{ex.coverAlt}}" style="display: block; flex-shrink: 0; width: 72px; height: 96px; object-fit: cover; object-position: top; border-radius: 2px; border: 1px solid rgba(207,224,244,0.25); background: #ffffff">
-</sc-if>
-<div style="{{ex.descStyle}}">{{ex.desc}}</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px; padding-top: 10px; border-top: 1px solid rgba(207,224,244,0.14)">
-<sc-for list="{{ex.facts}}" as="f" hint-placeholder-count="6">
-<div style="display: flex; gap: 12px; align-items: baseline">
-<div style="width: 132px; flex-shrink: 0; font: 400 11px 'IBM Plex Mono', monospace; letter-spacing: 0.03em; color: #8db8e3">{{f.k}}</div>
-<div style="{{f.vStyle}}"><span style="{{f.sw}}"></span><span>{{f.v}}</span></div>
-</div>
-</sc-for>
-</div>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; padding-top: 8px; border-top: 1px solid rgba(207,224,244,0.14); font: 400 11px 'IBM Plex Mono', monospace; color: #8db8e3">
-<span>{{ex.foot}}</span>
-<sc-if value="{{ex.hasLink}}" hint-placeholder-val="{{ false }}">
-<a href="{{ex.link}}" target="_blank" rel="noopener" style="color: #4cc3c9">{{ex.linkText}} ↗ <span style="color: #8db8e3">{{ex.linkHost}}</span></a>
-</sc-if>
-</div>
-</div>
 </sc-if>
 </div>
 
@@ -326,6 +279,97 @@ a{color:#4cc3c9}a:hover{color:#8fe0e4}
 </div>
 
 </div>
+
+<!-- example preview (pointing at a circle, or a featured example) and full profile (after a click): above the story cards -->
+<sc-if value="{{pv.show}}" hint-placeholder-val="{{ false }}">
+<div style="{{pv.style}}" role="dialog" aria-label="Example preview" aria-live="polite">
+<sc-if value="{{pv.hasImg}}" hint-placeholder-val="{{ false }}">
+<div style="height: 132px; background: #ffffff; overflow: hidden"><img src="{{pv.img}}" alt="{{pv.imgAlt}}" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top"></div>
+</sc-if>
+<div style="padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 7px">
+<div style="display: flex; gap: 10px; align-items: flex-start; justify-content: space-between">
+<div style="font: 500 11px 'IBM Plex Mono', monospace; letter-spacing: 0.08em; color: #8db8e3">{{pv.meta}}</div>
+<sc-if value="{{pv.closable}}" hint-placeholder-val="{{ false }}">
+<button class="x" type="button" aria-label="Close example" onClick="{{closeEx}}">×</button>
+</sc-if>
+</div>
+<div style="font-family: Obvia, Figtree, sans-serif; font-weight: 600; font-size: 16px; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden">{{pv.title}}</div>
+<div style="font-size: 12px; line-height: 1.4; color: #cfe0f4">{{pv.org}}</div>
+<sc-if value="{{pv.hasWhy}}" hint-placeholder-val="{{ false }}">
+<div style="font: 500 11px 'IBM Plex Mono', monospace; line-height: 1.5; color: #e0a93b">{{pv.why}}</div>
+</sc-if>
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<sc-for list="{{pv.chips}}" as="c" hint-placeholder-count="2"><span style="{{c.style}}">{{c.t}}</span></sc-for>
+</div>
+<sc-if value="{{pv.closable}}" hint-placeholder-val="{{ false }}">
+<button class="openbtn" type="button" onClick="{{openFull}}">Read the full example →</button>
+</sc-if>
+<sc-if value="{{pv.hoverHint}}" hint-placeholder-val="{{ false }}">
+<div style="padding-top: 7px; border-top: 1px solid rgba(207,224,244,0.14); font: 400 11px 'IBM Plex Mono', monospace; color: #4cc3c9">{{pv.hint}}</div>
+</sc-if>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{dr.show}}" hint-placeholder-val="{{ false }}">
+<div style="position: fixed; inset: 0; z-index: 60; background: rgba(4,9,26,0.62)" onClick="{{closeEx}}"></div>
+<div style="{{dr.style}}" role="dialog" aria-modal="true" aria-label="Example details">
+<div style="position: sticky; top: 0; z-index: 1; display: flex; gap: 12px; align-items: center; justify-content: space-between; padding: 14px 22px 12px; background: #0e1b3d; border-bottom: 1px solid rgba(207,224,244,0.12)">
+<div style="font: 500 11px 'IBM Plex Mono', monospace; letter-spacing: 0.1em; color: #4cc3c9">{{dr.meta}}</div>
+<button class="x" type="button" aria-label="Close example" onClick="{{closeEx}}">×</button>
+</div>
+<div style="{{dr.grid}}">
+<sc-if value="{{dr.hasImg}}" hint-placeholder-val="{{ false }}">
+<figure style="{{dr.figStyle}}">
+<img src="{{dr.img}}" alt="{{dr.imgAlt}}" style="{{dr.imgStyle}}">
+<figcaption style="font: 400 10px 'IBM Plex Mono', monospace; line-height: 1.5; color: #5a6884">{{dr.cap}}</figcaption>
+</figure>
+</sc-if>
+<div style="display: flex; flex-direction: column; gap: 16px; min-width: 0">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: Obvia, Figtree, sans-serif; font-weight: 600; font-size: 22px; line-height: 1.25; color: #ffffff">{{dr.title}}</h2>
+<div style="font-size: 13px; line-height: 1.45; color: #cfe0f4">{{dr.org}}</div>
+<sc-if value="{{dr.hasWhy}}" hint-placeholder-val="{{ false }}">
+<div style="font: 500 11px 'IBM Plex Mono', monospace; line-height: 1.5; color: #e0a93b">{{dr.why}}</div>
+</sc-if>
+</div>
+<p style="{{dr.descStyle}}">{{dr.desc}}</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)); gap: 14px 18px">
+<sc-for list="{{dr.groups}}" as="gp" hint-placeholder-count="4">
+<div style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<div style="font: 400 10px 'IBM Plex Mono', monospace; letter-spacing: 0.1em; text-transform: uppercase; color: #8db8e3">{{gp.k}}</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><sc-for list="{{gp.chips}}" as="c" hint-placeholder-count="1"><span style="{{c.style}}">{{c.t}}</span></sc-for></div>
+</div>
+</sc-for>
+</div>
+<sc-if value="{{dr.hasCases}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font: 400 10px 'IBM Plex Mono', monospace; letter-spacing: 0.1em; text-transform: uppercase; color: #4cc3c9">{{dr.casesHead}}</div>
+<sc-for list="{{dr.cases}}" as="cs" hint-placeholder-count="1">
+<a href="{{cs.url}}" target="_blank" rel="noopener" class="casecard"><img src="{{cs.img}}" alt="" style="width: 104px; height: 66px; object-fit: cover; object-position: top; border-radius: 2px; flex-shrink: 0; background: #ffffff"><span style="display: flex; flex-direction: column; gap: 3px; min-width: 0"><span style="font: 500 10px 'IBM Plex Mono', monospace; letter-spacing: 0.08em; color: #4cc3c9">{{cs.y}}</span><span style="font-size: 13px; line-height: 1.4; color: #ffffff">{{cs.t}} ↗</span></span></a>
+</sc-for>
+</div>
+</sc-if>
+<sc-if value="{{dr.hasOthers}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font: 400 10px 'IBM Plex Mono', monospace; letter-spacing: 0.1em; text-transform: uppercase; color: #8db8e3">{{dr.othersHead}}</div>
+<sc-for list="{{dr.others}}" as="o" hint-placeholder-count="2">
+<button class="otherex" type="button" onClick="{{o.pick}}"><span style="font: 400 11px 'IBM Plex Mono', monospace; color: #8db8e3; flex-shrink: 0">{{o.y}}</span><span style="min-width: 0">{{o.t}}</span></button>
+</sc-for>
+</div>
+</sc-if>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding-top: 14px; border-top: 1px solid rgba(207,224,244,0.14)">
+<sc-if value="{{dr.hasLink}}" hint-placeholder-val="{{ false }}">
+<a href="{{dr.link}}" target="_blank" rel="noopener" class="actbtn primary">{{dr.linkText}} ↗</a>
+</sc-if>
+<sc-if value="{{dr.hasCaseLink}}" hint-placeholder-val="{{ false }}">
+<a href="{{dr.caseLink}}" target="_blank" rel="noopener" class="actbtn">Read the case study ↗</a>
+</sc-if>
+</div>
+<div style="font: 400 11px 'IBM Plex Mono', monospace; line-height: 1.6; color: #8db8e3">{{dr.foot}}</div>
+</div>
+</div>
+</div>
+</sc-if>
 </section>
 
 <footer style="background: #f7fafd; color: #1d2940; padding: 112px 48px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
@@ -395,7 +439,7 @@ class Component extends DCLogic {
   }
   geo() {
     var W = this.W || 1440, H = this.H || 900, wide = W >= 1000;
-    return { W: W, H: H, wide: wide, L: wide ? Math.max(500, Math.round(W * 0.36)) : 16, R: W - (wide ? 56 : 16), T: wide ? 170 : 112, B: wide ? H - 72 : Math.round(H * 0.58) };
+    return { W: W, H: H, wide: wide, L: wide ? Math.max(500, Math.round(W * 0.36)) : 16, R: W - (wide ? 56 : 16), T: wide ? 170 : 176, B: wide ? H - 72 : Math.round(H * 0.58) };
   }
   mono(size, color, extra) { return 'font: 500 ' + size + 'px \'IBM Plex Mono\', monospace; color: ' + color + ';' + (extra || ''); }
   label(x, y, a, b, align, aStyle, bStyle) {
@@ -428,7 +472,7 @@ class Component extends DCLogic {
       ? ids.length + ' examples reported ' + answers + ' ' + many + '. ' + multi + ' of them reported more than one ' + one + ', so they appear once per answer and are ringed in white. Hover over one to highlight its other answers.'
       : '';
     var box = 'display: block; width: ' + (g.wide ? 300 : 260) + 'px; white-space: normal; padding: 10px 12px; background: rgba(20,35,76,0.92); border: 1px dashed rgba(224,169,59,0.8); border-radius: 3px; font: 400 12px \'IBM Plex Sans\', sans-serif; line-height: 1.5; color: #e6eef8';
-    return this.label(g.wide ? g.R : 16, g.wide ? g.T - 20 : g.B + 70, text, '', g.wide ? 'right' : 'left', ids.length ? box : 'display: none', 'display: none');
+    return this.label(g.wide ? g.R : 16, g.wide ? g.T + 60 : g.B + 70, text, '', g.wide ? 'right' : 'left', ids.length ? box : 'display: none', 'display: none');
   }
   build(layout) {
     var g = this.geo();
@@ -552,8 +596,8 @@ class Component extends DCLogic {
         labels.push(self.label(hx + (right ? 6 : -6), ey, String(gr.n), gr.name, right ? 'left' : 'right', 'display: block; ' + self.mono(g.wide ? 26 : 16, gr.col, ' line-height: 1.05;'), gr.bs));
       });
       legend = byLead
-        ? [{ label: 'Country-led (coral, as in the Annual Report)', sw: 'lc' }, { label: 'Institution-led', sw: 'li' }, { label: 'Faded inner ring: Recommendations used', sw: 'fw4' }]
-        : [{ label: 'IRRS', sw: 'fw0' }, { label: 'IRIS', sw: 'fw1' }, { label: 'IROSS', sw: 'fw2' }, { label: 'Mixed use: circle split by the Recommendations combined', sw: 'fw3' }, { label: 'Undetermined', sw: 'fw4' }, { label: 'Inner ring: country', sw: 'lc' }, { label: 'institution', sw: 'li' }];
+        ? [{ head: 'Circles: who led the example' }, { label: 'Country-led', sw: 'lc' }, { label: 'Institution-led', sw: 'li' }, { head: 'Faded inner ring: the Recommendations applied' }]
+        : [{ head: 'Circles: Recommendations applied' }, { label: 'IRRS', sw: 'fw0' }, { label: 'IRIS', sw: 'fw1' }, { label: 'IROSS', sw: 'fw2' }, { label: 'Mixed use (circle split)', sw: 'fw3' }, { label: 'Undetermined', sw: 'fw4' }, { head: 'Inner ring: who led the example' }, { label: 'Country-led', sw: 'lc' }, { label: 'Institution-led', sw: 'li' }];
     } else if (layout.indexOf('regions') === 0 || layout.indexOf('challenges') === 0) {
       var isR = layout.indexOf('regions') === 0;
       var ry = layout.split(':')[1] || '2025', ryN = ry === 'all' ? null : +ry;
@@ -587,7 +631,7 @@ class Component extends DCLogic {
         labels.push(self.label(x0 - 14, yc, names[qi], '', 'right', 'font: 400 ' + (g.wide ? 13 : 11) + 'px \'IBM Plex Sans\', sans-serif; color: #cfe0f4'));
         labels.push(self.label(x0 + wv + 12, yc, String(b.length), '', 'left', self.mono(g.wide ? 15 : 12, '#ffffff')));
       });
-      legend = isR ? [{ label: 'Country-led, using', sw: 'cU' }] : [{ label: 'Country-led', sw: 'cU' }, { label: 'Institution-led', sw: 'iU' }, { label: 'Ringed: example reported several challenges', sw: 'cUm' }];
+      legend = isR ? [{ label: 'Country-led, using', sw: 'cU' }] : [{ label: 'Country-led', sw: 'cU' }, { label: 'Institution-led', sw: 'iU' }, { label: 'White ring: reported several challenges', sw: 'cUm' }];
       if (!isR) labels.push(self.multiNote(g, buckets, 'challenge', 'challenges'));
     } else if (layout.indexOf('sources') === 0) {
       var sy = layout.split(':')[1] || '2025', syN = sy === 'all' ? null : +sy;
@@ -615,7 +659,7 @@ class Component extends DCLogic {
         labels.push(self.label(x0b + bw3 / 2, g.B + 13, String(u3), '', 'center', self.mono(g.wide ? 12 : 10, '#ffffff', ' opacity: 0.9;')));
       });
       NM.forEach(function (nm, ci) { labels.push(self.label(g.L + band3 * ci + band3 / 2, g.B + 36, nm, '', 'center', 'font: 400 ' + (g.wide ? 13 : 10) + 'px \'IBM Plex Sans\', sans-serif; color: #ffffff')); });
-      legend = [{ label: 'Example using the Recommendations', sw: 'cU' }, { label: 'Not using / did not know', sw: 'cN' }, { label: 'Ringed: example used several sources', sw: 'cUm' }];
+      legend = [{ label: 'Example using the Recommendations', sw: 'cU' }, { label: 'Not using / did not know', sw: 'cN' }, { label: 'White ring: reported several sources', sw: 'cUm' }];
       labels.push(self.multiNote(g, bk, 'source', 'sources'));
     } else if (layout.indexOf('map') === 0) {
       var my0 = layout.split(':')[1] || '2025', myN = my0 === 'all' ? null : +my0;
@@ -668,8 +712,9 @@ class Component extends DCLogic {
       // an example with no place in this view (another round, or outside this chart) drifts faintly in the background, once
       if (P[n].j === 0 && !(pos[f] && pos[f].v) && layout !== 'bars') { pos[n].bg = true; nbg++; }
     }
-    if (layout !== 'bars') legend.push({ label: 'Teal ring: EGRISS case study (bright: 2025–2026)', sw: 'ring' });
-    if (nbg) legend.push({ label: 'Faint: examples not in this view', sw: 'bg' });
+    if (layout !== 'bars' || nbg) legend.push({ brk: true });
+    if (layout !== 'bars') legend.push({ label: 'Teal ring: has an EGRISS case study (brighter: 2025–2026)', sw: 'ring' });
+    if (nbg) legend.push({ label: 'Faint dots: other years or not in this chart', sw: 'bg' });
     var out = { pos: pos, deco: deco, labels: labels, legend: legend, title: title };
     this._cache[key] = out;
     return out;
@@ -1231,9 +1276,11 @@ class Component extends DCLogic {
       next: function () { self.go(active + 1); },
       leave: function () { var s2 = self.state || {}; if (s2.hover != null || s2.regHover != null) self.setState({ hover: null, regHover: null }); },
       closeEx: function () { self.setState({ sel: -1, hover: null }); },
-      loading: !st.ready, labels: [], legend: [], chartTitle: '', hasEx: false,
-      ex: { head: '', title: '', org: '', desc: '', descStyle: '', facts: [], foot: '', hasImg: false, pinned: false, img: '', imgStyle: '', imgAlt: '', cap: '', hasCover: false, cover: '', coverAlt: '', hasLink: false, link: '', linkHost: '', hasCases: false, cases: [], casesHead: '', hasWhy: false, why: '' },
-      panelStyle: 'display: none', legendBox: 'display: none', exploreBox: 'display: none', seg: {}, mode: { text: '', style: 'display: none' }
+      loading: !st.ready, labels: [], legend: [], chartTitle: '',
+      pv: { show: false, meta: '', title: '', org: '', hasWhy: false, why: '', hasImg: false, img: '', imgAlt: '', chips: [], closable: false, hoverHint: false, hint: '', style: 'display: none' },
+      dr: { show: false, meta: '', title: '', org: '', hasWhy: false, why: '', style: 'display: none', grid: '', hasImg: false, img: '', imgAlt: '', figStyle: '', imgStyle: '', cap: '', desc: '', descStyle: '', groups: [], hasCases: false, cases: [], casesHead: '', hasOthers: false, othersHead: '', others: [], hasLink: false, link: '', linkText: '', hasCaseLink: false, caseLink: '', foot: '' },
+      openFull: function () { var s3 = self.state || {}, sp = self.steps()[s3.active || 0]; if (sp && sp.feat != null) self.setState({ sel: sp.feat, hover: null }); },
+      legendBox: 'display: none', exploreBox: 'display: none', seg: {}, mode: { text: '', style: 'display: none' }
     };
     this.ringE = null;
     if (!st.ready || !this.rows) return base;
@@ -1247,7 +1294,14 @@ class Component extends DCLogic {
       if (p.f[3] === 0) return 'display: inline-block; flex-shrink: 0; width: 10px; height: 10px; border-radius: 50%; box-shadow: inset 0 0 0 1.5px ' + 'rgb(' + p.s[0] + ',' + p.s[1] + ',' + p.s[2] + ')';
       return 'display: inline-block; flex-shrink: 0; width: 10px; height: 10px; border-radius: 50%; background: ' + c + (p.s[3] > 0 ? '; box-shadow: 0 0 0 1.5px rgb(' + p.s[0] + ',' + p.s[1] + ',' + p.s[2] + ')' : '');
     }
-    var legend = B ? B.legend.map(function (l) { return { label: l.label, sw: sw(l.sw) }; }) : [];
+    // legend rows: items with room between them; group headings and line breaks start a new row
+    var LI = 'display: flex; align-items: center; gap: 8px; font: 400 13px \'IBM Plex Sans\', sans-serif; color: #cfe0f4';
+    var LH = 'flex-basis: 100%; margin-top: 2px; font: 500 11px \'IBM Plex Mono\', monospace; letter-spacing: 0.08em; text-transform: uppercase; color: #8db8e3';
+    var legend = B ? B.legend.filter(function (l) { return g.wide || !(l.brk || l.sw === 'ring' || l.sw === 'bg'); }).map(function (l) {
+      if (l.brk) return { label: '', sw: 'display: none', style: 'flex-basis: 100%; height: 0' };
+      if (l.head) return { label: l.head, sw: 'display: none', style: LH };
+      return { label: l.label, sw: sw(l.sw), style: LI };
+    }) : [];
     var labels = B ? B.labels : [];
     var exId = null, ax = null, ay = null, pinned = false, featured = false;
     if (st.hover != null) { exId = st.hover; ax = st.hx; ay = st.hy; }
@@ -1258,7 +1312,7 @@ class Component extends DCLogic {
       ax = fp.x; ay = fp.y;
     }
     this.ringE = exId;
-    var ex = base.ex, panelStyle = 'display: none';
+    var pv = base.pv, dr = base.dr;
     if (exId != null) {
       var d = this.rows[exId];
       // every pop-up has the same fields, in the same order; missing answers say why they are missing
@@ -1336,50 +1390,108 @@ class Component extends DCLogic {
       var lnkNews = !!st2.news;
       var lnkRel = !!st2.related;  // held-back covers: the link is a related edition or section page, not the example's own document
       var CL = this.caseList || [], csKeys = (this.caseOf || {})[exId] || [];
-      var csList = csKeys.slice().sort(function (a4, b4) { return CL[b4][0] - CL[a4][0]; }).map(function (k) { return { y: CL[k][0] >= 2025 ? 'NEW · ' + CL[k][0] : String(CL[k][0]), t: CL[k][1], url: CL[k][2] }; });
-      var csHead = (csList.length > 1 ? 'EGRISS CASE STUDIES' : 'EGRISS CASE STUDY') + ' ON THIS EXAMPLE';
-      var pw = Math.min(360, g.W - 32);
-      var ph = (im ? 175 : 0) + 90 + 6 * 34 + 120 + (csList.length ? 30 + csList.length * 34 : 0);
-      var px, py;
-      if (g.wide && ax != null) {
-        px = ax + 24;
-        if (px + pw > g.W - 16) px = ax - 24 - pw;
-        px = Math.max(16, px);
-        py = Math.max(16, Math.min(g.H - ph - 16, ay - 60));
-      } else { px = 16; py = null; }
-      // wide screens: next to the example, never past the bottom edge; narrow screens: a sheet along the bottom
-      var vpos = py == null ? 'bottom: 16px; max-height: ' + Math.round(g.H * 0.6) + 'px;' : 'top: ' + Math.round(py) + 'px; max-height: ' + Math.round(g.H - py - 16) + 'px;';
-      panelStyle = 'position: absolute; left: ' + Math.round(px) + 'px; ' + vpos + ' overflow-y: auto; overscroll-behavior: contain; width: ' + pw + 'px; box-sizing: border-box; padding: 16px 18px; background: rgba(14,27,61,0.97); border: 1px solid rgba(207,224,244,0.22); border-radius: 3px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 12px 34px rgba(0,0,0,0.35); z-index: 10;' + (pinned ? '' : ' pointer-events: none;');
-      var clamp = 'display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; font-size: 13px; line-height: 1.55;';
-      ex = {
-        head: ('GAIN ' + d.y + ' · ' + (d.country || 'Regional / global')).toUpperCase(),
-        title: d.title, org: d.org || 'Organisation not reported', pinned: pinned,
-        desc: d.desc || 'No description was provided for this example.',
-        descStyle: clamp + (d.desc ? ' color: #e6eef8' : ' color: #8b98b3; font-style: italic'),
-        facts: facts,
-        foot: nParts > 1 ? 'Multiple-choice answers: shown ' + nParts + ' times in the data sources and challenges charts' : 'GAIN Survey ' + d.y,
-        hasImg: !!im, img: im ? im.src : '', imgStyle: 'display: block; width: 100%; height: 150px; object-fit: cover; border-radius: 3px;' + (shot && im && im.src === st2.cover ? ' object-position: top; border: 1px solid rgba(207,224,244,0.25); background: #ffffff' : ''), imgAlt: im ? im.alt : '', cap: im ? im.cap : '',
-        hasCover: !!cov, cover: cov ? cov.src : '', coverAlt: cov ? cov.alt : '',
-        hasCases: csList.length > 0, cases: csList, casesHead: csHead,
-        hasWhy: !!(featured && step.why), why: featured ? (step.why || '') : '',
-        hasLink: !!lnk, link: lnk, linkText: lnkRel ? 'Open a related source' : "Open the example's source", linkHost: lnk ? lnk.replace(/^https?:\/\/(www\.)?/, '').split('/')[0] + (lnkNews ? ' · news article, no official page found' : '') + (lnkRel ? ' · not this example\'s own document' : '') : ''
-      };
+      var csSorted = csKeys.slice().sort(function (a4, b4) { return CL[b4][0] - CL[a4][0]; });
+      var csList = csSorted.map(function (k) {
+        var slug = CL[k][2].replace(/\/+$/, '').split('/').pop();
+        return { y: (CL[k][0] >= 2025 ? 'NEW · ' : '') + 'EGRISS CASE STUDY · ' + CL[k][3].toUpperCase() + ' · ' + CL[k][0], t: CL[k][1], url: CL[k][2], img: './assets/cases/' + slug + '.jpg' };
+      });
+      var csHead = csList.length > 1 ? 'EGRISS case studies on this example' : 'EGRISS case study on this example';
+      // tags, coloured as in the charts
+      var self2 = this;
+      function rgb(k) { var f = self2.pal[k].f; return 'rgb(' + f[0] + ',' + f[1] + ',' + f[2] + ')'; }
+      var CHIP = 'display: inline-flex; align-items: center; min-height: 24px; padding: 2px 9px; border-radius: 999px; font: 500 12px \'IBM Plex Sans\', sans-serif; line-height: 1.3; white-space: nowrap; ';
+      function chip(txt, kind, k) {
+        var s = CHIP;
+        if (kind === 'fill') s += 'background: ' + rgb(k) + '; color: #0a1430';
+        else if (kind === 'pop') s += 'border: 1px solid #8fe0e4; color: #8fe0e4';
+        else if (kind === 'ch') s += 'border: 1px solid rgba(240,102,103,0.6); color: #f7a3a4';
+        else if (kind === 'off') s += 'border: 1px dashed rgba(207,224,244,0.3); color: #8b98b3; font-style: italic; font-weight: 400';
+        else s += 'border: 1px solid rgba(207,224,244,0.3); color: #e6eef8';
+        return { t: txt, style: s };
+      }
+      var notAsked = 'Not asked before GAIN 2024';
+      var popChips = d.pop ? d.pop.split(' · ').map(function (x) { return chip(x, 'pop'); }) : [chip(early ? notAsked : 'Not reported', 'off')];
+      var recTxt = d.fw === 3 && d.mix >= 0 ? ['IRRS + IRIS + IROSS', 'IRRS + IRIS', 'IRRS + IROSS', 'IRIS + IROSS'][d.mix] : FW[d.fw];
+      var recChips = d.use ? [chip(recTxt, d.fw === 4 ? 'off' : 'fill', 'fw' + d.fw)] : [chip('Not using the Recommendations, or not known', 'off')];
+      var srcChips = d.src.length ? d.src.map(function (c) { return chip(SN[c]); }) : [chip(early ? (d.src1 || notAsked) : (d.src1 || 'Not reported'), early && !d.src1 ? 'off' : '')];
+      var chChips = d.ch.length ? d.ch.map(function (c) { return chip(CN[c], 'ch'); }) : [chip(early ? notAsked : 'None reported', 'off')];
+      var leadChip = chip(d.lead === 0 ? 'Country-led' : 'Institution-led');
+      var meta = ('GAIN ' + d.y + ' · ' + (d.country || 'Regional / global') + ' · ' + (d.lead === 0 ? 'Country-led' : 'Institution-led')).toUpperCase();
+      var why = featured ? (step.why || '') : '';
+      var imgSrc = cov ? cov.src : (im ? im.src : ''), imgAlt = cov ? cov.alt : (im ? im.alt : '');
+      var isPhoto = !cov && !!im && !(shot && im.src === st2.cover);
+      var linkText = lnkRel ? 'Open a related source' : "Open the example's source";
+      var host = lnk ? lnk.replace(/^https?:\/\/(www\.)?/, '').split('/')[0] : '';
+      if (pinned && !featured) {
+        // a click: the full profile, on top of everything, page dimmed behind it
+        var others = [];
+        if (d.country) this.rows.forEach(function (r) { if (r.country === d.country && r.id !== d.id) others.push(r); });
+        others.sort(function (a5, b5) { return (b5.y - a5.y) || (a5.id - b5.id); });
+        var nOth = others.length;
+        var drWide = g.W >= 760;
+        dr = {
+          show: true, meta: meta, title: d.title, org: d.org || 'Organisation not reported', hasWhy: false, why: '',
+          style: drWide
+            ? 'position: fixed; top: 16px; right: 16px; bottom: 16px; z-index: 61; width: min(640px, calc(100vw - 32px)); overflow-y: auto; overscroll-behavior: contain; background: #0e1b3d; border: 1px solid rgba(207,224,244,0.22); border-radius: 6px; box-shadow: 0 24px 60px rgba(0,0,0,0.5)'
+            : 'position: fixed; left: 0; right: 0; bottom: 0; z-index: 61; max-height: 88vh; overflow-y: auto; overscroll-behavior: contain; background: #0e1b3d; border-top: 1px solid rgba(207,224,244,0.22); border-radius: 12px 12px 0 0; box-shadow: 0 -12px 40px rgba(0,0,0,0.5)',
+          grid: drWide && imgSrc ? 'display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 22px; padding: 18px 22px 22px; align-items: start' : 'display: flex; flex-direction: column; gap: 16px; padding: 16px 18px 22px',
+          hasImg: !!imgSrc, img: imgSrc, imgAlt: imgAlt,
+          figStyle: 'margin: 0; display: flex; flex-direction: column; gap: 6px; padding: ' + (isPhoto ? '0' : '10px') + '; background: ' + (isPhoto ? 'transparent' : '#ffffff') + '; border-radius: 4px; ' + (drWide ? 'position: sticky; top: 64px' : 'max-width: 220px'),
+          imgStyle: 'display: block; width: 100%; height: auto; border-radius: 2px;' + (isPhoto ? '' : ' border: 1px solid #d9e2ef'),
+          cap: cov ? (lnkRel ? 'Cover of a related document' : 'Cover or first page') + (d.org ? ' · ' + d.org : '') : (im ? (im.cap || 'Source page') : ''),
+          desc: d.desc || 'No description was given for this example in the GAIN Survey.',
+          descStyle: 'margin: 0; font-size: 15px; line-height: 1.65; ' + (d.desc ? 'color: #e6eef8' : 'color: #8b98b3; font-style: italic'),
+          groups: [
+            { k: 'Who is counted', chips: popChips },
+            { k: 'Recommendations applied', chips: recChips },
+            { k: 'Data sources and tools', chips: srcChips },
+            { k: 'Challenges reported', chips: chChips },
+            { k: 'Led by', chips: [leadChip] }
+          ],
+          hasCases: csList.length > 0, cases: csList, casesHead: csHead,
+          hasOthers: nOth > 0, othersHead: (d.country || '') + ' in GAIN · ' + nOth + ' other example' + (nOth === 1 ? '' : 's'),
+          others: others.slice(0, 12).map(function (r) { return { y: String(r.y), t: r.title.length > 110 ? r.title.slice(0, 107) + '…' : r.title, pick: self2._pick['e' + r.id] }; }),
+          hasLink: !!lnk, link: lnk, linkText: linkText + (lnkNews ? ' (news article)' : ''),
+          hasCaseLink: csList.length > 0, caseLink: csList.length ? csList[0].url : '',
+          foot: 'Source: GAIN Survey ' + d.y + (host ? ' · ' + host + (lnkRel ? ' (not this example\'s own document)' : '') : '') + (nParts > 1 ? ' · Multiple-choice answers: this example appears ' + nParts + ' times in the data sources and challenges charts' : '')
+        };
+      } else {
+        // pointing at a circle (or a featured example in the story): a short preview beside it
+        var pw = Math.min(320, g.W - 32);
+        var ph = (imgSrc ? 132 : 0) + 150 + (why ? 34 : 0) + (featured ? 48 : 22);
+        var px, py;
+        if (g.wide && ax != null) {
+          px = ax + 24;
+          if (px + pw > g.W - 16) px = ax - 24 - pw;
+          px = Math.max(16, px);
+          py = Math.max(16, Math.min(g.H - ph - 16, ay - 60));
+        } else { px = 16; py = g.T - 6; }
+        var vpos2 = 'top: ' + Math.round(py) + 'px;';
+        pv = {
+          show: true, meta: meta, title: d.title, org: d.org || 'Organisation not reported',
+          hasWhy: !!why, why: why,
+          hasImg: !!imgSrc && g.wide, img: imgSrc, imgAlt: imgAlt,
+          chips: popChips.filter(function (c) { return c.style.indexOf('dashed') < 0; }).concat(d.use ? recChips : []).slice(0, 4),
+          closable: featured, hoverHint: !featured, hint: 'Click the circle to read the full example',
+          style: 'position: fixed; left: ' + Math.round(px) + 'px; ' + vpos2 + ' z-index: 62; width: ' + pw + 'px; box-sizing: border-box; overflow: hidden; background: #1a2852; border: 1px solid rgba(207,224,244,0.22); border-radius: 6px; box-shadow: 0 16px 40px rgba(0,0,0,0.45);' + (featured ? '' : ' pointer-events: none;')
+        };
+      }
     }
     var show = !!B;
-    var legendBox = 'position: absolute; left: ' + (g.wide ? g.L : 16) + 'px; top: ' + (g.wide ? 32 : 8) + 'px; display: flex; flex-wrap: wrap; gap: 4px 12px; max-width: ' + (g.W - (g.wide ? g.L : 16) - 24) + 'px; pointer-events: none; transition: opacity .4s; opacity: ' + (show ? 1 : 0);
+    var legendBox = 'position: absolute; left: ' + (g.wide ? g.L : 16) + 'px; top: ' + (g.wide ? 28 : 8) + 'px; display: flex; flex-wrap: wrap; align-items: center; gap: 7px 22px; max-width: ' + (g.W - (g.wide ? g.L : 16) - 24) + 'px; pointer-events: none; transition: opacity .4s; opacity: ' + (show ? 1 : 0);
     var exploreBox = 'position: absolute; right: 24px; bottom: 12px; display: ' + (step.explore ? 'flex' : 'none') + '; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 6px; max-width: calc(100% - 48px)';
     var on = 'border-color: #4cc3c9; color: #4cc3c9';
     var seg = {};
     ['bars', 'donut', 'regions', 'sources', 'challenges', 'map'].forEach(function (k2) { seg[k2] = layout.split(':')[0] === k2 ? on : ''; });
     var lb = layout.split(':');
     var hasYear = lb[0] !== 'snow' && lb[0] !== 'bars';
-    var yearBox = 'position: absolute; left: ' + (g.wide ? g.L : 16) + 'px; top: ' + (g.wide ? 118 : 68) + 'px; display: ' + (hasYear ? 'flex' : 'none') + '; flex-wrap: wrap; align-items: center; gap: 6px; z-index: 5';
+    var yearBox = 'flex-basis: 100%; display: ' + (hasYear ? 'flex' : 'none') + '; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 6px; pointer-events: auto';
     var ys = {};
     ['all', '2021', '2022', '2023', '2024', '2025'].forEach(function (y) { ys[y === 'all' ? 'all' : 'y' + y] = hasYear && lb[1] === y ? on : ''; });
     return Object.assign(base, {
       yearBox: yearBox, ys: ys,
       loading: false, labels: labels, legend: legend, chartTitle: B ? B.title : '',
-      hasEx: exId != null, ex: ex, panelStyle: panelStyle, legendBox: legendBox, exploreBox: exploreBox, seg: seg,
+      pv: pv, dr: dr, legendBox: legendBox, exploreBox: exploreBox, seg: seg,
       mode: (function () {
         // which rounds the chart shows: the latest round (GAIN 2025 now, 2026 next) or all rounds
         var bits = layout.split(':'), kind = bits[0], yv = bits[1], L = String(self.latest());
